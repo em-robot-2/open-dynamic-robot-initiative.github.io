@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['driver',['Driver',['../classDriver.html',1,'']]]
+  ['fingertypes',['FingerTypes',['../structrobot__interfaces_1_1FingerTypes.html',1,'robot_interfaces']]]
 ];

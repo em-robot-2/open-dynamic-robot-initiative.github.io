@@ -1,0 +1,64 @@
+\hypertarget{dynamical__systems_8hpp}{}\section{include/mpi\+\_\+cpp\+\_\+tools/dynamical\+\_\+systems.hpp File Reference}
+\label{dynamical__systems_8hpp}\index{include/mpi\+\_\+cpp\+\_\+tools/dynamical\+\_\+systems.\+hpp@{include/mpi\+\_\+cpp\+\_\+tools/dynamical\+\_\+systems.\+hpp}}
+{\ttfamily \#include $<$cmath$>$}\\*
+{\ttfamily \#include $<$math.\+h$>$}\\*
+{\ttfamily \#include $<$Eigen/\+Eigen$>$}\\*
+{\ttfamily \#include $<$iostream$>$}\\*
+{\ttfamily \#include \char`\"{}mpi\+\_\+cpp\+\_\+tools/basic\+\_\+tools.\+hpp\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}mpi\+\_\+cpp\+\_\+tools/math.\+hpp\char`\"{}}\\*
+Include dependency graph for dynamical\+\_\+systems.\+hpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dynamical__systems_8hpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classmct_1_1LinearDynamics}{mct\+::\+Linear\+Dynamics}
+\item 
+class \hyperlink{classmct_1_1LinearDynamicsWithAccelerationConstraint}{mct\+::\+Linear\+Dynamics\+With\+Acceleration\+Constraint}
+\item 
+class \hyperlink{classmct_1_1SafetyConstraint}{mct\+::\+Safety\+Constraint}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+double \hyperlink{dynamical__systems_8hpp_aab449f0863dee56d0f0e377c75a4812d}{mct\+::find\+\_\+max\+\_\+admissible\+\_\+acceleration} (const double \&initial\+\_\+velocity, const double \&initial\+\_\+position, const double \&max\+\_\+velocity, const double \&max\+\_\+position, const \hyperlink{classmct_1_1NonnegDouble}{mct\+::\+Nonneg\+Double} \&abs\+\_\+jerk\+\_\+limit, const \hyperlink{classmct_1_1NonnegDouble}{mct\+::\+Nonneg\+Double} \&abs\+\_\+acceleration\+\_\+limit)
+\item 
+double {\bfseries mct\+::find\+\_\+min\+\_\+admissible\+\_\+acceleration} (const double \&initial\+\_\+velocity, const double \&initial\+\_\+position, const double \&min\+\_\+velocity, const double \&min\+\_\+position, const \hyperlink{classmct_1_1NonnegDouble}{mct\+::\+Nonneg\+Double} \&abs\+\_\+jerk\+\_\+limit, const \hyperlink{classmct_1_1NonnegDouble}{mct\+::\+Nonneg\+Double} \&abs\+\_\+acceleration\+\_\+limit)\hypertarget{dynamical__systems_8hpp_a87c8fdeac88fa24892ddb753f31f2a6c}{}\label{dynamical__systems_8hpp_a87c8fdeac88fa24892ddb753f31f2a6c}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Manuel Wuthrich 
+\end{DoxyAuthor}
+\begin{DoxyRefDesc}{License}
+\item[\hyperlink{license__license000002}{License}]License B\+S\+D-\/3-\/\+Clause \end{DoxyRefDesc}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2019, New York University and Max Planck Gesellschaft. 
+\end{DoxyCopyright}
+\begin{DoxyDate}{Date}
+2019-\/08-\/05 
+\end{DoxyDate}
+
+
+\subsection{Function Documentation}
+\index{dynamical\+\_\+systems.\+hpp@{dynamical\+\_\+systems.\+hpp}!find\+\_\+max\+\_\+admissible\+\_\+acceleration@{find\+\_\+max\+\_\+admissible\+\_\+acceleration}}
+\index{find\+\_\+max\+\_\+admissible\+\_\+acceleration@{find\+\_\+max\+\_\+admissible\+\_\+acceleration}!dynamical\+\_\+systems.\+hpp@{dynamical\+\_\+systems.\+hpp}}
+\subsubsection[{\texorpdfstring{find\+\_\+max\+\_\+admissible\+\_\+acceleration(const double \&initial\+\_\+velocity, const double \&initial\+\_\+position, const double \&max\+\_\+velocity, const double \&max\+\_\+position, const mct\+::\+Nonneg\+Double \&abs\+\_\+jerk\+\_\+limit, const mct\+::\+Nonneg\+Double \&abs\+\_\+acceleration\+\_\+limit)}{find_max_admissible_acceleration(const double &initial_velocity, const double &initial_position, const double &max_velocity, const double &max_position, const mct::NonnegDouble &abs_jerk_limit, const mct::NonnegDouble &abs_acceleration_limit)}}]{\setlength{\rightskip}{0pt plus 5cm}double mct\+::find\+\_\+max\+\_\+admissible\+\_\+acceleration (
+\begin{DoxyParamCaption}
+\item[{const double \&}]{initial\+\_\+velocity, }
+\item[{const double \&}]{initial\+\_\+position, }
+\item[{const double \&}]{max\+\_\+velocity, }
+\item[{const double \&}]{max\+\_\+position, }
+\item[{const {\bf mct\+::\+Nonneg\+Double} \&}]{abs\+\_\+jerk\+\_\+limit, }
+\item[{const {\bf mct\+::\+Nonneg\+Double} \&}]{abs\+\_\+acceleration\+\_\+limit}
+\end{DoxyParamCaption}
+)}\hypertarget{dynamical__systems_8hpp_file_aab449f0863dee56d0f0e377c75a4812d}{}\label{dynamical__systems_8hpp_file_aab449f0863dee56d0f0e377c75a4812d}
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000001}{Todo}]\+: not quite sure what is the right thing to do here \end{DoxyRefDesc}

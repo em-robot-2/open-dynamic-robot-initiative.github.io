@@ -1,0 +1,144 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="cereal__eigen_8hpp" kind="file" language="C++">
+    <compoundname>cereal_eigen.hpp</compoundname>
+    <includes local="no">Eigen/Eigen</includes>
+    <includes local="no">type_traits</includes>
+    <includedby refid="n__joint__robot__types_8hpp" local="no">include/robot_interfaces/n_joint_robot_types.hpp</includedby>
+    <incdepgraph>
+      <node id="479">
+        <label>Eigen/Eigen</label>
+      </node>
+      <node id="478">
+        <label>include/robot_interfaces/cereal_eigen.hpp</label>
+        <link refid="cereal_eigen.hpp"/>
+        <childnode refid="479" relation="include">
+        </childnode>
+        <childnode refid="480" relation="include">
+        </childnode>
+      </node>
+      <node id="480">
+        <label>type_traits</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="488">
+        <label>srcpy/py_one_joint_types.cpp</label>
+        <link refid="py__one__joint__types_8cpp"/>
+      </node>
+      <node id="487">
+        <label>srcpy/py_trifinger_types.cpp</label>
+        <link refid="py__trifinger__types_8cpp"/>
+      </node>
+      <node id="482">
+        <label>include/robot_interfaces/n_joint_robot_types.hpp</label>
+        <link refid="n__joint__robot__types_8hpp_source"/>
+        <childnode refid="483" relation="include">
+        </childnode>
+        <childnode refid="485" relation="include">
+        </childnode>
+        <childnode refid="486" relation="include">
+        </childnode>
+        <childnode refid="488" relation="include">
+        </childnode>
+        <childnode refid="489" relation="include">
+        </childnode>
+      </node>
+      <node id="484">
+        <label>srcpy/py_finger_types.cpp</label>
+        <link refid="py__finger__types_8cpp"/>
+      </node>
+      <node id="489">
+        <label>srcpy/py_two_joint_types.cpp</label>
+        <link refid="py__two__joint__types_8cpp"/>
+      </node>
+      <node id="481">
+        <label>include/robot_interfaces/cereal_eigen.hpp</label>
+        <link refid="cereal_eigen.hpp"/>
+        <childnode refid="482" relation="include">
+        </childnode>
+      </node>
+      <node id="485">
+        <label>include/robot_interfaces/n_joint_robot_functions.hpp</label>
+        <link refid="n__joint__robot__functions_8hpp_source"/>
+      </node>
+      <node id="483">
+        <label>include/robot_interfaces/finger_types.hpp</label>
+        <link refid="finger__types_8hpp_source"/>
+        <childnode refid="484" relation="include">
+        </childnode>
+      </node>
+      <node id="486">
+        <label>include/robot_interfaces/trifinger_types.hpp</label>
+        <link refid="trifinger__types_8hpp_source"/>
+        <childnode refid="487" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innernamespace refid="namespacecereal">cereal</innernamespace>
+    <briefdescription>
+<para>Serialization functions for serializing Eigen matrices and arrays with cereal. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="authors"><para>Azoth, eudoxos </para></simplesect>
+<simplesect kind="date"><para>2020-01-15 </para></simplesect>
+<xrefsect id="license_1_license000001"><xreftitle>License</xreftitle><xrefdescription><para>CC BY-SA 4.0 </para></xrefdescription></xrefsect><xrefsect id="todo_1_todo000001"><xreftitle>Todo</xreftitle><xrefdescription><para>Move this to some &quot;serialization tools&quot; package.</para></xrefdescription></xrefsect></para><para>Taken from <ulink url="https://stackoverflow.com/a/51944389/2095383">https://stackoverflow.com/a/51944389/2095383</ulink> with minor modifications. </para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="13"><highlight class="preprocessor">#include<sp/>&lt;Eigen/Eigen&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;type_traits&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacecereal" kindref="compound">cereal</ref></highlight></codeline>
+<codeline lineno="17"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>Archive,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>Derived&gt;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>std::enable_if&lt;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>traits::is_output_serializable&lt;BinaryData&lt;typename<sp/>Derived::Scalar&gt;,</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Archive&gt;::value,</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">&gt;::type</highlight></codeline>
+<codeline lineno="23"><highlight class="normal">save(Archive&amp;<sp/>archive,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Eigen::PlainObjectBase&lt;Derived&gt;&amp;<sp/></highlight><highlight class="keywordtype">object</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="24"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>Eigen::PlainObjectBase&lt;Derived&gt;<sp/>ArrT;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>only<sp/>add<sp/>dimensions<sp/>to<sp/>the<sp/>serialized<sp/>data<sp/>when<sp/>they<sp/>are<sp/>dynamic</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ArrT::RowsAtCompileTime<sp/>==<sp/>Eigen::Dynamic)</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>archive(</highlight><highlight class="keywordtype">object</highlight><highlight class="normal">.rows());</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ArrT::ColsAtCompileTime<sp/>==<sp/>Eigen::Dynamic)</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>archive(</highlight><highlight class="keywordtype">object</highlight><highlight class="normal">.cols());</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>archive(binary_data(</highlight><highlight class="keywordtype">object</highlight><highlight class="normal">.data(),</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">object</highlight><highlight class="normal">.size()<sp/>*<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Derived::Scalar)));</highlight></codeline>
+<codeline lineno="39"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>Archive,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>Derived&gt;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>std::enable_if&lt;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>traits::is_input_serializable&lt;BinaryData&lt;typename<sp/>Derived::Scalar&gt;,</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Archive&gt;::value,</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">&gt;::type</highlight></codeline>
+<codeline lineno="46"><highlight class="normal">load(Archive&amp;<sp/>archive,<sp/>Eigen::PlainObjectBase&lt;Derived&gt;&amp;<sp/></highlight><highlight class="keywordtype">object</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="47"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>Eigen::PlainObjectBase&lt;Derived&gt;<sp/>ArrT;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>Eigen::Index<sp/>rows<sp/>=<sp/>ArrT::RowsAtCompileTime,<sp/>cols<sp/>=<sp/>ArrT::ColsAtCompileTime;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>information<sp/>about<sp/>dimensions<sp/>are<sp/>only<sp/>serialized<sp/>for<sp/>dynamic-size<sp/>types</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(rows<sp/>==<sp/>Eigen::Dynamic)</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>archive(rows);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(cols<sp/>==<sp/>Eigen::Dynamic)</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>archive(cols);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">object</highlight><highlight class="normal">.resize(rows,<sp/>cols);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>archive(binary_data(</highlight><highlight class="keywordtype">object</highlight><highlight class="normal">.data(),</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>static_cast&lt;std::size_t&gt;(</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rows<sp/>*<sp/>cols<sp/>*<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Derived::Scalar))));</highlight></codeline>
+<codeline lineno="65"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="66"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>cereal</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="include/robot_interfaces/cereal_eigen.hpp"/>
+  </compounddef>
+</doxygen>

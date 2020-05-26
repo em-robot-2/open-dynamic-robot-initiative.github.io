@@ -1,0 +1,201 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structrobot__interfaces_1_1NJointRobotTypes" kind="struct" language="C++" prot="public">
+    <compoundname>robot_interfaces::NJointRobotTypes</compoundname>
+    <includes refid="n__joint__robot__types_8hpp" local="no">n_joint_robot_types.hpp</includes>
+    <innerclass refid="structrobot__interfaces_1_1NJointRobotTypes_1_1Action" prot="public">robot_interfaces::NJointRobotTypes::Action</innerclass>
+    <innerclass refid="structrobot__interfaces_1_1NJointRobotTypes_1_1Observation" prot="public">robot_interfaces::NJointRobotTypes::Observation</innerclass>
+    <templateparamlist>
+      <param>
+        <type>size_t</type>
+        <declname>N</declname>
+        <defname>N</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="structrobot__interfaces_1_1NJointRobotTypes_1a2c8ab754133625e175456e0f81753eb3" prot="public" static="no">
+        <type>Eigen::Matrix&lt; double, N, 1 &gt;</type>
+        <definition>typedef Eigen::Matrix&lt;double, N, 1&gt; robot_interfaces::NJointRobotTypes&lt; N &gt;::Vector</definition>
+        <argsstring></argsstring>
+        <name>Vector</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/robot_interfaces/n_joint_robot_types.hpp" line="38" column="1" bodyfile="include/robot_interfaces/n_joint_robot_types.hpp" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="structrobot__interfaces_1_1NJointRobotTypes_1aee4f8ae91b6d7b31852c4e5ad82635ca" prot="public" static="no">
+        <type><ref refid="classrobot__interfaces_1_1RobotBackend" kindref="compound">RobotBackend</ref>&lt; <ref refid="structrobot__interfaces_1_1NJointRobotTypes_1_1Action" kindref="compound">Action</ref>, <ref refid="structrobot__interfaces_1_1NJointRobotTypes_1_1Observation" kindref="compound">Observation</ref> &gt;</type>
+        <definition>typedef RobotBackend&lt;Action, Observation&gt; robot_interfaces::NJointRobotTypes&lt; N &gt;::Backend</definition>
+        <argsstring></argsstring>
+        <name>Backend</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/robot_interfaces/n_joint_robot_types.hpp" line="244" column="1" bodyfile="include/robot_interfaces/n_joint_robot_types.hpp" bodystart="244" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="structrobot__interfaces_1_1NJointRobotTypes_1af7a865b80531a7b8e36368ad8bd8ce7e" prot="public" static="no">
+        <type>std::shared_ptr&lt; <ref refid="classrobot__interfaces_1_1RobotBackend" kindref="compound">Backend</ref> &gt;</type>
+        <definition>typedef std::shared_ptr&lt;Backend&gt; robot_interfaces::NJointRobotTypes&lt; N &gt;::BackendPtr</definition>
+        <argsstring></argsstring>
+        <name>BackendPtr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/robot_interfaces/n_joint_robot_types.hpp" line="245" column="1" bodyfile="include/robot_interfaces/n_joint_robot_types.hpp" bodystart="245" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="structrobot__interfaces_1_1NJointRobotTypes_1a87d6d758d4b569e795eb977cd738d29a" prot="public" static="no">
+        <type><ref refid="classrobot__interfaces_1_1RobotData" kindref="compound">RobotData</ref>&lt; <ref refid="structrobot__interfaces_1_1NJointRobotTypes_1_1Action" kindref="compound">Action</ref>, <ref refid="structrobot__interfaces_1_1NJointRobotTypes_1_1Observation" kindref="compound">Observation</ref> &gt;</type>
+        <definition>typedef RobotData&lt;Action, Observation&gt; robot_interfaces::NJointRobotTypes&lt; N &gt;::BaseData</definition>
+        <argsstring></argsstring>
+        <name>BaseData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/robot_interfaces/n_joint_robot_types.hpp" line="247" column="1" bodyfile="include/robot_interfaces/n_joint_robot_types.hpp" bodystart="247" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="structrobot__interfaces_1_1NJointRobotTypes_1a080b4a9042dd2c795f2af486fc33d9dc" prot="public" static="no">
+        <type>std::shared_ptr&lt; <ref refid="classrobot__interfaces_1_1RobotData" kindref="compound">BaseData</ref> &gt;</type>
+        <definition>typedef std::shared_ptr&lt;BaseData&gt; robot_interfaces::NJointRobotTypes&lt; N &gt;::BaseDataPtr</definition>
+        <argsstring></argsstring>
+        <name>BaseDataPtr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/robot_interfaces/n_joint_robot_types.hpp" line="248" column="1" bodyfile="include/robot_interfaces/n_joint_robot_types.hpp" bodystart="248" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="structrobot__interfaces_1_1NJointRobotTypes_1a5cd0e28d0542c4949f0780082e35a48c" prot="public" static="no">
+        <type><ref refid="classrobot__interfaces_1_1SingleProcessRobotData" kindref="compound">SingleProcessRobotData</ref>&lt; <ref refid="structrobot__interfaces_1_1NJointRobotTypes_1_1Action" kindref="compound">Action</ref>, <ref refid="structrobot__interfaces_1_1NJointRobotTypes_1_1Observation" kindref="compound">Observation</ref> &gt;</type>
+        <definition>typedef SingleProcessRobotData&lt;Action, Observation&gt; robot_interfaces::NJointRobotTypes&lt; N &gt;::SingleProcessData</definition>
+        <argsstring></argsstring>
+        <name>SingleProcessData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/robot_interfaces/n_joint_robot_types.hpp" line="249" column="1" bodyfile="include/robot_interfaces/n_joint_robot_types.hpp" bodystart="249" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="structrobot__interfaces_1_1NJointRobotTypes_1a98ad0ce92d0a999ef0345225d198f790" prot="public" static="no">
+        <type>std::shared_ptr&lt; <ref refid="classrobot__interfaces_1_1SingleProcessRobotData" kindref="compound">SingleProcessData</ref> &gt;</type>
+        <definition>typedef std::shared_ptr&lt;SingleProcessData&gt; robot_interfaces::NJointRobotTypes&lt; N &gt;::SingleProcessDataPtr</definition>
+        <argsstring></argsstring>
+        <name>SingleProcessDataPtr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/robot_interfaces/n_joint_robot_types.hpp" line="250" column="1" bodyfile="include/robot_interfaces/n_joint_robot_types.hpp" bodystart="250" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="structrobot__interfaces_1_1NJointRobotTypes_1a4dff725737b41b840db7b7af6c64718f" prot="public" static="no">
+        <type><ref refid="classrobot__interfaces_1_1MultiProcessRobotData" kindref="compound">MultiProcessRobotData</ref>&lt; <ref refid="structrobot__interfaces_1_1NJointRobotTypes_1_1Action" kindref="compound">Action</ref>, <ref refid="structrobot__interfaces_1_1NJointRobotTypes_1_1Observation" kindref="compound">Observation</ref> &gt;</type>
+        <definition>typedef MultiProcessRobotData&lt;Action, Observation&gt; robot_interfaces::NJointRobotTypes&lt; N &gt;::MultiProcessData</definition>
+        <argsstring></argsstring>
+        <name>MultiProcessData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/robot_interfaces/n_joint_robot_types.hpp" line="251" column="1" bodyfile="include/robot_interfaces/n_joint_robot_types.hpp" bodystart="251" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="structrobot__interfaces_1_1NJointRobotTypes_1a231d94c36fcddaa6e3fefd54e8fb8d82" prot="public" static="no">
+        <type>std::shared_ptr&lt; <ref refid="classrobot__interfaces_1_1MultiProcessRobotData" kindref="compound">MultiProcessData</ref> &gt;</type>
+        <definition>typedef std::shared_ptr&lt;MultiProcessData&gt; robot_interfaces::NJointRobotTypes&lt; N &gt;::MultiProcessDataPtr</definition>
+        <argsstring></argsstring>
+        <name>MultiProcessDataPtr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/robot_interfaces/n_joint_robot_types.hpp" line="252" column="1" bodyfile="include/robot_interfaces/n_joint_robot_types.hpp" bodystart="252" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="structrobot__interfaces_1_1NJointRobotTypes_1acfa2fab5ec37d832d80c9147e28903ec" prot="public" static="no">
+        <type><ref refid="classrobot__interfaces_1_1RobotFrontend" kindref="compound">RobotFrontend</ref>&lt; <ref refid="structrobot__interfaces_1_1NJointRobotTypes_1_1Action" kindref="compound">Action</ref>, <ref refid="structrobot__interfaces_1_1NJointRobotTypes_1_1Observation" kindref="compound">Observation</ref> &gt;</type>
+        <definition>typedef RobotFrontend&lt;Action, Observation&gt; robot_interfaces::NJointRobotTypes&lt; N &gt;::Frontend</definition>
+        <argsstring></argsstring>
+        <name>Frontend</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/robot_interfaces/n_joint_robot_types.hpp" line="254" column="1" bodyfile="include/robot_interfaces/n_joint_robot_types.hpp" bodystart="254" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="structrobot__interfaces_1_1NJointRobotTypes_1ab97eb0bbf6e63868dd1c215249742b04" prot="public" static="no">
+        <type>std::shared_ptr&lt; <ref refid="classrobot__interfaces_1_1RobotFrontend" kindref="compound">Frontend</ref> &gt;</type>
+        <definition>typedef std::shared_ptr&lt;Frontend&gt; robot_interfaces::NJointRobotTypes&lt; N &gt;::FrontendPtr</definition>
+        <argsstring></argsstring>
+        <name>FrontendPtr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/robot_interfaces/n_joint_robot_types.hpp" line="255" column="1" bodyfile="include/robot_interfaces/n_joint_robot_types.hpp" bodystart="255" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="structrobot__interfaces_1_1NJointRobotTypes_1a3e170adc934171b70773e9f96b3d3c55" prot="public" static="no">
+        <type><ref refid="classrobot__interfaces_1_1RobotLogger" kindref="compound">RobotLogger</ref>&lt; <ref refid="structrobot__interfaces_1_1NJointRobotTypes_1_1Action" kindref="compound">Action</ref>, <ref refid="structrobot__interfaces_1_1NJointRobotTypes_1_1Observation" kindref="compound">Observation</ref> &gt;</type>
+        <definition>typedef RobotLogger&lt;Action, Observation&gt; robot_interfaces::NJointRobotTypes&lt; N &gt;::Logger</definition>
+        <argsstring></argsstring>
+        <name>Logger</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/robot_interfaces/n_joint_robot_types.hpp" line="257" column="1" bodyfile="include/robot_interfaces/n_joint_robot_types.hpp" bodystart="257" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Collection of types for a generic N-joint BLMC robot. </para>    </briefdescription>
+    <detaileddescription>
+<para>Defines all the types needed to set up an interface to a generic N-joint BLMC robot that expects as <ref refid="structrobot__interfaces_1_1NJointRobotTypes_1_1Action" kindref="compound">Action</ref> a simple vector of N torque commands and provides N observations containing measured joint angle, velocity and torque.</para><para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>N</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of joints </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>    </detaileddescription>
+    <location file="include/robot_interfaces/n_joint_robot_types.hpp" line="37" column="1" bodyfile="include/robot_interfaces/n_joint_robot_types.hpp" bodystart="36" bodyend="258"/>
+    <listofallmembers>
+      <member refid="structrobot__interfaces_1_1NJointRobotTypes_1aee4f8ae91b6d7b31852c4e5ad82635ca" prot="public" virt="non-virtual"><scope>robot_interfaces::NJointRobotTypes</scope><name>Backend</name></member>
+      <member refid="structrobot__interfaces_1_1NJointRobotTypes_1af7a865b80531a7b8e36368ad8bd8ce7e" prot="public" virt="non-virtual"><scope>robot_interfaces::NJointRobotTypes</scope><name>BackendPtr</name></member>
+      <member refid="structrobot__interfaces_1_1NJointRobotTypes_1a87d6d758d4b569e795eb977cd738d29a" prot="public" virt="non-virtual"><scope>robot_interfaces::NJointRobotTypes</scope><name>BaseData</name></member>
+      <member refid="structrobot__interfaces_1_1NJointRobotTypes_1a080b4a9042dd2c795f2af486fc33d9dc" prot="public" virt="non-virtual"><scope>robot_interfaces::NJointRobotTypes</scope><name>BaseDataPtr</name></member>
+      <member refid="structrobot__interfaces_1_1NJointRobotTypes_1acfa2fab5ec37d832d80c9147e28903ec" prot="public" virt="non-virtual"><scope>robot_interfaces::NJointRobotTypes</scope><name>Frontend</name></member>
+      <member refid="structrobot__interfaces_1_1NJointRobotTypes_1ab97eb0bbf6e63868dd1c215249742b04" prot="public" virt="non-virtual"><scope>robot_interfaces::NJointRobotTypes</scope><name>FrontendPtr</name></member>
+      <member refid="structrobot__interfaces_1_1NJointRobotTypes_1a3e170adc934171b70773e9f96b3d3c55" prot="public" virt="non-virtual"><scope>robot_interfaces::NJointRobotTypes</scope><name>Logger</name></member>
+      <member refid="structrobot__interfaces_1_1NJointRobotTypes_1a4dff725737b41b840db7b7af6c64718f" prot="public" virt="non-virtual"><scope>robot_interfaces::NJointRobotTypes</scope><name>MultiProcessData</name></member>
+      <member refid="structrobot__interfaces_1_1NJointRobotTypes_1a231d94c36fcddaa6e3fefd54e8fb8d82" prot="public" virt="non-virtual"><scope>robot_interfaces::NJointRobotTypes</scope><name>MultiProcessDataPtr</name></member>
+      <member refid="structrobot__interfaces_1_1NJointRobotTypes_1a5cd0e28d0542c4949f0780082e35a48c" prot="public" virt="non-virtual"><scope>robot_interfaces::NJointRobotTypes</scope><name>SingleProcessData</name></member>
+      <member refid="structrobot__interfaces_1_1NJointRobotTypes_1a98ad0ce92d0a999ef0345225d198f790" prot="public" virt="non-virtual"><scope>robot_interfaces::NJointRobotTypes</scope><name>SingleProcessDataPtr</name></member>
+      <member refid="structrobot__interfaces_1_1NJointRobotTypes_1a2c8ab754133625e175456e0f81753eb3" prot="public" virt="non-virtual"><scope>robot_interfaces::NJointRobotTypes</scope><name>Vector</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

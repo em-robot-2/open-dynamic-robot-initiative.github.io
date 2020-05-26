@@ -1,0 +1,133 @@
+\hypertarget{classrobot__properties__solo_1_1config_1_1SoloConfig}{}\section{robot\+\_\+properties\+\_\+solo.\+config.\+Solo\+Config Class Reference}
+\label{classrobot__properties__solo_1_1config_1_1SoloConfig}\index{robot\+\_\+properties\+\_\+solo.\+config.\+Solo\+Config@{robot\+\_\+properties\+\_\+solo.\+config.\+Solo\+Config}}
+
+
+Inheritance diagram for robot\+\_\+properties\+\_\+solo.\+config.\+Solo\+Config\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=222pt]{classrobot__properties__solo_1_1config_1_1SoloConfig__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for robot\+\_\+properties\+\_\+solo.\+config.\+Solo\+Config\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=222pt]{classrobot__properties__solo_1_1config_1_1SoloConfig__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+string {\bfseries robot\+\_\+name} = \char`\"{}solo\char`\"{}\hypertarget{classrobot__properties__solo_1_1config_1_1SoloConfig_a4e8858bf41253f84618b56cb4078a895}{}\label{classrobot__properties__solo_1_1config_1_1SoloConfig_a4e8858bf41253f84618b56cb4078a895}
+
+\item 
+tuple {\bfseries urdf\+\_\+path}
+\item 
+list {\bfseries meshes\+\_\+path}
+\item 
+tuple {\bfseries yaml\+\_\+path}
+\item 
+float {\bfseries motor\+\_\+inertia} = 0.\+0000045\hypertarget{classrobot__properties__solo_1_1config_1_1SoloConfig_a12d720f23faf864ef7647c757af1b218}{}\label{classrobot__properties__solo_1_1config_1_1SoloConfig_a12d720f23faf864ef7647c757af1b218}
+
+\item 
+int {\bfseries motor\+\_\+gear\+\_\+ration} = 9\hypertarget{classrobot__properties__solo_1_1config_1_1SoloConfig_a559ced3a5570ce1276577ea5c3ab8602}{}\label{classrobot__properties__solo_1_1config_1_1SoloConfig_a559ced3a5570ce1276577ea5c3ab8602}
+
+\item 
+{\bfseries robot\+\_\+model}
+\item 
+{\bfseries mass} = np.\+sum(\mbox{[}i.\+mass for i in robot\+\_\+model.\+inertias\mbox{]})\hypertarget{classrobot__properties__solo_1_1config_1_1SoloConfig_aa37d5b10d35ab3b579fd62b4e1ad572e}{}\label{classrobot__properties__solo_1_1config_1_1SoloConfig_aa37d5b10d35ab3b579fd62b4e1ad572e}
+
+\item 
+{\bfseries base\+\_\+name} = robot\+\_\+model.\+frames\mbox{[}2\mbox{]}.name\hypertarget{classrobot__properties__solo_1_1config_1_1SoloConfig_a0b4136fce9ca843680096545d6dc34a8}{}\label{classrobot__properties__solo_1_1config_1_1SoloConfig_a0b4136fce9ca843680096545d6dc34a8}
+
+\item 
+int {\bfseries nb\+\_\+joints} = robot\+\_\+model.\+nv-\/6\hypertarget{classrobot__properties__solo_1_1config_1_1SoloConfig_af689510a467b1a99d82d484fdfee0e36}{}\label{classrobot__properties__solo_1_1config_1_1SoloConfig_af689510a467b1a99d82d484fdfee0e36}
+
+\item 
+list {\bfseries joint\+\_\+names}
+\item 
+{\bfseries urdf\+\_\+to\+\_\+dgm} = tuple(range(8))\hypertarget{classrobot__properties__solo_1_1config_1_1SoloConfig_a877fc14fdc03a7bf5b3991f0d11a7392}{}\label{classrobot__properties__solo_1_1config_1_1SoloConfig_a877fc14fdc03a7bf5b3991f0d11a7392}
+
+\item 
+dictionary {\bfseries map\+\_\+joint\+\_\+name\+\_\+to\+\_\+id} = \{\}\hypertarget{classrobot__properties__solo_1_1config_1_1SoloConfig_aac97a02a11701c95c2c8719e16a92cbf}{}\label{classrobot__properties__solo_1_1config_1_1SoloConfig_aac97a02a11701c95c2c8719e16a92cbf}
+
+\item 
+dictionary {\bfseries map\+\_\+joint\+\_\+limits} = \{\}\hypertarget{classrobot__properties__solo_1_1config_1_1SoloConfig_ad3ac7879d8f6d5b6c1c02ea13e45aef8}{}\label{classrobot__properties__solo_1_1config_1_1SoloConfig_ad3ac7879d8f6d5b6c1c02ea13e45aef8}
+
+\item 
+int {\bfseries initial\+\_\+configuration} = \mbox{[}0.\+2,0,0.\+4, 0,0,0,1\mbox{]}+4\hypertarget{classrobot__properties__solo_1_1config_1_1SoloConfig_a2f9f72586fbc5ef55c7d1bd25ba85453}{}\label{classrobot__properties__solo_1_1config_1_1SoloConfig_a2f9f72586fbc5ef55c7d1bd25ba85453}
+
+\item 
+tuple {\bfseries initial\+\_\+velocity} = (8+6)$\ast$\mbox{[}0,\mbox{]}\hypertarget{classrobot__properties__solo_1_1config_1_1SoloConfig_a192588a74211fd2b922e1630671e49cc}{}\label{classrobot__properties__solo_1_1config_1_1SoloConfig_a192588a74211fd2b922e1630671e49cc}
+
+\item 
+{\bfseries q0} = zero(robot\+\_\+model.\+nq)\hypertarget{classrobot__properties__solo_1_1config_1_1SoloConfig_ad8d81b53294542fc4523d65263e12cc1}{}\label{classrobot__properties__solo_1_1config_1_1SoloConfig_ad8d81b53294542fc4523d65263e12cc1}
+
+\item 
+{\bfseries v0} = zero(robot\+\_\+model.\+nv)\hypertarget{classrobot__properties__solo_1_1config_1_1SoloConfig_a811dca2e27956d61e4a45b3d62bd7af3}{}\label{classrobot__properties__solo_1_1config_1_1SoloConfig_a811dca2e27956d61e4a45b3d62bd7af3}
+
+\item 
+{\bfseries a0} = zero(robot\+\_\+model.\+nv)\hypertarget{classrobot__properties__solo_1_1config_1_1SoloConfig_af3ec693097bbe39397e347532f4aea8b}{}\label{classrobot__properties__solo_1_1config_1_1SoloConfig_af3ec693097bbe39397e347532f4aea8b}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Data Documentation}
+\index{robot\+\_\+properties\+\_\+solo\+::config\+::\+Solo\+Config@{robot\+\_\+properties\+\_\+solo\+::config\+::\+Solo\+Config}!joint\+\_\+names@{joint\+\_\+names}}
+\index{joint\+\_\+names@{joint\+\_\+names}!robot\+\_\+properties\+\_\+solo\+::config\+::\+Solo\+Config@{robot\+\_\+properties\+\_\+solo\+::config\+::\+Solo\+Config}}
+\subsubsection[{\texorpdfstring{joint\+\_\+names}{joint_names}}]{\setlength{\rightskip}{0pt plus 5cm}list robot\+\_\+properties\+\_\+solo.\+config.\+Solo\+Config.\+joint\+\_\+names\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classrobot__properties__solo_1_1config_1_1SoloConfig_a466e5eda1f7fbcac30906e3d386bd747}{}\label{classrobot__properties__solo_1_1config_1_1SoloConfig_a466e5eda1f7fbcac30906e3d386bd747}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+1 = [\textcolor{stringliteral}{'FL\_HFE'}, \textcolor{stringliteral}{'FL\_KFE'}, \textcolor{stringliteral}{'FR\_HFE'}, \textcolor{stringliteral}{'FR\_KFE'}, \textcolor{stringliteral}{'HL\_HFE'},
+2                    \textcolor{stringliteral}{'HL\_KFE'}, \textcolor{stringliteral}{'HR\_HFE'}, \textcolor{stringliteral}{'HR\_KFE'}]
+\end{DoxyCode}
+\index{robot\+\_\+properties\+\_\+solo\+::config\+::\+Solo\+Config@{robot\+\_\+properties\+\_\+solo\+::config\+::\+Solo\+Config}!meshes\+\_\+path@{meshes\+\_\+path}}
+\index{meshes\+\_\+path@{meshes\+\_\+path}!robot\+\_\+properties\+\_\+solo\+::config\+::\+Solo\+Config@{robot\+\_\+properties\+\_\+solo\+::config\+::\+Solo\+Config}}
+\subsubsection[{\texorpdfstring{meshes\+\_\+path}{meshes_path}}]{\setlength{\rightskip}{0pt plus 5cm}list robot\+\_\+properties\+\_\+solo.\+config.\+Solo\+Config.\+meshes\+\_\+path\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classrobot__properties__solo_1_1config_1_1SoloConfig_a37618fcda5a61cafb77ee8aedf6f1c15}{}\label{classrobot__properties__solo_1_1config_1_1SoloConfig_a37618fcda5a61cafb77ee8aedf6f1c15}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+1 = [
+2       dirname(rospkg.RosPack().get\_path(\textcolor{stringliteral}{"robot\_properties\_"} + robot\_name))
+3     ]
+\end{DoxyCode}
+\index{robot\+\_\+properties\+\_\+solo\+::config\+::\+Solo\+Config@{robot\+\_\+properties\+\_\+solo\+::config\+::\+Solo\+Config}!robot\+\_\+model@{robot\+\_\+model}}
+\index{robot\+\_\+model@{robot\+\_\+model}!robot\+\_\+properties\+\_\+solo\+::config\+::\+Solo\+Config@{robot\+\_\+properties\+\_\+solo\+::config\+::\+Solo\+Config}}
+\subsubsection[{\texorpdfstring{robot\+\_\+model}{robot_model}}]{\setlength{\rightskip}{0pt plus 5cm}robot\+\_\+properties\+\_\+solo.\+config.\+Solo\+Config.\+robot\+\_\+model\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classrobot__properties__solo_1_1config_1_1SoloConfig_a70f240a3708326aa2bb3272b00ce8cec}{}\label{classrobot__properties__solo_1_1config_1_1SoloConfig_a70f240a3708326aa2bb3272b00ce8cec}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+1 = se3.buildModelFromUrdf(urdf\_path,
+2                                          se3.JointModelFreeFlyer())
+\end{DoxyCode}
+\index{robot\+\_\+properties\+\_\+solo\+::config\+::\+Solo\+Config@{robot\+\_\+properties\+\_\+solo\+::config\+::\+Solo\+Config}!urdf\+\_\+path@{urdf\+\_\+path}}
+\index{urdf\+\_\+path@{urdf\+\_\+path}!robot\+\_\+properties\+\_\+solo\+::config\+::\+Solo\+Config@{robot\+\_\+properties\+\_\+solo\+::config\+::\+Solo\+Config}}
+\subsubsection[{\texorpdfstring{urdf\+\_\+path}{urdf_path}}]{\setlength{\rightskip}{0pt plus 5cm}tuple robot\+\_\+properties\+\_\+solo.\+config.\+Solo\+Config.\+urdf\+\_\+path\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classrobot__properties__solo_1_1config_1_1SoloConfig_a2ccf8dae7f440112401e8aa66c8ccdc9}{}\label{classrobot__properties__solo_1_1config_1_1SoloConfig_a2ccf8dae7f440112401e8aa66c8ccdc9}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+1 = (
+2         join(rospkg.RosPack().get\_path(\textcolor{stringliteral}{"robot\_properties\_"} + robot\_name),
+3              \textcolor{stringliteral}{"urdf"},
+4              robot\_name + \textcolor{stringliteral}{".urdf"})
+5     )
+\end{DoxyCode}
+\index{robot\+\_\+properties\+\_\+solo\+::config\+::\+Solo\+Config@{robot\+\_\+properties\+\_\+solo\+::config\+::\+Solo\+Config}!yaml\+\_\+path@{yaml\+\_\+path}}
+\index{yaml\+\_\+path@{yaml\+\_\+path}!robot\+\_\+properties\+\_\+solo\+::config\+::\+Solo\+Config@{robot\+\_\+properties\+\_\+solo\+::config\+::\+Solo\+Config}}
+\subsubsection[{\texorpdfstring{yaml\+\_\+path}{yaml_path}}]{\setlength{\rightskip}{0pt plus 5cm}tuple robot\+\_\+properties\+\_\+solo.\+config.\+Solo\+Config.\+yaml\+\_\+path\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classrobot__properties__solo_1_1config_1_1SoloConfig_ace186b0b03d0de17972faf5c5c25d929}{}\label{classrobot__properties__solo_1_1config_1_1SoloConfig_ace186b0b03d0de17972faf5c5c25d929}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+1 = (
+2         join(rospkg.RosPack().get\_path(\textcolor{stringliteral}{"robot\_properties\_"} + robot\_name),
+3              \textcolor{stringliteral}{"config"},
+4              \textcolor{stringliteral}{"dgm\_parameters\_solo8.yaml"})
+5     )
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+python/robot\+\_\+properties\+\_\+solo/config.\+py\end{DoxyCompactItemize}

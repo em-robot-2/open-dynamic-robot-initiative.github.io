@@ -1,0 +1,101 @@
+\hypertarget{structrobot__interfaces_1_1NJointRobotFunctions}{}\section{robot\+\_\+interfaces\+:\+:N\+Joint\+Robot\+Functions$<$ N\+\_\+\+J\+O\+I\+N\+TS $>$ Struct Template Reference}
+\label{structrobot__interfaces_1_1NJointRobotFunctions}\index{robot\+\_\+interfaces\+::\+N\+Joint\+Robot\+Functions$<$ N\+\_\+\+J\+O\+I\+N\+T\+S $>$@{robot\+\_\+interfaces\+::\+N\+Joint\+Robot\+Functions$<$ N\+\_\+\+J\+O\+I\+N\+T\+S $>$}}
+
+
+Collection of functions for a generic N-\/joint B\+L\+MC robot.  
+
+
+
+
+{\ttfamily \#include $<$n\+\_\+joint\+\_\+robot\+\_\+functions.\+hpp$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+using {\bfseries Types} = \hyperlink{structrobot__interfaces_1_1NJointRobotTypes}{N\+Joint\+Robot\+Types}$<$ N\+\_\+\+J\+O\+I\+N\+TS $>$\hypertarget{structrobot__interfaces_1_1NJointRobotFunctions_a7ace341ed7d3f1302264384b411c63e8}{}\label{structrobot__interfaces_1_1NJointRobotFunctions_a7ace341ed7d3f1302264384b411c63e8}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{structrobot__interfaces_1_1NJointRobotTypes_1_1Action}{Types\+::\+Action} \hyperlink{structrobot__interfaces_1_1NJointRobotFunctions_a25eefa719e07b4499fe3fd6462d866df}{process\+\_\+desired\+\_\+action} (const typename \hyperlink{structrobot__interfaces_1_1NJointRobotTypes_1_1Action}{Types\+::\+Action} \&desired\+\_\+action, const typename \hyperlink{structrobot__interfaces_1_1NJointRobotTypes_1_1Observation}{Types\+::\+Observation} \&latest\+\_\+observation, const double max\+\_\+torque\+\_\+\+Nm, const typename Types\+::\+Vector \&safety\+\_\+kd, const typename Types\+::\+Vector \&default\+\_\+position\+\_\+control\+\_\+kp, const typename Types\+::\+Vector \&default\+\_\+position\+\_\+control\+\_\+kd)
+\begin{DoxyCompactList}\small\item\em Process the desired action provided by the user. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$size\+\_\+t N\+\_\+\+J\+O\+I\+N\+TS$>$\\*
+struct robot\+\_\+interfaces\+::\+N\+Joint\+Robot\+Functions$<$ N\+\_\+\+J\+O\+I\+N\+T\+S $>$}
+
+Collection of functions for a generic N-\/joint B\+L\+MC robot. 
+
+Defines all the types needed to set up an interface to a generic N-\/joint B\+L\+MC robot that expects as \hyperlink{classAction}{Action} a simple vector of N torque commands and provides N observations containing measured joint angle, velocity and torque.
+
+Defines some generic functions that can be used by all robots that are based on the {\ttfamily \hyperlink{structrobot__interfaces_1_1NJointRobotTypes}{N\+Joint\+Robot\+Types}}.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em N\+\_\+\+J\+O\+I\+N\+TS} & Number of joints the robot has. \\
+\hline
+\end{DoxyTemplParams}
+
+
+\subsection{Member Function Documentation}
+\index{robot\+\_\+interfaces\+::\+N\+Joint\+Robot\+Functions@{robot\+\_\+interfaces\+::\+N\+Joint\+Robot\+Functions}!process\+\_\+desired\+\_\+action@{process\+\_\+desired\+\_\+action}}
+\index{process\+\_\+desired\+\_\+action@{process\+\_\+desired\+\_\+action}!robot\+\_\+interfaces\+::\+N\+Joint\+Robot\+Functions@{robot\+\_\+interfaces\+::\+N\+Joint\+Robot\+Functions}}
+\subsubsection[{\texorpdfstring{process\+\_\+desired\+\_\+action(const typename Types\+::\+Action \&desired\+\_\+action, const typename Types\+::\+Observation \&latest\+\_\+observation, const double max\+\_\+torque\+\_\+\+Nm, const typename Types\+::\+Vector \&safety\+\_\+kd, const typename Types\+::\+Vector \&default\+\_\+position\+\_\+control\+\_\+kp, const typename Types\+::\+Vector \&default\+\_\+position\+\_\+control\+\_\+kd)}{process_desired_action(const typename Types::Action &desired_action, const typename Types::Observation &latest_observation, const double max_torque_Nm, const typename Types::Vector &safety_kd, const typename Types::Vector &default_position_control_kp, const typename Types::Vector &default_position_control_kd)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$size\+\_\+t N\+\_\+\+J\+O\+I\+N\+TS$>$ static {\bf Types\+::\+Action} {\bf robot\+\_\+interfaces\+::\+N\+Joint\+Robot\+Functions}$<$ N\+\_\+\+J\+O\+I\+N\+TS $>$\+::process\+\_\+desired\+\_\+action (
+\begin{DoxyParamCaption}
+\item[{const typename {\bf Types\+::\+Action} \&}]{desired\+\_\+action, }
+\item[{const typename {\bf Types\+::\+Observation} \&}]{latest\+\_\+observation, }
+\item[{const double}]{max\+\_\+torque\+\_\+\+Nm, }
+\item[{const typename Types\+::\+Vector \&}]{safety\+\_\+kd, }
+\item[{const typename Types\+::\+Vector \&}]{default\+\_\+position\+\_\+control\+\_\+kp, }
+\item[{const typename Types\+::\+Vector \&}]{default\+\_\+position\+\_\+control\+\_\+kd}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{structrobot__interfaces_1_1NJointRobotFunctions_a25eefa719e07b4499fe3fd6462d866df}{}\label{structrobot__interfaces_1_1NJointRobotFunctions_a25eefa719e07b4499fe3fd6462d866df}
+
+
+Process the desired action provided by the user. 
+
+Takes the desired action from the user and does the following processing\+:
+
+\subsubsection*{1. Run the position controller in case a target position is set.}
+
+If the target position is set to a value unequal to NaN for any joint, a PD position controller is executed for this joint and the resulting torque command is added to the torque command in the action.
+
+If the P-\/ and/or D-\/gains are set to a non-\/\+NaN value in the action, they are used for the control. Na\+N-\/values are replaced with the default gains.
+
+\subsubsection*{2. Apply safety checks.}
+
+
+\begin{DoxyItemize}
+\item Limit the torque to the allowed maximum value.
+\item Dampen velocity using the given safety\+\_\+kd gains. Damping us done joint-\/wise using this equation\+: \begin{DoxyVerb}torque_damped = torque_desired - safety_kd * current_velocity
+\end{DoxyVerb}
+
+\end{DoxyItemize}
+
+The resulting action with modifications of all steps is returned.
+
+
+\begin{DoxyParams}{Parameters}
+{\em desired\+\_\+action} & Desired action given by the user. \\
+\hline
+{\em latest\+\_\+observation} & Latest observation from the robot. \\
+\hline
+{\em max\+\_\+torque\+\_\+\+Nm} & Maximum allowed absolute torque. \\
+\hline
+{\em safety\+\_\+kd} & D-\/gain for velocity damping. \\
+\hline
+{\em default\+\_\+position\+\_\+control\+\_\+kp} & Default P-\/gain for position control. \\
+\hline
+{\em default\+\_\+position\+\_\+control\+\_\+kd} & Default D-\/gain for position control.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Resulting action after applying all the processing. 
+\end{DoxyReturn}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/robot\+\_\+interfaces/n\+\_\+joint\+\_\+robot\+\_\+functions.\+hpp\end{DoxyCompactItemize}

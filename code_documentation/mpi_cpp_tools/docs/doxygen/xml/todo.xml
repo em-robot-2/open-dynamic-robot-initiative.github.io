@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="todo" kind="page">
+    <compoundname>todo</compoundname>
+    <title>Todo List</title>
+    <detaileddescription>
+<para><variablelist>
+<varlistentry><term><anchor id="todo_1_todo000001"/>Member <ref refid="dynamical__systems_8hpp_1aab449f0863dee56d0f0e377c75a4812d" kindref="member">mct::find_max_admissible_acceleration</ref>  (const double &amp;initial_velocity, const double &amp;initial_position, const double &amp;max_velocity, const double &amp;max_position, const <ref refid="classmct_1_1NonnegDouble" kindref="compound">mct::NonnegDouble</ref> &amp;abs_jerk_limit, const <ref refid="classmct_1_1NonnegDouble" kindref="compound">mct::NonnegDouble</ref> &amp;abs_acceleration_limit)</term></varlistentry>
+<listitem><para>: not quite sure what is the right thing to do here  </para></listitem>
+<varlistentry><term><anchor id="todo_1_todo000002"/>Member <ref refid="classmct_1_1LinearDynamicsWithAccelerationConstraint_1a568991a3b2459be274a86298caf8356c" kindref="member">mct::LinearDynamicsWithAccelerationConstraint::will_exceed_jointly</ref>  (const double &amp;max_velocity, const double &amp;max_position, double &amp;certificate_time) const </term></varlistentry>
+<listitem><para>we could do this in a cleaner way with candidate points </para></listitem>
+</variablelist>
+</para>    </detaileddescription>
+  </compounddef>
+</doxygen>

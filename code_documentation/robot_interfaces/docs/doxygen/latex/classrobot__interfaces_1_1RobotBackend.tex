@@ -1,0 +1,209 @@
+\hypertarget{classrobot__interfaces_1_1RobotBackend}{}\section{robot\+\_\+interfaces\+:\+:Robot\+Backend$<$ Action, Observation $>$ Class Template Reference}
+\label{classrobot__interfaces_1_1RobotBackend}\index{robot\+\_\+interfaces\+::\+Robot\+Backend$<$ Action, Observation $>$@{robot\+\_\+interfaces\+::\+Robot\+Backend$<$ Action, Observation $>$}}
+
+
+Communication link between \hyperlink{classrobot__interfaces_1_1RobotDriver}{Robot\+Driver} and \hyperlink{classrobot__interfaces_1_1RobotData}{Robot\+Data}.  
+
+
+
+
+{\ttfamily \#include $<$robot\+\_\+backend.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classrobot__interfaces_1_1RobotBackend_af454a09b5d269ed32b0ae2d35abdb833}{Robot\+Backend} (std\+::shared\+\_\+ptr$<$ \hyperlink{classrobot__interfaces_1_1RobotDriver}{Robot\+Driver}$<$ \hyperlink{classAction}{Action}, \hyperlink{classObservation}{Observation} $>$$>$ robot\+\_\+driver, std\+::shared\+\_\+ptr$<$ \hyperlink{classrobot__interfaces_1_1RobotData}{Robot\+Data}$<$ \hyperlink{classAction}{Action}, \hyperlink{classObservation}{Observation} $>$$>$ robot\+\_\+data, const bool real\+\_\+time\+\_\+mode=true, const double first\+\_\+action\+\_\+timeout=std\+::numeric\+\_\+limits$<$ double $>$\+::infinity(), const uint32\+\_\+t max\+\_\+number\+\_\+of\+\_\+actions=0)
+\item 
+uint32\+\_\+t {\bfseries get\+\_\+max\+\_\+action\+\_\+repetitions} ()\hypertarget{classrobot__interfaces_1_1RobotBackend_ae354dfd960d4fd0d2f9242dcfb4a701f}{}\label{classrobot__interfaces_1_1RobotBackend_ae354dfd960d4fd0d2f9242dcfb4a701f}
+
+\item 
+void \hyperlink{classrobot__interfaces_1_1RobotBackend_aad761d1e0ab7296a9632b9c4cc9c91db}{set\+\_\+max\+\_\+action\+\_\+repetitions} (const uint32\+\_\+t \&max\+\_\+action\+\_\+repetitions)
+\begin{DoxyCompactList}\small\item\em Set how often an action is repeated if no new one is provided. \end{DoxyCompactList}\item 
+void {\bfseries initialize} ()\hypertarget{classrobot__interfaces_1_1RobotBackend_a7e4eb9f5362b79c0c21b824e3b639ae6}{}\label{classrobot__interfaces_1_1RobotBackend_a7e4eb9f5362b79c0c21b824e3b639ae6}
+
+\item 
+void \hyperlink{classrobot__interfaces_1_1RobotBackend_a3da1748227b56acf7b745aff64023715}{request\+\_\+shutdown} ()
+\begin{DoxyCompactList}\small\item\em Request shutdown of the backend loop. \end{DoxyCompactList}\item 
+void \hyperlink{classrobot__interfaces_1_1RobotBackend_acc6fd15379502943f99b58bad9b0acf7}{wait\+\_\+until\+\_\+terminated} () const \hypertarget{classrobot__interfaces_1_1RobotBackend_acc6fd15379502943f99b58bad9b0acf7}{}\label{classrobot__interfaces_1_1RobotBackend_acc6fd15379502943f99b58bad9b0acf7}
+
+\begin{DoxyCompactList}\small\item\em Wait until the backend loop terminates. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool {\bfseries has\+\_\+shutdown\+\_\+request} () const \hypertarget{classrobot__interfaces_1_1RobotBackend_afb4058468e7cc59dae5801eb5e369613}{}\label{classrobot__interfaces_1_1RobotBackend_afb4058468e7cc59dae5801eb5e369613}
+
+\item 
+void \hyperlink{classrobot__interfaces_1_1RobotBackend_a7cc66183743f277c41614a44fcc47b1a}{loop} ()
+\begin{DoxyCompactList}\small\item\em Main loop. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void $\ast$ {\bfseries loop} (void $\ast$instance\+\_\+pointer)\hypertarget{classrobot__interfaces_1_1RobotBackend_a44f21ab5414ea7742e34a3cf3dfe0650}{}\label{classrobot__interfaces_1_1RobotBackend_a44f21ab5414ea7742e34a3cf3dfe0650}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{classrobot__interfaces_1_1RobotDriver}{Robot\+Driver}$<$ \hyperlink{classAction}{Action}, \hyperlink{classObservation}{Observation} $>$ $>$ {\bfseries robot\+\_\+driver\+\_\+}\hypertarget{classrobot__interfaces_1_1RobotBackend_a9c07b9b4a8c98b3f1b63d0754cbcb85b}{}\label{classrobot__interfaces_1_1RobotBackend_a9c07b9b4a8c98b3f1b63d0754cbcb85b}
+
+\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{classrobot__interfaces_1_1RobotData}{Robot\+Data}$<$ \hyperlink{classAction}{Action}, \hyperlink{classObservation}{Observation} $>$ $>$ {\bfseries robot\+\_\+data\+\_\+}\hypertarget{classrobot__interfaces_1_1RobotBackend_a4bb04e584d971d4d99a32ea8c5b0cd68}{}\label{classrobot__interfaces_1_1RobotBackend_a4bb04e584d971d4d99a32ea8c5b0cd68}
+
+\item 
+const bool \hyperlink{classrobot__interfaces_1_1RobotBackend_a81610183c52c9fe2088304bbd3b6f83f}{real\+\_\+time\+\_\+mode\+\_\+}
+\begin{DoxyCompactList}\small\item\em Enable/disable real time mode. \end{DoxyCompactList}\item 
+const double \hyperlink{classrobot__interfaces_1_1RobotBackend_a56f111a9e0663eedefbaf55de36f7cac}{first\+\_\+action\+\_\+timeout\+\_\+}
+\begin{DoxyCompactList}\small\item\em Timeout for the first action to arrive. \end{DoxyCompactList}\item 
+const uint32\+\_\+t \hyperlink{classrobot__interfaces_1_1RobotBackend_a7cac555549bff96a32da042a97919d47}{max\+\_\+number\+\_\+of\+\_\+actions\+\_\+}
+\begin{DoxyCompactList}\small\item\em Maximum number of actions that are executed by the backend. \end{DoxyCompactList}\item 
+std\+::atomic$<$ bool $>$ \hyperlink{classrobot__interfaces_1_1RobotBackend_abe24206dcf102b33f8ee472e287f485a}{is\+\_\+shutdown\+\_\+requested\+\_\+}
+\begin{DoxyCompactList}\small\item\em Set to true when shutdown is requested. \end{DoxyCompactList}\item 
+std\+::atomic$<$ bool $>$ \hyperlink{classrobot__interfaces_1_1RobotBackend_a0e91800b352b7b52f22820775b1d5e99}{loop\+\_\+is\+\_\+running\+\_\+}\hypertarget{classrobot__interfaces_1_1RobotBackend_a0e91800b352b7b52f22820775b1d5e99}{}\label{classrobot__interfaces_1_1RobotBackend_a0e91800b352b7b52f22820775b1d5e99}
+
+\begin{DoxyCompactList}\small\item\em Indicates if the background loop is still running. \end{DoxyCompactList}\item 
+uint32\+\_\+t \hyperlink{classrobot__interfaces_1_1RobotBackend_ae40ecdc44212f79f96d63a84f7b8a6e8}{max\+\_\+action\+\_\+repetitions\+\_\+}\hypertarget{classrobot__interfaces_1_1RobotBackend_ae40ecdc44212f79f96d63a84f7b8a6e8}{}\label{classrobot__interfaces_1_1RobotBackend_ae40ecdc44212f79f96d63a84f7b8a6e8}
+
+\begin{DoxyCompactList}\small\item\em Number of times the previous action is repeated if no new one is provided. \end{DoxyCompactList}\item 
+real\+\_\+time\+\_\+tools\+::\+Checkpoint\+Timer$<$ 6, false $>$ {\bfseries timer\+\_\+}\hypertarget{classrobot__interfaces_1_1RobotBackend_a69c9b7f07651484d1677121f72832482}{}\label{classrobot__interfaces_1_1RobotBackend_a69c9b7f07651484d1677121f72832482}
+
+\item 
+std\+::shared\+\_\+ptr$<$ real\+\_\+time\+\_\+tools\+::\+Real\+Time\+Thread $>$ {\bfseries thread\+\_\+}\hypertarget{classrobot__interfaces_1_1RobotBackend_afcf4f2443b7f3000cece9b0851284717}{}\label{classrobot__interfaces_1_1RobotBackend_afcf4f2443b7f3000cece9b0851284717}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename Action, typename Observation$>$\\*
+class robot\+\_\+interfaces\+::\+Robot\+Backend$<$ Action, Observation $>$}
+
+Communication link between \hyperlink{classrobot__interfaces_1_1RobotDriver}{Robot\+Driver} and \hyperlink{classrobot__interfaces_1_1RobotData}{Robot\+Data}. 
+
+At each time-\/step, it gets the observation from the \hyperlink{classrobot__interfaces_1_1RobotDriver}{Robot\+Driver} and writes it to \hyperlink{classrobot__interfaces_1_1RobotData}{Robot\+Data}, and it takes the desired\+\_\+action from \hyperlink{classrobot__interfaces_1_1RobotData}{Robot\+Data} and applies it on the \hyperlink{classrobot__interfaces_1_1RobotDriver}{Robot\+Driver}.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em \hyperlink{classAction}{Action}} & \\
+\hline
+{\em \hyperlink{classObservation}{Observation}} & \\
+\hline
+\end{DoxyTemplParams}
+\begin{Desc}
+\item[Examples\+: ]\par
+\hyperlink{demo_8cpp-example}{demo.\+cpp}, and \hyperlink{demo_multiprocess_backend_8cpp-example}{demo\+\_\+multiprocess\+\_\+backend.\+cpp}.\end{Desc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{robot\+\_\+interfaces\+::\+Robot\+Backend@{robot\+\_\+interfaces\+::\+Robot\+Backend}!Robot\+Backend@{Robot\+Backend}}
+\index{Robot\+Backend@{Robot\+Backend}!robot\+\_\+interfaces\+::\+Robot\+Backend@{robot\+\_\+interfaces\+::\+Robot\+Backend}}
+\subsubsection[{\texorpdfstring{Robot\+Backend(std\+::shared\+\_\+ptr$<$ Robot\+Driver$<$ Action, Observation $>$$>$ robot\+\_\+driver, std\+::shared\+\_\+ptr$<$ Robot\+Data$<$ Action, Observation $>$$>$ robot\+\_\+data, const bool real\+\_\+time\+\_\+mode=true, const double first\+\_\+action\+\_\+timeout=std\+::numeric\+\_\+limits$<$ double $>$\+::infinity(), const uint32\+\_\+t max\+\_\+number\+\_\+of\+\_\+actions=0)}{RobotBackend(std::shared_ptr< RobotDriver< Action, Observation >> robot_driver, std::shared_ptr< RobotData< Action, Observation >> robot_data, const bool real_time_mode=true, const double first_action_timeout=std::numeric_limits< double >::infinity(), const uint32_t max_number_of_actions=0)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Action, typename Observation$>$ {\bf robot\+\_\+interfaces\+::\+Robot\+Backend}$<$ {\bf Action}, {\bf Observation} $>$\+::{\bf Robot\+Backend} (
+\begin{DoxyParamCaption}
+\item[{std\+::shared\+\_\+ptr$<$ {\bf Robot\+Driver}$<$ {\bf Action}, {\bf Observation} $>$$>$}]{robot\+\_\+driver, }
+\item[{std\+::shared\+\_\+ptr$<$ {\bf Robot\+Data}$<$ {\bf Action}, {\bf Observation} $>$$>$}]{robot\+\_\+data, }
+\item[{const bool}]{real\+\_\+time\+\_\+mode = {\ttfamily true}, }
+\item[{const double}]{first\+\_\+action\+\_\+timeout = {\ttfamily std\+:\+:numeric\+\_\+limits$<$double$>$\+:\+:infinity()}, }
+\item[{const uint32\+\_\+t}]{max\+\_\+number\+\_\+of\+\_\+actions = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classrobot__interfaces_1_1RobotBackend_af454a09b5d269ed32b0ae2d35abdb833}{}\label{classrobot__interfaces_1_1RobotBackend_af454a09b5d269ed32b0ae2d35abdb833}
+
+\begin{DoxyParams}{Parameters}
+{\em robot\+\_\+driver} & \hyperlink{classDriver}{Driver} instance for the actual robot. \\
+\hline
+{\em robot\+\_\+data} & Data is send to/retrieved from here. \\
+\hline
+{\em real\+\_\+time\+\_\+mode} & Enable/disable real-\/time mode. In real-\/time mode, the backend will repeat previous actions if the new one is not provided in time or fail with an error if the allowed number of repetitions is exceeded. In non-\/real-\/time mode, it will simply block and wait until the action is provided. \\
+\hline
+{\em first\+\_\+action\+\_\+timeout} & See \hyperlink{classrobot__interfaces_1_1RobotBackend_a56f111a9e0663eedefbaf55de36f7cac}{Robot\+Backend\+::first\+\_\+action\+\_\+timeout\+\_\+}. \\
+\hline
+{\em max\+\_\+number\+\_\+of\+\_\+actions} & See \hyperlink{classrobot__interfaces_1_1RobotBackend_a7cac555549bff96a32da042a97919d47}{Robot\+Backend\+::max\+\_\+number\+\_\+of\+\_\+actions\+\_\+}. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{robot\+\_\+interfaces\+::\+Robot\+Backend@{robot\+\_\+interfaces\+::\+Robot\+Backend}!loop@{loop}}
+\index{loop@{loop}!robot\+\_\+interfaces\+::\+Robot\+Backend@{robot\+\_\+interfaces\+::\+Robot\+Backend}}
+\subsubsection[{\texorpdfstring{loop()}{loop()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Action, typename Observation$>$ void {\bf robot\+\_\+interfaces\+::\+Robot\+Backend}$<$ {\bf Action}, {\bf Observation} $>$\+::loop (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}\hypertarget{classrobot__interfaces_1_1RobotBackend_a7cc66183743f277c41614a44fcc47b1a}{}\label{classrobot__interfaces_1_1RobotBackend_a7cc66183743f277c41614a44fcc47b1a}
+
+
+Main loop. 
+
+Iterate over robot\+\_\+data\+\_\+.\+desired\+\_\+action and apply these actions to the robot, and read the applied\+\_\+action and the observation from the robot and append them to the corresponding timeseries in robot\+\_\+data\+\_\+. \index{robot\+\_\+interfaces\+::\+Robot\+Backend@{robot\+\_\+interfaces\+::\+Robot\+Backend}!request\+\_\+shutdown@{request\+\_\+shutdown}}
+\index{request\+\_\+shutdown@{request\+\_\+shutdown}!robot\+\_\+interfaces\+::\+Robot\+Backend@{robot\+\_\+interfaces\+::\+Robot\+Backend}}
+\subsubsection[{\texorpdfstring{request\+\_\+shutdown()}{request_shutdown()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Action, typename Observation$>$ void {\bf robot\+\_\+interfaces\+::\+Robot\+Backend}$<$ {\bf Action}, {\bf Observation} $>$\+::request\+\_\+shutdown (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classrobot__interfaces_1_1RobotBackend_a3da1748227b56acf7b745aff64023715}{}\label{classrobot__interfaces_1_1RobotBackend_a3da1748227b56acf7b745aff64023715}
+
+
+Request shutdown of the backend loop. 
+
+The loop may take some time to actually terminate after calling this function. Use \hyperlink{classrobot__interfaces_1_1RobotBackend_acc6fd15379502943f99b58bad9b0acf7}{wait\+\_\+until\+\_\+terminated()} to ensure it has really terminated. \index{robot\+\_\+interfaces\+::\+Robot\+Backend@{robot\+\_\+interfaces\+::\+Robot\+Backend}!set\+\_\+max\+\_\+action\+\_\+repetitions@{set\+\_\+max\+\_\+action\+\_\+repetitions}}
+\index{set\+\_\+max\+\_\+action\+\_\+repetitions@{set\+\_\+max\+\_\+action\+\_\+repetitions}!robot\+\_\+interfaces\+::\+Robot\+Backend@{robot\+\_\+interfaces\+::\+Robot\+Backend}}
+\subsubsection[{\texorpdfstring{set\+\_\+max\+\_\+action\+\_\+repetitions(const uint32\+\_\+t \&max\+\_\+action\+\_\+repetitions)}{set_max_action_repetitions(const uint32_t &max_action_repetitions)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Action, typename Observation$>$ void {\bf robot\+\_\+interfaces\+::\+Robot\+Backend}$<$ {\bf Action}, {\bf Observation} $>$\+::set\+\_\+max\+\_\+action\+\_\+repetitions (
+\begin{DoxyParamCaption}
+\item[{const uint32\+\_\+t \&}]{max\+\_\+action\+\_\+repetitions}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classrobot__interfaces_1_1RobotBackend_aad761d1e0ab7296a9632b9c4cc9c91db}{}\label{classrobot__interfaces_1_1RobotBackend_aad761d1e0ab7296a9632b9c4cc9c91db}
+
+
+Set how often an action is repeated if no new one is provided. 
+
+If the next action is due to be executed but the user did not provide one yet (i.\+e. there is no new action in the robot data time series), the last action will be repeated by automatically adding it to the time series again.
+
+Use this this method to specify how often the action shall be repeated (default is 0, i.\+e. no repetition at all). If this limit is exceeded, the robot will be shut down and the \hyperlink{classrobot__interfaces_1_1RobotBackend}{Robot\+Backend} stops.
+
+{\bfseries Note\+:} This is ignored in non-\/real-\/time mode.
+
+
+\begin{DoxyParams}{Parameters}
+{\em max\+\_\+action\+\_\+repetitions} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\index{robot\+\_\+interfaces\+::\+Robot\+Backend@{robot\+\_\+interfaces\+::\+Robot\+Backend}!first\+\_\+action\+\_\+timeout\+\_\+@{first\+\_\+action\+\_\+timeout\+\_\+}}
+\index{first\+\_\+action\+\_\+timeout\+\_\+@{first\+\_\+action\+\_\+timeout\+\_\+}!robot\+\_\+interfaces\+::\+Robot\+Backend@{robot\+\_\+interfaces\+::\+Robot\+Backend}}
+\subsubsection[{\texorpdfstring{first\+\_\+action\+\_\+timeout\+\_\+}{first_action_timeout_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Action, typename Observation$>$ const double {\bf robot\+\_\+interfaces\+::\+Robot\+Backend}$<$ {\bf Action}, {\bf Observation} $>$\+::first\+\_\+action\+\_\+timeout\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classrobot__interfaces_1_1RobotBackend_a56f111a9e0663eedefbaf55de36f7cac}{}\label{classrobot__interfaces_1_1RobotBackend_a56f111a9e0663eedefbaf55de36f7cac}
+
+
+Timeout for the first action to arrive. 
+
+Timeout for the time between starting the backend loop and receiving the first action from the user. If exceeded, the backend shuts down. Set to infinity to disable the timeout. \index{robot\+\_\+interfaces\+::\+Robot\+Backend@{robot\+\_\+interfaces\+::\+Robot\+Backend}!is\+\_\+shutdown\+\_\+requested\+\_\+@{is\+\_\+shutdown\+\_\+requested\+\_\+}}
+\index{is\+\_\+shutdown\+\_\+requested\+\_\+@{is\+\_\+shutdown\+\_\+requested\+\_\+}!robot\+\_\+interfaces\+::\+Robot\+Backend@{robot\+\_\+interfaces\+::\+Robot\+Backend}}
+\subsubsection[{\texorpdfstring{is\+\_\+shutdown\+\_\+requested\+\_\+}{is_shutdown_requested_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Action, typename Observation$>$ std\+::atomic$<$bool$>$ {\bf robot\+\_\+interfaces\+::\+Robot\+Backend}$<$ {\bf Action}, {\bf Observation} $>$\+::is\+\_\+shutdown\+\_\+requested\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classrobot__interfaces_1_1RobotBackend_abe24206dcf102b33f8ee472e287f485a}{}\label{classrobot__interfaces_1_1RobotBackend_abe24206dcf102b33f8ee472e287f485a}
+
+
+Set to true when shutdown is requested. 
+
+This is used to notify the background loop about requested shutdown, so it terminates itself. \index{robot\+\_\+interfaces\+::\+Robot\+Backend@{robot\+\_\+interfaces\+::\+Robot\+Backend}!max\+\_\+number\+\_\+of\+\_\+actions\+\_\+@{max\+\_\+number\+\_\+of\+\_\+actions\+\_\+}}
+\index{max\+\_\+number\+\_\+of\+\_\+actions\+\_\+@{max\+\_\+number\+\_\+of\+\_\+actions\+\_\+}!robot\+\_\+interfaces\+::\+Robot\+Backend@{robot\+\_\+interfaces\+::\+Robot\+Backend}}
+\subsubsection[{\texorpdfstring{max\+\_\+number\+\_\+of\+\_\+actions\+\_\+}{max_number_of_actions_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Action, typename Observation$>$ const uint32\+\_\+t {\bf robot\+\_\+interfaces\+::\+Robot\+Backend}$<$ {\bf Action}, {\bf Observation} $>$\+::max\+\_\+number\+\_\+of\+\_\+actions\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classrobot__interfaces_1_1RobotBackend_a7cac555549bff96a32da042a97919d47}{}\label{classrobot__interfaces_1_1RobotBackend_a7cac555549bff96a32da042a97919d47}
+
+
+Maximum number of actions that are executed by the backend. 
+
+If set to a value greater than zero, the backend will automatically shut down after the specified number of actions is executed. \index{robot\+\_\+interfaces\+::\+Robot\+Backend@{robot\+\_\+interfaces\+::\+Robot\+Backend}!real\+\_\+time\+\_\+mode\+\_\+@{real\+\_\+time\+\_\+mode\+\_\+}}
+\index{real\+\_\+time\+\_\+mode\+\_\+@{real\+\_\+time\+\_\+mode\+\_\+}!robot\+\_\+interfaces\+::\+Robot\+Backend@{robot\+\_\+interfaces\+::\+Robot\+Backend}}
+\subsubsection[{\texorpdfstring{real\+\_\+time\+\_\+mode\+\_\+}{real_time_mode_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Action, typename Observation$>$ const bool {\bf robot\+\_\+interfaces\+::\+Robot\+Backend}$<$ {\bf Action}, {\bf Observation} $>$\+::real\+\_\+time\+\_\+mode\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classrobot__interfaces_1_1RobotBackend_a81610183c52c9fe2088304bbd3b6f83f}{}\label{classrobot__interfaces_1_1RobotBackend_a81610183c52c9fe2088304bbd3b6f83f}
+
+
+Enable/disable real time mode. 
+
+If real time mode is enabled (true), the back end expects new actions to be provided in time by the user. If this does not happen, the last received action is repeated until the configured number of repetitions is exceeded in which case it stops with an error.
+
+If real time mode is disabled (false), the back-\/end loop blocks and waits for the next action if it is not provided in time.
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classrobot__interfaces_1_1RobotBackend_ae40ecdc44212f79f96d63a84f7b8a6e8}{max\+\_\+action\+\_\+repetitions\+\_\+} 
+\end{DoxySeeAlso}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/robot\+\_\+interfaces/robot\+\_\+backend.\+hpp\end{DoxyCompactItemize}

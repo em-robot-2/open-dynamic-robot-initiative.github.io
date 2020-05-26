@@ -1,0 +1,59 @@
+\hypertarget{classmct_1_1LinearDynamics}{}\section{mct\+:\+:Linear\+Dynamics Class Reference}
+\label{classmct_1_1LinearDynamics}\index{mct\+::\+Linear\+Dynamics@{mct\+::\+Linear\+Dynamics}}
+
+
+Inheritance diagram for mct\+:\+:Linear\+Dynamics\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=264pt]{classmct_1_1LinearDynamics__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef Eigen\+::\+Matrix$<$ double, Eigen\+::\+Dynamic, 1, 0, 10 $>$ {\bfseries Vector}\hypertarget{classmct_1_1LinearDynamics_abd48cad5a3b6819e218cde41ec2670a0}{}\label{classmct_1_1LinearDynamics_abd48cad5a3b6819e218cde41ec2670a0}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Linear\+Dynamics} (Eigen\+::\+Vector4d parameters)\hypertarget{classmct_1_1LinearDynamics_a4cb41e128efc2d9fda1995610966da86}{}\label{classmct_1_1LinearDynamics_a4cb41e128efc2d9fda1995610966da86}
+
+\item 
+{\bfseries Linear\+Dynamics} (double jerk, double initial\+\_\+acceleration, double initial\+\_\+velocity, double initial\+\_\+position)\hypertarget{classmct_1_1LinearDynamics_a5c38619de6412eb2c85bb207fbe6d7ec}{}\label{classmct_1_1LinearDynamics_a5c38619de6412eb2c85bb207fbe6d7ec}
+
+\item 
+double {\bfseries get\+\_\+acceleration} (\hyperlink{classmct_1_1NonnegDouble}{mct\+::\+Nonneg\+Double} t) const \hypertarget{classmct_1_1LinearDynamics_a34d6238236aec2a1b30f66edc1e13db9}{}\label{classmct_1_1LinearDynamics_a34d6238236aec2a1b30f66edc1e13db9}
+
+\item 
+double {\bfseries get\+\_\+velocity} (\hyperlink{classmct_1_1NonnegDouble}{mct\+::\+Nonneg\+Double} t) const \hypertarget{classmct_1_1LinearDynamics_a0179d2a8a7adfb9280f5238d340e7534}{}\label{classmct_1_1LinearDynamics_a0179d2a8a7adfb9280f5238d340e7534}
+
+\item 
+double {\bfseries get\+\_\+position} (\hyperlink{classmct_1_1NonnegDouble}{mct\+::\+Nonneg\+Double} t) const \hypertarget{classmct_1_1LinearDynamics_a8896d67d7d8ecd3676ee1cc54041d03a}{}\label{classmct_1_1LinearDynamics_a8896d67d7d8ecd3676ee1cc54041d03a}
+
+\item 
+Vector {\bfseries find\+\_\+t\+\_\+given\+\_\+velocity} (double velocity) const \hypertarget{classmct_1_1LinearDynamics_ae0b39a3139d5f7de01ecbb6e66d85a6e}{}\label{classmct_1_1LinearDynamics_ae0b39a3139d5f7de01ecbb6e66d85a6e}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double {\bfseries jerk\+\_\+}\hypertarget{classmct_1_1LinearDynamics_aa12a81e1ef4e33e310bf02978a20fef4}{}\label{classmct_1_1LinearDynamics_aa12a81e1ef4e33e310bf02978a20fef4}
+
+\item 
+double {\bfseries initial\+\_\+acceleration\+\_\+}\hypertarget{classmct_1_1LinearDynamics_aa37dc8e527de707c9402b3de06e7e35f}{}\label{classmct_1_1LinearDynamics_aa37dc8e527de707c9402b3de06e7e35f}
+
+\item 
+double {\bfseries initial\+\_\+velocity\+\_\+}\hypertarget{classmct_1_1LinearDynamics_ab9db51c5442ac30a82f10fa33b3a024d}{}\label{classmct_1_1LinearDynamics_ab9db51c5442ac30a82f10fa33b3a024d}
+
+\item 
+double {\bfseries initial\+\_\+position\+\_\+}\hypertarget{classmct_1_1LinearDynamics_a4ab9e657e985729091d3136f98bb99fd}{}\label{classmct_1_1LinearDynamics_a4ab9e657e985729091d3136f98bb99fd}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/mpi\+\_\+cpp\+\_\+tools/\hyperlink{dynamical__systems_8hpp}{dynamical\+\_\+systems.\+hpp}\end{DoxyCompactItemize}

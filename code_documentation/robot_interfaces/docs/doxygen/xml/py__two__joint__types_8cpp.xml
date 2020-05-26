@@ -1,0 +1,305 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="py__two__joint__types_8cpp" kind="file" language="C++">
+    <compoundname>py_two_joint_types.cpp</compoundname>
+    <includes refid="pybind__helper_8hpp" local="no">robot_interfaces/pybind_helper.hpp</includes>
+    <includes refid="n__joint__robot__types_8hpp" local="no">robot_interfaces/n_joint_robot_types.hpp</includes>
+    <incdepgraph>
+      <node id="1093">
+        <label>atomic</label>
+      </node>
+      <node id="1105">
+        <label>time_series/time_series.hpp</label>
+      </node>
+      <node id="1083">
+        <label>robot_interfaces/pybind_helper.hpp</label>
+        <link refid="pybind__helper_8hpp"/>
+        <childnode refid="1084" relation="include">
+        </childnode>
+        <childnode refid="1085" relation="include">
+        </childnode>
+        <childnode refid="1086" relation="include">
+        </childnode>
+      </node>
+      <node id="1104">
+        <label>time_series/multiprocess_time_series.hpp</label>
+      </node>
+      <node id="1106">
+        <label>status.hpp</label>
+        <link refid="status_8hpp"/>
+        <childnode refid="1107" relation="include">
+        </childnode>
+        <childnode refid="1090" relation="include">
+        </childnode>
+        <childnode refid="1103" relation="include">
+        </childnode>
+        <childnode refid="1108" relation="include">
+        </childnode>
+      </node>
+      <node id="1099">
+        <label>robot_interfaces/global_signal_handler.hpp</label>
+        <link refid="global__signal__handler_8hpp"/>
+      </node>
+      <node id="1094">
+        <label>cstdint</label>
+      </node>
+      <node id="1117">
+        <label>real_time_tools/timer.hpp</label>
+      </node>
+      <node id="1111">
+        <label>robot_interfaces/robot_logger.hpp</label>
+        <link refid="robot__logger_8hpp_source"/>
+        <childnode refid="1112" relation="include">
+        </childnode>
+        <childnode refid="1101" relation="include">
+        </childnode>
+        <childnode refid="1113" relation="include">
+        </childnode>
+        <childnode refid="1089" relation="include">
+        </childnode>
+        <childnode refid="1114" relation="include">
+        </childnode>
+        <childnode refid="1115" relation="include">
+        </childnode>
+        <childnode refid="1116" relation="include">
+        </childnode>
+        <childnode refid="1097" relation="include">
+        </childnode>
+        <childnode refid="1098" relation="include">
+        </childnode>
+        <childnode refid="1117" relation="include">
+        </childnode>
+        <childnode refid="1090" relation="include">
+        </childnode>
+        <childnode refid="1106" relation="include">
+        </childnode>
+      </node>
+      <node id="1090">
+        <label>robot_interfaces/loggable.hpp</label>
+        <link refid="loggable_8hpp_source"/>
+      </node>
+      <node id="1088">
+        <label>cmath</label>
+      </node>
+      <node id="1107">
+        <label>cereal/types/string.hpp</label>
+      </node>
+      <node id="1098">
+        <label>real_time_tools/thread.hpp</label>
+      </node>
+      <node id="1087">
+        <label>robot_interfaces/n_joint_robot_types.hpp</label>
+        <link refid="n__joint__robot__types_8hpp_source"/>
+        <childnode refid="1088" relation="include">
+        </childnode>
+        <childnode refid="1089" relation="include">
+        </childnode>
+        <childnode refid="1090" relation="include">
+        </childnode>
+        <childnode refid="1091" relation="include">
+        </childnode>
+        <childnode refid="1100" relation="include">
+        </childnode>
+        <childnode refid="1110" relation="include">
+        </childnode>
+        <childnode refid="1111" relation="include">
+        </childnode>
+        <childnode refid="1118" relation="include">
+        </childnode>
+      </node>
+      <node id="1089">
+        <label>Eigen/Eigen</label>
+      </node>
+      <node id="1103">
+        <label>string</label>
+      </node>
+      <node id="1084">
+        <label>pybind11/eigen.h</label>
+      </node>
+      <node id="1114">
+        <label>mpi_cpp_tools/basic_tools.hpp</label>
+      </node>
+      <node id="1115">
+        <label>mpi_cpp_tools/dynamical_systems.hpp</label>
+      </node>
+      <node id="1110">
+        <label>robot_interfaces/robot_frontend.hpp</label>
+        <link refid="robot__frontend_8hpp_source"/>
+        <childnode refid="1092" relation="include">
+        </childnode>
+        <childnode refid="1088" relation="include">
+        </childnode>
+        <childnode refid="1105" relation="include">
+        </childnode>
+        <childnode refid="1091" relation="include">
+        </childnode>
+        <childnode refid="1100" relation="include">
+        </childnode>
+        <childnode refid="1106" relation="include">
+        </childnode>
+      </node>
+      <node id="1112">
+        <label>fstream</label>
+      </node>
+      <node id="1096">
+        <label>real_time_tools/checkpoint_timer.hpp</label>
+      </node>
+      <node id="1116">
+        <label>mpi_cpp_tools/math.hpp</label>
+      </node>
+      <node id="1097">
+        <label>real_time_tools/process_manager.hpp</label>
+      </node>
+      <node id="1108">
+        <label>vector</label>
+      </node>
+      <node id="1095">
+        <label>pybind11/embed.h</label>
+      </node>
+      <node id="1082">
+        <label>srcpy/py_two_joint_types.cpp</label>
+        <link refid="py_two_joint_types.cpp"/>
+        <childnode refid="1083" relation="include">
+        </childnode>
+        <childnode refid="1087" relation="include">
+        </childnode>
+      </node>
+      <node id="1100">
+        <label>robot_interfaces/robot_data.hpp</label>
+        <link refid="robot__data_8hpp"/>
+        <childnode refid="1101" relation="include">
+        </childnode>
+        <childnode refid="1102" relation="include">
+        </childnode>
+        <childnode refid="1103" relation="include">
+        </childnode>
+        <childnode refid="1104" relation="include">
+        </childnode>
+        <childnode refid="1105" relation="include">
+        </childnode>
+        <childnode refid="1106" relation="include">
+        </childnode>
+      </node>
+      <node id="1085">
+        <label>pybind11/pybind11.h</label>
+      </node>
+      <node id="1118">
+        <label>robot_interfaces/cereal_eigen.hpp</label>
+        <link refid="cereal__eigen_8hpp"/>
+        <childnode refid="1089" relation="include">
+        </childnode>
+        <childnode refid="1119" relation="include">
+        </childnode>
+      </node>
+      <node id="1101">
+        <label>iostream</label>
+      </node>
+      <node id="1091">
+        <label>robot_interfaces/robot_backend.hpp</label>
+        <link refid="robot__backend_8hpp_source"/>
+        <childnode refid="1092" relation="include">
+        </childnode>
+        <childnode refid="1093" relation="include">
+        </childnode>
+        <childnode refid="1088" relation="include">
+        </childnode>
+        <childnode refid="1094" relation="include">
+        </childnode>
+        <childnode refid="1095" relation="include">
+        </childnode>
+        <childnode refid="1096" relation="include">
+        </childnode>
+        <childnode refid="1097" relation="include">
+        </childnode>
+        <childnode refid="1098" relation="include">
+        </childnode>
+        <childnode refid="1099" relation="include">
+        </childnode>
+        <childnode refid="1090" relation="include">
+        </childnode>
+        <childnode refid="1100" relation="include">
+        </childnode>
+        <childnode refid="1109" relation="include">
+        </childnode>
+        <childnode refid="1106" relation="include">
+        </childnode>
+      </node>
+      <node id="1113">
+        <label>chrono</label>
+      </node>
+      <node id="1119">
+        <label>type_traits</label>
+      </node>
+      <node id="1092">
+        <label>algorithm</label>
+      </node>
+      <node id="1086">
+        <label>pybind11/stl_bind.h</label>
+      </node>
+      <node id="1109">
+        <label>robot_interfaces/robot_driver.hpp</label>
+        <link refid="robot__driver_8hpp_source"/>
+        <childnode refid="1103" relation="include">
+        </childnode>
+      </node>
+      <node id="1102">
+        <label>memory</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="py__two__joint__types_8cpp_1a045f161d5577878718d68713b650463f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PYBIND11_MODULE</definition>
+        <argsstring>(py_two_joint_types, m)</argsstring>
+        <name>PYBIND11_MODULE</name>
+        <param>
+          <type>py_two_joint_types</type>
+        </param>
+        <param>
+          <type>m</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="srcpy/py_two_joint_types.cpp" line="28" column="1" bodyfile="srcpy/py_two_joint_types.cpp" bodystart="28" bodyend="31"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Create bindings for Two-Joint robot types. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>[2017]<sp/>Max<sp/>Planck<sp/>Society.<sp/>All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>This<sp/>program<sp/>is<sp/>free<sp/>software:<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>as<sp/>published<sp/>by</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>the<sp/>Free<sp/>Software<sp/>Foundation,<sp/>either<sp/>version<sp/>3<sp/>of<sp/>the<sp/>License,<sp/>or</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>This<sp/>program<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>along<sp/>with<sp/>this<sp/>program.<sp/><sp/>If<sp/>not,<sp/>see<sp/>&lt;http://www.gnu.org/licenses/&gt;.</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="preprocessor">#include<sp/>&lt;<ref refid="pybind__helper_8hpp" kindref="compound">robot_interfaces/pybind_helper.hpp</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;robot_interfaces/n_joint_robot_types.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal"><ref refid="namespacerobot__interfaces" kindref="compound">robot_interfaces</ref>;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal">PYBIND11_MODULE(py_two_joint_types,<sp/>m)</highlight></codeline>
+<codeline lineno="29"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>create_python_bindings&lt;NJointRobotTypes&lt;2&gt;&gt;(m);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="srcpy/py_two_joint_types.cpp"/>
+  </compounddef>
+</doxygen>

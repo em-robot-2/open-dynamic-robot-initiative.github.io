@@ -1,0 +1,52 @@
+\hypertarget{cereal__eigen_8hpp}{}\section{include/robot\+\_\+interfaces/cereal\+\_\+eigen.hpp File Reference}
+\label{cereal__eigen_8hpp}\index{include/robot\+\_\+interfaces/cereal\+\_\+eigen.\+hpp@{include/robot\+\_\+interfaces/cereal\+\_\+eigen.\+hpp}}
+
+
+Serialization functions for serializing Eigen matrices and arrays with cereal.  
+
+
+{\ttfamily \#include $<$Eigen/\+Eigen$>$}\\*
+{\ttfamily \#include $<$type\+\_\+traits$>$}\\*
+Include dependency graph for cereal\+\_\+eigen.\+hpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=230pt]{cereal__eigen_8hpp__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{cereal__eigen_8hpp__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class Archive , class Derived $>$ }\\std\+::enable\+\_\+if$<$ traits\+::is\+\_\+output\+\_\+serializable$<$ Binary\+Data$<$ typename Derived\+::\+Scalar $>$, Archive $>$\+::value, void $>$\+::type {\bfseries cereal\+::save} (Archive \&archive, const Eigen\+::\+Plain\+Object\+Base$<$ Derived $>$ \&object)\hypertarget{cereal__eigen_8hpp_aba6cfc68d144d36a4ac46cdaa4f9626c}{}\label{cereal__eigen_8hpp_aba6cfc68d144d36a4ac46cdaa4f9626c}
+
+\item 
+{\footnotesize template$<$class Archive , class Derived $>$ }\\std\+::enable\+\_\+if$<$ traits\+::is\+\_\+input\+\_\+serializable$<$ Binary\+Data$<$ typename Derived\+::\+Scalar $>$, Archive $>$\+::value, void $>$\+::type {\bfseries cereal\+::load} (Archive \&archive, Eigen\+::\+Plain\+Object\+Base$<$ Derived $>$ \&object)\hypertarget{cereal__eigen_8hpp_a2c410cde64d019622dd6d81387316eaa}{}\label{cereal__eigen_8hpp_a2c410cde64d019622dd6d81387316eaa}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Serialization functions for serializing Eigen matrices and arrays with cereal. 
+
+\begin{DoxyAuthor}{Authors}
+Azoth, eudoxos 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2020-\/01-\/15 
+\end{DoxyDate}
+\begin{DoxyRefDesc}{License}
+\item[\hyperlink{license__license000001}{License}]CC B\+Y-\/\+SA 4.\+0 \end{DoxyRefDesc}
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000001}{Todo}]Move this to some \char`\"{}serialization tools\char`\"{} package.\end{DoxyRefDesc}
+
+
+Taken from \href{https://stackoverflow.com/a/51944389/2095383}{\tt https\+://stackoverflow.\+com/a/51944389/2095383} with minor modifications. 

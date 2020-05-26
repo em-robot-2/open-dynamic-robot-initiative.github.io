@@ -1,0 +1,134 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structrobot__interfaces_1_1NJointRobotFunctions" kind="struct" language="C++" prot="public">
+    <compoundname>robot_interfaces::NJointRobotFunctions</compoundname>
+    <includes refid="n__joint__robot__functions_8hpp" local="no">n_joint_robot_functions.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>size_t</type>
+        <declname>N_JOINTS</declname>
+        <defname>N_JOINTS</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="structrobot__interfaces_1_1NJointRobotFunctions_1a7ace341ed7d3f1302264384b411c63e8" prot="public" static="no">
+        <type><ref refid="structrobot__interfaces_1_1NJointRobotTypes" kindref="compound">NJointRobotTypes</ref>&lt; N_JOINTS &gt;</type>
+        <definition>using robot_interfaces::NJointRobotFunctions&lt; N_JOINTS &gt;::Types =  NJointRobotTypes&lt;N_JOINTS&gt;</definition>
+        <argsstring></argsstring>
+        <name>Types</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/robot_interfaces/n_joint_robot_functions.hpp" line="30" column="1" bodyfile="include/robot_interfaces/n_joint_robot_functions.hpp" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="structrobot__interfaces_1_1NJointRobotFunctions_1a25eefa719e07b4499fe3fd6462d866df" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structrobot__interfaces_1_1NJointRobotTypes_1_1Action" kindref="compound">Types::Action</ref></type>
+        <definition>static Types::Action robot_interfaces::NJointRobotFunctions&lt; N_JOINTS &gt;::process_desired_action</definition>
+        <argsstring>(const typename Types::Action &amp;desired_action, const typename Types::Observation &amp;latest_observation, const double max_torque_Nm, const typename Types::Vector &amp;safety_kd, const typename Types::Vector &amp;default_position_control_kp, const typename Types::Vector &amp;default_position_control_kd)</argsstring>
+        <name>process_desired_action</name>
+        <param>
+          <type>const typename <ref refid="structrobot__interfaces_1_1NJointRobotTypes_1_1Action" kindref="compound">Types::Action</ref> &amp;</type>
+          <declname>desired_action</declname>
+        </param>
+        <param>
+          <type>const typename <ref refid="structrobot__interfaces_1_1NJointRobotTypes_1_1Observation" kindref="compound">Types::Observation</ref> &amp;</type>
+          <declname>latest_observation</declname>
+        </param>
+        <param>
+          <type>const double</type>
+          <declname>max_torque_Nm</declname>
+        </param>
+        <param>
+          <type>const typename Types::Vector &amp;</type>
+          <declname>safety_kd</declname>
+        </param>
+        <param>
+          <type>const typename Types::Vector &amp;</type>
+          <declname>default_position_control_kp</declname>
+        </param>
+        <param>
+          <type>const typename Types::Vector &amp;</type>
+          <declname>default_position_control_kd</declname>
+        </param>
+        <briefdescription>
+<para>Process the desired action provided by the user. </para>        </briefdescription>
+        <detaileddescription>
+<para>Takes the desired action from the user and does the following processing:</para><para><heading level="2">1. Run the position controller in case a target position is set.</heading>
+</para><para>If the target position is set to a value unequal to NaN for any joint, a PD position controller is executed for this joint and the resulting torque command is added to the torque command in the action.</para><para>If the P- and/or D-gains are set to a non-NaN value in the action, they are used for the control. NaN-values are replaced with the default gains.</para><para><heading level="2">2. Apply safety checks.</heading>
+</para><para><itemizedlist>
+<listitem><para>Limit the torque to the allowed maximum value.</para></listitem><listitem><para>Dampen velocity using the given safety_kd gains. Damping us done joint-wise using this equation: <verbatim>torque_damped = torque_desired - safety_kd * current_velocity
+</verbatim></para></listitem></itemizedlist>
+</para><para>The resulting action with modifications of all steps is returned.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>desired_action</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Desired action given by the user. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>latest_observation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Latest observation from the robot. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>max_torque_Nm</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Maximum allowed absolute torque. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>safety_kd</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>D-gain for velocity damping. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>default_position_control_kp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Default P-gain for position control. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>default_position_control_kd</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Default D-gain for position control.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Resulting action after applying all the processing. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/robot_interfaces/n_joint_robot_functions.hpp" line="66" column="1" bodyfile="include/robot_interfaces/n_joint_robot_functions.hpp" bodystart="66" bodyend="128"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Collection of functions for a generic N-joint BLMC robot. </para>    </briefdescription>
+    <detaileddescription>
+<para>Defines all the types needed to set up an interface to a generic N-joint BLMC robot that expects as <ref refid="classAction" kindref="compound">Action</ref> a simple vector of N torque commands and provides N observations containing measured joint angle, velocity and torque.</para><para>Defines some generic functions that can be used by all robots that are based on the <computeroutput><ref refid="structrobot__interfaces_1_1NJointRobotTypes" kindref="compound">NJointRobotTypes</ref></computeroutput>.</para><para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>N_JOINTS</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of joints the robot has. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>    </detaileddescription>
+    <location file="include/robot_interfaces/n_joint_robot_functions.hpp" line="29" column="1" bodyfile="include/robot_interfaces/n_joint_robot_functions.hpp" bodystart="28" bodyend="129"/>
+    <listofallmembers>
+      <member refid="structrobot__interfaces_1_1NJointRobotFunctions_1a25eefa719e07b4499fe3fd6462d866df" prot="public" virt="non-virtual"><scope>robot_interfaces::NJointRobotFunctions</scope><name>process_desired_action</name></member>
+      <member refid="structrobot__interfaces_1_1NJointRobotFunctions_1a7ace341ed7d3f1302264384b411c63e8" prot="public" virt="non-virtual"><scope>robot_interfaces::NJointRobotFunctions</scope><name>Types</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

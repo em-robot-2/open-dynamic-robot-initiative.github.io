@@ -1,0 +1,55 @@
+\hypertarget{math_8hpp}{}\section{include/mpi\+\_\+cpp\+\_\+tools/math.hpp File Reference}
+\label{math_8hpp}\index{include/mpi\+\_\+cpp\+\_\+tools/math.\+hpp@{include/mpi\+\_\+cpp\+\_\+tools/math.\+hpp}}
+{\ttfamily \#include $<$cmath$>$}\\*
+{\ttfamily \#include $<$algorithm$>$}\\*
+Include dependency graph for math.\+hpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=199pt]{math_8hpp__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=205pt]{math_8hpp__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+double {\bfseries mct\+::clamp} (const double \&value, const double \&limit\+\_\+a, const double \&limit\+\_\+b)\hypertarget{math_8hpp_acee1bab6012500f4f6709fadef426407}{}\label{math_8hpp_acee1bab6012500f4f6709fadef426407}
+
+\item 
+{\footnotesize template$<$typename Vector $>$ }\\Vector {\bfseries mct\+::clamp} (const Vector \&vector, const double \&limit\+\_\+a, const double \&limit\+\_\+b)\hypertarget{math_8hpp_a0da0a10ac9a5f53e1bff7004b9375ef1}{}\label{math_8hpp_a0da0a10ac9a5f53e1bff7004b9375ef1}
+
+\item 
+{\footnotesize template$<$typename Vector $>$ }\\void {\bfseries mct\+::append\+\_\+to\+\_\+vector} (Vector \&vector, const double \&element)\hypertarget{math_8hpp_a51a2b8ea864671201f79d50310a0cdd4}{}\label{math_8hpp_a51a2b8ea864671201f79d50310a0cdd4}
+
+\item 
+{\footnotesize template$<$typename Matrix $>$ }\\void {\bfseries mct\+::append\+\_\+rows\+\_\+to\+\_\+matrix} (Matrix \&matrix, const Matrix \&rows)\hypertarget{math_8hpp_aab77f23043c1849bee062cf75c75d101}{}\label{math_8hpp_aab77f23043c1849bee062cf75c75d101}
+
+\item 
+bool {\bfseries mct\+::approx\+\_\+equal} (double x, double y, double epsilon=1e-\/10)\hypertarget{math_8hpp_a6014d19d6c69a7a98aac6b68c57e6795}{}\label{math_8hpp_a6014d19d6c69a7a98aac6b68c57e6795}
+
+\item 
+{\footnotesize template$<$typename Vector $>$ }\\bool {\bfseries mct\+::contains} (Vector v, double x)\hypertarget{math_8hpp_a1cee0ed64de57025bf7ab0ae767008e6}{}\label{math_8hpp_a1cee0ed64de57025bf7ab0ae767008e6}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Manuel Wuthrich 
+\end{DoxyAuthor}
+\begin{DoxyRefDesc}{License}
+\item[\hyperlink{license__license000003}{License}]License B\+S\+D-\/3-\/\+Clause \end{DoxyRefDesc}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2019, New York University and Max Planck Gesellschaft. 
+\end{DoxyCopyright}
+\begin{DoxyDate}{Date}
+2019-\/08-\/05 
+\end{DoxyDate}

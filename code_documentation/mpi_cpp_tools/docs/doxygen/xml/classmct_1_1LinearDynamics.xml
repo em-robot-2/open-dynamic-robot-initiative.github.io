@@ -1,0 +1,222 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classmct_1_1LinearDynamics" kind="class" language="C++" prot="public">
+    <compoundname>mct::LinearDynamics</compoundname>
+    <derivedcompoundref refid="classmct_1_1LinearDynamicsWithAccelerationConstraint" prot="public" virt="non-virtual">mct::LinearDynamicsWithAccelerationConstraint</derivedcompoundref>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classmct_1_1LinearDynamics_1abd48cad5a3b6819e218cde41ec2670a0" prot="public" static="no">
+        <type>Eigen::Matrix&lt; double, Eigen::Dynamic, 1, 0, 10 &gt;</type>
+        <definition>typedef Eigen::Matrix&lt;double, Eigen::Dynamic, 1, 0, 10&gt; mct::LinearDynamics::Vector</definition>
+        <argsstring></argsstring>
+        <name>Vector</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mpi_cpp_tools/dynamical_systems.hpp" line="31" column="1" bodyfile="include/mpi_cpp_tools/dynamical_systems.hpp" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classmct_1_1LinearDynamics_1aa12a81e1ef4e33e310bf02978a20fef4" prot="protected" static="no" mutable="no">
+        <type>double</type>
+        <definition>double mct::LinearDynamics::jerk_</definition>
+        <argsstring></argsstring>
+        <name>jerk_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mpi_cpp_tools/dynamical_systems.hpp" line="112" column="1" bodyfile="include/mpi_cpp_tools/dynamical_systems.hpp" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmct_1_1LinearDynamics_1aa37dc8e527de707c9402b3de06e7e35f" prot="protected" static="no" mutable="no">
+        <type>double</type>
+        <definition>double mct::LinearDynamics::initial_acceleration_</definition>
+        <argsstring></argsstring>
+        <name>initial_acceleration_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mpi_cpp_tools/dynamical_systems.hpp" line="113" column="1" bodyfile="include/mpi_cpp_tools/dynamical_systems.hpp" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmct_1_1LinearDynamics_1ab9db51c5442ac30a82f10fa33b3a024d" prot="protected" static="no" mutable="no">
+        <type>double</type>
+        <definition>double mct::LinearDynamics::initial_velocity_</definition>
+        <argsstring></argsstring>
+        <name>initial_velocity_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mpi_cpp_tools/dynamical_systems.hpp" line="114" column="1" bodyfile="include/mpi_cpp_tools/dynamical_systems.hpp" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmct_1_1LinearDynamics_1a4ab9e657e985729091d3136f98bb99fd" prot="protected" static="no" mutable="no">
+        <type>double</type>
+        <definition>double mct::LinearDynamics::initial_position_</definition>
+        <argsstring></argsstring>
+        <name>initial_position_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mpi_cpp_tools/dynamical_systems.hpp" line="115" column="1" bodyfile="include/mpi_cpp_tools/dynamical_systems.hpp" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmct_1_1LinearDynamics_1a4cb41e128efc2d9fda1995610966da86" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>mct::LinearDynamics::LinearDynamics</definition>
+        <argsstring>(Eigen::Vector4d parameters)</argsstring>
+        <name>LinearDynamics</name>
+        <param>
+          <type>Eigen::Vector4d</type>
+          <declname>parameters</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mpi_cpp_tools/dynamical_systems.hpp" line="33" column="1" bodyfile="include/mpi_cpp_tools/dynamical_systems.hpp" bodystart="33" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="classmct_1_1LinearDynamics_1a5c38619de6412eb2c85bb207fbe6d7ec" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>mct::LinearDynamics::LinearDynamics</definition>
+        <argsstring>(double jerk, double initial_acceleration, double initial_velocity, double initial_position)</argsstring>
+        <name>LinearDynamics</name>
+        <param>
+          <type>double</type>
+          <declname>jerk</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>initial_acceleration</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>initial_velocity</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>initial_position</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mpi_cpp_tools/dynamical_systems.hpp" line="39" column="1" bodyfile="include/mpi_cpp_tools/dynamical_systems.hpp" bodystart="39" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="classmct_1_1LinearDynamics_1a34d6238236aec2a1b30f66edc1e13db9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double mct::LinearDynamics::get_acceleration</definition>
+        <argsstring>(mct::NonnegDouble t) const </argsstring>
+        <name>get_acceleration</name>
+        <param>
+          <type><ref refid="classmct_1_1NonnegDouble" kindref="compound">mct::NonnegDouble</ref></type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mpi_cpp_tools/dynamical_systems.hpp" line="49" column="1" bodyfile="include/mpi_cpp_tools/dynamical_systems.hpp" bodystart="49" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="classmct_1_1LinearDynamics_1a0179d2a8a7adfb9280f5238d340e7534" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double mct::LinearDynamics::get_velocity</definition>
+        <argsstring>(mct::NonnegDouble t) const </argsstring>
+        <name>get_velocity</name>
+        <param>
+          <type><ref refid="classmct_1_1NonnegDouble" kindref="compound">mct::NonnegDouble</ref></type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mpi_cpp_tools/dynamical_systems.hpp" line="54" column="1" bodyfile="include/mpi_cpp_tools/dynamical_systems.hpp" bodystart="54" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="classmct_1_1LinearDynamics_1a8896d67d7d8ecd3676ee1cc54041d03a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double mct::LinearDynamics::get_position</definition>
+        <argsstring>(mct::NonnegDouble t) const </argsstring>
+        <name>get_position</name>
+        <param>
+          <type><ref refid="classmct_1_1NonnegDouble" kindref="compound">mct::NonnegDouble</ref></type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mpi_cpp_tools/dynamical_systems.hpp" line="60" column="1" bodyfile="include/mpi_cpp_tools/dynamical_systems.hpp" bodystart="60" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="classmct_1_1LinearDynamics_1ae0b39a3139d5f7de01ecbb6e66d85a6e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>Vector</type>
+        <definition>Vector mct::LinearDynamics::find_t_given_velocity</definition>
+        <argsstring>(double velocity) const </argsstring>
+        <name>find_t_given_velocity</name>
+        <param>
+          <type>double</type>
+          <declname>velocity</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mpi_cpp_tools/dynamical_systems.hpp" line="68" column="1" bodyfile="include/mpi_cpp_tools/dynamical_systems.hpp" bodystart="68" bodyend="109"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="13">
+        <label>mct::LinearDynamics</label>
+        <link refid="classmct_1_1LinearDynamics"/>
+      </node>
+      <node id="14">
+        <label>mct::LinearDynamicsWithAccelerationConstraint</label>
+        <link refid="classmct_1_1LinearDynamicsWithAccelerationConstraint"/>
+        <childnode refid="13" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="include/mpi_cpp_tools/dynamical_systems.hpp" line="29" column="1" bodyfile="include/mpi_cpp_tools/dynamical_systems.hpp" bodystart="28" bodyend="116"/>
+    <listofallmembers>
+      <member refid="classmct_1_1LinearDynamics_1ae0b39a3139d5f7de01ecbb6e66d85a6e" prot="public" virt="non-virtual"><scope>mct::LinearDynamics</scope><name>find_t_given_velocity</name></member>
+      <member refid="classmct_1_1LinearDynamics_1a34d6238236aec2a1b30f66edc1e13db9" prot="public" virt="non-virtual"><scope>mct::LinearDynamics</scope><name>get_acceleration</name></member>
+      <member refid="classmct_1_1LinearDynamics_1a8896d67d7d8ecd3676ee1cc54041d03a" prot="public" virt="non-virtual"><scope>mct::LinearDynamics</scope><name>get_position</name></member>
+      <member refid="classmct_1_1LinearDynamics_1a0179d2a8a7adfb9280f5238d340e7534" prot="public" virt="non-virtual"><scope>mct::LinearDynamics</scope><name>get_velocity</name></member>
+      <member refid="classmct_1_1LinearDynamics_1aa37dc8e527de707c9402b3de06e7e35f" prot="protected" virt="non-virtual"><scope>mct::LinearDynamics</scope><name>initial_acceleration_</name></member>
+      <member refid="classmct_1_1LinearDynamics_1a4ab9e657e985729091d3136f98bb99fd" prot="protected" virt="non-virtual"><scope>mct::LinearDynamics</scope><name>initial_position_</name></member>
+      <member refid="classmct_1_1LinearDynamics_1ab9db51c5442ac30a82f10fa33b3a024d" prot="protected" virt="non-virtual"><scope>mct::LinearDynamics</scope><name>initial_velocity_</name></member>
+      <member refid="classmct_1_1LinearDynamics_1aa12a81e1ef4e33e310bf02978a20fef4" prot="protected" virt="non-virtual"><scope>mct::LinearDynamics</scope><name>jerk_</name></member>
+      <member refid="classmct_1_1LinearDynamics_1a4cb41e128efc2d9fda1995610966da86" prot="public" virt="non-virtual"><scope>mct::LinearDynamics</scope><name>LinearDynamics</name></member>
+      <member refid="classmct_1_1LinearDynamics_1a5c38619de6412eb2c85bb207fbe6d7ec" prot="public" virt="non-virtual"><scope>mct::LinearDynamics</scope><name>LinearDynamics</name></member>
+      <member refid="classmct_1_1LinearDynamics_1abd48cad5a3b6819e218cde41ec2670a0" prot="public" virt="non-virtual"><scope>mct::LinearDynamics</scope><name>Vector</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

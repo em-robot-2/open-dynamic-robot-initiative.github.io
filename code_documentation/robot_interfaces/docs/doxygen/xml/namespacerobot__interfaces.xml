@@ -1,0 +1,134 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="namespacerobot__interfaces" kind="namespace" language="C++">
+    <compoundname>robot_interfaces</compoundname>
+    <innerclass refid="structrobot__interfaces_1_1FingerTypes" prot="public">robot_interfaces::FingerTypes</innerclass>
+    <innerclass refid="classrobot__interfaces_1_1GlobalSignalHandler" prot="public">robot_interfaces::GlobalSignalHandler</innerclass>
+    <innerclass refid="classrobot__interfaces_1_1Loggable" prot="public">robot_interfaces::Loggable</innerclass>
+    <innerclass refid="classrobot__interfaces_1_1MonitoredRobotDriver" prot="public">robot_interfaces::MonitoredRobotDriver</innerclass>
+    <innerclass refid="classrobot__interfaces_1_1MultiProcessRobotData" prot="public">robot_interfaces::MultiProcessRobotData</innerclass>
+    <innerclass refid="structrobot__interfaces_1_1NJointRobotFunctions" prot="public">robot_interfaces::NJointRobotFunctions</innerclass>
+    <innerclass refid="structrobot__interfaces_1_1NJointRobotTypes" prot="public">robot_interfaces::NJointRobotTypes</innerclass>
+    <innerclass refid="classrobot__interfaces_1_1Robot" prot="public">robot_interfaces::Robot</innerclass>
+    <innerclass refid="classrobot__interfaces_1_1RobotBackend" prot="public">robot_interfaces::RobotBackend</innerclass>
+    <innerclass refid="classrobot__interfaces_1_1RobotData" prot="public">robot_interfaces::RobotData</innerclass>
+    <innerclass refid="classrobot__interfaces_1_1RobotDriver" prot="public">robot_interfaces::RobotDriver</innerclass>
+    <innerclass refid="classrobot__interfaces_1_1RobotFrontend" prot="public">robot_interfaces::RobotFrontend</innerclass>
+    <innerclass refid="classrobot__interfaces_1_1RobotLogger" prot="public">robot_interfaces::RobotLogger</innerclass>
+    <innerclass refid="classrobot__interfaces_1_1SensorBackend" prot="public">robot_interfaces::SensorBackend</innerclass>
+    <innerclass refid="classrobot__interfaces_1_1SensorData" prot="public">robot_interfaces::SensorData</innerclass>
+    <innerclass refid="classrobot__interfaces_1_1SensorDriver" prot="public">robot_interfaces::SensorDriver</innerclass>
+    <innerclass refid="classrobot__interfaces_1_1SensorFrontend" prot="public">robot_interfaces::SensorFrontend</innerclass>
+    <innerclass refid="classrobot__interfaces_1_1SingleProcessRobotData" prot="public">robot_interfaces::SingleProcessRobotData</innerclass>
+    <innerclass refid="structrobot__interfaces_1_1Status" prot="public">robot_interfaces::Status</innerclass>
+    <innerclass refid="structrobot__interfaces_1_1TriFingerTypes" prot="public">robot_interfaces::TriFingerTypes</innerclass>
+    <innernamespace refid="namespacerobot__interfaces_1_1demo">robot_interfaces::demo</innernamespace>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="robot__frontend_8hpp_1ab6664f66fd1f2241b42bd1b594e13735" prot="public" static="no">
+        <type>time_series::TimeSeries&lt; Type &gt;</type>
+        <definition>using robot_interfaces::Timeseries = typedef time_series::TimeSeries&lt;Type&gt;</definition>
+        <argsstring></argsstring>
+        <name>Timeseries</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/robot_interfaces/robot_frontend.hpp" line="23" column="1" bodyfile="include/robot_interfaces/robot_frontend.hpp" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="robot__frontend_8hpp_1a732892087242301eff80dce26d24dba0" prot="public" static="no">
+        <type>time_series::Index</type>
+        <definition>typedef time_series::Index robot_interfaces::TimeIndex</definition>
+        <argsstring></argsstring>
+        <name>TimeIndex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/robot_interfaces/robot_frontend.hpp" line="25" column="1" bodyfile="include/robot_interfaces/robot_frontend.hpp" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="pybind__helper_8hpp_1a82052567130c3000eeef9f5520885233" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Types</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void robot_interfaces::create_python_bindings</definition>
+        <argsstring>(pybind11::module &amp;m)</argsstring>
+        <name>create_python_bindings</name>
+        <param>
+          <type>pybind11::module &amp;</type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+<para>Create Python bindings for the specified robot Types. </para>        </briefdescription>
+        <detaileddescription>
+<para>With this function, Python bindings can easily be created for new robots that are based on the <ref refid="structrobot__interfaces_1_1NJointRobotTypes" kindref="compound">NJointRobotTypes</ref>. Example: <verbatim>PYBIND11_MODULE(py_fortytwo_types, m)
+{
+    create_python_bindings&lt;NJointRobotTypes&lt;42&gt;&gt;(m);
+}
+</verbatim></para><para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>Types</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An instance of <ref refid="structrobot__interfaces_1_1NJointRobotTypes" kindref="compound">NJointRobotTypes</ref>. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>m</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The second argument of the PYBIND11_MODULE macro. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/robot_interfaces/pybind_helper.hpp" line="43" column="1" bodyfile="include/robot_interfaces/pybind_helper.hpp" bodystart="43" bodyend="125"/>
+      </memberdef>
+      <memberdef kind="function" id="pybind__sensors_8hpp_1a31fc2ebe96b63e949a14f3f08cfea9b4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename ObservationType</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void robot_interfaces::create_sensor_bindings</definition>
+        <argsstring>(pybind11::module &amp;m)</argsstring>
+        <name>create_sensor_bindings</name>
+        <param>
+          <type>pybind11::module &amp;</type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+<para>Create python bindings for different sensor types. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>The</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ObservationType </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/robot_interfaces/sensors/pybind_sensors.hpp" line="26" column="1" bodyfile="include/robot_interfaces/sensors/pybind_sensors.hpp" bodystart="26" bodyend="52"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="demos/types.hpp" line="12" column="1"/>
+  </compounddef>
+</doxygen>

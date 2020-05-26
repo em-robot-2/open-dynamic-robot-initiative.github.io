@@ -3,7 +3,7 @@ var classblmc__robots_1_1BlmcJointModules =
     [ "Vector", "classblmc__robots_1_1BlmcJointModules.html#abaff382c6fd4b494ec0c17498d94919e", null ],
     [ "BlmcJointModules", "classblmc__robots_1_1BlmcJointModules.html#a74910d81a89f9b1713ce8fecc69191fe", null ],
     [ "BlmcJointModules", "classblmc__robots_1_1BlmcJointModules.html#af4c700a8d346ceaebece38928b5e7ca6", null ],
-    [ "execute_homing", "classblmc__robots_1_1BlmcJointModules.html#ab6a642e6939b8587189502e4b179fdcf", null ],
+    [ "execute_homing", "classblmc__robots_1_1BlmcJointModules.html#a4b3dfee12a87fddf81961fab48e3dae4", null ],
     [ "get_max_torques", "classblmc__robots_1_1BlmcJointModules.html#a6cc2989e6132988557ebe03e69658f50", null ],
     [ "get_measured_angles", "classblmc__robots_1_1BlmcJointModules.html#af739948e89e5192eb853c7c5dcb9e87f", null ],
     [ "get_measured_index_angles", "classblmc__robots_1_1BlmcJointModules.html#a0ef05c89eeb1ffde131f44d4f3a300c8", null ],

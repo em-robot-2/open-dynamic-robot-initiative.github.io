@@ -2,7 +2,6 @@ var hierarchy =
 [
     [ "Action", "classAction.html", null ],
     [ "robot_interfaces::demo::Action", "classrobot__interfaces_1_1demo_1_1Action.html", null ],
-    [ "robot_interfaces::CameraObservation", "structrobot__interfaces_1_1CameraObservation.html", null ],
     [ "robot_interfaces::GlobalSignalHandler", "classrobot__interfaces_1_1GlobalSignalHandler.html", null ],
     [ "robot_interfaces::Loggable", "classrobot__interfaces_1_1Loggable.html", [
       [ "robot_interfaces::NJointRobotTypes< N >::Action", "structrobot__interfaces_1_1NJointRobotTypes_1_1Action.html", null ],
@@ -39,13 +38,5 @@ var hierarchy =
     [ "robot_interfaces::SensorBackend< ObservationType >", "classrobot__interfaces_1_1SensorBackend.html", null ],
     [ "robot_interfaces::SensorData< ObservationType >", "classrobot__interfaces_1_1SensorData.html", null ],
     [ "robot_interfaces::SensorDriver< ObservationType >", "classrobot__interfaces_1_1SensorDriver.html", null ],
-    [ "robot_interfaces::SensorDriver< CameraObservation >", "classrobot__interfaces_1_1SensorDriver.html", [
-      [ "robot_interfaces::OpenCVDriver", "classrobot__interfaces_1_1OpenCVDriver.html", null ],
-      [ "robot_interfaces::PylonDriver", "classrobot__interfaces_1_1PylonDriver.html", null ]
-    ] ],
-    [ "robot_interfaces::SensorDriver< TriCameraObservation >", "classrobot__interfaces_1_1SensorDriver.html", [
-      [ "robot_interfaces::TriCameraDriver", "classrobot__interfaces_1_1TriCameraDriver.html", null ]
-    ] ],
-    [ "robot_interfaces::SensorFrontend< ObservationType >", "classrobot__interfaces_1_1SensorFrontend.html", null ],
-    [ "robot_interfaces::TriCameraObservation", "structrobot__interfaces_1_1TriCameraObservation.html", null ]
+    [ "robot_interfaces::SensorFrontend< ObservationType >", "classrobot__interfaces_1_1SensorFrontend.html", null ]
 ];

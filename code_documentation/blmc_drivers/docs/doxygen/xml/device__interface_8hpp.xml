@@ -1,0 +1,274 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="device__interface_8hpp" kind="file" language="C++">
+    <compoundname>device_interface.hpp</compoundname>
+    <includedby refid="analog__sensor_8hpp" local="yes">include/blmc_drivers/devices/analog_sensor.hpp</includedby>
+    <includedby refid="can__bus_8hpp" local="yes">include/blmc_drivers/devices/can_bus.hpp</includedby>
+    <includedby refid="leg_8hpp" local="no">include/blmc_drivers/devices/leg.hpp</includedby>
+    <includedby refid="motor_8hpp" local="yes">include/blmc_drivers/devices/motor.hpp</includedby>
+    <includedby refid="motor__board_8hpp" local="yes">include/blmc_drivers/devices/motor_board.hpp</includedby>
+    <invincdepgraph>
+      <node id="2131">
+        <label>demos/demo_sine_position_1_motor.cpp</label>
+        <link refid="demo__sine__position__1__motor_8cpp"/>
+      </node>
+      <node id="2129">
+        <label>demos/sine_position_control.hpp</label>
+        <link refid="sine__position__control_8hpp"/>
+        <childnode refid="2130" relation="include">
+        </childnode>
+        <childnode refid="2131" relation="include">
+        </childnode>
+        <childnode refid="2132" relation="include">
+        </childnode>
+      </node>
+      <node id="2138">
+        <label>include/blmc_drivers/devices/motor_board.hpp</label>
+        <link refid="motor__board_8hpp"/>
+        <childnode refid="2120" relation="include">
+        </childnode>
+        <childnode refid="2121" relation="include">
+        </childnode>
+        <childnode refid="2116" relation="include">
+        </childnode>
+        <childnode refid="2139" relation="include">
+        </childnode>
+        <childnode refid="2141" relation="include">
+        </childnode>
+        <childnode refid="2142" relation="include">
+        </childnode>
+        <childnode refid="2146" relation="include">
+        </childnode>
+      </node>
+      <node id="2141">
+        <label>include/blmc_drivers/devices/spi_bus.hpp</label>
+        <link refid="spi__bus_8hpp"/>
+        <childnode refid="2142" relation="include">
+        </childnode>
+        <childnode refid="2144" relation="include">
+        </childnode>
+      </node>
+      <node id="2128">
+        <label>demos/pd_control.cpp</label>
+        <link refid="pd__control_8cpp"/>
+      </node>
+      <node id="2130">
+        <label>demos/demo_ethernet.cpp</label>
+        <link refid="demo__ethernet_8cpp"/>
+      </node>
+      <node id="2125">
+        <label>demos/demo_8_motors.cpp</label>
+        <link refid="demo__8__motors_8cpp"/>
+      </node>
+      <node id="2127">
+        <label>demos/demo_single_board.cpp</label>
+        <link refid="demo__single__board_8cpp"/>
+      </node>
+      <node id="2118">
+        <label>demos/const_torque_control.cpp</label>
+        <link refid="const__torque__control_8cpp"/>
+      </node>
+      <node id="2133">
+        <label>demos/sine_torque_control.hpp</label>
+        <link refid="sine__torque__control_8hpp"/>
+        <childnode refid="2134" relation="include">
+        </childnode>
+        <childnode refid="2135" relation="include">
+        </childnode>
+      </node>
+      <node id="2115">
+        <label>include/blmc_drivers/devices/device_interface.hpp</label>
+        <link refid="device_interface.hpp"/>
+        <childnode refid="2116" relation="include">
+        </childnode>
+        <childnode refid="2137" relation="include">
+        </childnode>
+        <childnode refid="2140" relation="include">
+        </childnode>
+        <childnode refid="2139" relation="include">
+        </childnode>
+        <childnode refid="2138" relation="include">
+        </childnode>
+      </node>
+      <node id="2137">
+        <label>include/blmc_drivers/devices/can_bus.hpp</label>
+        <link refid="can__bus_8hpp"/>
+        <childnode refid="2120" relation="include">
+        </childnode>
+        <childnode refid="2121" relation="include">
+        </childnode>
+        <childnode refid="2138" relation="include">
+        </childnode>
+        <childnode refid="2147" relation="include">
+        </childnode>
+      </node>
+      <node id="2139">
+        <label>include/blmc_drivers/devices/motor.hpp</label>
+        <link refid="motor_8hpp"/>
+        <childnode refid="2117" relation="include">
+        </childnode>
+        <childnode refid="2120" relation="include">
+        </childnode>
+        <childnode refid="2121" relation="include">
+        </childnode>
+        <childnode refid="2122" relation="include">
+        </childnode>
+        <childnode refid="2129" relation="include">
+        </childnode>
+        <childnode refid="2126" relation="include">
+        </childnode>
+        <childnode refid="2133" relation="include">
+        </childnode>
+        <childnode refid="2140" relation="include">
+        </childnode>
+        <childnode refid="2141" relation="include">
+        </childnode>
+        <childnode refid="2145" relation="include">
+        </childnode>
+        <childnode refid="2144" relation="include">
+        </childnode>
+      </node>
+      <node id="2145">
+        <label>src/motor.cpp</label>
+        <link refid="motor_8cpp"/>
+      </node>
+      <node id="2142">
+        <label>include/blmc_drivers/devices/spi_motor_board.hpp</label>
+        <link refid="spi__motor__board_8hpp"/>
+        <childnode refid="2130" relation="include">
+        </childnode>
+        <childnode refid="2143" relation="include">
+        </childnode>
+      </node>
+      <node id="2136">
+        <label>src/analog_sensors.cpp</label>
+        <link refid="analog__sensors_8cpp"/>
+      </node>
+      <node id="2147">
+        <label>src/can_bus.cpp</label>
+        <link refid="can__bus_8cpp"/>
+      </node>
+      <node id="2146">
+        <label>src/motor_board.cpp</label>
+        <link refid="motor__board_8cpp"/>
+      </node>
+      <node id="2126">
+        <label>demos/demo_leg.cpp</label>
+        <link refid="demo__leg_8cpp"/>
+      </node>
+      <node id="2122">
+        <label>demos/pd_control.hpp</label>
+        <link refid="pd__control_8hpp"/>
+        <childnode refid="2123" relation="include">
+        </childnode>
+        <childnode refid="2124" relation="include">
+        </childnode>
+        <childnode refid="2125" relation="include">
+        </childnode>
+        <childnode refid="2126" relation="include">
+        </childnode>
+        <childnode refid="2127" relation="include">
+        </childnode>
+        <childnode refid="2128" relation="include">
+        </childnode>
+      </node>
+      <node id="2124">
+        <label>demos/demo_3_motors.cpp</label>
+        <link refid="demo__3__motors_8cpp"/>
+      </node>
+      <node id="2119">
+        <label>demos/demo_const_torque_1_motor.cpp</label>
+        <link refid="demo__const__torque__1__motor_8cpp"/>
+      </node>
+      <node id="2135">
+        <label>demos/sine_torque_control.cpp</label>
+        <link refid="sine__torque__control_8cpp"/>
+      </node>
+      <node id="2117">
+        <label>demos/const_torque_control.hpp</label>
+        <link refid="const__torque__control_8hpp"/>
+        <childnode refid="2118" relation="include">
+        </childnode>
+        <childnode refid="2119" relation="include">
+        </childnode>
+      </node>
+      <node id="2121">
+        <label>demos/demo_1_motor_print_everything.cpp</label>
+        <link refid="demo__1__motor__print__everything_8cpp"/>
+      </node>
+      <node id="2144">
+        <label>src/spi_bus.cpp</label>
+        <link refid="spi__bus_8cpp"/>
+      </node>
+      <node id="2134">
+        <label>demos/demo_sine_torque_1_motor.cpp</label>
+        <link refid="demo__sine__torque__1__motor_8cpp"/>
+      </node>
+      <node id="2143">
+        <label>src/spi_motor_board.cpp</label>
+        <link refid="spi__motor__board_8cpp"/>
+      </node>
+      <node id="2140">
+        <label>include/blmc_drivers/devices/leg.hpp</label>
+        <link refid="leg_8hpp"/>
+        <childnode refid="2126" relation="include">
+        </childnode>
+      </node>
+      <node id="2120">
+        <label>demos/demo_1_motor.cpp</label>
+        <link refid="demo__1__motor_8cpp"/>
+      </node>
+      <node id="2132">
+        <label>demos/sine_position_control.cpp</label>
+        <link refid="sine__position__control_8cpp"/>
+      </node>
+      <node id="2116">
+        <label>include/blmc_drivers/devices/analog_sensor.hpp</label>
+        <link refid="analog__sensor_8hpp"/>
+        <childnode refid="2117" relation="include">
+        </childnode>
+        <childnode refid="2120" relation="include">
+        </childnode>
+        <childnode refid="2121" relation="include">
+        </childnode>
+        <childnode refid="2122" relation="include">
+        </childnode>
+        <childnode refid="2129" relation="include">
+        </childnode>
+        <childnode refid="2126" relation="include">
+        </childnode>
+        <childnode refid="2133" relation="include">
+        </childnode>
+        <childnode refid="2136" relation="include">
+        </childnode>
+      </node>
+      <node id="2123">
+        <label>demos/demo_2_motors.cpp</label>
+        <link refid="demo__2__motors_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classblmc__drivers_1_1DeviceInterface" prot="public">blmc_drivers::DeviceInterface</innerclass>
+    <innernamespace refid="namespaceblmc__drivers">blmc_drivers</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><xrefsect id="license_1_license000003"><xreftitle>License</xreftitle><xrefdescription><para>License BSD-3-Clause </para></xrefdescription></xrefsect><simplesect kind="copyright"><para>Copyright (c) 2019, New York University and Max Planck Gesellshaft. </para></simplesect>
+<simplesect kind="date"><para>2019-07-11 </para></simplesect>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="8"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceblmc__drivers" kindref="compound">blmc_drivers</ref></highlight></codeline>
+<codeline lineno="14"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36" refid="classblmc__drivers_1_1DeviceInterface" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classblmc__drivers_1_1DeviceInterface" kindref="compound">DeviceInterface</ref></highlight></codeline>
+<codeline lineno="37"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="include/blmc_drivers/devices/device_interface.hpp"/>
+  </compounddef>
+</doxygen>

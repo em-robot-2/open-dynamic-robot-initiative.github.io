@@ -1,0 +1,137 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structrobot__interfaces_1_1NJointRobotTypes_1_1Observation" kind="struct" language="C++" prot="public">
+    <compoundname>robot_interfaces::NJointRobotTypes::Observation</compoundname>
+    <basecompoundref refid="classrobot__interfaces_1_1Loggable" prot="public" virt="non-virtual">robot_interfaces::Loggable</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structrobot__interfaces_1_1NJointRobotTypes_1_1Observation_1a69885da4fb153f7157e1573d6347a3d5" prot="public" static="no" mutable="no">
+        <type>Vector</type>
+        <definition>Vector robot_interfaces::NJointRobotTypes&lt; N &gt;::Observation::position</definition>
+        <argsstring></argsstring>
+        <name>position</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/robot_interfaces/n_joint_robot_types.hpp" line="208" column="1" bodyfile="include/robot_interfaces/n_joint_robot_types.hpp" bodystart="208" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structrobot__interfaces_1_1NJointRobotTypes_1_1Observation_1a177d11f7a5f097b8a2d6959619812890" prot="public" static="no" mutable="no">
+        <type>Vector</type>
+        <definition>Vector robot_interfaces::NJointRobotTypes&lt; N &gt;::Observation::velocity</definition>
+        <argsstring></argsstring>
+        <name>velocity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/robot_interfaces/n_joint_robot_types.hpp" line="209" column="1" bodyfile="include/robot_interfaces/n_joint_robot_types.hpp" bodystart="209" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structrobot__interfaces_1_1NJointRobotTypes_1_1Observation_1a01a13c04af01d13e0eedde954d9eb84d" prot="public" static="no" mutable="no">
+        <type>Vector</type>
+        <definition>Vector robot_interfaces::NJointRobotTypes&lt; N &gt;::Observation::torque</definition>
+        <argsstring></argsstring>
+        <name>torque</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/robot_interfaces/n_joint_robot_types.hpp" line="210" column="1" bodyfile="include/robot_interfaces/n_joint_robot_types.hpp" bodystart="210" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structrobot__interfaces_1_1NJointRobotTypes_1_1Observation_1a9a94b6938b2dc8c71468d11a721330db" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class Archive</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void robot_interfaces::NJointRobotTypes&lt; N &gt;::Observation::serialize</definition>
+        <argsstring>(Archive &amp;archive)</argsstring>
+        <name>serialize</name>
+        <param>
+          <type>Archive &amp;</type>
+          <declname>archive</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/robot_interfaces/n_joint_robot_types.hpp" line="213" column="1" bodyfile="include/robot_interfaces/n_joint_robot_types.hpp" bodystart="213" bodyend="216"/>
+      </memberdef>
+      <memberdef kind="function" id="structrobot__interfaces_1_1NJointRobotTypes_1_1Observation_1a9eda538dfcaf22f36a879e0b6b11e856" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt;std::string&gt; robot_interfaces::NJointRobotTypes&lt; N &gt;::Observation::get_name</definition>
+        <argsstring>() override</argsstring>
+        <name>get_name</name>
+        <reimplements refid="classrobot__interfaces_1_1Loggable_1a19635ebc166379f11fe4c8e58153243a">get_name</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/robot_interfaces/n_joint_robot_types.hpp" line="218" column="1" bodyfile="include/robot_interfaces/n_joint_robot_types.hpp" bodystart="218" bodyend="221"/>
+      </memberdef>
+      <memberdef kind="function" id="structrobot__interfaces_1_1NJointRobotTypes_1_1Observation_1a874a72549cdd211ee60390e7df46a4bc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>std::vector&lt; std::vector&lt; double &gt; &gt;</type>
+        <definition>std::vector&lt;std::vector&lt;double&gt; &gt; robot_interfaces::NJointRobotTypes&lt; N &gt;::Observation::get_data</definition>
+        <argsstring>() override</argsstring>
+        <name>get_data</name>
+        <reimplements refid="classrobot__interfaces_1_1Loggable_1a28ffee45cf66a84d16b2c907ed10367c">get_data</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/robot_interfaces/n_joint_robot_types.hpp" line="223" column="1" bodyfile="include/robot_interfaces/n_joint_robot_types.hpp" bodystart="223" bodyend="241"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="120">
+        <label>robot_interfaces::Loggable</label>
+        <link refid="classrobot__interfaces_1_1Loggable"/>
+      </node>
+      <node id="119">
+        <label>robot_interfaces::NJointRobotTypes&lt; N &gt;::Observation</label>
+        <link refid="structrobot__interfaces_1_1NJointRobotTypes_1_1Observation"/>
+        <childnode refid="120" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="122">
+        <label>robot_interfaces::Loggable</label>
+        <link refid="classrobot__interfaces_1_1Loggable"/>
+      </node>
+      <node id="121">
+        <label>robot_interfaces::NJointRobotTypes&lt; N &gt;::Observation</label>
+        <link refid="structrobot__interfaces_1_1NJointRobotTypes_1_1Observation"/>
+        <childnode refid="122" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/robot_interfaces/n_joint_robot_types.hpp" line="207" column="1" bodyfile="include/robot_interfaces/n_joint_robot_types.hpp" bodystart="206" bodyend="242"/>
+    <listofallmembers>
+      <member refid="structrobot__interfaces_1_1NJointRobotTypes_1_1Observation_1a874a72549cdd211ee60390e7df46a4bc" prot="public" virt="virtual"><scope>robot_interfaces::NJointRobotTypes::Observation</scope><name>get_data</name></member>
+      <member refid="structrobot__interfaces_1_1NJointRobotTypes_1_1Observation_1a9eda538dfcaf22f36a879e0b6b11e856" prot="public" virt="virtual"><scope>robot_interfaces::NJointRobotTypes::Observation</scope><name>get_name</name></member>
+      <member refid="structrobot__interfaces_1_1NJointRobotTypes_1_1Observation_1a69885da4fb153f7157e1573d6347a3d5" prot="public" virt="non-virtual"><scope>robot_interfaces::NJointRobotTypes::Observation</scope><name>position</name></member>
+      <member refid="structrobot__interfaces_1_1NJointRobotTypes_1_1Observation_1a9a94b6938b2dc8c71468d11a721330db" prot="public" virt="non-virtual"><scope>robot_interfaces::NJointRobotTypes::Observation</scope><name>serialize</name></member>
+      <member refid="structrobot__interfaces_1_1NJointRobotTypes_1_1Observation_1a01a13c04af01d13e0eedde954d9eb84d" prot="public" virt="non-virtual"><scope>robot_interfaces::NJointRobotTypes::Observation</scope><name>torque</name></member>
+      <member refid="structrobot__interfaces_1_1NJointRobotTypes_1_1Observation_1a177d11f7a5f097b8a2d6959619812890" prot="public" virt="non-virtual"><scope>robot_interfaces::NJointRobotTypes::Observation</scope><name>velocity</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

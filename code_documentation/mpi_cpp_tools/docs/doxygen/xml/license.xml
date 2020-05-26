@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="license" kind="page">
+    <compoundname>license</compoundname>
+    <title>License</title>
+    <detaileddescription>
+<para><variablelist>
+<varlistentry><term><anchor id="license_1_license000001"/>File <ref refid="basic__tools_8hpp" kindref="compound">basic_tools.hpp</ref>  </term></varlistentry>
+<listitem><para>License BSD-3-Clause  </para></listitem>
+<varlistentry><term><anchor id="license_1_license000002"/>File <ref refid="dynamical__systems_8hpp" kindref="compound">dynamical_systems.hpp</ref>  </term></varlistentry>
+<listitem><para>License BSD-3-Clause  </para></listitem>
+<varlistentry><term><anchor id="license_1_license000003"/>File <ref refid="math_8hpp" kindref="compound">math.hpp</ref>  </term></varlistentry>
+<listitem><para>License BSD-3-Clause </para></listitem>
+</variablelist>
+</para>    </detaileddescription>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,67 @@
+\hypertarget{classrobot__interfaces_1_1SensorFrontend}{}\section{robot\+\_\+interfaces\+:\+:Sensor\+Frontend$<$ Observation\+Type $>$ Class Template Reference}
+\label{classrobot__interfaces_1_1SensorFrontend}\index{robot\+\_\+interfaces\+::\+Sensor\+Frontend$<$ Observation\+Type $>$@{robot\+\_\+interfaces\+::\+Sensor\+Frontend$<$ Observation\+Type $>$}}
+
+
+Communication link between \hyperlink{classrobot__interfaces_1_1SensorData}{Sensor\+Data} and the user.  
+
+
+
+
+{\ttfamily \#include $<$sensor\+\_\+frontend.\+hpp$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename Type $>$ }\\using {\bfseries Timeseries} = time\+\_\+series\+::\+Time\+Series$<$ Type $>$\hypertarget{classrobot__interfaces_1_1SensorFrontend_a92f23f72c62ac7d32ca10742ddc5019f}{}\label{classrobot__interfaces_1_1SensorFrontend_a92f23f72c62ac7d32ca10742ddc5019f}
+
+\item 
+typedef time\+\_\+series\+::\+Timestamp {\bfseries Time\+Stamp}\hypertarget{classrobot__interfaces_1_1SensorFrontend_a28f5b6f4a74b1fd3fcd45fde6df6f0f6}{}\label{classrobot__interfaces_1_1SensorFrontend_a28f5b6f4a74b1fd3fcd45fde6df6f0f6}
+
+\item 
+typedef time\+\_\+series\+::\+Index {\bfseries Time\+Index}\hypertarget{classrobot__interfaces_1_1SensorFrontend_a199456a7768dfeec4a5c4d2a59461b8d}{}\label{classrobot__interfaces_1_1SensorFrontend_a199456a7768dfeec4a5c4d2a59461b8d}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Sensor\+Frontend} (std\+::shared\+\_\+ptr$<$ \hyperlink{classrobot__interfaces_1_1SensorData}{Sensor\+Data}$<$ Observation\+Type $>$$>$ sensor\+\_\+data)\hypertarget{classrobot__interfaces_1_1SensorFrontend_a87a137bd1903267ab407718ecc8375de}{}\label{classrobot__interfaces_1_1SensorFrontend_a87a137bd1903267ab407718ecc8375de}
+
+\item 
+Observation\+Type {\bfseries get\+\_\+observation} (const Time\+Index \&t)\hypertarget{classrobot__interfaces_1_1SensorFrontend_a5cd0e27368bdd233f1d4091448244330}{}\label{classrobot__interfaces_1_1SensorFrontend_a5cd0e27368bdd233f1d4091448244330}
+
+\item 
+Observation\+Type {\bfseries get\+\_\+latest\+\_\+observation} ()\hypertarget{classrobot__interfaces_1_1SensorFrontend_adb8f1281c2cfc36c371e9538bd030bf4}{}\label{classrobot__interfaces_1_1SensorFrontend_adb8f1281c2cfc36c371e9538bd030bf4}
+
+\item 
+Time\+Stamp {\bfseries get\+\_\+timestamp\+\_\+ms} (const Time\+Index \&t)\hypertarget{classrobot__interfaces_1_1SensorFrontend_a5b5e173a9322758e29002e5a6f536edb}{}\label{classrobot__interfaces_1_1SensorFrontend_a5b5e173a9322758e29002e5a6f536edb}
+
+\item 
+Time\+Index {\bfseries get\+\_\+current\+\_\+timeindex} ()\hypertarget{classrobot__interfaces_1_1SensorFrontend_aa1eeffc227854dc5fdede71dd04bcaa6}{}\label{classrobot__interfaces_1_1SensorFrontend_aa1eeffc227854dc5fdede71dd04bcaa6}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{classrobot__interfaces_1_1SensorData}{Sensor\+Data}$<$ Observation\+Type $>$ $>$ {\bfseries sensor\+\_\+data\+\_\+}\hypertarget{classrobot__interfaces_1_1SensorFrontend_a19b1505aed15c8e8e62c47e5de37d27f}{}\label{classrobot__interfaces_1_1SensorFrontend_a19b1505aed15c8e8e62c47e5de37d27f}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename Observation\+Type$>$\\*
+class robot\+\_\+interfaces\+::\+Sensor\+Frontend$<$ Observation\+Type $>$}
+
+Communication link between \hyperlink{classrobot__interfaces_1_1SensorData}{Sensor\+Data} and the user. 
+
+Exposes the sensor data to the user to enable the user to get observations, timestamps, and timeindices from the timeseries.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Observation\+Type} & \\
+\hline
+\end{DoxyTemplParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/robot\+\_\+interfaces/sensors/\hyperlink{sensor__frontend_8hpp}{sensor\+\_\+frontend.\+hpp}\end{DoxyCompactItemize}

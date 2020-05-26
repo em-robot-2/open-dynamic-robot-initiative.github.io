@@ -1,0 +1,66 @@
+\hypertarget{classrobot__interfaces_1_1GlobalSignalHandler}{}\section{robot\+\_\+interfaces\+:\+:Global\+Signal\+Handler Class Reference}
+\label{classrobot__interfaces_1_1GlobalSignalHandler}\index{robot\+\_\+interfaces\+::\+Global\+Signal\+Handler@{robot\+\_\+interfaces\+::\+Global\+Signal\+Handler}}
+
+
+Static class implementing a signal handler and providing information about S\+I\+G\+I\+NT.  
+
+
+
+
+{\ttfamily \#include $<$global\+\_\+signal\+\_\+handler.\+hpp$>$}
+
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{classrobot__interfaces_1_1GlobalSignalHandler_af7503f0022d78843f85062d7b602fe4b}{initialize} ()
+\begin{DoxyCompactList}\small\item\em Initialize the signal handler. \end{DoxyCompactList}\item 
+static void \hyperlink{classrobot__interfaces_1_1GlobalSignalHandler_a55da931218f7d10052c233832456c601}{signal\+\_\+handler} (int signal)\hypertarget{classrobot__interfaces_1_1GlobalSignalHandler_a55da931218f7d10052c233832456c601}{}\label{classrobot__interfaces_1_1GlobalSignalHandler_a55da931218f7d10052c233832456c601}
+
+\begin{DoxyCompactList}\small\item\em Handles the signals. Do not call this directly. \end{DoxyCompactList}\item 
+static bool \hyperlink{classrobot__interfaces_1_1GlobalSignalHandler_a7d24e6a71be9282a270e92be4e3808b9}{has\+\_\+received\+\_\+sigint} ()
+\begin{DoxyCompactList}\small\item\em Check if a S\+I\+G\+I\+NT was received. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static bool {\bfseries received\+\_\+sigint\+\_\+} = false\hypertarget{classrobot__interfaces_1_1GlobalSignalHandler_ae0c579060c4b33139ed9f23c6398fe01}{}\label{classrobot__interfaces_1_1GlobalSignalHandler_ae0c579060c4b33139ed9f23c6398fe01}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Static class implementing a signal handler and providing information about S\+I\+G\+I\+NT. 
+
+Since signal handlers cannot be implemented in a non-\/static class method, use this globally accessible class as a workaround. It registers a signal handler provides static methods to poll if certain signals are received. 
+
+\subsection{Member Function Documentation}
+\index{robot\+\_\+interfaces\+::\+Global\+Signal\+Handler@{robot\+\_\+interfaces\+::\+Global\+Signal\+Handler}!has\+\_\+received\+\_\+sigint@{has\+\_\+received\+\_\+sigint}}
+\index{has\+\_\+received\+\_\+sigint@{has\+\_\+received\+\_\+sigint}!robot\+\_\+interfaces\+::\+Global\+Signal\+Handler@{robot\+\_\+interfaces\+::\+Global\+Signal\+Handler}}
+\subsubsection[{\texorpdfstring{has\+\_\+received\+\_\+sigint()}{has_received_sigint()}}]{\setlength{\rightskip}{0pt plus 5cm}bool robot\+\_\+interfaces\+::\+Global\+Signal\+Handler\+::has\+\_\+received\+\_\+sigint (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classrobot__interfaces_1_1GlobalSignalHandler_a7d24e6a71be9282a270e92be4e3808b9}{}\label{classrobot__interfaces_1_1GlobalSignalHandler_a7d24e6a71be9282a270e92be4e3808b9}
+
+
+Check if a S\+I\+G\+I\+NT was received. 
+
+\begin{DoxyReturn}{Returns}
+True if S\+I\+G\+I\+NT was received. 
+\end{DoxyReturn}
+\index{robot\+\_\+interfaces\+::\+Global\+Signal\+Handler@{robot\+\_\+interfaces\+::\+Global\+Signal\+Handler}!initialize@{initialize}}
+\index{initialize@{initialize}!robot\+\_\+interfaces\+::\+Global\+Signal\+Handler@{robot\+\_\+interfaces\+::\+Global\+Signal\+Handler}}
+\subsubsection[{\texorpdfstring{initialize()}{initialize()}}]{\setlength{\rightskip}{0pt plus 5cm}void robot\+\_\+interfaces\+::\+Global\+Signal\+Handler\+::initialize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classrobot__interfaces_1_1GlobalSignalHandler_af7503f0022d78843f85062d7b602fe4b}{}\label{classrobot__interfaces_1_1GlobalSignalHandler_af7503f0022d78843f85062d7b602fe4b}
+
+
+Initialize the signal handler. 
+
+This must be called before using the class. Does nothing when called a second time. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/robot\+\_\+interfaces/\hyperlink{global__signal__handler_8hpp}{global\+\_\+signal\+\_\+handler.\+hpp}\item 
+src/\hyperlink{global__signal__handler_8cpp}{global\+\_\+signal\+\_\+handler.\+cpp}\end{DoxyCompactItemize}

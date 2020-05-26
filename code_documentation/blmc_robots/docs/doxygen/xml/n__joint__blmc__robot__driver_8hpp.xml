@@ -1,0 +1,475 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="n__joint__blmc__robot__driver_8hpp" kind="file" language="C++">
+    <compoundname>n_joint_blmc_robot_driver.hpp</compoundname>
+    <includes local="no">array</includes>
+    <includes local="no">cmath</includes>
+    <includes local="no">iterator</includes>
+    <includes local="no">string</includes>
+    <includes local="no">yaml-cpp/yaml.h</includes>
+    <includes local="no">Eigen/Eigen</includes>
+    <includes local="no">yaml_cpp_catkin/yaml_eigen.h</includes>
+    <includes local="no">mpi_cpp_tools/math.hpp</includes>
+    <includes local="no">robot_interfaces/monitored_robot_driver.hpp</includes>
+    <includes local="no">robot_interfaces/n_joint_robot_functions.hpp</includes>
+    <includes local="no">robot_interfaces/n_joint_robot_types.hpp</includes>
+    <includes local="no">robot_interfaces/robot_driver.hpp</includes>
+    <includes refid="blmc__joint__module_8hpp" local="no">blmc_robots/blmc_joint_module.hpp</includes>
+    <includes refid="common__header_8hpp" local="no">blmc_robots/common_header.hpp</includes>
+    <includes refid="n__joint__blmc__robot__driver_8hxx" local="yes">n_joint_blmc_robot_driver.hxx</includes>
+    <incdepgraph>
+      <node id="989">
+        <label>atomic</label>
+      </node>
+      <node id="971">
+        <label>iterator</label>
+      </node>
+      <node id="991">
+        <label>real_time_tools/timer.hpp</label>
+      </node>
+      <node id="986">
+        <label>blmc_robots/common_header.hpp</label>
+        <link refid="common__header_8hpp"/>
+        <childnode refid="987" relation="include">
+        </childnode>
+        <childnode refid="974" relation="include">
+        </childnode>
+        <childnode refid="988" relation="include">
+        </childnode>
+        <childnode refid="989" relation="include">
+        </childnode>
+        <childnode refid="990" relation="include">
+        </childnode>
+        <childnode refid="991" relation="include">
+        </childnode>
+        <childnode refid="992" relation="include">
+        </childnode>
+        <childnode refid="993" relation="include">
+        </childnode>
+        <childnode refid="985" relation="include">
+        </childnode>
+        <childnode refid="994" relation="include">
+        </childnode>
+      </node>
+      <node id="996">
+        <label>blmc_robots/mathematics/polynome.hxx</label>
+        <link refid="polynome_8hxx_source"/>
+        <childnode refid="983" relation="include">
+        </childnode>
+        <childnode refid="997" relation="include">
+        </childnode>
+        <childnode refid="995" relation="include">
+        </childnode>
+      </node>
+      <node id="970">
+        <label>cmath</label>
+      </node>
+      <node id="993">
+        <label>real_time_tools/thread.hpp</label>
+      </node>
+      <node id="998">
+        <label>n_joint_blmc_robot_driver.hxx</label>
+        <link refid="n__joint__blmc__robot__driver_8hxx"/>
+      </node>
+      <node id="984">
+        <label>stdexcept</label>
+      </node>
+      <node id="974">
+        <label>Eigen/Eigen</label>
+      </node>
+      <node id="972">
+        <label>string</label>
+      </node>
+      <node id="995">
+        <label>blmc_robots/mathematics/polynome.hpp</label>
+        <link refid="polynome_8hpp"/>
+        <childnode refid="969" relation="include">
+        </childnode>
+        <childnode refid="996" relation="include">
+        </childnode>
+      </node>
+      <node id="968">
+        <label>include/blmc_robots/n_joint_blmc_robot_driver.hpp</label>
+        <link refid="n_joint_blmc_robot_driver.hpp"/>
+        <childnode refid="969" relation="include">
+        </childnode>
+        <childnode refid="970" relation="include">
+        </childnode>
+        <childnode refid="971" relation="include">
+        </childnode>
+        <childnode refid="972" relation="include">
+        </childnode>
+        <childnode refid="973" relation="include">
+        </childnode>
+        <childnode refid="974" relation="include">
+        </childnode>
+        <childnode refid="975" relation="include">
+        </childnode>
+        <childnode refid="976" relation="include">
+        </childnode>
+        <childnode refid="977" relation="include">
+        </childnode>
+        <childnode refid="978" relation="include">
+        </childnode>
+        <childnode refid="979" relation="include">
+        </childnode>
+        <childnode refid="980" relation="include">
+        </childnode>
+        <childnode refid="981" relation="include">
+        </childnode>
+        <childnode refid="986" relation="include">
+        </childnode>
+        <childnode refid="998" relation="include">
+        </childnode>
+      </node>
+      <node id="992">
+        <label>real_time_tools/spinner.hpp</label>
+      </node>
+      <node id="973">
+        <label>yaml-cpp/yaml.h</label>
+      </node>
+      <node id="976">
+        <label>mpi_cpp_tools/math.hpp</label>
+      </node>
+      <node id="990">
+        <label>real_time_tools/iostream.hpp</label>
+      </node>
+      <node id="980">
+        <label>robot_interfaces/robot_driver.hpp</label>
+      </node>
+      <node id="997">
+        <label>vector</label>
+      </node>
+      <node id="988">
+        <label>signal.h</label>
+      </node>
+      <node id="969">
+        <label>array</label>
+      </node>
+      <node id="987">
+        <label>yaml_cpp_catkin/yaml_cpp_fwd.hpp</label>
+      </node>
+      <node id="982">
+        <label>math.h</label>
+      </node>
+      <node id="981">
+        <label>blmc_robots/blmc_joint_module.hpp</label>
+        <link refid="blmc__joint__module_8hpp"/>
+        <childnode refid="982" relation="include">
+        </childnode>
+        <childnode refid="974" relation="include">
+        </childnode>
+        <childnode refid="969" relation="include">
+        </childnode>
+        <childnode refid="983" relation="include">
+        </childnode>
+        <childnode refid="984" relation="include">
+        </childnode>
+        <childnode refid="985" relation="include">
+        </childnode>
+        <childnode refid="986" relation="include">
+        </childnode>
+        <childnode refid="995" relation="include">
+        </childnode>
+      </node>
+      <node id="979">
+        <label>robot_interfaces/n_joint_robot_types.hpp</label>
+      </node>
+      <node id="983">
+        <label>iostream</label>
+      </node>
+      <node id="977">
+        <label>robot_interfaces/monitored_robot_driver.hpp</label>
+      </node>
+      <node id="975">
+        <label>yaml_cpp_catkin/yaml_eigen.h</label>
+      </node>
+      <node id="994">
+        <label>blmc_drivers/devices/analog_sensor.hpp</label>
+      </node>
+      <node id="985">
+        <label>blmc_drivers/devices/motor.hpp</label>
+      </node>
+      <node id="978">
+        <label>robot_interfaces/n_joint_robot_functions.hpp</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="structblmc__robots_1_1MotorParameters" prot="public">blmc_robots::MotorParameters</innerclass>
+    <innerclass refid="classblmc__robots_1_1NJointBlmcRobotDriver" prot="public">blmc_robots::NJointBlmcRobotDriver</innerclass>
+    <innerclass refid="structblmc__robots_1_1NJointBlmcRobotDriver_1_1Config" prot="public">blmc_robots::NJointBlmcRobotDriver::Config</innerclass>
+    <innernamespace refid="namespaceblmc__robots">blmc_robots</innernamespace>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="n__joint__blmc__robot__driver_8hpp_1a8f0c3d2c5211dc9fd38c4d64bdcf77cb" prot="public" static="no" mutable="no">
+        <type>Vector</type>
+        <definition>Vector endstop_search_torques_Nm</definition>
+        <argsstring></argsstring>
+        <name>endstop_search_torques_Nm</name>
+        <initializer>= Vector::Zero()</initializer>
+        <briefdescription>
+<para>Torque that is used to find the end stop. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/blmc_robots/n_joint_blmc_robot_driver.hpp" line="248" column="1" bodyfile="include/blmc_robots/n_joint_blmc_robot_driver.hpp" bodystart="248" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="n__joint__blmc__robot__driver_8hpp_1aeba7217b05abc8b92452b8834f12f8fb" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double position_tolerance_rad</definition>
+        <argsstring></argsstring>
+        <name>position_tolerance_rad</name>
+        <initializer>= 0.0</initializer>
+        <briefdescription>
+<para>Tolerance for reaching the starting position. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/blmc_robots/n_joint_blmc_robot_driver.hpp" line="250" column="1" bodyfile="include/blmc_robots/n_joint_blmc_robot_driver.hpp" bodystart="250" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="n__joint__blmc__robot__driver_8hpp_1ab4f5a0faa6a9435ba0dd1bf935d9d2ea" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double move_timeout</definition>
+        <argsstring></argsstring>
+        <name>move_timeout</name>
+        <initializer>= 0.0</initializer>
+        <briefdescription>
+<para>Timeout for reaching the starting position. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/blmc_robots/n_joint_blmc_robot_driver.hpp" line="252" column="1" bodyfile="include/blmc_robots/n_joint_blmc_robot_driver.hpp" bodystart="252" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="n__joint__blmc__robot__driver_8hpp_1ac3da728256c1e02cf56f80c0fbdf647a" prot="public" static="no" mutable="no">
+        <type>Vector</type>
+        <definition>Vector kp</definition>
+        <argsstring></argsstring>
+        <name>kp</name>
+        <initializer>= Vector::Zero()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/blmc_robots/n_joint_blmc_robot_driver.hpp" line="262" column="1" bodyfile="include/blmc_robots/n_joint_blmc_robot_driver.hpp" bodystart="262" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="n__joint__blmc__robot__driver_8hpp_1a3f6b03adc12f35015b64b4b09fbb7062" prot="public" static="no" mutable="no">
+        <type>Vector</type>
+        <definition>Vector kd</definition>
+        <argsstring></argsstring>
+        <name>kd</name>
+        <initializer>= Vector::Zero()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/blmc_robots/n_joint_blmc_robot_driver.hpp" line="263" column="1" bodyfile="include/blmc_robots/n_joint_blmc_robot_driver.hpp" bodystart="263" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Base driver for a generic n-joint BLMC robot. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="copyright"><para>Copyright (c) 2019, New York University and Max Planck Gesellschaft. </para></simplesect>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="8"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;array&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cmath&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iterator&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;yaml-cpp/yaml.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;Eigen/Eigen&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;yaml_cpp_catkin/yaml_eigen.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;mpi_cpp_tools/math.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;robot_interfaces/monitored_robot_driver.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;robot_interfaces/n_joint_robot_functions.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;robot_interfaces/n_joint_robot_types.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;robot_interfaces/robot_driver.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="blmc__joint__module_8hpp" kindref="compound">blmc_robots/blmc_joint_module.hpp</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="common__header_8hpp" kindref="compound">blmc_robots/common_header.hpp</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceblmc__robots" kindref="compound">blmc_robots</ref></highlight></codeline>
+<codeline lineno="29"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="33" refid="structblmc__robots_1_1MotorParameters" refkind="compound"><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structblmc__robots_1_1MotorParameters" kindref="compound">MotorParameters</ref></highlight></codeline>
+<codeline lineno="34"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="36" refid="structblmc__robots_1_1MotorParameters_1a960e7f64dae8cd08837f8bff620eacfb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="structblmc__robots_1_1MotorParameters_1a960e7f64dae8cd08837f8bff620eacfb" kindref="member">torque_constant_NmpA</ref>;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="structblmc__robots_1_1MotorParameters_1a6a8158b9ac1633bab6181043d04ab655" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="structblmc__robots_1_1MotorParameters_1a6a8158b9ac1633bab6181043d04ab655" kindref="member">gear_ratio</ref>;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>N_JOINTS,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>N_MOTOR_BOARDS&gt;</highlight></codeline>
+<codeline lineno="57" refid="classblmc__robots_1_1NJointBlmcRobotDriver" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classblmc__robots_1_1NJointBlmcRobotDriver" kindref="compound">NJointBlmcRobotDriver</ref></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>robot_interfaces::RobotDriver&lt;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>typename<sp/>robot_interfaces::NJointRobotTypes&lt;N_JOINTS&gt;::Action,</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>typename<sp/>robot_interfaces::NJointRobotTypes&lt;N_JOINTS&gt;::Observation&gt;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>robot_interfaces::NJointRobotTypes&lt;N_JOINTS&gt;<sp/>Types;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Types::Action<sp/>Action;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Types::Observation<sp/>Observation;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Types::Vector<sp/>Vector;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>std::array&lt;std::shared_ptr&lt;blmc_drivers::MotorInterface&gt;,<sp/>N_JOINTS&gt;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Motors;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>std::array&lt;std::shared_ptr&lt;blmc_drivers::CanBusMotorBoard&gt;,</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>N_MOTOR_BOARDS&gt;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MotorBoards;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74" refid="classblmc__robots_1_1NJointBlmcRobotDriver_1a4da9d51841e9b2995e597ae52c460586" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structblmc__robots_1_1NJointBlmcRobotDriver_1_1Config" kindref="compound">Config</ref>;<sp/><sp/></highlight><highlight class="comment">//<sp/>actual<sp/>declaration<sp/>see<sp/>below</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classblmc__robots_1_1NJointBlmcRobotDriver_1a4da9d51841e9b2995e597ae52c460586" kindref="member">has_endstop_</ref>;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classblmc__robots_1_1NJointBlmcRobotDriver" kindref="compound">NJointBlmcRobotDriver</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>MotorBoards<sp/>&amp;motor_boards,</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Motors<sp/>&amp;motors,</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structblmc__robots_1_1MotorParameters" kindref="compound">MotorParameters</ref><sp/>&amp;motor_parameters,</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structblmc__robots_1_1NJointBlmcRobotDriver_1_1Config" kindref="compound">Config</ref><sp/>&amp;config)</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>robot_interfaces::RobotDriver&lt;Action,<sp/>Observation&gt;(),</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>has_endstop_(config.has_endstop),</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>joint_modules_(motors,</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>motor_parameters.<ref refid="structblmc__robots_1_1MotorParameters_1a960e7f64dae8cd08837f8bff620eacfb" kindref="member">torque_constant_NmpA</ref><sp/>*<sp/>Vector::Ones(),</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>motor_parameters.<ref refid="structblmc__robots_1_1MotorParameters_1a6a8158b9ac1633bab6181043d04ab655" kindref="member">gear_ratio</ref><sp/>*<sp/>Vector::Ones(),</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Vector::Zero(),</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>config.max_current_A<sp/>*<sp/>Vector::Ones()),</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>motor_boards_(motor_boards),</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>motor_parameters_(motor_parameters),</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>max_torque_Nm_(config.max_current_A<sp/>*</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>motor_parameters.<ref refid="structblmc__robots_1_1MotorParameters_1a960e7f64dae8cd08837f8bff620eacfb" kindref="member">torque_constant_NmpA</ref><sp/>*</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>motor_parameters.<ref refid="structblmc__robots_1_1MotorParameters_1a6a8158b9ac1633bab6181043d04ab655" kindref="member">gear_ratio</ref>),</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>config_(config)</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pause_motors();</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>MotorBoards<sp/>create_motor_boards(</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::array&lt;std::string,<sp/>N_MOTOR_BOARDS&gt;<sp/>&amp;can_ports);</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/>Vector<sp/>get_max_torques()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="115"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>max_torque_Nm_<sp/>*<sp/>Vector::Ones();</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>pause_motors();</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/>Vector<sp/>get_measured_index_angles()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>initialize()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/>Observation<sp/>get_latest_observation()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/>Action<sp/>apply_action(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Action<sp/>&amp;desired_action)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>get_error()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>shutdown()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classblmc__robots_1_1BlmcJointModules" kindref="compound">BlmcJointModules&lt;N_JOINTS&gt;</ref><sp/>joint_modules_;</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/>MotorBoards<sp/>motor_boards_;</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight></codeline>
+<codeline lineno="143" refid="classblmc__robots_1_1NJointBlmcRobotDriver_1a035472dd47cf790d38b49d50fe51ba61" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structblmc__robots_1_1MotorParameters" kindref="compound">MotorParameters</ref><sp/><ref refid="classblmc__robots_1_1NJointBlmcRobotDriver_1a035472dd47cf790d38b49d50fe51ba61" kindref="member">motor_parameters_</ref>;</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="146" refid="classblmc__robots_1_1NJointBlmcRobotDriver_1a4c4b68c6ce49317b2bc15e20c136c2d5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classblmc__robots_1_1NJointBlmcRobotDriver_1a4c4b68c6ce49317b2bc15e20c136c2d5" kindref="member">max_torque_Nm_</ref>;</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight></codeline>
+<codeline lineno="154" refid="classblmc__robots_1_1NJointBlmcRobotDriver_1a704ad05a652572289b74525e18680c11" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structblmc__robots_1_1NJointBlmcRobotDriver_1_1Config" kindref="compound">Config</ref><sp/><ref refid="classblmc__robots_1_1NJointBlmcRobotDriver_1a704ad05a652572289b74525e18680c11" kindref="member">config_</ref>;</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>is_initialized_<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/>Action<sp/>apply_action_uninitialized(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Action<sp/>&amp;desired_action);</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>_initialize();</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>homing(Vector<sp/><ref refid="n__joint__blmc__robot__driver_8hpp_1a8f0c3d2c5211dc9fd38c4d64bdcf77cb" kindref="member">endstop_search_torques_Nm</ref>,</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Vector<sp/>home_offset_rad<sp/>=<sp/>Vector::Zero());</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>move_to_position(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Vector<sp/>&amp;goal_pos,</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>tolerance,</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>timeout_cycles);</highlight></codeline>
+<codeline lineno="206"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"></highlight></codeline>
+<codeline lineno="211"><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>N_JOINTS,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>N_MOTOR_BOARDS&gt;</highlight></codeline>
+<codeline lineno="212" refid="structblmc__robots_1_1NJointBlmcRobotDriver_1_1Config" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="classblmc__robots_1_1NJointBlmcRobotDriver" kindref="compound">NJointBlmcRobotDriver</ref>&lt;N_JOINTS,<sp/>N_MOTOR_BOARDS&gt;::<ref refid="structblmc__robots_1_1NJointBlmcRobotDriver_1_1Config" kindref="compound">Config</ref></highlight></codeline>
+<codeline lineno="213"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>std::array&lt;std::string,<sp/>N_MOTOR_BOARDS&gt;<sp/>CanPortArray;</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"></highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>All<sp/>parameters<sp/>should<sp/>have<sp/>default<sp/>values<sp/>that<sp/>should<sp/>not<sp/>result<sp/>in</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>dangerous<sp/>behaviour<sp/>in<sp/>case<sp/>someone<sp/>forgets<sp/>to<sp/>specify<sp/>them.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="218"><highlight class="normal"></highlight></codeline>
+<codeline lineno="227" refid="structblmc__robots_1_1NJointBlmcRobotDriver_1_1Config_1a849381580e6d6d0768e6a4e04a394cfd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>CanPortArray<sp/><ref refid="structblmc__robots_1_1NJointBlmcRobotDriver_1_1Config_1a849381580e6d6d0768e6a4e04a394cfd" kindref="member">can_ports</ref>;</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"></highlight></codeline>
+<codeline lineno="230" refid="structblmc__robots_1_1NJointBlmcRobotDriver_1_1Config_1ab7f483ae02a0c026981c223c97c462c5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>max_current_A<sp/>=<sp/>0.0;</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"></highlight></codeline>
+<codeline lineno="242" refid="structblmc__robots_1_1NJointBlmcRobotDriver_1_1Config_1a8cbf3c740b0cae7afb7170d51e04b60d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>has_endstop<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"></highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="248" refid="n__joint__blmc__robot__driver_8hpp_1a8f0c3d2c5211dc9fd38c4d64bdcf77cb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Vector<sp/><ref refid="n__joint__blmc__robot__driver_8hpp_1a8f0c3d2c5211dc9fd38c4d64bdcf77cb" kindref="member">endstop_search_torques_Nm</ref><sp/>=<sp/>Vector::Zero();</highlight></codeline>
+<codeline lineno="250" refid="n__joint__blmc__robot__driver_8hpp_1aeba7217b05abc8b92452b8834f12f8fb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="n__joint__blmc__robot__driver_8hpp_1aeba7217b05abc8b92452b8834f12f8fb" kindref="member">position_tolerance_rad</ref><sp/>=<sp/>0.0;</highlight></codeline>
+<codeline lineno="252" refid="n__joint__blmc__robot__driver_8hpp_1ab4f5a0faa6a9435ba0dd1bf935d9d2ea" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="n__joint__blmc__robot__driver_8hpp_1ab4f5a0faa6a9435ba0dd1bf935d9d2ea" kindref="member">move_timeout</ref><sp/>=<sp/>0.0;</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/>calibration;</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"></highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>set<sp/>some<sp/>rather<sp/>high<sp/>damping<sp/>by<sp/>default</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="257" refid="structblmc__robots_1_1NJointBlmcRobotDriver_1_1Config_1a6548c1cc2f3c2789d44c01e2e3d24e11" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>Vector<sp/>safety_kd<sp/>=<sp/>Vector::Constant(0.1);</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"></highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Vector<sp/>kp<sp/>=<sp/>Vector::Zero();</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Vector<sp/>kd<sp/>=<sp/>Vector::Zero();</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/>position_control_gains;</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"></highlight></codeline>
+<codeline lineno="267" refid="structblmc__robots_1_1NJointBlmcRobotDriver_1_1Config_1a67b22638d86285d94021e9d1c0c1b6d7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>Vector<sp/>home_offset_rad<sp/>=<sp/>Vector::Zero();</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"></highlight></codeline>
+<codeline lineno="273" refid="structblmc__robots_1_1NJointBlmcRobotDriver_1_1Config_1a797ec8a753d4daf0f2df89ebaa313a13" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>Vector<sp/>initial_position_rad<sp/>=<sp/>Vector::Zero();</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"></highlight></codeline>
+<codeline lineno="278"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>print()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="279"><highlight class="normal"></highlight></codeline>
+<codeline lineno="292"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="structblmc__robots_1_1NJointBlmcRobotDriver_1_1Config" kindref="compound">Config</ref><sp/>load_config(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;config_file_name);</highlight></codeline>
+<codeline lineno="293"><highlight class="normal"></highlight></codeline>
+<codeline lineno="294"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="307"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="308"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>set_config_value(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>YAML::Node<sp/>&amp;user_config,</highlight></codeline>
+<codeline lineno="309"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;name,</highlight></codeline>
+<codeline lineno="310"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>T<sp/>*var);</highlight></codeline>
+<codeline lineno="311"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="312"><highlight class="normal"></highlight></codeline>
+<codeline lineno="326"><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Driver&gt;</highlight></codeline>
+<codeline lineno="327" refid="n__joint__blmc__robot__driver_8hpp_1a988c07200135ba12bf9ec1bbe955bde8" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Driver::Types::BackendPtr<sp/><ref refid="n__joint__blmc__robot__driver_8hpp_1a988c07200135ba12bf9ec1bbe955bde8" kindref="member">create_backend</ref>(</highlight></codeline>
+<codeline lineno="328"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Driver::Types::BaseDataPtr<sp/>robot_data,</highlight></codeline>
+<codeline lineno="329"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;config_file_path,</highlight></codeline>
+<codeline lineno="330"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>first_action_timeout<sp/>=<sp/>std::numeric_limits&lt;double&gt;::infinity())</highlight></codeline>
+<codeline lineno="331"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="332"><highlight class="normal"><sp/><sp/><sp/><sp/>constexpr<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>MAX_ACTION_DURATION_S<sp/>=<sp/>0.003;</highlight></codeline>
+<codeline lineno="333"><highlight class="normal"><sp/><sp/><sp/><sp/>constexpr<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>MAX_INTER_ACTION_DURATION_S<sp/>=<sp/>0.005;</highlight></codeline>
+<codeline lineno="334"><highlight class="normal"></highlight></codeline>
+<codeline lineno="335"><highlight class="normal"><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Load<sp/>robot<sp/>driver<sp/>configuration<sp/>from<sp/>file<sp/>&apos;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="336"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>config_file_path<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;&apos;&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="337"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>config<sp/>=<sp/>Driver::Config::load_config(config_file_path);</highlight></codeline>
+<codeline lineno="338"><highlight class="normal"><sp/><sp/><sp/><sp/>config.print();</highlight></codeline>
+<codeline lineno="339"><highlight class="normal"></highlight></codeline>
+<codeline lineno="340"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>wrap<sp/>the<sp/>actual<sp/>robot<sp/>driver<sp/>directly<sp/>in<sp/>a<sp/>MonitoredRobotDriver</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="341"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>monitored_driver<sp/>=</highlight></codeline>
+<codeline lineno="342"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::make_shared&lt;robot_interfaces::MonitoredRobotDriver&lt;Driver&gt;&gt;(</highlight></codeline>
+<codeline lineno="343"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::make_shared&lt;Driver&gt;(config),</highlight></codeline>
+<codeline lineno="344"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MAX_ACTION_DURATION_S,</highlight></codeline>
+<codeline lineno="345"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MAX_INTER_ACTION_DURATION_S);</highlight></codeline>
+<codeline lineno="346"><highlight class="normal"></highlight></codeline>
+<codeline lineno="347"><highlight class="normal"><sp/><sp/><sp/><sp/>constexpr<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>real_time_mode<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="348"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>backend<sp/>=<sp/>std::make_shared&lt;typename<sp/>Driver::Types::Backend&gt;(</highlight></codeline>
+<codeline lineno="349"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>monitored_driver,<sp/>robot_data,<sp/>real_time_mode,<sp/>first_action_timeout);</highlight></codeline>
+<codeline lineno="350"><highlight class="normal"><sp/><sp/><sp/><sp/>backend-&gt;set_max_action_repetitions(std::numeric_limits&lt;uint32_t&gt;::max());</highlight></codeline>
+<codeline lineno="351"><highlight class="normal"></highlight></codeline>
+<codeline lineno="352"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>backend;</highlight></codeline>
+<codeline lineno="353"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="354"><highlight class="normal"></highlight></codeline>
+<codeline lineno="355"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>blmc_robots</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="356"><highlight class="normal"></highlight></codeline>
+<codeline lineno="357"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="n__joint__blmc__robot__driver_8hxx" kindref="compound">n_joint_blmc_robot_driver.hxx</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="include/blmc_robots/n_joint_blmc_robot_driver.hpp"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,212 @@
+\hypertarget{structrobot__interfaces_1_1NJointRobotTypes_1_1Action}{}\section{robot\+\_\+interfaces\+:\+:N\+Joint\+Robot\+Types$<$ N $>$\+:\+:Action Struct Reference}
+\label{structrobot__interfaces_1_1NJointRobotTypes_1_1Action}\index{robot\+\_\+interfaces\+::\+N\+Joint\+Robot\+Types$<$ N $>$\+::\+Action@{robot\+\_\+interfaces\+::\+N\+Joint\+Robot\+Types$<$ N $>$\+::\+Action}}
+
+
+Inheritance diagram for robot\+\_\+interfaces\+:\+:N\+Joint\+Robot\+Types$<$ N $>$\+:\+:Action\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=211pt]{structrobot__interfaces_1_1NJointRobotTypes_1_1Action__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for robot\+\_\+interfaces\+:\+:N\+Joint\+Robot\+Types$<$ N $>$\+:\+:Action\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=211pt]{structrobot__interfaces_1_1NJointRobotTypes_1_1Action__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class Archive $>$ }\\void {\bfseries serialize} (Archive \&archive)\hypertarget{structrobot__interfaces_1_1NJointRobotTypes_1_1Action_a7f645ab9be5cee75974d9cf1d4300c67}{}\label{structrobot__interfaces_1_1NJointRobotTypes_1_1Action_a7f645ab9be5cee75974d9cf1d4300c67}
+
+\item 
+std\+::vector$<$ std\+::string $>$ {\bfseries get\+\_\+name} () override\hypertarget{structrobot__interfaces_1_1NJointRobotTypes_1_1Action_a4d4b702fdf41cc9713c46edbbb26db51}{}\label{structrobot__interfaces_1_1NJointRobotTypes_1_1Action_a4d4b702fdf41cc9713c46edbbb26db51}
+
+\item 
+std\+::vector$<$ std\+::vector$<$ double $>$ $>$ {\bfseries get\+\_\+data} () override\hypertarget{structrobot__interfaces_1_1NJointRobotTypes_1_1Action_a8fe4c10c53d72e4f8bb9c09d3be9b39d}{}\label{structrobot__interfaces_1_1NJointRobotTypes_1_1Action_a8fe4c10c53d72e4f8bb9c09d3be9b39d}
+
+\item 
+\hyperlink{structrobot__interfaces_1_1NJointRobotTypes_1_1Action_aeb7fbd93adcc0140b5db42298211fe9d}{Action} (Vector \hyperlink{structrobot__interfaces_1_1NJointRobotTypes_1_1Action_ad19a93b677bdc60e655071743acf160e}{torque}=Vector\+::\+Zero(), Vector \hyperlink{structrobot__interfaces_1_1NJointRobotTypes_1_1Action_ad0d8104b1e521c7d0a316d093155e3a8}{position}=\hyperlink{structrobot__interfaces_1_1NJointRobotTypes_1_1Action_ab963d5faa78618bdaae53dc70ca936ae}{None}(), Vector \hyperlink{structrobot__interfaces_1_1NJointRobotTypes_1_1Action_a16eb24df6bdbc10c8ce08c0621723b92}{position\+\_\+kp}=\hyperlink{structrobot__interfaces_1_1NJointRobotTypes_1_1Action_ab963d5faa78618bdaae53dc70ca936ae}{None}(), Vector \hyperlink{structrobot__interfaces_1_1NJointRobotTypes_1_1Action_a3690aa864884fb51fb411d26eeea3fd4}{position\+\_\+kd}=\hyperlink{structrobot__interfaces_1_1NJointRobotTypes_1_1Action_ab963d5faa78618bdaae53dc70ca936ae}{None}())
+\begin{DoxyCompactList}\small\item\em Create action with desired torque and (optional) position. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{structrobot__interfaces_1_1NJointRobotTypes_1_1Action}{Action} \hyperlink{structrobot__interfaces_1_1NJointRobotTypes_1_1Action_ae5aae444c808728af59a8a5b27035293}{Torque} (Vector \hyperlink{structrobot__interfaces_1_1NJointRobotTypes_1_1Action_ad19a93b677bdc60e655071743acf160e}{torque})
+\begin{DoxyCompactList}\small\item\em Create an action that only contains a torque command. \end{DoxyCompactList}\item 
+static \hyperlink{structrobot__interfaces_1_1NJointRobotTypes_1_1Action}{Action} \hyperlink{structrobot__interfaces_1_1NJointRobotTypes_1_1Action_ad60ea89acc73e544634b47a74797afd1}{Position} (Vector \hyperlink{structrobot__interfaces_1_1NJointRobotTypes_1_1Action_ad0d8104b1e521c7d0a316d093155e3a8}{position}, Vector kp=\hyperlink{structrobot__interfaces_1_1NJointRobotTypes_1_1Action_ab963d5faa78618bdaae53dc70ca936ae}{None}(), Vector kd=\hyperlink{structrobot__interfaces_1_1NJointRobotTypes_1_1Action_ab963d5faa78618bdaae53dc70ca936ae}{None}())
+\begin{DoxyCompactList}\small\item\em Create an action that only contains a position command. \end{DoxyCompactList}\item 
+static \hyperlink{structrobot__interfaces_1_1NJointRobotTypes_1_1Action}{Action} \hyperlink{structrobot__interfaces_1_1NJointRobotTypes_1_1Action_a076108da9106e45e9e8ab0b89e4c66e6}{Torque\+And\+Position} (Vector \hyperlink{structrobot__interfaces_1_1NJointRobotTypes_1_1Action_ad19a93b677bdc60e655071743acf160e}{torque}, Vector \hyperlink{structrobot__interfaces_1_1NJointRobotTypes_1_1Action_ad0d8104b1e521c7d0a316d093155e3a8}{position}, Vector \hyperlink{structrobot__interfaces_1_1NJointRobotTypes_1_1Action_a16eb24df6bdbc10c8ce08c0621723b92}{position\+\_\+kp}=\hyperlink{structrobot__interfaces_1_1NJointRobotTypes_1_1Action_ab963d5faa78618bdaae53dc70ca936ae}{None}(), Vector \hyperlink{structrobot__interfaces_1_1NJointRobotTypes_1_1Action_a3690aa864884fb51fb411d26eeea3fd4}{position\+\_\+kd}=\hyperlink{structrobot__interfaces_1_1NJointRobotTypes_1_1Action_ab963d5faa78618bdaae53dc70ca936ae}{None}())
+\begin{DoxyCompactList}\small\item\em Create an action with both torque and position commands. \end{DoxyCompactList}\item 
+static \hyperlink{structrobot__interfaces_1_1NJointRobotTypes_1_1Action}{Action} \hyperlink{structrobot__interfaces_1_1NJointRobotTypes_1_1Action_ad6fa1cd952afc4f02fcabc4221802b47}{Zero} ()
+\begin{DoxyCompactList}\small\item\em Create a zero-\/torque action. \end{DoxyCompactList}\item 
+static Vector \hyperlink{structrobot__interfaces_1_1NJointRobotTypes_1_1Action_ab963d5faa78618bdaae53dc70ca936ae}{None} ()
+\begin{DoxyCompactList}\small\item\em Create a Na\+N-\/\+Vector. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Vector \hyperlink{structrobot__interfaces_1_1NJointRobotTypes_1_1Action_ad19a93b677bdc60e655071743acf160e}{torque}\hypertarget{structrobot__interfaces_1_1NJointRobotTypes_1_1Action_ad19a93b677bdc60e655071743acf160e}{}\label{structrobot__interfaces_1_1NJointRobotTypes_1_1Action_ad19a93b677bdc60e655071743acf160e}
+
+\begin{DoxyCompactList}\small\item\em Desired torque command (in addition to position controller). \end{DoxyCompactList}\item 
+Vector \hyperlink{structrobot__interfaces_1_1NJointRobotTypes_1_1Action_ad0d8104b1e521c7d0a316d093155e3a8}{position}\hypertarget{structrobot__interfaces_1_1NJointRobotTypes_1_1Action_ad0d8104b1e521c7d0a316d093155e3a8}{}\label{structrobot__interfaces_1_1NJointRobotTypes_1_1Action_ad0d8104b1e521c7d0a316d093155e3a8}
+
+\begin{DoxyCompactList}\small\item\em Desired position. Set to NaN to disable position controller. \end{DoxyCompactList}\item 
+Vector \hyperlink{structrobot__interfaces_1_1NJointRobotTypes_1_1Action_a16eb24df6bdbc10c8ce08c0621723b92}{position\+\_\+kp}\hypertarget{structrobot__interfaces_1_1NJointRobotTypes_1_1Action_a16eb24df6bdbc10c8ce08c0621723b92}{}\label{structrobot__interfaces_1_1NJointRobotTypes_1_1Action_a16eb24df6bdbc10c8ce08c0621723b92}
+
+\begin{DoxyCompactList}\small\item\em P-\/gain for position controller. If NaN, default is used. \end{DoxyCompactList}\item 
+Vector \hyperlink{structrobot__interfaces_1_1NJointRobotTypes_1_1Action_a3690aa864884fb51fb411d26eeea3fd4}{position\+\_\+kd}\hypertarget{structrobot__interfaces_1_1NJointRobotTypes_1_1Action_a3690aa864884fb51fb411d26eeea3fd4}{}\label{structrobot__interfaces_1_1NJointRobotTypes_1_1Action_a3690aa864884fb51fb411d26eeea3fd4}
+
+\begin{DoxyCompactList}\small\item\em D-\/gain for position controller. If NaN, default is used. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{robot\+\_\+interfaces\+::\+N\+Joint\+Robot\+Types\+::\+Action@{robot\+\_\+interfaces\+::\+N\+Joint\+Robot\+Types\+::\+Action}!Action@{Action}}
+\index{Action@{Action}!robot\+\_\+interfaces\+::\+N\+Joint\+Robot\+Types\+::\+Action@{robot\+\_\+interfaces\+::\+N\+Joint\+Robot\+Types\+::\+Action}}
+\subsubsection[{\texorpdfstring{Action(\+Vector torque=\+Vector\+::\+Zero(), Vector position=\+None(), Vector position\+\_\+kp=\+None(), Vector position\+\_\+kd=\+None())}{Action(Vector torque=Vector::Zero(), Vector position=None(), Vector position_kp=None(), Vector position_kd=None())}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$size\+\_\+t N$>$ {\bf robot\+\_\+interfaces\+::\+N\+Joint\+Robot\+Types}$<$ N $>$\+::Action\+::\+Action (
+\begin{DoxyParamCaption}
+\item[{Vector}]{torque = {\ttfamily Vector\+:\+:Zero()}, }
+\item[{Vector}]{position = {\ttfamily {\bf None}()}, }
+\item[{Vector}]{position\+\_\+kp = {\ttfamily {\bf None}()}, }
+\item[{Vector}]{position\+\_\+kd = {\ttfamily {\bf None}()}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structrobot__interfaces_1_1NJointRobotTypes_1_1Action_aeb7fbd93adcc0140b5db42298211fe9d}{}\label{structrobot__interfaces_1_1NJointRobotTypes_1_1Action_aeb7fbd93adcc0140b5db42298211fe9d}
+
+
+Create action with desired torque and (optional) position. 
+
+The resulting torque command sent to the robot is \begin{DoxyVerb}sent_torque = torque + PD(position)
+\end{DoxyVerb}
+
+
+To disable the position controller, set the target position to NaN. The controller is executed joint-\/wise, so it is possible to run it only for some joints by setting a target position for these joints and setting the others to NaN.
+
+The specified torque is always added to the result of the position controller, so if you only want to run the position controller, make sure to set {\ttfamily torque} to zero for all joints.
+
+For more explicit code, the static factory methods {\ttfamily Troque}, {\ttfamily Position}, {\ttfamily Torque\+And\+Position} and {\ttfamily Zero} should be used instead directly creating actions through this constuctor.
+
+
+\begin{DoxyParams}{Parameters}
+{\em torque} & Desired torque. \\
+\hline
+{\em position} & Desired position. Set values to NaN to disable position controller for the corresponding joints \\
+\hline
+{\em position\+\_\+kp} & P-\/gains for the position controller. Set to NaN to use default values. \\
+\hline
+{\em position\+\_\+kd} & D-\/gains for the position controller. Set to NaN to use default values. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{robot\+\_\+interfaces\+::\+N\+Joint\+Robot\+Types\+::\+Action@{robot\+\_\+interfaces\+::\+N\+Joint\+Robot\+Types\+::\+Action}!None@{None}}
+\index{None@{None}!robot\+\_\+interfaces\+::\+N\+Joint\+Robot\+Types\+::\+Action@{robot\+\_\+interfaces\+::\+N\+Joint\+Robot\+Types\+::\+Action}}
+\subsubsection[{\texorpdfstring{None()}{None()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$size\+\_\+t N$>$ static Vector {\bf robot\+\_\+interfaces\+::\+N\+Joint\+Robot\+Types}$<$ N $>$\+::Action\+::\+None (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{structrobot__interfaces_1_1NJointRobotTypes_1_1Action_ab963d5faa78618bdaae53dc70ca936ae}{}\label{structrobot__interfaces_1_1NJointRobotTypes_1_1Action_ab963d5faa78618bdaae53dc70ca936ae}
+
+
+Create a Na\+N-\/\+Vector. 
+
+Helper function to set defaults for position.
+
+\begin{DoxyReturn}{Returns}
+Vector with all elements set to NaN. 
+\end{DoxyReturn}
+\index{robot\+\_\+interfaces\+::\+N\+Joint\+Robot\+Types\+::\+Action@{robot\+\_\+interfaces\+::\+N\+Joint\+Robot\+Types\+::\+Action}!Position@{Position}}
+\index{Position@{Position}!robot\+\_\+interfaces\+::\+N\+Joint\+Robot\+Types\+::\+Action@{robot\+\_\+interfaces\+::\+N\+Joint\+Robot\+Types\+::\+Action}}
+\subsubsection[{\texorpdfstring{Position(\+Vector position, Vector kp=\+None(), Vector kd=\+None())}{Position(Vector position, Vector kp=None(), Vector kd=None())}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$size\+\_\+t N$>$ static {\bf Action} {\bf robot\+\_\+interfaces\+::\+N\+Joint\+Robot\+Types}$<$ N $>$\+::Action\+::\+Position (
+\begin{DoxyParamCaption}
+\item[{Vector}]{position, }
+\item[{Vector}]{kp = {\ttfamily {\bf None}()}, }
+\item[{Vector}]{kd = {\ttfamily {\bf None}()}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{structrobot__interfaces_1_1NJointRobotTypes_1_1Action_ad60ea89acc73e544634b47a74797afd1}{}\label{structrobot__interfaces_1_1NJointRobotTypes_1_1Action_ad60ea89acc73e544634b47a74797afd1}
+
+
+Create an action that only contains a position command. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & Desired position. \\
+\hline
+{\em kp} & P-\/gain for position controller. If not set, default is used. Set to NaN for specific joints to use default for this joint. \\
+\hline
+{\em kd} & D-\/gain for position controller. If not set, default is used. Set to NaN for specific joints to use default for this joint.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pure \char`\"{}position action\char`\"{}. 
+\end{DoxyReturn}
+\index{robot\+\_\+interfaces\+::\+N\+Joint\+Robot\+Types\+::\+Action@{robot\+\_\+interfaces\+::\+N\+Joint\+Robot\+Types\+::\+Action}!Torque@{Torque}}
+\index{Torque@{Torque}!robot\+\_\+interfaces\+::\+N\+Joint\+Robot\+Types\+::\+Action@{robot\+\_\+interfaces\+::\+N\+Joint\+Robot\+Types\+::\+Action}}
+\subsubsection[{\texorpdfstring{Torque(\+Vector torque)}{Torque(Vector torque)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$size\+\_\+t N$>$ static {\bf Action} {\bf robot\+\_\+interfaces\+::\+N\+Joint\+Robot\+Types}$<$ N $>$\+::Action\+::\+Torque (
+\begin{DoxyParamCaption}
+\item[{Vector}]{torque}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{structrobot__interfaces_1_1NJointRobotTypes_1_1Action_ae5aae444c808728af59a8a5b27035293}{}\label{structrobot__interfaces_1_1NJointRobotTypes_1_1Action_ae5aae444c808728af59a8a5b27035293}
+
+
+Create an action that only contains a torque command. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em torque} & Desired torque.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pure \char`\"{}torque action\char`\"{}. 
+\end{DoxyReturn}
+\index{robot\+\_\+interfaces\+::\+N\+Joint\+Robot\+Types\+::\+Action@{robot\+\_\+interfaces\+::\+N\+Joint\+Robot\+Types\+::\+Action}!Torque\+And\+Position@{Torque\+And\+Position}}
+\index{Torque\+And\+Position@{Torque\+And\+Position}!robot\+\_\+interfaces\+::\+N\+Joint\+Robot\+Types\+::\+Action@{robot\+\_\+interfaces\+::\+N\+Joint\+Robot\+Types\+::\+Action}}
+\subsubsection[{\texorpdfstring{Torque\+And\+Position(\+Vector torque, Vector position, Vector position\+\_\+kp=\+None(), Vector position\+\_\+kd=\+None())}{TorqueAndPosition(Vector torque, Vector position, Vector position_kp=None(), Vector position_kd=None())}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$size\+\_\+t N$>$ static {\bf Action} {\bf robot\+\_\+interfaces\+::\+N\+Joint\+Robot\+Types}$<$ N $>$\+::Action\+::\+Torque\+And\+Position (
+\begin{DoxyParamCaption}
+\item[{Vector}]{torque, }
+\item[{Vector}]{position, }
+\item[{Vector}]{position\+\_\+kp = {\ttfamily {\bf None}()}, }
+\item[{Vector}]{position\+\_\+kd = {\ttfamily {\bf None}()}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{structrobot__interfaces_1_1NJointRobotTypes_1_1Action_a076108da9106e45e9e8ab0b89e4c66e6}{}\label{structrobot__interfaces_1_1NJointRobotTypes_1_1Action_a076108da9106e45e9e8ab0b89e4c66e6}
+
+
+Create an action with both torque and position commands. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em torque} & Desired torque. \\
+\hline
+{\em position} & Desired position. Set to NaN for specific joints to disable position control for this joint. \\
+\hline
+{\em kp} & P-\/gain for position controller. If not set, default is used. Set to NaN for specific joints to use default for this joint. \\
+\hline
+{\em kd} & D-\/gain for position controller. If not set, default is used. Set to NaN for specific joints to use default for this joint.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{structrobot__interfaces_1_1NJointRobotTypes_1_1Action}{Action} with both torque and position commands. 
+\end{DoxyReturn}
+\index{robot\+\_\+interfaces\+::\+N\+Joint\+Robot\+Types\+::\+Action@{robot\+\_\+interfaces\+::\+N\+Joint\+Robot\+Types\+::\+Action}!Zero@{Zero}}
+\index{Zero@{Zero}!robot\+\_\+interfaces\+::\+N\+Joint\+Robot\+Types\+::\+Action@{robot\+\_\+interfaces\+::\+N\+Joint\+Robot\+Types\+::\+Action}}
+\subsubsection[{\texorpdfstring{Zero()}{Zero()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$size\+\_\+t N$>$ static {\bf Action} {\bf robot\+\_\+interfaces\+::\+N\+Joint\+Robot\+Types}$<$ N $>$\+::Action\+::\+Zero (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{structrobot__interfaces_1_1NJointRobotTypes_1_1Action_ad6fa1cd952afc4f02fcabc4221802b47}{}\label{structrobot__interfaces_1_1NJointRobotTypes_1_1Action_ad6fa1cd952afc4f02fcabc4221802b47}
+
+
+Create a zero-\/torque action. 
+
+\begin{DoxyReturn}{Returns}
+Zero-\/torque action with position control disabled. 
+\end{DoxyReturn}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/robot\+\_\+interfaces/n\+\_\+joint\+\_\+robot\+\_\+types.\+hpp\end{DoxyCompactItemize}

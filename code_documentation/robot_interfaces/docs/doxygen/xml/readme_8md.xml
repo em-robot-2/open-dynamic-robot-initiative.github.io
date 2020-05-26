@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="readme_8md" kind="file" language="Markdown">
+    <compoundname>readme.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">#<sp/>Robot<sp/>interfaces</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>What<sp/>it<sp/>is</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Interface<sp/>to<sp/>robot<sp/>hardware</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Authors</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Manuel<sp/>Wuethrich</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Felix<sp/>Widmaier</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Copyrights</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Copyright(c)<sp/>2018-2019<sp/>Max<sp/>Planck<sp/>Gesellschaft</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>License</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">BSD<sp/>3-Clause<sp/>License</highlight></codeline>
+    </programlisting>
+    <location file="readme.md"/>
+  </compounddef>
+</doxygen>

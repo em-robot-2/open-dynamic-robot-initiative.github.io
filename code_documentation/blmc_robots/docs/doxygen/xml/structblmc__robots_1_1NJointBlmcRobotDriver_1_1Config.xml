@@ -1,0 +1,249 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structblmc__robots_1_1NJointBlmcRobotDriver_1_1Config" kind="struct" language="C++" prot="public">
+    <compoundname>blmc_robots::NJointBlmcRobotDriver::Config</compoundname>
+    <includes refid="n__joint__blmc__robot__driver_8hpp" local="no">n_joint_blmc_robot_driver.hpp</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="structblmc__robots_1_1NJointBlmcRobotDriver_1_1Config_1a720d682f0f1a7d4052a3e2bed08926f8" prot="public" static="no">
+        <type>std::array&lt; std::string, N_MOTOR_BOARDS &gt;</type>
+        <definition>typedef std::array&lt;std::string, N_MOTOR_BOARDS&gt; blmc_robots::NJointBlmcRobotDriver&lt; N_JOINTS, N_MOTOR_BOARDS &gt;::Config::CanPortArray</definition>
+        <argsstring></argsstring>
+        <name>CanPortArray</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/blmc_robots/n_joint_blmc_robot_driver.hpp" line="214" column="1" bodyfile="include/blmc_robots/n_joint_blmc_robot_driver.hpp" bodystart="214" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structblmc__robots_1_1NJointBlmcRobotDriver_1_1Config_1a849381580e6d6d0768e6a4e04a394cfd" prot="public" static="no" mutable="no">
+        <type>CanPortArray</type>
+        <definition>CanPortArray blmc_robots::NJointBlmcRobotDriver&lt; N_JOINTS, N_MOTOR_BOARDS &gt;::Config::can_ports</definition>
+        <argsstring></argsstring>
+        <name>can_ports</name>
+        <briefdescription>
+<para>List of CAN port names used by the robot. </para>        </briefdescription>
+        <detaileddescription>
+<para>For each motor control board used by the robot, this specifies the CAN port through which it is connected.</para><para>Example: <computeroutput>{&quot;can0&quot;, &quot;can1&quot;}</computeroutput> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/blmc_robots/n_joint_blmc_robot_driver.hpp" line="227" column="1" bodyfile="include/blmc_robots/n_joint_blmc_robot_driver.hpp" bodystart="227" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structblmc__robots_1_1NJointBlmcRobotDriver_1_1Config_1ab7f483ae02a0c026981c223c97c462c5" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double blmc_robots::NJointBlmcRobotDriver&lt; N_JOINTS, N_MOTOR_BOARDS &gt;::Config::max_current_A</definition>
+        <argsstring></argsstring>
+        <name>max_current_A</name>
+        <initializer>= 0.0</initializer>
+        <briefdescription>
+<para>Maximum current that can be sent to the motor [A]. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/blmc_robots/n_joint_blmc_robot_driver.hpp" line="230" column="1" bodyfile="include/blmc_robots/n_joint_blmc_robot_driver.hpp" bodystart="230" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structblmc__robots_1_1NJointBlmcRobotDriver_1_1Config_1a8cbf3c740b0cae7afb7170d51e04b60d" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool blmc_robots::NJointBlmcRobotDriver&lt; N_JOINTS, N_MOTOR_BOARDS &gt;::Config::has_endstop</definition>
+        <argsstring></argsstring>
+        <name>has_endstop</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+<para>Whether the joints have physical end stops or not. </para>        </briefdescription>
+        <detaileddescription>
+<para>This is for example relevant for homing, where (in case this value is set to true) all joints move until they hit the end stop to determine their absolute position.</para><para>Note that not having end stops does not mean that the joint can rotate freely in general. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/blmc_robots/n_joint_blmc_robot_driver.hpp" line="242" column="1" bodyfile="include/blmc_robots/n_joint_blmc_robot_driver.hpp" bodystart="242" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structblmc__robots_1_1NJointBlmcRobotDriver_1_1Config_1af8b6a47f77f116d4749cf0ea2344727e" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="classblmc__robots_1_1NJointBlmcRobotDriver" kindref="compound">blmc_robots::NJointBlmcRobotDriver</ref>&lt; N_JOINTS, N_MOTOR_BOARDS &gt;::Config::@0</type>
+        <definition>struct blmc_robots::NJointBlmcRobotDriver&lt; N_JOINTS, N_MOTOR_BOARDS &gt;::Config::@0  blmc_robots::NJointBlmcRobotDriver&lt; N_JOINTS, N_MOTOR_BOARDS &gt;::Config::calibration</definition>
+        <argsstring></argsstring>
+        <name>calibration</name>
+        <briefdescription>
+<para>Parameters related to calibration. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/blmc_robots/n_joint_blmc_robot_driver.hpp" line="253" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structblmc__robots_1_1NJointBlmcRobotDriver_1_1Config_1a6548c1cc2f3c2789d44c01e2e3d24e11" prot="public" static="no" mutable="no">
+        <type>Vector</type>
+        <definition>Vector blmc_robots::NJointBlmcRobotDriver&lt; N_JOINTS, N_MOTOR_BOARDS &gt;::Config::safety_kd</definition>
+        <argsstring></argsstring>
+        <name>safety_kd</name>
+        <initializer>= Vector::Constant(0.1)</initializer>
+        <briefdescription>
+<para>D-gain to dampen velocity. Set to zero to disable damping. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/blmc_robots/n_joint_blmc_robot_driver.hpp" line="257" column="1" bodyfile="include/blmc_robots/n_joint_blmc_robot_driver.hpp" bodystart="257" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structblmc__robots_1_1NJointBlmcRobotDriver_1_1Config_1a7bd95f2f62c0f88d2cc6cf1ab34a50c8" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="classblmc__robots_1_1NJointBlmcRobotDriver" kindref="compound">blmc_robots::NJointBlmcRobotDriver</ref>&lt; N_JOINTS, N_MOTOR_BOARDS &gt;::Config::@1</type>
+        <definition>struct blmc_robots::NJointBlmcRobotDriver&lt; N_JOINTS, N_MOTOR_BOARDS &gt;::Config::@1  blmc_robots::NJointBlmcRobotDriver&lt; N_JOINTS, N_MOTOR_BOARDS &gt;::Config::position_control_gains</definition>
+        <argsstring></argsstring>
+        <name>position_control_gains</name>
+        <briefdescription>
+<para>Default control gains for the position PD controller. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/blmc_robots/n_joint_blmc_robot_driver.hpp" line="264" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structblmc__robots_1_1NJointBlmcRobotDriver_1_1Config_1a67b22638d86285d94021e9d1c0c1b6d7" prot="public" static="no" mutable="no">
+        <type>Vector</type>
+        <definition>Vector blmc_robots::NJointBlmcRobotDriver&lt; N_JOINTS, N_MOTOR_BOARDS &gt;::Config::home_offset_rad</definition>
+        <argsstring></argsstring>
+        <name>home_offset_rad</name>
+        <initializer>= Vector::Zero()</initializer>
+        <briefdescription>
+<para>Offset between home position and zero. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/blmc_robots/n_joint_blmc_robot_driver.hpp" line="267" column="1" bodyfile="include/blmc_robots/n_joint_blmc_robot_driver.hpp" bodystart="267" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structblmc__robots_1_1NJointBlmcRobotDriver_1_1Config_1a797ec8a753d4daf0f2df89ebaa313a13" prot="public" static="no" mutable="no">
+        <type>Vector</type>
+        <definition>Vector blmc_robots::NJointBlmcRobotDriver&lt; N_JOINTS, N_MOTOR_BOARDS &gt;::Config::initial_position_rad</definition>
+        <argsstring></argsstring>
+        <name>initial_position_rad</name>
+        <initializer>= Vector::Zero()</initializer>
+        <briefdescription>
+<para>Initial position to which the robot moves after initialization. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/blmc_robots/n_joint_blmc_robot_driver.hpp" line="273" column="1" bodyfile="include/blmc_robots/n_joint_blmc_robot_driver.hpp" bodystart="273" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structblmc__robots_1_1NJointBlmcRobotDriver_1_1Config_1a6cad2ea47acc09ddadec330e570e0958" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void blmc_robots::NJointBlmcRobotDriver&lt; N_JOINTS, N_MOTOR_BOARDS &gt;::Config::print</definition>
+        <argsstring>() const </argsstring>
+        <name>print</name>
+        <briefdescription>
+<para>Print the given configuration in a human-readable way. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/blmc_robots/n_joint_blmc_robot_driver.hpp" line="278" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="structblmc__robots_1_1NJointBlmcRobotDriver_1_1Config_1a1499dfca020da9c45bfe5cbdcf9872f9" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structblmc__robots_1_1NJointBlmcRobotDriver_1_1Config" kindref="compound">Config</ref></type>
+        <definition>static Config blmc_robots::NJointBlmcRobotDriver&lt; N_JOINTS, N_MOTOR_BOARDS &gt;::Config::load_config</definition>
+        <argsstring>(const std::string &amp;config_file_name)</argsstring>
+        <name>load_config</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>config_file_name</declname>
+        </param>
+        <briefdescription>
+<para>Load driver configuration from file. </para>        </briefdescription>
+        <detaileddescription>
+<para>Load the configuration from the specified YAML file. The file is expected to have the same structure/key naming as the <ref refid="structblmc__robots_1_1NJointBlmcRobotDriver_1_1Config" kindref="compound">Config</ref> struct. If a value can not be read from the file, the application exists with an error message.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>config_file_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Path/name of the configuration YAML file.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Configuration </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/blmc_robots/n_joint_blmc_robot_driver.hpp" line="292" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="structblmc__robots_1_1NJointBlmcRobotDriver_1_1Config_1a0d5d8b4ad8693498e56a95e5cbbad9f6" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>static void blmc_robots::NJointBlmcRobotDriver&lt; N_JOINTS, N_MOTOR_BOARDS &gt;::Config::set_config_value</definition>
+        <argsstring>(const YAML::Node &amp;user_config, const std::string &amp;name, T *var)</argsstring>
+        <name>set_config_value</name>
+        <param>
+          <type>const YAML::Node &amp;</type>
+          <declname>user_config</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>T *</type>
+          <declname>var</declname>
+        </param>
+        <briefdescription>
+<para>Set value from user configuration to var if specified. </para>        </briefdescription>
+        <detaileddescription>
+<para>Checks if a field <computeroutput>name</computeroutput> exists in <computeroutput>user_config</computeroutput>. If yes, its value is written to <computeroutput>var</computeroutput>, otherwise <computeroutput>var</computeroutput> is unchanged.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">user_config</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>YAML node containing the user configuration. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the configuration entry. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">var</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Variable to which configuration is written. Value is unchanged if the specified field name does not exist in user_config, i.e. it can be initialized with a default value. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/blmc_robots/n_joint_blmc_robot_driver.hpp" line="308" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Configuration of the robot that can be changed by the user. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/blmc_robots/n_joint_blmc_robot_driver.hpp" line="213" column="1" bodyfile="include/blmc_robots/n_joint_blmc_robot_driver.hpp" bodystart="212" bodyend="311"/>
+    <listofallmembers>
+      <member refid="structblmc__robots_1_1NJointBlmcRobotDriver_1_1Config_1af8b6a47f77f116d4749cf0ea2344727e" prot="public" virt="non-virtual"><scope>blmc_robots::NJointBlmcRobotDriver::Config</scope><name>calibration</name></member>
+      <member refid="structblmc__robots_1_1NJointBlmcRobotDriver_1_1Config_1a849381580e6d6d0768e6a4e04a394cfd" prot="public" virt="non-virtual"><scope>blmc_robots::NJointBlmcRobotDriver::Config</scope><name>can_ports</name></member>
+      <member refid="structblmc__robots_1_1NJointBlmcRobotDriver_1_1Config_1a720d682f0f1a7d4052a3e2bed08926f8" prot="public" virt="non-virtual"><scope>blmc_robots::NJointBlmcRobotDriver::Config</scope><name>CanPortArray</name></member>
+      <member refid="structblmc__robots_1_1NJointBlmcRobotDriver_1_1Config_1a8cbf3c740b0cae7afb7170d51e04b60d" prot="public" virt="non-virtual"><scope>blmc_robots::NJointBlmcRobotDriver::Config</scope><name>has_endstop</name></member>
+      <member refid="structblmc__robots_1_1NJointBlmcRobotDriver_1_1Config_1a67b22638d86285d94021e9d1c0c1b6d7" prot="public" virt="non-virtual"><scope>blmc_robots::NJointBlmcRobotDriver::Config</scope><name>home_offset_rad</name></member>
+      <member refid="structblmc__robots_1_1NJointBlmcRobotDriver_1_1Config_1a797ec8a753d4daf0f2df89ebaa313a13" prot="public" virt="non-virtual"><scope>blmc_robots::NJointBlmcRobotDriver::Config</scope><name>initial_position_rad</name></member>
+      <member refid="structblmc__robots_1_1NJointBlmcRobotDriver_1_1Config_1a1499dfca020da9c45bfe5cbdcf9872f9" prot="public" virt="non-virtual"><scope>blmc_robots::NJointBlmcRobotDriver::Config</scope><name>load_config</name></member>
+      <member refid="structblmc__robots_1_1NJointBlmcRobotDriver_1_1Config_1ab7f483ae02a0c026981c223c97c462c5" prot="public" virt="non-virtual"><scope>blmc_robots::NJointBlmcRobotDriver::Config</scope><name>max_current_A</name></member>
+      <member refid="structblmc__robots_1_1NJointBlmcRobotDriver_1_1Config_1a7bd95f2f62c0f88d2cc6cf1ab34a50c8" prot="public" virt="non-virtual"><scope>blmc_robots::NJointBlmcRobotDriver::Config</scope><name>position_control_gains</name></member>
+      <member refid="structblmc__robots_1_1NJointBlmcRobotDriver_1_1Config_1a6cad2ea47acc09ddadec330e570e0958" prot="public" virt="non-virtual"><scope>blmc_robots::NJointBlmcRobotDriver::Config</scope><name>print</name></member>
+      <member refid="structblmc__robots_1_1NJointBlmcRobotDriver_1_1Config_1a6548c1cc2f3c2789d44c01e2e3d24e11" prot="public" virt="non-virtual"><scope>blmc_robots::NJointBlmcRobotDriver::Config</scope><name>safety_kd</name></member>
+      <member refid="structblmc__robots_1_1NJointBlmcRobotDriver_1_1Config_1a0d5d8b4ad8693498e56a95e5cbbad9f6" prot="private" virt="non-virtual"><scope>blmc_robots::NJointBlmcRobotDriver::Config</scope><name>set_config_value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

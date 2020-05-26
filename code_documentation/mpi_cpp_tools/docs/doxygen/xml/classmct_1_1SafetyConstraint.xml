@@ -1,0 +1,212 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classmct_1_1SafetyConstraint" kind="class" language="C++" prot="public">
+    <compoundname>mct::SafetyConstraint</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classmct_1_1SafetyConstraint_1ae32fca1b6c738c3a3f101feb2fec5785" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double mct::SafetyConstraint::min_velocity_</definition>
+        <argsstring></argsstring>
+        <name>min_velocity_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mpi_cpp_tools/dynamical_systems.hpp" line="564" column="1" bodyfile="include/mpi_cpp_tools/dynamical_systems.hpp" bodystart="564" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmct_1_1SafetyConstraint_1afbec12a6f80368bb9e2b25de92dedcf2" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double mct::SafetyConstraint::min_position_</definition>
+        <argsstring></argsstring>
+        <name>min_position_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mpi_cpp_tools/dynamical_systems.hpp" line="565" column="1" bodyfile="include/mpi_cpp_tools/dynamical_systems.hpp" bodystart="565" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmct_1_1SafetyConstraint_1affeefa06a5a89e777f0779622cc21edc" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double mct::SafetyConstraint::max_velocity_</definition>
+        <argsstring></argsstring>
+        <name>max_velocity_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mpi_cpp_tools/dynamical_systems.hpp" line="566" column="1" bodyfile="include/mpi_cpp_tools/dynamical_systems.hpp" bodystart="566" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmct_1_1SafetyConstraint_1a8b90d0a57f869e4cadec366aad397bcd" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double mct::SafetyConstraint::max_position_</definition>
+        <argsstring></argsstring>
+        <name>max_position_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mpi_cpp_tools/dynamical_systems.hpp" line="567" column="1" bodyfile="include/mpi_cpp_tools/dynamical_systems.hpp" bodystart="567" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmct_1_1SafetyConstraint_1a9a7b128dcd64b5105f86d027b665ca02" prot="public" static="no" mutable="no">
+        <type><ref refid="classmct_1_1NonnegDouble" kindref="compound">mct::NonnegDouble</ref></type>
+        <definition>mct::NonnegDouble mct::SafetyConstraint::max_torque_</definition>
+        <argsstring></argsstring>
+        <name>max_torque_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mpi_cpp_tools/dynamical_systems.hpp" line="568" column="1" bodyfile="include/mpi_cpp_tools/dynamical_systems.hpp" bodystart="568" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmct_1_1SafetyConstraint_1a0a50dbf6329aa075ba85fa60bd3b17dc" prot="public" static="no" mutable="no">
+        <type><ref refid="classmct_1_1NonnegDouble" kindref="compound">mct::NonnegDouble</ref></type>
+        <definition>mct::NonnegDouble mct::SafetyConstraint::max_jerk_</definition>
+        <argsstring></argsstring>
+        <name>max_jerk_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mpi_cpp_tools/dynamical_systems.hpp" line="569" column="1" bodyfile="include/mpi_cpp_tools/dynamical_systems.hpp" bodystart="569" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmct_1_1SafetyConstraint_1affdcd5e2e62a8445fd02d83b7308fc6f" prot="public" static="no" mutable="no">
+        <type><ref refid="classmct_1_1NonnegDouble" kindref="compound">mct::NonnegDouble</ref></type>
+        <definition>mct::NonnegDouble mct::SafetyConstraint::inertia_</definition>
+        <argsstring></argsstring>
+        <name>inertia_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mpi_cpp_tools/dynamical_systems.hpp" line="570" column="1" bodyfile="include/mpi_cpp_tools/dynamical_systems.hpp" bodystart="570" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmct_1_1SafetyConstraint_1aa7ec3ff4513d08cb82418a1b30353633" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>mct::SafetyConstraint::SafetyConstraint</definition>
+        <argsstring>()</argsstring>
+        <name>SafetyConstraint</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mpi_cpp_tools/dynamical_systems.hpp" line="458" column="1" bodyfile="include/mpi_cpp_tools/dynamical_systems.hpp" bodystart="458" bodyend="467"/>
+      </memberdef>
+      <memberdef kind="function" id="classmct_1_1SafetyConstraint_1aaeed0e02691c4764e3a4934b8b42b69e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>mct::SafetyConstraint::SafetyConstraint</definition>
+        <argsstring>(double min_velocity, double min_position, double max_velocity, double max_position, mct::NonnegDouble max_torque, mct::NonnegDouble max_jerk, mct::NonnegDouble inertia)</argsstring>
+        <name>SafetyConstraint</name>
+        <param>
+          <type>double</type>
+          <declname>min_velocity</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>min_position</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>max_velocity</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>max_position</declname>
+        </param>
+        <param>
+          <type><ref refid="classmct_1_1NonnegDouble" kindref="compound">mct::NonnegDouble</ref></type>
+          <declname>max_torque</declname>
+        </param>
+        <param>
+          <type><ref refid="classmct_1_1NonnegDouble" kindref="compound">mct::NonnegDouble</ref></type>
+          <declname>max_jerk</declname>
+        </param>
+        <param>
+          <type><ref refid="classmct_1_1NonnegDouble" kindref="compound">mct::NonnegDouble</ref></type>
+          <declname>inertia</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mpi_cpp_tools/dynamical_systems.hpp" line="469" column="1" bodyfile="include/mpi_cpp_tools/dynamical_systems.hpp" bodystart="469" bodyend="484"/>
+      </memberdef>
+      <memberdef kind="function" id="classmct_1_1SafetyConstraint_1a8fbdcc71a00669057a8a957db41eea1e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double mct::SafetyConstraint::get_safe_torque</definition>
+        <argsstring>(const double &amp;torque, const double &amp;velocity, const double &amp;position)</argsstring>
+        <name>get_safe_torque</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>torque</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>velocity</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>position</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mpi_cpp_tools/dynamical_systems.hpp" line="487" column="1" bodyfile="include/mpi_cpp_tools/dynamical_systems.hpp" bodystart="487" bodyend="562"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="24">
+        <label>mct::SafetyConstraint</label>
+        <link refid="classmct_1_1SafetyConstraint"/>
+        <childnode refid="25" relation="usage">
+          <edgelabel>inertia_</edgelabel>
+          <edgelabel>max_torque_</edgelabel>
+          <edgelabel>max_jerk_</edgelabel>
+        </childnode>
+      </node>
+      <node id="25">
+        <label>mct::NonnegDouble</label>
+        <link refid="classmct_1_1NonnegDouble"/>
+      </node>
+    </collaborationgraph>
+    <location file="include/mpi_cpp_tools/dynamical_systems.hpp" line="456" column="1" bodyfile="include/mpi_cpp_tools/dynamical_systems.hpp" bodystart="455" bodyend="571"/>
+    <listofallmembers>
+      <member refid="classmct_1_1SafetyConstraint_1a8fbdcc71a00669057a8a957db41eea1e" prot="public" virt="non-virtual"><scope>mct::SafetyConstraint</scope><name>get_safe_torque</name></member>
+      <member refid="classmct_1_1SafetyConstraint_1affdcd5e2e62a8445fd02d83b7308fc6f" prot="public" virt="non-virtual"><scope>mct::SafetyConstraint</scope><name>inertia_</name></member>
+      <member refid="classmct_1_1SafetyConstraint_1a0a50dbf6329aa075ba85fa60bd3b17dc" prot="public" virt="non-virtual"><scope>mct::SafetyConstraint</scope><name>max_jerk_</name></member>
+      <member refid="classmct_1_1SafetyConstraint_1a8b90d0a57f869e4cadec366aad397bcd" prot="public" virt="non-virtual"><scope>mct::SafetyConstraint</scope><name>max_position_</name></member>
+      <member refid="classmct_1_1SafetyConstraint_1a9a7b128dcd64b5105f86d027b665ca02" prot="public" virt="non-virtual"><scope>mct::SafetyConstraint</scope><name>max_torque_</name></member>
+      <member refid="classmct_1_1SafetyConstraint_1affeefa06a5a89e777f0779622cc21edc" prot="public" virt="non-virtual"><scope>mct::SafetyConstraint</scope><name>max_velocity_</name></member>
+      <member refid="classmct_1_1SafetyConstraint_1afbec12a6f80368bb9e2b25de92dedcf2" prot="public" virt="non-virtual"><scope>mct::SafetyConstraint</scope><name>min_position_</name></member>
+      <member refid="classmct_1_1SafetyConstraint_1ae32fca1b6c738c3a3f101feb2fec5785" prot="public" virt="non-virtual"><scope>mct::SafetyConstraint</scope><name>min_velocity_</name></member>
+      <member refid="classmct_1_1SafetyConstraint_1aa7ec3ff4513d08cb82418a1b30353633" prot="public" virt="non-virtual"><scope>mct::SafetyConstraint</scope><name>SafetyConstraint</name></member>
+      <member refid="classmct_1_1SafetyConstraint_1aaeed0e02691c4764e3a4934b8b42b69e" prot="public" virt="non-virtual"><scope>mct::SafetyConstraint</scope><name>SafetyConstraint</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

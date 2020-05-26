@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.11">
+  <compound refid="classmct_1_1LinearDynamics" kind="class"><name>mct::LinearDynamics</name>
+    <member refid="classmct_1_1LinearDynamics_1abd48cad5a3b6819e218cde41ec2670a0" kind="typedef"><name>Vector</name></member>
+    <member refid="classmct_1_1LinearDynamics_1aa12a81e1ef4e33e310bf02978a20fef4" kind="variable"><name>jerk_</name></member>
+    <member refid="classmct_1_1LinearDynamics_1aa37dc8e527de707c9402b3de06e7e35f" kind="variable"><name>initial_acceleration_</name></member>
+    <member refid="classmct_1_1LinearDynamics_1ab9db51c5442ac30a82f10fa33b3a024d" kind="variable"><name>initial_velocity_</name></member>
+    <member refid="classmct_1_1LinearDynamics_1a4ab9e657e985729091d3136f98bb99fd" kind="variable"><name>initial_position_</name></member>
+    <member refid="classmct_1_1LinearDynamics_1a4cb41e128efc2d9fda1995610966da86" kind="function"><name>LinearDynamics</name></member>
+    <member refid="classmct_1_1LinearDynamics_1a5c38619de6412eb2c85bb207fbe6d7ec" kind="function"><name>LinearDynamics</name></member>
+    <member refid="classmct_1_1LinearDynamics_1a34d6238236aec2a1b30f66edc1e13db9" kind="function"><name>get_acceleration</name></member>
+    <member refid="classmct_1_1LinearDynamics_1a0179d2a8a7adfb9280f5238d340e7534" kind="function"><name>get_velocity</name></member>
+    <member refid="classmct_1_1LinearDynamics_1a8896d67d7d8ecd3676ee1cc54041d03a" kind="function"><name>get_position</name></member>
+    <member refid="classmct_1_1LinearDynamics_1ae0b39a3139d5f7de01ecbb6e66d85a6e" kind="function"><name>find_t_given_velocity</name></member>
+  </compound>
+  <compound refid="classmct_1_1LinearDynamicsWithAccelerationConstraint" kind="class"><name>mct::LinearDynamicsWithAccelerationConstraint</name>
+    <member refid="classmct_1_1LinearDynamicsWithAccelerationConstraint_1a9f31f3ecc820198a01eb0fc78c4dfb75" kind="typedef"><name>Vector</name></member>
+    <member refid="classmct_1_1LinearDynamicsWithAccelerationConstraint_1a5a74321eebcdddebde9083145feb996f" kind="typedef"><name>Matrix</name></member>
+    <member refid="classmct_1_1LinearDynamicsWithAccelerationConstraint_1a8030e84817471fde3716a5d4ea4f2927" kind="variable"><name>acceleration_limit_</name></member>
+    <member refid="classmct_1_1LinearDynamicsWithAccelerationConstraint_1ad5f33b779d2503eca2a7bb1f53ccc0da" kind="variable"><name>jerk_duration_</name></member>
+    <member refid="classmct_1_1LinearDynamicsWithAccelerationConstraint_1ade3a0d6eddf1a5af523270ae1fe13aca" kind="function"><name>print_parameters</name></member>
+    <member refid="classmct_1_1LinearDynamicsWithAccelerationConstraint_1afe40d0fc5058e69055e0f4dbf59d611a" kind="function"><name>LinearDynamicsWithAccelerationConstraint</name></member>
+    <member refid="classmct_1_1LinearDynamicsWithAccelerationConstraint_1a4501cf02cce687c60d6da0b24ef609d3" kind="function"><name>LinearDynamicsWithAccelerationConstraint</name></member>
+    <member refid="classmct_1_1LinearDynamicsWithAccelerationConstraint_1a8f9a83d5da9d9e7b9eb4031e43022dfe" kind="function"><name>set_initial_acceleration</name></member>
+    <member refid="classmct_1_1LinearDynamicsWithAccelerationConstraint_1ad2691066026d0aa0e9c7867c98fc6685" kind="function"><name>get_acceleration</name></member>
+    <member refid="classmct_1_1LinearDynamicsWithAccelerationConstraint_1a75b2c052e49a8b591b29df9551f05614" kind="function"><name>get_velocity</name></member>
+    <member refid="classmct_1_1LinearDynamicsWithAccelerationConstraint_1a79216cc4eef7308542d9811b8c44ecf6" kind="function"><name>get_position</name></member>
+    <member refid="classmct_1_1LinearDynamicsWithAccelerationConstraint_1adaa181c2109d4f4098e7833e58ce929d" kind="function"><name>get_positions</name></member>
+    <member refid="classmct_1_1LinearDynamicsWithAccelerationConstraint_1a9ce476e49904c83c85af67f5be5a5e2d" kind="function"><name>find_t_given_velocity</name></member>
+    <member refid="classmct_1_1LinearDynamicsWithAccelerationConstraint_1a941585f2acda77a22a3a269ba6873afb" kind="function"><name>will_exceed_jointly</name></member>
+    <member refid="classmct_1_1LinearDynamicsWithAccelerationConstraint_1a568991a3b2459be274a86298caf8356c" kind="function"><name>will_exceed_jointly</name></member>
+    <member refid="classmct_1_1LinearDynamicsWithAccelerationConstraint_1a9c94e5e278cb7519215a5495f326b11c" kind="function"><name>will_deceed_jointly</name></member>
+    <member refid="classmct_1_1LinearDynamicsWithAccelerationConstraint_1ae3c5bef385c2bcb64b5a7cd9dae42654" kind="function"><name>will_deceed_jointly</name></member>
+  </compound>
+  <compound refid="classmct_1_1NonnegDouble" kind="class"><name>mct::NonnegDouble</name>
+    <member refid="classmct_1_1NonnegDouble_1a5129a6c7ffbd14b989523a210e8180e4" kind="variable"><name>value_</name></member>
+    <member refid="classmct_1_1NonnegDouble_1a65280a4cd99d97a93b4593048cc4df55" kind="function"><name>NonnegDouble</name></member>
+    <member refid="classmct_1_1NonnegDouble_1a416aa156d31270f95b569b2e00cafa06" kind="function"><name>NonnegDouble</name></member>
+    <member refid="classmct_1_1NonnegDouble_1aabb3515195942147a8cd5e81a34331ca" kind="function"><name>operator double</name></member>
+  </compound>
+  <compound refid="classmct_1_1SafetyConstraint" kind="class"><name>mct::SafetyConstraint</name>
+    <member refid="classmct_1_1SafetyConstraint_1ae32fca1b6c738c3a3f101feb2fec5785" kind="variable"><name>min_velocity_</name></member>
+    <member refid="classmct_1_1SafetyConstraint_1afbec12a6f80368bb9e2b25de92dedcf2" kind="variable"><name>min_position_</name></member>
+    <member refid="classmct_1_1SafetyConstraint_1affeefa06a5a89e777f0779622cc21edc" kind="variable"><name>max_velocity_</name></member>
+    <member refid="classmct_1_1SafetyConstraint_1a8b90d0a57f869e4cadec366aad397bcd" kind="variable"><name>max_position_</name></member>
+    <member refid="classmct_1_1SafetyConstraint_1a9a7b128dcd64b5105f86d027b665ca02" kind="variable"><name>max_torque_</name></member>
+    <member refid="classmct_1_1SafetyConstraint_1a0a50dbf6329aa075ba85fa60bd3b17dc" kind="variable"><name>max_jerk_</name></member>
+    <member refid="classmct_1_1SafetyConstraint_1affdcd5e2e62a8445fd02d83b7308fc6f" kind="variable"><name>inertia_</name></member>
+    <member refid="classmct_1_1SafetyConstraint_1aa7ec3ff4513d08cb82418a1b30353633" kind="function"><name>SafetyConstraint</name></member>
+    <member refid="classmct_1_1SafetyConstraint_1aaeed0e02691c4764e3a4934b8b42b69e" kind="function"><name>SafetyConstraint</name></member>
+    <member refid="classmct_1_1SafetyConstraint_1a8fbdcc71a00669057a8a957db41eea1e" kind="function"><name>get_safe_torque</name></member>
+  </compound>
+  <compound refid="namespacemct" kind="namespace"><name>mct</name>
+    <member refid="dynamical__systems_8hpp_1aab449f0863dee56d0f0e377c75a4812d" kind="function"><name>find_max_admissible_acceleration</name></member>
+    <member refid="dynamical__systems_8hpp_1a87c8fdeac88fa24892ddb753f31f2a6c" kind="function"><name>find_min_admissible_acceleration</name></member>
+    <member refid="math_8hpp_1acee1bab6012500f4f6709fadef426407" kind="function"><name>clamp</name></member>
+    <member refid="math_8hpp_1a0da0a10ac9a5f53e1bff7004b9375ef1" kind="function"><name>clamp</name></member>
+    <member refid="math_8hpp_1a51a2b8ea864671201f79d50310a0cdd4" kind="function"><name>append_to_vector</name></member>
+    <member refid="math_8hpp_1aab77f23043c1849bee062cf75c75d101" kind="function"><name>append_rows_to_matrix</name></member>
+    <member refid="math_8hpp_1a6014d19d6c69a7a98aac6b68c57e6795" kind="function"><name>approx_equal</name></member>
+    <member refid="math_8hpp_1a1cee0ed64de57025bf7ab0ae767008e6" kind="function"><name>contains</name></member>
+  </compound>
+  <compound refid="basic__tools_8hpp" kind="file"><name>basic_tools.hpp</name>
+  </compound>
+  <compound refid="dynamical__systems_8hpp" kind="file"><name>dynamical_systems.hpp</name>
+  </compound>
+  <compound refid="math_8hpp" kind="file"><name>math.hpp</name>
+  </compound>
+  <compound refid="readme_8md" kind="file"><name>readme.md</name>
+  </compound>
+  <compound refid="md_readme" kind="page"><name>md_readme</name>
+  </compound>
+  <compound refid="todo" kind="page"><name>todo</name>
+  </compound>
+  <compound refid="license" kind="page"><name>license</name>
+  </compound>
+  <compound refid="dir_d44c64559bbebec7f509842c48db8b23" kind="dir"><name>include</name>
+  </compound>
+  <compound refid="dir_42fe015b2930196f64014ee0d05a8ca8" kind="dir"><name>include/mpi_cpp_tools</name>
+  </compound>
+</doxygenindex>

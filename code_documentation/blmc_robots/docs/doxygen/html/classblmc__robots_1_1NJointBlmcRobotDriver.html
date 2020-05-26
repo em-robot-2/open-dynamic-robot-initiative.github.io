@@ -135,10 +135,9 @@ Collaboration diagram for blmc_robots::NJointBlmcRobotDriver&lt; N_JOINTS, N_MOT
 <div class="dyncontent">
 <div class="center"><img src="classblmc__robots_1_1NJointBlmcRobotDriver__coll__graph.png" border="0" usemap="#blmc__robots_1_1NJointBlmcRobotDriver_3_01N__JOINTS_00_01N__MOTOR__BOARDS_01_4_coll__map" alt="Collaboration graph"/></div>
 <map name="blmc__robots_1_1NJointBlmcRobotDriver_3_01N__JOINTS_00_01N__MOTOR__BOARDS_01_4_coll__map" id="blmc__robots_1_1NJointBlmcRobotDriver_3_01N__JOINTS_00_01N__MOTOR__BOARDS_01_4_coll__map">
-<area shape="rect" id="node3" href="classblmc__robots_1_1BlmcJointModules.html" title="blmc_robots::BlmcJointModules\l\&lt; N_JOINTS \&gt;" alt="" coords="335,100,543,141"/>
-<area shape="rect" id="node4" href="structblmc__robots_1_1NJointBlmcRobotDriver_1_1Config.html" title="Configuration of the robot that can be changed by the user. " alt="" coords="335,165,543,221"/>
-<area shape="rect" id="node5" href="structblmc__robots_1_1CalibrationParameters.html" title="Parameters for the joint calibration (homing and go to initial pose). " alt="" coords="5,172,168,213"/>
-<area shape="rect" id="node6" href="structblmc__robots_1_1MotorParameters.html" title="Parameters related to the motor. " alt="" coords="339,245,540,271"/>
+<area shape="rect" id="node3" href="classblmc__robots_1_1BlmcJointModules.html" title="blmc_robots::BlmcJointModules\l\&lt; N_JOINTS \&gt;" alt="" coords="61,100,269,141"/>
+<area shape="rect" id="node4" href="structblmc__robots_1_1NJointBlmcRobotDriver_1_1Config.html" title="Configuration of the robot that can be changed by the user. " alt="" coords="61,165,269,221"/>
+<area shape="rect" id="node5" href="structblmc__robots_1_1MotorParameters.html" title="Parameters related to the motor. " alt="" coords="64,245,265,271"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -219,9 +218,9 @@ Action&#160;</td><td class="memItemRight" valign="bottom"><b>apply_action_uninit
 <tr class="memitem:a23e443e175d91b66cb4e50fa87bbf0fa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classblmc__robots_1_1NJointBlmcRobotDriver.html#a23e443e175d91b66cb4e50fa87bbf0fa">_initialize</a> ()</td></tr>
 <tr class="memdesc:a23e443e175d91b66cb4e50fa87bbf0fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Actual initialization that is called in a real-time thread in <a class="el" href="classblmc__robots_1_1NJointBlmcRobotDriver.html#a41b2ff96e0a687b0e1ae06ce1502d4db" title="Find home position of all joints and move to start position. ">initialize()</a>.  <a href="#a23e443e175d91b66cb4e50fa87bbf0fa">More...</a><br /></td></tr>
 <tr class="separator:a23e443e175d91b66cb4e50fa87bbf0fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9f48e6881584404fb24d7d770dfe6062"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classblmc__robots_1_1NJointBlmcRobotDriver.html#a9f48e6881584404fb24d7d770dfe6062">home_on_index_after_negative_end_stop</a> (double endstop_search_torque_Nm, Vector home_offset_rad=Vector::Zero())</td></tr>
-<tr class="memdesc:a9f48e6881584404fb24d7d770dfe6062"><td class="mdescLeft">&#160;</td><td class="mdescRight">Homing on negative end stop and encoder index.  <a href="#a9f48e6881584404fb24d7d770dfe6062">More...</a><br /></td></tr>
-<tr class="separator:a9f48e6881584404fb24d7d770dfe6062"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ec7dc99b82c474a1a16df37f5dee292"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classblmc__robots_1_1NJointBlmcRobotDriver.html#a2ec7dc99b82c474a1a16df37f5dee292">homing</a> (Vector <a class="el" href="n__joint__blmc__robot__driver_8hpp.html#a8f0c3d2c5211dc9fd38c4d64bdcf77cb">endstop_search_torques_Nm</a>, Vector home_offset_rad=Vector::Zero())</td></tr>
+<tr class="memdesc:a2ec7dc99b82c474a1a16df37f5dee292"><td class="mdescLeft">&#160;</td><td class="mdescRight">Homing using end stops (optional) and encoder indices.  <a href="#a2ec7dc99b82c474a1a16df37f5dee292">More...</a><br /></td></tr>
+<tr class="separator:a2ec7dc99b82c474a1a16df37f5dee292"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1defedb3825ccac7cd8511d209bcae61"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classblmc__robots_1_1NJointBlmcRobotDriver.html#a1defedb3825ccac7cd8511d209bcae61">move_to_position</a> (const Vector &amp;goal_pos, const double tolerance, const uint32_t timeout_cycles)</td></tr>
 <tr class="memdesc:a1defedb3825ccac7cd8511d209bcae61"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move to given goal position using PD control.  <a href="#a1defedb3825ccac7cd8511d209bcae61">More...</a><br /></td></tr>
 <tr class="separator:a1defedb3825ccac7cd8511d209bcae61"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -290,7 +289,7 @@ template&lt;size_t N_JOINTS, size_t N_MOTOR_BOARDS&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a9f48e6881584404fb24d7d770dfe6062"></a>
+<a class="anchor" id="a2ec7dc99b82c474a1a16df37f5dee292"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -300,10 +299,10 @@ template&lt;size_t N_JOINTS, size_t N_MOTOR_BOARDS&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool <a class="el" href="classblmc__robots_1_1NJointBlmcRobotDriver.html">blmc_robots::NJointBlmcRobotDriver</a>&lt; N_JOINTS, N_MOTOR_BOARDS &gt;::home_on_index_after_negative_end_stop </td>
+          <td class="memname">bool <a class="el" href="classblmc__robots_1_1NJointBlmcRobotDriver.html">blmc_robots::NJointBlmcRobotDriver</a>&lt; N_JOINTS, N_MOTOR_BOARDS &gt;::homing </td>
           <td>(</td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>endstop_search_torque_Nm</em>, </td>
+          <td class="paramtype">Vector&#160;</td>
+          <td class="paramname"><em>endstop_search_torques_Nm</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -324,13 +323,13 @@ template&lt;size_t N_JOINTS, size_t N_MOTOR_BOARDS&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Homing on negative end stop and encoder index. </p>
+<p>Homing using end stops (optional) and encoder indices. </p>
 <p>Procedure for finding an absolute zero position (or "home" position) when using relative encoders.</p>
 <p>If the robot has end stops (according to configuration), all joints first move in negative direction until they hit the end stop. Then an encoder index search is started where each joint moves slowly in positive direction until the next encoder index. The position of this encoder index is the "home position".</p>
 <p>By default, the zero position is the same as the home position. The optional argument home_offset_rad provides a means to move the zero position relative to the home position. The zero position is computed as </p><pre class="fragment">zero position = encoder index position + home offset
 </pre><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">endstop_search_torque_Nm</td><td>Torque that is used to move the joints while searching the end stop. </td></tr>
+    <tr><td class="paramname">endstop_search_torques_Nm</td><td>Torques that are used to move the joints while searching the end stop. </td></tr>
     <tr><td class="paramname">home_offset_rad</td><td>Offset between the home position and the desired zero position. </td></tr>
   </table>
   </dd>

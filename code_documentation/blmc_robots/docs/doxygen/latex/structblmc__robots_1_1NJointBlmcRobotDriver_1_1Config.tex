@@ -1,0 +1,138 @@
+\hypertarget{structblmc__robots_1_1NJointBlmcRobotDriver_1_1Config}{}\section{blmc\+\_\+robots\+:\+:N\+Joint\+Blmc\+Robot\+Driver$<$ N\+\_\+\+J\+O\+I\+N\+TS, N\+\_\+\+M\+O\+T\+O\+R\+\_\+\+B\+O\+A\+R\+DS $>$\+:\+:Config Struct Reference}
+\label{structblmc__robots_1_1NJointBlmcRobotDriver_1_1Config}\index{blmc\+\_\+robots\+::\+N\+Joint\+Blmc\+Robot\+Driver$<$ N\+\_\+\+J\+O\+I\+N\+T\+S, N\+\_\+\+M\+O\+T\+O\+R\+\_\+\+B\+O\+A\+R\+D\+S $>$\+::\+Config@{blmc\+\_\+robots\+::\+N\+Joint\+Blmc\+Robot\+Driver$<$ N\+\_\+\+J\+O\+I\+N\+T\+S, N\+\_\+\+M\+O\+T\+O\+R\+\_\+\+B\+O\+A\+R\+D\+S $>$\+::\+Config}}
+
+
+Configuration of the robot that can be changed by the user.  
+
+
+
+
+{\ttfamily \#include $<$n\+\_\+joint\+\_\+blmc\+\_\+robot\+\_\+driver.\+hpp$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::array$<$ std\+::string, N\+\_\+\+M\+O\+T\+O\+R\+\_\+\+B\+O\+A\+R\+DS $>$ {\bfseries Can\+Port\+Array}\hypertarget{structblmc__robots_1_1NJointBlmcRobotDriver_1_1Config_a720d682f0f1a7d4052a3e2bed08926f8}{}\label{structblmc__robots_1_1NJointBlmcRobotDriver_1_1Config_a720d682f0f1a7d4052a3e2bed08926f8}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{structblmc__robots_1_1NJointBlmcRobotDriver_1_1Config_a6cad2ea47acc09ddadec330e570e0958}{print} () const \hypertarget{structblmc__robots_1_1NJointBlmcRobotDriver_1_1Config_a6cad2ea47acc09ddadec330e570e0958}{}\label{structblmc__robots_1_1NJointBlmcRobotDriver_1_1Config_a6cad2ea47acc09ddadec330e570e0958}
+
+\begin{DoxyCompactList}\small\item\em Print the given configuration in a human-\/readable way. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{structblmc__robots_1_1NJointBlmcRobotDriver_1_1Config}{Config} \hyperlink{structblmc__robots_1_1NJointBlmcRobotDriver_1_1Config_a1499dfca020da9c45bfe5cbdcf9872f9}{load\+\_\+config} (const std\+::string \&config\+\_\+file\+\_\+name)
+\begin{DoxyCompactList}\small\item\em Load driver configuration from file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Can\+Port\+Array \hyperlink{structblmc__robots_1_1NJointBlmcRobotDriver_1_1Config_a849381580e6d6d0768e6a4e04a394cfd}{can\+\_\+ports}
+\begin{DoxyCompactList}\small\item\em List of C\+AN port names used by the robot. \end{DoxyCompactList}\item 
+double \hyperlink{structblmc__robots_1_1NJointBlmcRobotDriver_1_1Config_ab7f483ae02a0c026981c223c97c462c5}{max\+\_\+current\+\_\+A} = 0.\+0\hypertarget{structblmc__robots_1_1NJointBlmcRobotDriver_1_1Config_ab7f483ae02a0c026981c223c97c462c5}{}\label{structblmc__robots_1_1NJointBlmcRobotDriver_1_1Config_ab7f483ae02a0c026981c223c97c462c5}
+
+\begin{DoxyCompactList}\small\item\em Maximum current that can be sent to the motor \mbox{[}A\mbox{]}. \end{DoxyCompactList}\item 
+bool \hyperlink{structblmc__robots_1_1NJointBlmcRobotDriver_1_1Config_a8cbf3c740b0cae7afb7170d51e04b60d}{has\+\_\+endstop} = false
+\begin{DoxyCompactList}\small\item\em Whether the joints have physical end stops or not. \end{DoxyCompactList}\item 
+struct \hyperlink{classblmc__robots_1_1NJointBlmcRobotDriver}{blmc\+\_\+robots\+::\+N\+Joint\+Blmc\+Robot\+Driver}$<$ N\+\_\+\+J\+O\+I\+N\+TS, N\+\_\+\+M\+O\+T\+O\+R\+\_\+\+B\+O\+A\+R\+DS $>$\+::Config\+:: \{ ... \}  \hyperlink{structblmc__robots_1_1NJointBlmcRobotDriver_1_1Config_af8b6a47f77f116d4749cf0ea2344727e}{calibration}\hypertarget{structblmc__robots_1_1NJointBlmcRobotDriver_1_1Config_af8b6a47f77f116d4749cf0ea2344727e}{}\label{structblmc__robots_1_1NJointBlmcRobotDriver_1_1Config_af8b6a47f77f116d4749cf0ea2344727e}
+
+\begin{DoxyCompactList}\small\item\em Parameters related to calibration. \end{DoxyCompactList}\item 
+Vector \hyperlink{structblmc__robots_1_1NJointBlmcRobotDriver_1_1Config_a6548c1cc2f3c2789d44c01e2e3d24e11}{safety\+\_\+kd} = Vector\+::\+Constant(0.\+1)\hypertarget{structblmc__robots_1_1NJointBlmcRobotDriver_1_1Config_a6548c1cc2f3c2789d44c01e2e3d24e11}{}\label{structblmc__robots_1_1NJointBlmcRobotDriver_1_1Config_a6548c1cc2f3c2789d44c01e2e3d24e11}
+
+\begin{DoxyCompactList}\small\item\em D-\/gain to dampen velocity. Set to zero to disable damping. \end{DoxyCompactList}\item 
+struct \hyperlink{classblmc__robots_1_1NJointBlmcRobotDriver}{blmc\+\_\+robots\+::\+N\+Joint\+Blmc\+Robot\+Driver}$<$ N\+\_\+\+J\+O\+I\+N\+TS, N\+\_\+\+M\+O\+T\+O\+R\+\_\+\+B\+O\+A\+R\+DS $>$\+::Config\+:: \{ ... \}  \hyperlink{structblmc__robots_1_1NJointBlmcRobotDriver_1_1Config_a7bd95f2f62c0f88d2cc6cf1ab34a50c8}{position\+\_\+control\+\_\+gains}\hypertarget{structblmc__robots_1_1NJointBlmcRobotDriver_1_1Config_a7bd95f2f62c0f88d2cc6cf1ab34a50c8}{}\label{structblmc__robots_1_1NJointBlmcRobotDriver_1_1Config_a7bd95f2f62c0f88d2cc6cf1ab34a50c8}
+
+\begin{DoxyCompactList}\small\item\em Default control gains for the position PD controller. \end{DoxyCompactList}\item 
+Vector \hyperlink{structblmc__robots_1_1NJointBlmcRobotDriver_1_1Config_a67b22638d86285d94021e9d1c0c1b6d7}{home\+\_\+offset\+\_\+rad} = Vector\+::\+Zero()\hypertarget{structblmc__robots_1_1NJointBlmcRobotDriver_1_1Config_a67b22638d86285d94021e9d1c0c1b6d7}{}\label{structblmc__robots_1_1NJointBlmcRobotDriver_1_1Config_a67b22638d86285d94021e9d1c0c1b6d7}
+
+\begin{DoxyCompactList}\small\item\em Offset between home position and zero. \end{DoxyCompactList}\item 
+Vector \hyperlink{structblmc__robots_1_1NJointBlmcRobotDriver_1_1Config_a797ec8a753d4daf0f2df89ebaa313a13}{initial\+\_\+position\+\_\+rad} = Vector\+::\+Zero()\hypertarget{structblmc__robots_1_1NJointBlmcRobotDriver_1_1Config_a797ec8a753d4daf0f2df89ebaa313a13}{}\label{structblmc__robots_1_1NJointBlmcRobotDriver_1_1Config_a797ec8a753d4daf0f2df89ebaa313a13}
+
+\begin{DoxyCompactList}\small\item\em Initial position to which the robot moves after initialization. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T $>$ }\\static void \hyperlink{structblmc__robots_1_1NJointBlmcRobotDriver_1_1Config_a0d5d8b4ad8693498e56a95e5cbbad9f6}{set\+\_\+config\+\_\+value} (const Y\+A\+M\+L\+::\+Node \&user\+\_\+config, const std\+::string \&name, T $\ast$var)
+\begin{DoxyCompactList}\small\item\em Set value from user configuration to var if specified. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$size\+\_\+t N\+\_\+\+J\+O\+I\+N\+TS, size\+\_\+t N\+\_\+\+M\+O\+T\+O\+R\+\_\+\+B\+O\+A\+R\+DS$>$\\*
+struct blmc\+\_\+robots\+::\+N\+Joint\+Blmc\+Robot\+Driver$<$ N\+\_\+\+J\+O\+I\+N\+T\+S, N\+\_\+\+M\+O\+T\+O\+R\+\_\+\+B\+O\+A\+R\+D\+S $>$\+::\+Config}
+
+Configuration of the robot that can be changed by the user. 
+
+\subsection{Member Function Documentation}
+\index{blmc\+\_\+robots\+::\+N\+Joint\+Blmc\+Robot\+Driver\+::\+Config@{blmc\+\_\+robots\+::\+N\+Joint\+Blmc\+Robot\+Driver\+::\+Config}!load\+\_\+config@{load\+\_\+config}}
+\index{load\+\_\+config@{load\+\_\+config}!blmc\+\_\+robots\+::\+N\+Joint\+Blmc\+Robot\+Driver\+::\+Config@{blmc\+\_\+robots\+::\+N\+Joint\+Blmc\+Robot\+Driver\+::\+Config}}
+\subsubsection[{\texorpdfstring{load\+\_\+config(const std\+::string \&config\+\_\+file\+\_\+name)}{load_config(const std::string &config_file_name)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$size\+\_\+t N\+\_\+\+J\+O\+I\+N\+TS, size\+\_\+t N\+\_\+\+M\+O\+T\+O\+R\+\_\+\+B\+O\+A\+R\+DS$>$ static {\bf Config} {\bf blmc\+\_\+robots\+::\+N\+Joint\+Blmc\+Robot\+Driver}$<$ N\+\_\+\+J\+O\+I\+N\+TS, N\+\_\+\+M\+O\+T\+O\+R\+\_\+\+B\+O\+A\+R\+DS $>$\+::Config\+::load\+\_\+config (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{config\+\_\+file\+\_\+name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{structblmc__robots_1_1NJointBlmcRobotDriver_1_1Config_a1499dfca020da9c45bfe5cbdcf9872f9}{}\label{structblmc__robots_1_1NJointBlmcRobotDriver_1_1Config_a1499dfca020da9c45bfe5cbdcf9872f9}
+
+
+Load driver configuration from file. 
+
+Load the configuration from the specified Y\+A\+ML file. The file is expected to have the same structure/key naming as the \hyperlink{structblmc__robots_1_1NJointBlmcRobotDriver_1_1Config}{Config} struct. If a value can not be read from the file, the application exists with an error message.
+
+
+\begin{DoxyParams}{Parameters}
+{\em config\+\_\+file\+\_\+name} & Path/name of the configuration Y\+A\+ML file.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Configuration 
+\end{DoxyReturn}
+\index{blmc\+\_\+robots\+::\+N\+Joint\+Blmc\+Robot\+Driver\+::\+Config@{blmc\+\_\+robots\+::\+N\+Joint\+Blmc\+Robot\+Driver\+::\+Config}!set\+\_\+config\+\_\+value@{set\+\_\+config\+\_\+value}}
+\index{set\+\_\+config\+\_\+value@{set\+\_\+config\+\_\+value}!blmc\+\_\+robots\+::\+N\+Joint\+Blmc\+Robot\+Driver\+::\+Config@{blmc\+\_\+robots\+::\+N\+Joint\+Blmc\+Robot\+Driver\+::\+Config}}
+\subsubsection[{\texorpdfstring{set\+\_\+config\+\_\+value(const Y\+A\+M\+L\+::\+Node \&user\+\_\+config, const std\+::string \&name, T $\ast$var)}{set_config_value(const YAML::Node &user_config, const std::string &name, T *var)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$size\+\_\+t N\+\_\+\+J\+O\+I\+N\+TS, size\+\_\+t N\+\_\+\+M\+O\+T\+O\+R\+\_\+\+B\+O\+A\+R\+DS$>$ template$<$typename T $>$ static void {\bf blmc\+\_\+robots\+::\+N\+Joint\+Blmc\+Robot\+Driver}$<$ N\+\_\+\+J\+O\+I\+N\+TS, N\+\_\+\+M\+O\+T\+O\+R\+\_\+\+B\+O\+A\+R\+DS $>$\+::Config\+::set\+\_\+config\+\_\+value (
+\begin{DoxyParamCaption}
+\item[{const Y\+A\+M\+L\+::\+Node \&}]{user\+\_\+config, }
+\item[{const std\+::string \&}]{name, }
+\item[{T $\ast$}]{var}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\hypertarget{structblmc__robots_1_1NJointBlmcRobotDriver_1_1Config_a0d5d8b4ad8693498e56a95e5cbbad9f6}{}\label{structblmc__robots_1_1NJointBlmcRobotDriver_1_1Config_a0d5d8b4ad8693498e56a95e5cbbad9f6}
+
+
+Set value from user configuration to var if specified. 
+
+Checks if a field {\ttfamily name} exists in {\ttfamily user\+\_\+config}. If yes, its value is written to {\ttfamily var}, otherwise {\ttfamily var} is unchanged.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em user\+\_\+config} & Y\+A\+ML node containing the user configuration. \\
+\hline
+\mbox{\tt in}  & {\em name} & Name of the configuration entry. \\
+\hline
+\mbox{\tt out}  & {\em var} & Variable to which configuration is written. Value is unchanged if the specified field name does not exist in user\+\_\+config, i.\+e. it can be initialized with a default value. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\index{blmc\+\_\+robots\+::\+N\+Joint\+Blmc\+Robot\+Driver\+::\+Config@{blmc\+\_\+robots\+::\+N\+Joint\+Blmc\+Robot\+Driver\+::\+Config}!can\+\_\+ports@{can\+\_\+ports}}
+\index{can\+\_\+ports@{can\+\_\+ports}!blmc\+\_\+robots\+::\+N\+Joint\+Blmc\+Robot\+Driver\+::\+Config@{blmc\+\_\+robots\+::\+N\+Joint\+Blmc\+Robot\+Driver\+::\+Config}}
+\subsubsection[{\texorpdfstring{can\+\_\+ports}{can_ports}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$size\+\_\+t N\+\_\+\+J\+O\+I\+N\+TS, size\+\_\+t N\+\_\+\+M\+O\+T\+O\+R\+\_\+\+B\+O\+A\+R\+DS$>$ Can\+Port\+Array {\bf blmc\+\_\+robots\+::\+N\+Joint\+Blmc\+Robot\+Driver}$<$ N\+\_\+\+J\+O\+I\+N\+TS, N\+\_\+\+M\+O\+T\+O\+R\+\_\+\+B\+O\+A\+R\+DS $>$\+::Config\+::can\+\_\+ports}\hypertarget{structblmc__robots_1_1NJointBlmcRobotDriver_1_1Config_a849381580e6d6d0768e6a4e04a394cfd}{}\label{structblmc__robots_1_1NJointBlmcRobotDriver_1_1Config_a849381580e6d6d0768e6a4e04a394cfd}
+
+
+List of C\+AN port names used by the robot. 
+
+For each motor control board used by the robot, this specifies the C\+AN port through which it is connected.
+
+Example\+: {\ttfamily \{\char`\"{}can0\char`\"{}, \char`\"{}can1\char`\"{}\}} \index{blmc\+\_\+robots\+::\+N\+Joint\+Blmc\+Robot\+Driver\+::\+Config@{blmc\+\_\+robots\+::\+N\+Joint\+Blmc\+Robot\+Driver\+::\+Config}!has\+\_\+endstop@{has\+\_\+endstop}}
+\index{has\+\_\+endstop@{has\+\_\+endstop}!blmc\+\_\+robots\+::\+N\+Joint\+Blmc\+Robot\+Driver\+::\+Config@{blmc\+\_\+robots\+::\+N\+Joint\+Blmc\+Robot\+Driver\+::\+Config}}
+\subsubsection[{\texorpdfstring{has\+\_\+endstop}{has_endstop}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$size\+\_\+t N\+\_\+\+J\+O\+I\+N\+TS, size\+\_\+t N\+\_\+\+M\+O\+T\+O\+R\+\_\+\+B\+O\+A\+R\+DS$>$ bool {\bf blmc\+\_\+robots\+::\+N\+Joint\+Blmc\+Robot\+Driver}$<$ N\+\_\+\+J\+O\+I\+N\+TS, N\+\_\+\+M\+O\+T\+O\+R\+\_\+\+B\+O\+A\+R\+DS $>$\+::Config\+::has\+\_\+endstop = false}\hypertarget{structblmc__robots_1_1NJointBlmcRobotDriver_1_1Config_a8cbf3c740b0cae7afb7170d51e04b60d}{}\label{structblmc__robots_1_1NJointBlmcRobotDriver_1_1Config_a8cbf3c740b0cae7afb7170d51e04b60d}
+
+
+Whether the joints have physical end stops or not. 
+
+This is for example relevant for homing, where (in case this value is set to true) all joints move until they hit the end stop to determine their absolute position.
+
+Note that not having end stops does not mean that the joint can rotate freely in general. 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/blmc\+\_\+robots/\hyperlink{n__joint__blmc__robot__driver_8hpp}{n\+\_\+joint\+\_\+blmc\+\_\+robot\+\_\+driver.\+hpp}\end{DoxyCompactItemize}

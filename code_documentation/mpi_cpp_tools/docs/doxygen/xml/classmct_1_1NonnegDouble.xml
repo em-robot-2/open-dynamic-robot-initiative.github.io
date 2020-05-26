@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classmct_1_1NonnegDouble" kind="class" language="C++" prot="public">
+    <compoundname>mct::NonnegDouble</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmct_1_1NonnegDouble_1a5129a6c7ffbd14b989523a210e8180e4" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double mct::NonnegDouble::value_</definition>
+        <argsstring></argsstring>
+        <name>value_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mpi_cpp_tools/basic_tools.hpp" line="39" column="1" bodyfile="include/mpi_cpp_tools/basic_tools.hpp" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmct_1_1NonnegDouble_1a65280a4cd99d97a93b4593048cc4df55" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>mct::NonnegDouble::NonnegDouble</definition>
+        <argsstring>()</argsstring>
+        <name>NonnegDouble</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mpi_cpp_tools/basic_tools.hpp" line="20" column="1" bodyfile="include/mpi_cpp_tools/basic_tools.hpp" bodystart="20" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="classmct_1_1NonnegDouble_1a416aa156d31270f95b569b2e00cafa06" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>mct::NonnegDouble::NonnegDouble</definition>
+        <argsstring>(double value)</argsstring>
+        <name>NonnegDouble</name>
+        <param>
+          <type>double</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mpi_cpp_tools/basic_tools.hpp" line="26" column="1" bodyfile="include/mpi_cpp_tools/basic_tools.hpp" bodystart="26" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="classmct_1_1NonnegDouble_1aabb3515195942147a8cd5e81a34331ca" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>mct::NonnegDouble::operator double</definition>
+        <argsstring>() const </argsstring>
+        <name>operator double</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mpi_cpp_tools/basic_tools.hpp" line="33" column="1" bodyfile="include/mpi_cpp_tools/basic_tools.hpp" bodystart="33" bodyend="36"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/mpi_cpp_tools/basic_tools.hpp" line="18" column="1" bodyfile="include/mpi_cpp_tools/basic_tools.hpp" bodystart="17" bodyend="40"/>
+    <listofallmembers>
+      <member refid="classmct_1_1NonnegDouble_1a65280a4cd99d97a93b4593048cc4df55" prot="public" virt="non-virtual"><scope>mct::NonnegDouble</scope><name>NonnegDouble</name></member>
+      <member refid="classmct_1_1NonnegDouble_1a416aa156d31270f95b569b2e00cafa06" prot="public" virt="non-virtual"><scope>mct::NonnegDouble</scope><name>NonnegDouble</name></member>
+      <member refid="classmct_1_1NonnegDouble_1aabb3515195942147a8cd5e81a34331ca" prot="public" virt="non-virtual"><scope>mct::NonnegDouble</scope><name>operator double</name></member>
+      <member refid="classmct_1_1NonnegDouble_1a5129a6c7ffbd14b989523a210e8180e4" prot="private" virt="non-virtual"><scope>mct::NonnegDouble</scope><name>value_</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

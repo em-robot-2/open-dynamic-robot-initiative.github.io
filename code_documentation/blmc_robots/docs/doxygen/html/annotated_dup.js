@@ -3,7 +3,6 @@ var annotated_dup =
     [ "blmc_robots", null, [
       [ "BlmcJointModule", "classblmc__robots_1_1BlmcJointModule.html", "classblmc__robots_1_1BlmcJointModule" ],
       [ "BlmcJointModules", "classblmc__robots_1_1BlmcJointModules.html", "classblmc__robots_1_1BlmcJointModules" ],
-      [ "CalibrationParameters", "structblmc__robots_1_1CalibrationParameters.html", "structblmc__robots_1_1CalibrationParameters" ],
       [ "HomingState", "structblmc__robots_1_1HomingState.html", "structblmc__robots_1_1HomingState" ],
       [ "MotorParameters", "structblmc__robots_1_1MotorParameters.html", "structblmc__robots_1_1MotorParameters" ],
       [ "NJointBlmcRobotDriver", "classblmc__robots_1_1NJointBlmcRobotDriver.html", "classblmc__robots_1_1NJointBlmcRobotDriver" ],

@@ -1,0 +1,88 @@
+\hypertarget{classrobot__interfaces_1_1RobotFrontend}{}\section{robot\+\_\+interfaces\+:\+:Robot\+Frontend$<$ Action, Observation $>$ Class Template Reference}
+\label{classrobot__interfaces_1_1RobotFrontend}\index{robot\+\_\+interfaces\+::\+Robot\+Frontend$<$ Action, Observation $>$@{robot\+\_\+interfaces\+::\+Robot\+Frontend$<$ Action, Observation $>$}}
+
+
+Communication link between \hyperlink{classrobot__interfaces_1_1RobotData}{Robot\+Data} and the user.  
+
+
+
+
+{\ttfamily \#include $<$robot\+\_\+frontend.\+hpp$>$}
+
+
+
+Inheritance diagram for robot\+\_\+interfaces\+:\+:Robot\+Frontend$<$ Action, Observation $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=237pt]{classrobot__interfaces_1_1RobotFrontend__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef time\+\_\+series\+::\+Timestamp {\bfseries Time\+Stamp}\hypertarget{classrobot__interfaces_1_1RobotFrontend_a02bebc6c3e9822f026c48f970d80a865}{}\label{classrobot__interfaces_1_1RobotFrontend_a02bebc6c3e9822f026c48f970d80a865}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Robot\+Frontend} (std\+::shared\+\_\+ptr$<$ \hyperlink{classrobot__interfaces_1_1RobotData}{Robot\+Data}$<$ \hyperlink{classAction}{Action}, \hyperlink{classObservation}{Observation} $>$$>$ robot\+\_\+data)\hypertarget{classrobot__interfaces_1_1RobotFrontend_a0bd84764fb1a3004282706963aa48c3e}{}\label{classrobot__interfaces_1_1RobotFrontend_a0bd84764fb1a3004282706963aa48c3e}
+
+\item 
+\hyperlink{classObservation}{Observation} {\bfseries get\+\_\+observation} (const Time\+Index \&t)\hypertarget{classrobot__interfaces_1_1RobotFrontend_a7628a6f8d6858bb42565ad3577b9d5f0}{}\label{classrobot__interfaces_1_1RobotFrontend_a7628a6f8d6858bb42565ad3577b9d5f0}
+
+\item 
+\hyperlink{classAction}{Action} {\bfseries get\+\_\+desired\+\_\+action} (const Time\+Index \&t)\hypertarget{classrobot__interfaces_1_1RobotFrontend_ad9cf328a6a438cf40df1944c1772fca8}{}\label{classrobot__interfaces_1_1RobotFrontend_ad9cf328a6a438cf40df1944c1772fca8}
+
+\item 
+\hyperlink{classAction}{Action} {\bfseries get\+\_\+applied\+\_\+action} (const Time\+Index \&t)\hypertarget{classrobot__interfaces_1_1RobotFrontend_a52f915a23cd37e4c108080ed5cba674a}{}\label{classrobot__interfaces_1_1RobotFrontend_a52f915a23cd37e4c108080ed5cba674a}
+
+\item 
+\hyperlink{structrobot__interfaces_1_1Status}{Status} {\bfseries get\+\_\+status} (const Time\+Index \&t)\hypertarget{classrobot__interfaces_1_1RobotFrontend_a48eff6e33cdafa175e8e311296aacfec}{}\label{classrobot__interfaces_1_1RobotFrontend_a48eff6e33cdafa175e8e311296aacfec}
+
+\item 
+Time\+Stamp {\bfseries get\+\_\+time\+\_\+stamp\+\_\+ms} (const Time\+Index \&t)\hypertarget{classrobot__interfaces_1_1RobotFrontend_abaf909237a40a0da1839d5e341ad572b}{}\label{classrobot__interfaces_1_1RobotFrontend_abaf909237a40a0da1839d5e341ad572b}
+
+\item 
+Time\+Index {\bfseries get\+\_\+current\+\_\+timeindex} ()\hypertarget{classrobot__interfaces_1_1RobotFrontend_a3d74aa3bd15ab0baef5d011f06aad7e7}{}\label{classrobot__interfaces_1_1RobotFrontend_a3d74aa3bd15ab0baef5d011f06aad7e7}
+
+\item 
+Time\+Index {\bfseries append\+\_\+desired\+\_\+action} (const \hyperlink{classAction}{Action} \&desired\+\_\+action)\hypertarget{classrobot__interfaces_1_1RobotFrontend_a26c137f65b908d6eddffff75df38361a}{}\label{classrobot__interfaces_1_1RobotFrontend_a26c137f65b908d6eddffff75df38361a}
+
+\item 
+void {\bfseries wait\+\_\+until\+\_\+timeindex} (const Time\+Index \&t)\hypertarget{classrobot__interfaces_1_1RobotFrontend_a9b5242a6781e6028a84a6eb358b1ad10}{}\label{classrobot__interfaces_1_1RobotFrontend_a9b5242a6781e6028a84a6eb358b1ad10}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{classrobot__interfaces_1_1RobotData}{Robot\+Data}$<$ \hyperlink{classAction}{Action}, \hyperlink{classObservation}{Observation} $>$ $>$ {\bfseries robot\+\_\+data\+\_\+}\hypertarget{classrobot__interfaces_1_1RobotFrontend_a256d4a3359c46caca9fe92d62b4ae413}{}\label{classrobot__interfaces_1_1RobotFrontend_a256d4a3359c46caca9fe92d62b4ae413}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename Action, typename Observation$>$\\*
+class robot\+\_\+interfaces\+::\+Robot\+Frontend$<$ Action, Observation $>$}
+
+Communication link between \hyperlink{classrobot__interfaces_1_1RobotData}{Robot\+Data} and the user. 
+
+Takes care of communication between the \hyperlink{classrobot__interfaces_1_1RobotData}{Robot\+Data} and the user. It is just a thin wrapper around \hyperlink{classrobot__interfaces_1_1RobotData}{Robot\+Data} to facilitate interaction and also to make sure the user cannot use \hyperlink{classrobot__interfaces_1_1RobotData}{Robot\+Data} in incorrect ways.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em \hyperlink{classAction}{Action}} & \\
+\hline
+{\em \hyperlink{classObservation}{Observation}} & \\
+\hline
+\end{DoxyTemplParams}
+\begin{Desc}
+\item[Examples\+: ]\par
+\hyperlink{demo_8cpp-example}{demo.\+cpp}, and \hyperlink{demo_multiprocess_frontend_8cpp-example}{demo\+\_\+multiprocess\+\_\+frontend.\+cpp}.\end{Desc}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/robot\+\_\+interfaces/robot\+\_\+frontend.\+hpp\end{DoxyCompactItemize}

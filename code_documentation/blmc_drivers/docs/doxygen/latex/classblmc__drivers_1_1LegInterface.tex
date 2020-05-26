@@ -1,0 +1,213 @@
+\hypertarget{classblmc__drivers_1_1LegInterface}{}\section{blmc\+\_\+drivers\+:\+:Leg\+Interface Class Reference}
+\label{classblmc__drivers_1_1LegInterface}\index{blmc\+\_\+drivers\+::\+Leg\+Interface@{blmc\+\_\+drivers\+::\+Leg\+Interface}}
+
+
+This class defines an interface to control a leg.  
+
+
+
+
+{\ttfamily \#include $<$leg.\+hpp$>$}
+
+
+
+Inheritance diagram for blmc\+\_\+drivers\+:\+:Leg\+Interface\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=227pt]{classblmc__drivers_1_1LegInterface__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for blmc\+\_\+drivers\+:\+:Leg\+Interface\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=227pt]{classblmc__drivers_1_1LegInterface__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classblmc__drivers_1_1LegInterface_a9335cf8bf2595f70716159927d927346}{Motor\+Measurement\+Indexing} \{ \\*
+{\bfseries current}, 
+{\bfseries position}, 
+{\bfseries velocity}, 
+{\bfseries encoder\+\_\+index}, 
+\\*
+{\bfseries motor\+\_\+measurement\+\_\+count}
+ \}\hypertarget{classblmc__drivers_1_1LegInterface_a9335cf8bf2595f70716159927d927346}{}\label{classblmc__drivers_1_1LegInterface_a9335cf8bf2595f70716159927d927346}
+\begin{DoxyCompactList}\small\item\em Motor\+Measurement\+Indexing this enum allow to access the different kind of sensor measurements in an understandable way in the code. \end{DoxyCompactList}
+\item 
+enum \hyperlink{classblmc__drivers_1_1LegInterface_a2a11567617debfdb731ac06e2938712c}{Motor\+Indexing} \{ {\bfseries hip}, 
+{\bfseries knee}, 
+{\bfseries motor\+\_\+count}
+ \}\hypertarget{classblmc__drivers_1_1LegInterface_a2a11567617debfdb731ac06e2938712c}{}\label{classblmc__drivers_1_1LegInterface_a2a11567617debfdb731ac06e2938712c}
+\begin{DoxyCompactList}\small\item\em This enum list the motors in the leg. \end{DoxyCompactList}
+\item 
+typedef real\+\_\+time\+\_\+tools\+::\+Threadsafe\+Timeseries$<$ double $>$ \hyperlink{classblmc__drivers_1_1LegInterface_a57a35b64a76fb4225637828d1b1c35a6}{Scalar\+Timeseries}\hypertarget{classblmc__drivers_1_1LegInterface_a57a35b64a76fb4225637828d1b1c35a6}{}\label{classblmc__drivers_1_1LegInterface_a57a35b64a76fb4225637828d1b1c35a6}
+
+\begin{DoxyCompactList}\small\item\em Scalar\+Timeseries is a simple shortcut for more intelligible code. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Type $>$ }\\using \hyperlink{classblmc__drivers_1_1LegInterface_ac5af9e6514abff5ee918813925a8e42d}{Ptr} = std\+::shared\+\_\+ptr$<$ Type $>$
+\begin{DoxyCompactList}\small\item\em This is a shortcut for creating shared pointer in a simpler writting expression. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{classblmc__drivers_1_1LegInterface_afe46102b0ce1c790e921d71f86868066}{$\sim$\+Leg\+Interface} ()\hypertarget{classblmc__drivers_1_1LegInterface_afe46102b0ce1c790e921d71f86868066}{}\label{classblmc__drivers_1_1LegInterface_afe46102b0ce1c790e921d71f86868066}
+
+\begin{DoxyCompactList}\small\item\em Destroy the \hyperlink{classblmc__drivers_1_1LegInterface}{Leg\+Interface} object. \end{DoxyCompactList}\item 
+virtual \hyperlink{classblmc__drivers_1_1LegInterface_ac5af9e6514abff5ee918813925a8e42d}{Ptr}$<$ const \hyperlink{classblmc__drivers_1_1LegInterface_a57a35b64a76fb4225637828d1b1c35a6}{Scalar\+Timeseries} $>$ \hyperlink{classblmc__drivers_1_1LegInterface_ae653c7ee0ab7aa9d16a6bfce01580200}{get\+\_\+motor\+\_\+measurement} (const int \&motor\+\_\+index, const int \&measurement\+\_\+index) const =0
+\begin{DoxyCompactList}\small\item\em Getters. \end{DoxyCompactList}\item 
+virtual \hyperlink{classblmc__drivers_1_1LegInterface_ac5af9e6514abff5ee918813925a8e42d}{Ptr}$<$ const \hyperlink{classblmc__drivers_1_1LegInterface_a57a35b64a76fb4225637828d1b1c35a6}{Scalar\+Timeseries} $>$ \hyperlink{classblmc__drivers_1_1LegInterface_a44bac5c9a6015f0e08370b3bc9957512}{get\+\_\+current\+\_\+target} (const int \&motor\+\_\+index) const =0
+\begin{DoxyCompactList}\small\item\em Get the actual target current. \end{DoxyCompactList}\item 
+virtual \hyperlink{classblmc__drivers_1_1LegInterface_ac5af9e6514abff5ee918813925a8e42d}{Ptr}$<$ const \hyperlink{classblmc__drivers_1_1LegInterface_a57a35b64a76fb4225637828d1b1c35a6}{Scalar\+Timeseries} $>$ \hyperlink{classblmc__drivers_1_1LegInterface_ab724283c8eeadca0e7b8829de64f4f44}{get\+\_\+sent\+\_\+current\+\_\+target} (const int \&motor\+\_\+index) const =0
+\begin{DoxyCompactList}\small\item\em Get the last sent target current. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classblmc__drivers_1_1LegInterface_a6917a158f12589c9ee6aa45304fdafce}{set\+\_\+current\+\_\+target} (const double \&current\+\_\+target, const int \&motor\+\_\+index)=0
+\begin{DoxyCompactList}\small\item\em Setters. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classblmc__drivers_1_1LegInterface_aaf3d3759b63a3ffe7e9cee360302f9b7}{send\+\_\+if\+\_\+input\+\_\+changed} ()=0
+\begin{DoxyCompactList}\small\item\em Sender. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class defines an interface to control a leg. 
+
+This legg is composed of 2 motor, one for the hip and one for the knee. 
+
+\subsection{Member Typedef Documentation}
+\index{blmc\+\_\+drivers\+::\+Leg\+Interface@{blmc\+\_\+drivers\+::\+Leg\+Interface}!Ptr@{Ptr}}
+\index{Ptr@{Ptr}!blmc\+\_\+drivers\+::\+Leg\+Interface@{blmc\+\_\+drivers\+::\+Leg\+Interface}}
+\subsubsection[{\texorpdfstring{Ptr}{Ptr}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Type $>$ using {\bf blmc\+\_\+drivers\+::\+Leg\+Interface\+::\+Ptr} =  std\+::shared\+\_\+ptr$<$Type$>$}\hypertarget{classblmc__drivers_1_1LegInterface_ac5af9e6514abff5ee918813925a8e42d}{}\label{classblmc__drivers_1_1LegInterface_ac5af9e6514abff5ee918813925a8e42d}
+
+
+This is a shortcut for creating shared pointer in a simpler writting expression. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Type} & is the template paramer of the shared pointer. \\
+\hline
+\end{DoxyTemplParams}
+
+
+\subsection{Member Function Documentation}
+\index{blmc\+\_\+drivers\+::\+Leg\+Interface@{blmc\+\_\+drivers\+::\+Leg\+Interface}!get\+\_\+current\+\_\+target@{get\+\_\+current\+\_\+target}}
+\index{get\+\_\+current\+\_\+target@{get\+\_\+current\+\_\+target}!blmc\+\_\+drivers\+::\+Leg\+Interface@{blmc\+\_\+drivers\+::\+Leg\+Interface}}
+\subsubsection[{\texorpdfstring{get\+\_\+current\+\_\+target(const int \&motor\+\_\+index) const =0}{get_current_target(const int &motor_index) const =0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Ptr}$<$const {\bf Scalar\+Timeseries}$>$ blmc\+\_\+drivers\+::\+Leg\+Interface\+::get\+\_\+current\+\_\+target (
+\begin{DoxyParamCaption}
+\item[{const int \&}]{motor\+\_\+index}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classblmc__drivers_1_1LegInterface_a44bac5c9a6015f0e08370b3bc9957512}{}\label{classblmc__drivers_1_1LegInterface_a44bac5c9a6015f0e08370b3bc9957512}
+
+
+Get the actual target current. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em motor\+\_\+index} & designate the motor from which we want the data from. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Ptr$<$const Scalar\+Timeseries$>$ is the list of the lasts time stamped acquiered. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classblmc__drivers_1_1Leg_af4428c8734c5b393df8072a14850d9b1}{blmc\+\_\+drivers\+::\+Leg}.
+
+\index{blmc\+\_\+drivers\+::\+Leg\+Interface@{blmc\+\_\+drivers\+::\+Leg\+Interface}!get\+\_\+motor\+\_\+measurement@{get\+\_\+motor\+\_\+measurement}}
+\index{get\+\_\+motor\+\_\+measurement@{get\+\_\+motor\+\_\+measurement}!blmc\+\_\+drivers\+::\+Leg\+Interface@{blmc\+\_\+drivers\+::\+Leg\+Interface}}
+\subsubsection[{\texorpdfstring{get\+\_\+motor\+\_\+measurement(const int \&motor\+\_\+index, const int \&measurement\+\_\+index) const =0}{get_motor_measurement(const int &motor_index, const int &measurement_index) const =0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Ptr}$<$const {\bf Scalar\+Timeseries}$>$ blmc\+\_\+drivers\+::\+Leg\+Interface\+::get\+\_\+motor\+\_\+measurement (
+\begin{DoxyParamCaption}
+\item[{const int \&}]{motor\+\_\+index, }
+\item[{const int \&}]{measurement\+\_\+index}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classblmc__drivers_1_1LegInterface_ae653c7ee0ab7aa9d16a6bfce01580200}{}\label{classblmc__drivers_1_1LegInterface_ae653c7ee0ab7aa9d16a6bfce01580200}
+
+
+Getters. 
+
+Get the device output
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em motor\+\_\+index} & designate the motor from which we want the data from. \\
+\hline
+\mbox{\tt in}  & {\em measurement\+\_\+index} & is teh kind of data we are looking for. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Ptr$<$const Scalar\+Timeseries$>$ is the list of the lasts time stamped acquiered. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classblmc__drivers_1_1Leg_a585436aebc39562a5d1a486810b8b9ce}{blmc\+\_\+drivers\+::\+Leg}.
+
+\index{blmc\+\_\+drivers\+::\+Leg\+Interface@{blmc\+\_\+drivers\+::\+Leg\+Interface}!get\+\_\+sent\+\_\+current\+\_\+target@{get\+\_\+sent\+\_\+current\+\_\+target}}
+\index{get\+\_\+sent\+\_\+current\+\_\+target@{get\+\_\+sent\+\_\+current\+\_\+target}!blmc\+\_\+drivers\+::\+Leg\+Interface@{blmc\+\_\+drivers\+::\+Leg\+Interface}}
+\subsubsection[{\texorpdfstring{get\+\_\+sent\+\_\+current\+\_\+target(const int \&motor\+\_\+index) const =0}{get_sent_current_target(const int &motor_index) const =0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Ptr}$<$const {\bf Scalar\+Timeseries}$>$ blmc\+\_\+drivers\+::\+Leg\+Interface\+::get\+\_\+sent\+\_\+current\+\_\+target (
+\begin{DoxyParamCaption}
+\item[{const int \&}]{motor\+\_\+index}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classblmc__drivers_1_1LegInterface_ab724283c8eeadca0e7b8829de64f4f44}{}\label{classblmc__drivers_1_1LegInterface_ab724283c8eeadca0e7b8829de64f4f44}
+
+
+Get the last sent target current. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em motor\+\_\+index} & designate the motor from which we want the data from. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Ptr$<$const Scalar\+Timeseries$>$ is the list of the lasts time stamped acquiered. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classblmc__drivers_1_1Leg_a353253074a39f566055121c2cb4adc6a}{blmc\+\_\+drivers\+::\+Leg}.
+
+\index{blmc\+\_\+drivers\+::\+Leg\+Interface@{blmc\+\_\+drivers\+::\+Leg\+Interface}!send\+\_\+if\+\_\+input\+\_\+changed@{send\+\_\+if\+\_\+input\+\_\+changed}}
+\index{send\+\_\+if\+\_\+input\+\_\+changed@{send\+\_\+if\+\_\+input\+\_\+changed}!blmc\+\_\+drivers\+::\+Leg\+Interface@{blmc\+\_\+drivers\+::\+Leg\+Interface}}
+\subsubsection[{\texorpdfstring{send\+\_\+if\+\_\+input\+\_\+changed()=0}{send_if_input_changed()=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void blmc\+\_\+drivers\+::\+Leg\+Interface\+::send\+\_\+if\+\_\+input\+\_\+changed (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classblmc__drivers_1_1LegInterface_aaf3d3759b63a3ffe7e9cee360302f9b7}{}\label{classblmc__drivers_1_1LegInterface_aaf3d3759b63a3ffe7e9cee360302f9b7}
+
+
+Sender. 
+
+Actually send the target current to the motor cards. 
+
+Implemented in \hyperlink{classblmc__drivers_1_1Leg_a82bb681e4c5047babf699cff559e9488}{blmc\+\_\+drivers\+::\+Leg}.
+
+\index{blmc\+\_\+drivers\+::\+Leg\+Interface@{blmc\+\_\+drivers\+::\+Leg\+Interface}!set\+\_\+current\+\_\+target@{set\+\_\+current\+\_\+target}}
+\index{set\+\_\+current\+\_\+target@{set\+\_\+current\+\_\+target}!blmc\+\_\+drivers\+::\+Leg\+Interface@{blmc\+\_\+drivers\+::\+Leg\+Interface}}
+\subsubsection[{\texorpdfstring{set\+\_\+current\+\_\+target(const double \&current\+\_\+target, const int \&motor\+\_\+index)=0}{set_current_target(const double &current_target, const int &motor_index)=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void blmc\+\_\+drivers\+::\+Leg\+Interface\+::set\+\_\+current\+\_\+target (
+\begin{DoxyParamCaption}
+\item[{const double \&}]{current\+\_\+target, }
+\item[{const int \&}]{motor\+\_\+index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classblmc__drivers_1_1LegInterface_a6917a158f12589c9ee6aa45304fdafce}{}\label{classblmc__drivers_1_1LegInterface_a6917a158f12589c9ee6aa45304fdafce}
+
+
+Setters. 
+
+Set the current target saves internally the desired current. This data is not send to the motor yet. Please call send\+\_\+if\+\_\+input\+\_\+changed in order to actually send the data to the card.
+
+
+\begin{DoxyParams}{Parameters}
+{\em current\+\_\+target} & is the current to achieve on the motor card. \\
+\hline
+{\em motor\+\_\+index} & is the motor to control. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{classblmc__drivers_1_1Leg_a05415969ef111f86837b34bdaecb7320}{blmc\+\_\+drivers\+::\+Leg}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/blmc\+\_\+drivers/devices/\hyperlink{leg_8hpp}{leg.\+hpp}\end{DoxyCompactItemize}

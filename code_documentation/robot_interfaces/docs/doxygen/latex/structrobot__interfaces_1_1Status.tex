@@ -1,0 +1,83 @@
+\hypertarget{structrobot__interfaces_1_1Status}{}\section{robot\+\_\+interfaces\+:\+:Status Struct Reference}
+\label{structrobot__interfaces_1_1Status}\index{robot\+\_\+interfaces\+::\+Status@{robot\+\_\+interfaces\+::\+Status}}
+
+
+\hyperlink{structrobot__interfaces_1_1Status}{Status} information from the backend.  
+
+
+
+
+{\ttfamily \#include $<$status.\+hpp$>$}
+
+
+
+Inheritance diagram for robot\+\_\+interfaces\+:\+:Status\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=211pt]{structrobot__interfaces_1_1Status__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for robot\+\_\+interfaces\+:\+:Status\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=211pt]{structrobot__interfaces_1_1Status__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries Error\+Status} \{ {\bfseries N\+O\+\_\+\+E\+R\+R\+OR} = 0, 
+{\bfseries D\+R\+I\+V\+E\+R\+\_\+\+E\+R\+R\+OR}, 
+{\bfseries B\+A\+C\+K\+E\+N\+D\+\_\+\+E\+R\+R\+OR}
+ \}\hypertarget{structrobot__interfaces_1_1Status_a88f1cb8387648815ca75754985bdb3b6}{}\label{structrobot__interfaces_1_1Status_a88f1cb8387648815ca75754985bdb3b6}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class Archive $>$ }\\void {\bfseries serialize} (Archive \&archive)\hypertarget{structrobot__interfaces_1_1Status_a5531f83e2ef30f7629548194b4e3e9da}{}\label{structrobot__interfaces_1_1Status_a5531f83e2ef30f7629548194b4e3e9da}
+
+\item 
+std\+::vector$<$ std\+::string $>$ {\bfseries get\+\_\+name} () override\hypertarget{structrobot__interfaces_1_1Status_a2cd6543deb86d878ba43153c18d2fadb}{}\label{structrobot__interfaces_1_1Status_a2cd6543deb86d878ba43153c18d2fadb}
+
+\item 
+std\+::vector$<$ std\+::vector$<$ double $>$ $>$ {\bfseries get\+\_\+data} () override\hypertarget{structrobot__interfaces_1_1Status_af530134f33fa21c02d1157636c385fa3}{}\label{structrobot__interfaces_1_1Status_af530134f33fa21c02d1157636c385fa3}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t \hyperlink{structrobot__interfaces_1_1Status_a8ccb682cd2ba81059991f3b0b9ff0c00}{action\+\_\+repetitions} = 0\hypertarget{structrobot__interfaces_1_1Status_a8ccb682cd2ba81059991f3b0b9ff0c00}{}\label{structrobot__interfaces_1_1Status_a8ccb682cd2ba81059991f3b0b9ff0c00}
+
+\begin{DoxyCompactList}\small\item\em Number of times the current action has been repeated because no new action has been provided. \end{DoxyCompactList}\item 
+Error\+Status \hyperlink{structrobot__interfaces_1_1Status_a80ffe66121d425d48386b39984cd4c7b}{error\+\_\+status} = Error\+Status\+::\+N\+O\+\_\+\+E\+R\+R\+OR\hypertarget{structrobot__interfaces_1_1Status_a80ffe66121d425d48386b39984cd4c7b}{}\label{structrobot__interfaces_1_1Status_a80ffe66121d425d48386b39984cd4c7b}
+
+\begin{DoxyCompactList}\small\item\em Indicates if there is an error and, if yes, in which component. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{structrobot__interfaces_1_1Status_a7da10fb73cd19f2840c438d321eac744}{error\+\_\+message}
+\begin{DoxyCompactList}\small\item\em Message describing the error. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{structrobot__interfaces_1_1Status}{Status} information from the backend. 
+
+This struct is used to report status information that is not directly robot-\/related from the backend to the frontend. 
+
+\subsection{Member Data Documentation}
+\index{robot\+\_\+interfaces\+::\+Status@{robot\+\_\+interfaces\+::\+Status}!error\+\_\+message@{error\+\_\+message}}
+\index{error\+\_\+message@{error\+\_\+message}!robot\+\_\+interfaces\+::\+Status@{robot\+\_\+interfaces\+::\+Status}}
+\subsubsection[{\texorpdfstring{error\+\_\+message}{error_message}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string robot\+\_\+interfaces\+::\+Status\+::error\+\_\+message}\hypertarget{structrobot__interfaces_1_1Status_a7da10fb73cd19f2840c438d321eac744}{}\label{structrobot__interfaces_1_1Status_a7da10fb73cd19f2840c438d321eac744}
+
+
+Message describing the error. 
+
+Value is undefined if {\ttfamily error\+\_\+status == N\+O\+\_\+\+E\+R\+R\+OR}. 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/robot\+\_\+interfaces/\hyperlink{status_8hpp}{status.\+hpp}\end{DoxyCompactItemize}

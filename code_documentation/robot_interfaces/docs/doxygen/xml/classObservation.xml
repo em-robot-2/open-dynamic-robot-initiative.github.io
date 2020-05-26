@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classObservation" kind="class" language="C++" prot="public">
+    <compoundname>Observation</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classObservation_1a87baf44e3dbe1c7c43df49a9311d2c05" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Observation::values[2]</definition>
+        <argsstring>[2]</argsstring>
+        <name>values</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="demos/demo.cpp" line="47" column="1" bodyfile="demos/demo.cpp" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classObservation_1acbc2da8c3b6b8c80feef13ceb203be65" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Observation::print</definition>
+        <argsstring>(bool backline)</argsstring>
+        <name>print</name>
+        <param>
+          <type>bool</type>
+          <declname>backline</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="demos/demo.cpp" line="49" column="1" bodyfile="demos/demo.cpp" bodystart="49" bodyend="53"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="demos/demo.cpp" line="45" column="1" bodyfile="demos/demo.cpp" bodystart="44" bodyend="54"/>
+    <listofallmembers>
+      <member refid="classObservation_1acbc2da8c3b6b8c80feef13ceb203be65" prot="public" virt="non-virtual"><scope>Observation</scope><name>print</name></member>
+      <member refid="classObservation_1a87baf44e3dbe1c7c43df49a9311d2c05" prot="public" virt="non-virtual"><scope>Observation</scope><name>values</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

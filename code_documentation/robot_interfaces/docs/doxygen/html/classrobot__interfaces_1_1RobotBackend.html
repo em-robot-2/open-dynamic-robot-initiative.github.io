@@ -124,8 +124,8 @@ $(document).ready(function(){initNavTree('classrobot__interfaces_1_1RobotBackend
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a44a03b223170528f46ad991c9ce1985c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrobot__interfaces_1_1RobotBackend.html#a44a03b223170528f46ad991c9ce1985c">RobotBackend</a> (std::shared_ptr&lt; <a class="el" href="classrobot__interfaces_1_1RobotDriver.html">RobotDriver</a>&lt; <a class="el" href="classAction.html">Action</a>, <a class="el" href="classObservation.html">Observation</a> &gt;&gt; robot_driver, std::shared_ptr&lt; <a class="el" href="classrobot__interfaces_1_1RobotData.html">RobotData</a>&lt; <a class="el" href="classAction.html">Action</a>, <a class="el" href="classObservation.html">Observation</a> &gt;&gt; robot_data, const bool real_time_mode=true, const double first_action_timeout=std::numeric_limits&lt; double &gt;::infinity())</td></tr>
-<tr class="separator:a44a03b223170528f46ad991c9ce1985c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af454a09b5d269ed32b0ae2d35abdb833"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrobot__interfaces_1_1RobotBackend.html#af454a09b5d269ed32b0ae2d35abdb833">RobotBackend</a> (std::shared_ptr&lt; <a class="el" href="classrobot__interfaces_1_1RobotDriver.html">RobotDriver</a>&lt; <a class="el" href="classAction.html">Action</a>, <a class="el" href="classObservation.html">Observation</a> &gt;&gt; robot_driver, std::shared_ptr&lt; <a class="el" href="classrobot__interfaces_1_1RobotData.html">RobotData</a>&lt; <a class="el" href="classAction.html">Action</a>, <a class="el" href="classObservation.html">Observation</a> &gt;&gt; robot_data, const bool real_time_mode=true, const double first_action_timeout=std::numeric_limits&lt; double &gt;::infinity(), const uint32_t max_number_of_actions=0)</td></tr>
+<tr class="separator:af454a09b5d269ed32b0ae2d35abdb833"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae354dfd960d4fd0d2f9242dcfb4a701f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae354dfd960d4fd0d2f9242dcfb4a701f"></a>
 uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>get_max_action_repetitions</b> ()</td></tr>
 <tr class="separator:ae354dfd960d4fd0d2f9242dcfb4a701f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -172,6 +172,9 @@ std::shared_ptr&lt; <a class="el" href="classrobot__interfaces_1_1RobotData.html
 <tr class="memitem:a56f111a9e0663eedefbaf55de36f7cac"><td class="memItemLeft" align="right" valign="top">const double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrobot__interfaces_1_1RobotBackend.html#a56f111a9e0663eedefbaf55de36f7cac">first_action_timeout_</a></td></tr>
 <tr class="memdesc:a56f111a9e0663eedefbaf55de36f7cac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Timeout for the first action to arrive.  <a href="#a56f111a9e0663eedefbaf55de36f7cac">More...</a><br /></td></tr>
 <tr class="separator:a56f111a9e0663eedefbaf55de36f7cac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7cac555549bff96a32da042a97919d47"><td class="memItemLeft" align="right" valign="top">const uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrobot__interfaces_1_1RobotBackend.html#a7cac555549bff96a32da042a97919d47">max_number_of_actions_</a></td></tr>
+<tr class="memdesc:a7cac555549bff96a32da042a97919d47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum number of actions that are executed by the backend.  <a href="#a7cac555549bff96a32da042a97919d47">More...</a><br /></td></tr>
+<tr class="separator:a7cac555549bff96a32da042a97919d47"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abe24206dcf102b33f8ee472e287f485a"><td class="memItemLeft" align="right" valign="top">std::atomic&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrobot__interfaces_1_1RobotBackend.html#abe24206dcf102b33f8ee472e287f485a">is_shutdown_requested_</a></td></tr>
 <tr class="memdesc:abe24206dcf102b33f8ee472e287f485a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set to true when shutdown is requested.  <a href="#abe24206dcf102b33f8ee472e287f485a">More...</a><br /></td></tr>
 <tr class="separator:abe24206dcf102b33f8ee472e287f485a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -205,7 +208,7 @@ class robot_interfaces::RobotBackend&lt; Action, Observation &gt;</h3>
 </dl>
 <dl><dt><b>Examples: </b></dt><dd><a class="el" href="demo_8cpp-example.html#_a6">demo.cpp</a>, and <a class="el" href="demo_multiprocess_backend_8cpp-example.html#_a7">demo_multiprocess_backend.cpp</a>.</dd>
 </dl></div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a44a03b223170528f46ad991c9ce1985c"></a>
+<a class="anchor" id="af454a09b5d269ed32b0ae2d35abdb833"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -236,7 +239,13 @@ template&lt;typename Action, typename Observation&gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const double&#160;</td>
-          <td class="paramname"><em>first_action_timeout</em> = <code>std::numeric_limits&lt;double&gt;::infinity()</code>&#160;</td>
+          <td class="paramname"><em>first_action_timeout</em> = <code>std::numeric_limits&lt;double&gt;::infinity()</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint32_t&#160;</td>
+          <td class="paramname"><em>max_number_of_actions</em> = <code>0</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -255,7 +264,8 @@ template&lt;typename Action, typename Observation&gt; </div>
     <tr><td class="paramname">robot_driver</td><td><a class="el" href="classDriver.html">Driver</a> instance for the actual robot. </td></tr>
     <tr><td class="paramname">robot_data</td><td>Data is send to/retrieved from here. </td></tr>
     <tr><td class="paramname">real_time_mode</td><td>Enable/disable real-time mode. In real-time mode, the backend will repeat previous actions if the new one is not provided in time or fail with an error if the allowed number of repetitions is exceeded. In non-real-time mode, it will simply block and wait until the action is provided. </td></tr>
-    <tr><td class="paramname">first_action_timeout</td><td>See <a class="el" href="classrobot__interfaces_1_1RobotBackend.html#a56f111a9e0663eedefbaf55de36f7cac" title="Timeout for the first action to arrive. ">RobotBackend::first_action_timeout_</a> </td></tr>
+    <tr><td class="paramname">first_action_timeout</td><td>See <a class="el" href="classrobot__interfaces_1_1RobotBackend.html#a56f111a9e0663eedefbaf55de36f7cac" title="Timeout for the first action to arrive. ">RobotBackend::first_action_timeout_</a>. </td></tr>
+    <tr><td class="paramname">max_number_of_actions</td><td>See <a class="el" href="classrobot__interfaces_1_1RobotBackend.html#a7cac555549bff96a32da042a97919d47" title="Maximum number of actions that are executed by the backend. ">RobotBackend::max_number_of_actions_</a>. </td></tr>
   </table>
   </dd>
 </dl>
@@ -404,6 +414,31 @@ template&lt;typename Action, typename Observation&gt; </div>
 
 <p>Set to true when shutdown is requested. </p>
 <p>This is used to notify the background loop about requested shutdown, so it terminates itself. </p>
+
+</div>
+</div>
+<a class="anchor" id="a7cac555549bff96a32da042a97919d47"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Action, typename Observation&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint32_t <a class="el" href="classrobot__interfaces_1_1RobotBackend.html">robot_interfaces::RobotBackend</a>&lt; <a class="el" href="classAction.html">Action</a>, <a class="el" href="classObservation.html">Observation</a> &gt;::max_number_of_actions_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Maximum number of actions that are executed by the backend. </p>
+<p>If set to a value greater than zero, the backend will automatically shut down after the specified number of actions is executed. </p>
 
 </div>
 </div>

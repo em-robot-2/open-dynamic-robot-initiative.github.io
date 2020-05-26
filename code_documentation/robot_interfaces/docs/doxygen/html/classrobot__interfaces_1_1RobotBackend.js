@@ -1,6 +1,6 @@
 var classrobot__interfaces_1_1RobotBackend =
 [
-    [ "RobotBackend", "classrobot__interfaces_1_1RobotBackend.html#a44a03b223170528f46ad991c9ce1985c", null ],
+    [ "RobotBackend", "classrobot__interfaces_1_1RobotBackend.html#af454a09b5d269ed32b0ae2d35abdb833", null ],
     [ "~RobotBackend", "classrobot__interfaces_1_1RobotBackend.html#af43d9fbf6fcac1e37d8fc6196440dec5", null ],
     [ "get_max_action_repetitions", "classrobot__interfaces_1_1RobotBackend.html#ae354dfd960d4fd0d2f9242dcfb4a701f", null ],
     [ "has_shutdown_request", "classrobot__interfaces_1_1RobotBackend.html#afb4058468e7cc59dae5801eb5e369613", null ],
@@ -14,6 +14,7 @@ var classrobot__interfaces_1_1RobotBackend =
     [ "is_shutdown_requested_", "classrobot__interfaces_1_1RobotBackend.html#abe24206dcf102b33f8ee472e287f485a", null ],
     [ "loop_is_running_", "classrobot__interfaces_1_1RobotBackend.html#a0e91800b352b7b52f22820775b1d5e99", null ],
     [ "max_action_repetitions_", "classrobot__interfaces_1_1RobotBackend.html#ae40ecdc44212f79f96d63a84f7b8a6e8", null ],
+    [ "max_number_of_actions_", "classrobot__interfaces_1_1RobotBackend.html#a7cac555549bff96a32da042a97919d47", null ],
     [ "real_time_mode_", "classrobot__interfaces_1_1RobotBackend.html#a81610183c52c9fe2088304bbd3b6f83f", null ],
     [ "robot_data_", "classrobot__interfaces_1_1RobotBackend.html#a4bb04e584d971d4d99a32ea8c5b0cd68", null ],
     [ "robot_driver_", "classrobot__interfaces_1_1RobotBackend.html#a9c07b9b4a8c98b3f1b63d0754cbcb85b", null ],

@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="md_readme" kind="page">
+    <compoundname>md_readme</compoundname>
+    <title>Robot interfaces</title>
+    <detaileddescription>
+<para><heading level="2">What it is</heading>
+</para><para>Interface to robot hardware</para><para><heading level="2">Authors</heading>
+</para><para>Manuel Wuethrich</para><para>Felix Widmaier</para><para><heading level="2">Copyrights</heading>
+</para><para>Copyright(c) 2018-2019 Max Planck Gesellschaft</para><para><heading level="2">License</heading>
+</para><para>BSD 3-Clause License </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,77 @@
+\hypertarget{structrobot__interfaces_1_1NJointRobotTypes}{}\section{robot\+\_\+interfaces\+:\+:N\+Joint\+Robot\+Types$<$ N $>$ Struct Template Reference}
+\label{structrobot__interfaces_1_1NJointRobotTypes}\index{robot\+\_\+interfaces\+::\+N\+Joint\+Robot\+Types$<$ N $>$@{robot\+\_\+interfaces\+::\+N\+Joint\+Robot\+Types$<$ N $>$}}
+
+
+Collection of types for a generic N-\/joint B\+L\+MC robot.  
+
+
+
+
+{\ttfamily \#include $<$n\+\_\+joint\+\_\+robot\+\_\+types.\+hpp$>$}
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structrobot__interfaces_1_1NJointRobotTypes_1_1Action}{Action}
+\item 
+struct \hyperlink{structrobot__interfaces_1_1NJointRobotTypes_1_1Observation}{Observation}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef Eigen\+::\+Matrix$<$ double, N, 1 $>$ {\bfseries Vector}\hypertarget{structrobot__interfaces_1_1NJointRobotTypes_a2c8ab754133625e175456e0f81753eb3}{}\label{structrobot__interfaces_1_1NJointRobotTypes_a2c8ab754133625e175456e0f81753eb3}
+
+\item 
+typedef \hyperlink{classrobot__interfaces_1_1RobotBackend}{Robot\+Backend}$<$ \hyperlink{structrobot__interfaces_1_1NJointRobotTypes_1_1Action}{Action}, \hyperlink{structrobot__interfaces_1_1NJointRobotTypes_1_1Observation}{Observation} $>$ {\bfseries Backend}\hypertarget{structrobot__interfaces_1_1NJointRobotTypes_aee4f8ae91b6d7b31852c4e5ad82635ca}{}\label{structrobot__interfaces_1_1NJointRobotTypes_aee4f8ae91b6d7b31852c4e5ad82635ca}
+
+\item 
+typedef std\+::shared\+\_\+ptr$<$ \hyperlink{classrobot__interfaces_1_1RobotBackend}{Backend} $>$ {\bfseries Backend\+Ptr}\hypertarget{structrobot__interfaces_1_1NJointRobotTypes_af7a865b80531a7b8e36368ad8bd8ce7e}{}\label{structrobot__interfaces_1_1NJointRobotTypes_af7a865b80531a7b8e36368ad8bd8ce7e}
+
+\item 
+typedef \hyperlink{classrobot__interfaces_1_1RobotData}{Robot\+Data}$<$ \hyperlink{structrobot__interfaces_1_1NJointRobotTypes_1_1Action}{Action}, \hyperlink{structrobot__interfaces_1_1NJointRobotTypes_1_1Observation}{Observation} $>$ {\bfseries Base\+Data}\hypertarget{structrobot__interfaces_1_1NJointRobotTypes_a87d6d758d4b569e795eb977cd738d29a}{}\label{structrobot__interfaces_1_1NJointRobotTypes_a87d6d758d4b569e795eb977cd738d29a}
+
+\item 
+typedef std\+::shared\+\_\+ptr$<$ \hyperlink{classrobot__interfaces_1_1RobotData}{Base\+Data} $>$ {\bfseries Base\+Data\+Ptr}\hypertarget{structrobot__interfaces_1_1NJointRobotTypes_a080b4a9042dd2c795f2af486fc33d9dc}{}\label{structrobot__interfaces_1_1NJointRobotTypes_a080b4a9042dd2c795f2af486fc33d9dc}
+
+\item 
+typedef \hyperlink{classrobot__interfaces_1_1SingleProcessRobotData}{Single\+Process\+Robot\+Data}$<$ \hyperlink{structrobot__interfaces_1_1NJointRobotTypes_1_1Action}{Action}, \hyperlink{structrobot__interfaces_1_1NJointRobotTypes_1_1Observation}{Observation} $>$ {\bfseries Single\+Process\+Data}\hypertarget{structrobot__interfaces_1_1NJointRobotTypes_a5cd0e28d0542c4949f0780082e35a48c}{}\label{structrobot__interfaces_1_1NJointRobotTypes_a5cd0e28d0542c4949f0780082e35a48c}
+
+\item 
+typedef std\+::shared\+\_\+ptr$<$ \hyperlink{classrobot__interfaces_1_1SingleProcessRobotData}{Single\+Process\+Data} $>$ {\bfseries Single\+Process\+Data\+Ptr}\hypertarget{structrobot__interfaces_1_1NJointRobotTypes_a98ad0ce92d0a999ef0345225d198f790}{}\label{structrobot__interfaces_1_1NJointRobotTypes_a98ad0ce92d0a999ef0345225d198f790}
+
+\item 
+typedef \hyperlink{classrobot__interfaces_1_1MultiProcessRobotData}{Multi\+Process\+Robot\+Data}$<$ \hyperlink{structrobot__interfaces_1_1NJointRobotTypes_1_1Action}{Action}, \hyperlink{structrobot__interfaces_1_1NJointRobotTypes_1_1Observation}{Observation} $>$ {\bfseries Multi\+Process\+Data}\hypertarget{structrobot__interfaces_1_1NJointRobotTypes_a4dff725737b41b840db7b7af6c64718f}{}\label{structrobot__interfaces_1_1NJointRobotTypes_a4dff725737b41b840db7b7af6c64718f}
+
+\item 
+typedef std\+::shared\+\_\+ptr$<$ \hyperlink{classrobot__interfaces_1_1MultiProcessRobotData}{Multi\+Process\+Data} $>$ {\bfseries Multi\+Process\+Data\+Ptr}\hypertarget{structrobot__interfaces_1_1NJointRobotTypes_a231d94c36fcddaa6e3fefd54e8fb8d82}{}\label{structrobot__interfaces_1_1NJointRobotTypes_a231d94c36fcddaa6e3fefd54e8fb8d82}
+
+\item 
+typedef \hyperlink{classrobot__interfaces_1_1RobotFrontend}{Robot\+Frontend}$<$ \hyperlink{structrobot__interfaces_1_1NJointRobotTypes_1_1Action}{Action}, \hyperlink{structrobot__interfaces_1_1NJointRobotTypes_1_1Observation}{Observation} $>$ {\bfseries Frontend}\hypertarget{structrobot__interfaces_1_1NJointRobotTypes_acfa2fab5ec37d832d80c9147e28903ec}{}\label{structrobot__interfaces_1_1NJointRobotTypes_acfa2fab5ec37d832d80c9147e28903ec}
+
+\item 
+typedef std\+::shared\+\_\+ptr$<$ \hyperlink{classrobot__interfaces_1_1RobotFrontend}{Frontend} $>$ {\bfseries Frontend\+Ptr}\hypertarget{structrobot__interfaces_1_1NJointRobotTypes_ab97eb0bbf6e63868dd1c215249742b04}{}\label{structrobot__interfaces_1_1NJointRobotTypes_ab97eb0bbf6e63868dd1c215249742b04}
+
+\item 
+typedef \hyperlink{classrobot__interfaces_1_1RobotLogger}{Robot\+Logger}$<$ \hyperlink{structrobot__interfaces_1_1NJointRobotTypes_1_1Action}{Action}, \hyperlink{structrobot__interfaces_1_1NJointRobotTypes_1_1Observation}{Observation} $>$ {\bfseries Logger}\hypertarget{structrobot__interfaces_1_1NJointRobotTypes_a3e170adc934171b70773e9f96b3d3c55}{}\label{structrobot__interfaces_1_1NJointRobotTypes_a3e170adc934171b70773e9f96b3d3c55}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$size\+\_\+t N$>$\\*
+struct robot\+\_\+interfaces\+::\+N\+Joint\+Robot\+Types$<$ N $>$}
+
+Collection of types for a generic N-\/joint B\+L\+MC robot. 
+
+Defines all the types needed to set up an interface to a generic N-\/joint B\+L\+MC robot that expects as \hyperlink{structrobot__interfaces_1_1NJointRobotTypes_1_1Action}{Action} a simple vector of N torque commands and provides N observations containing measured joint angle, velocity and torque.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em N} & Number of joints \\
+\hline
+\end{DoxyTemplParams}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/robot\+\_\+interfaces/n\+\_\+joint\+\_\+robot\+\_\+types.\+hpp\end{DoxyCompactItemize}

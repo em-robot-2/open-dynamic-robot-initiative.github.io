@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="namespacecereal" kind="namespace" language="C++">
+    <compoundname>cereal</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="cereal__eigen_8hpp_1aba6cfc68d144d36a4ac46cdaa4f9626c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class Archive</type>
+          </param>
+          <param>
+            <type>class Derived</type>
+          </param>
+        </templateparamlist>
+        <type>std::enable_if&lt; traits::is_output_serializable&lt; BinaryData&lt; typename Derived::Scalar &gt;, Archive &gt;::value, void &gt;::type</type>
+        <definition>std::enable_if&lt; traits::is_output_serializable&lt;BinaryData&lt;typename Derived::Scalar&gt;, Archive&gt;::value, void&gt;::type cereal::save</definition>
+        <argsstring>(Archive &amp;archive, const Eigen::PlainObjectBase&lt; Derived &gt; &amp;object)</argsstring>
+        <name>save</name>
+        <param>
+          <type>Archive &amp;</type>
+          <declname>archive</declname>
+        </param>
+        <param>
+          <type>const Eigen::PlainObjectBase&lt; Derived &gt; &amp;</type>
+          <declname>object</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/robot_interfaces/cereal_eigen.hpp" line="23" column="1" bodyfile="include/robot_interfaces/cereal_eigen.hpp" bodystart="23" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="cereal__eigen_8hpp_1a2c410cde64d019622dd6d81387316eaa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class Archive</type>
+          </param>
+          <param>
+            <type>class Derived</type>
+          </param>
+        </templateparamlist>
+        <type>std::enable_if&lt; traits::is_input_serializable&lt; BinaryData&lt; typename Derived::Scalar &gt;, Archive &gt;::value, void &gt;::type</type>
+        <definition>std::enable_if&lt; traits::is_input_serializable&lt;BinaryData&lt;typename Derived::Scalar&gt;, Archive&gt;::value, void&gt;::type cereal::load</definition>
+        <argsstring>(Archive &amp;archive, Eigen::PlainObjectBase&lt; Derived &gt; &amp;object)</argsstring>
+        <name>load</name>
+        <param>
+          <type>Archive &amp;</type>
+          <declname>archive</declname>
+        </param>
+        <param>
+          <type>Eigen::PlainObjectBase&lt; Derived &gt; &amp;</type>
+          <declname>object</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/robot_interfaces/cereal_eigen.hpp" line="46" column="1" bodyfile="include/robot_interfaces/cereal_eigen.hpp" bodystart="46" bodyend="65"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/robot_interfaces/cereal_eigen.hpp" line="17" column="1"/>
+  </compounddef>
+</doxygen>

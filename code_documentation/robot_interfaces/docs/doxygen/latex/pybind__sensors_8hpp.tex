@@ -1,0 +1,56 @@
+\hypertarget{pybind__sensors_8hpp}{}\section{include/robot\+\_\+interfaces/sensors/pybind\+\_\+sensors.hpp File Reference}
+\label{pybind__sensors_8hpp}\index{include/robot\+\_\+interfaces/sensors/pybind\+\_\+sensors.\+hpp@{include/robot\+\_\+interfaces/sensors/pybind\+\_\+sensors.\+hpp}}
+
+
+Binds methods and objects to enable access from python.  
+
+
+{\ttfamily \#include $<$pybind11/eigen.\+h$>$}\\*
+{\ttfamily \#include $<$pybind11/pybind11.\+h$>$}\\*
+{\ttfamily \#include $<$pybind11/stl.\+h$>$}\\*
+{\ttfamily \#include $<$robot\+\_\+interfaces/sensors/sensor\+\_\+backend.\+hpp$>$}\\*
+{\ttfamily \#include $<$robot\+\_\+interfaces/sensors/sensor\+\_\+data.\+hpp$>$}\\*
+{\ttfamily \#include $<$robot\+\_\+interfaces/sensors/sensor\+\_\+driver.\+hpp$>$}\\*
+{\ttfamily \#include $<$robot\+\_\+interfaces/sensors/sensor\+\_\+frontend.\+hpp$>$}\\*
+Include dependency graph for pybind\+\_\+sensors.\+hpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{pybind__sensors_8hpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename Observation\+Type $>$ }\\void \hyperlink{pybind__sensors_8hpp_a31fc2ebe96b63e949a14f3f08cfea9b4}{robot\+\_\+interfaces\+::create\+\_\+sensor\+\_\+bindings} (pybind11\+::module \&m)
+\begin{DoxyCompactList}\small\item\em Create python bindings for different sensor types. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Binds methods and objects to enable access from python. 
+
+\begin{DoxyCopyright}{Copyright}
+2020, New York University, Max Planck Gesellschaft. All rights reserved. 
+\end{DoxyCopyright}
+\begin{DoxyRefDesc}{License}
+\item[\hyperlink{license__license000004}{License}]B\+SD 3-\/clause \end{DoxyRefDesc}
+
+
+\subsection{Function Documentation}
+\index{pybind\+\_\+sensors.\+hpp@{pybind\+\_\+sensors.\+hpp}!create\+\_\+sensor\+\_\+bindings@{create\+\_\+sensor\+\_\+bindings}}
+\index{create\+\_\+sensor\+\_\+bindings@{create\+\_\+sensor\+\_\+bindings}!pybind\+\_\+sensors.\+hpp@{pybind\+\_\+sensors.\+hpp}}
+\subsubsection[{\texorpdfstring{create\+\_\+sensor\+\_\+bindings(pybind11\+::module \&m)}{create_sensor_bindings(pybind11::module &m)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Observation\+Type $>$ void robot\+\_\+interfaces\+::create\+\_\+sensor\+\_\+bindings (
+\begin{DoxyParamCaption}
+\item[{pybind11\+::module \&}]{m}
+\end{DoxyParamCaption}
+)}\hypertarget{pybind__sensors_8hpp_file_a31fc2ebe96b63e949a14f3f08cfea9b4}{}\label{pybind__sensors_8hpp_file_a31fc2ebe96b63e949a14f3f08cfea9b4}
+
+
+Create python bindings for different sensor types. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em The} & Observation\+Type \\
+\hline
+\end{DoxyTemplParams}

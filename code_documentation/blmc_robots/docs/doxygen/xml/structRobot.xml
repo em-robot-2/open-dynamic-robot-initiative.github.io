@@ -1,0 +1,197 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structRobot" kind="struct" language="C++" prot="public">
+    <compoundname>Robot</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structRobot_1a981e4452cbcb3f5d4ccab57c149cc996" prot="public" static="no" mutable="no">
+        <type>std::shared_ptr&lt; blmc_drivers::CanBus &gt;</type>
+        <definition>std::shared_ptr&lt;blmc_drivers::CanBus&gt; Robot::can_bus</definition>
+        <argsstring></argsstring>
+        <name>can_bus</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="demos/demo_calibration.cpp" line="20" column="1" bodyfile="demos/demo_calibration.cpp" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structRobot_1a7130a31f454549ed9b499abdc750e263" prot="public" static="no" mutable="no">
+        <type>std::shared_ptr&lt; blmc_drivers::CanBusMotorBoard &gt;</type>
+        <definition>std::shared_ptr&lt;blmc_drivers::CanBusMotorBoard&gt; Robot::can_bus_motor_board</definition>
+        <argsstring></argsstring>
+        <name>can_bus_motor_board</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="demos/demo_calibration.cpp" line="21" column="1" bodyfile="demos/demo_calibration.cpp" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structRobot_1a97a3f8855072318aadbd6bb4a2b3c797" prot="public" static="no" mutable="no">
+        <type>std::shared_ptr&lt; blmc_drivers::AnalogSensor &gt;</type>
+        <definition>std::shared_ptr&lt;blmc_drivers::AnalogSensor&gt; Robot::slider_a</definition>
+        <argsstring></argsstring>
+        <name>slider_a</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="demos/demo_calibration.cpp" line="23" column="1" bodyfile="demos/demo_calibration.cpp" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structRobot_1a1e974a5b757e05045aefe528901812dc" prot="public" static="no" mutable="no">
+        <type>std::shared_ptr&lt; blmc_drivers::AnalogSensor &gt;</type>
+        <definition>std::shared_ptr&lt;blmc_drivers::AnalogSensor&gt; Robot::slider_b</definition>
+        <argsstring></argsstring>
+        <name>slider_b</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="demos/demo_calibration.cpp" line="24" column="1" bodyfile="demos/demo_calibration.cpp" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structRobot_1a1f9d54a46141d3c38ca06fe85c92c50a" prot="public" static="no" mutable="no">
+        <type>std::shared_ptr&lt; blmc_drivers::MotorInterface &gt;</type>
+        <definition>std::shared_ptr&lt;blmc_drivers::MotorInterface&gt; Robot::motor</definition>
+        <argsstring></argsstring>
+        <name>motor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="demos/demo_calibration.cpp" line="25" column="1" bodyfile="demos/demo_calibration.cpp" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structRobot_1abc53076359a6049c4fdd79906f7571ac" prot="public" static="no" mutable="no">
+        <type>std::shared_ptr&lt; <ref refid="classblmc__robots_1_1BlmcJointModule" kindref="compound">BlmcJointModule</ref> &gt;</type>
+        <definition>std::shared_ptr&lt;BlmcJointModule&gt; Robot::joint_module</definition>
+        <argsstring></argsstring>
+        <name>joint_module</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="demos/demo_calibration.cpp" line="27" column="1" bodyfile="demos/demo_calibration.cpp" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structRobot_1ace630f1abca285b60ad921b945764caf" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Robot::motor_constant</definition>
+        <argsstring></argsstring>
+        <name>motor_constant</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="demos/demo_calibration.cpp" line="29" column="1" bodyfile="demos/demo_calibration.cpp" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structRobot_1aae15cf10aaef0cd97d569a81232efe1e" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Robot::gear_ratio</definition>
+        <argsstring></argsstring>
+        <name>gear_ratio</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="demos/demo_calibration.cpp" line="30" column="1" bodyfile="demos/demo_calibration.cpp" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structRobot_1aee76416f855270701fee8aa214498503" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Robot::zero_angle</definition>
+        <argsstring></argsstring>
+        <name>zero_angle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="demos/demo_calibration.cpp" line="31" column="1" bodyfile="demos/demo_calibration.cpp" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structRobot_1a8541af2f9b418958dd73548dde285a51" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Robot::angle_zero_to_index</definition>
+        <argsstring></argsstring>
+        <name>angle_zero_to_index</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="demos/demo_calibration.cpp" line="32" column="1" bodyfile="demos/demo_calibration.cpp" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structRobot_1a29f1467dddd5df0bfce7de3efd70ddcf" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Robot::calibrated_index_angle</definition>
+        <argsstring></argsstring>
+        <name>calibrated_index_angle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="demos/demo_calibration.cpp" line="33" column="1" bodyfile="demos/demo_calibration.cpp" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structRobot_1a57c270424cc00ece6cee9a31011a14f3" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Robot::mechanical_calibration</definition>
+        <argsstring></argsstring>
+        <name>mechanical_calibration</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="demos/demo_calibration.cpp" line="34" column="1" bodyfile="demos/demo_calibration.cpp" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structRobot_1a9b4527aa61e8070712c8140b940cb5f2" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Robot::reverse_polarity</definition>
+        <argsstring></argsstring>
+        <name>reverse_polarity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="demos/demo_calibration.cpp" line="35" column="1" bodyfile="demos/demo_calibration.cpp" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="demos/demo_calibration.cpp" line="19" column="1" bodyfile="demos/demo_calibration.cpp" bodystart="18" bodyend="36"/>
+    <listofallmembers>
+      <member refid="structRobot_1a8541af2f9b418958dd73548dde285a51" prot="public" virt="non-virtual"><scope>Robot</scope><name>angle_zero_to_index</name></member>
+      <member refid="structRobot_1a29f1467dddd5df0bfce7de3efd70ddcf" prot="public" virt="non-virtual"><scope>Robot</scope><name>calibrated_index_angle</name></member>
+      <member refid="structRobot_1a981e4452cbcb3f5d4ccab57c149cc996" prot="public" virt="non-virtual"><scope>Robot</scope><name>can_bus</name></member>
+      <member refid="structRobot_1a7130a31f454549ed9b499abdc750e263" prot="public" virt="non-virtual"><scope>Robot</scope><name>can_bus_motor_board</name></member>
+      <member refid="structRobot_1aae15cf10aaef0cd97d569a81232efe1e" prot="public" virt="non-virtual"><scope>Robot</scope><name>gear_ratio</name></member>
+      <member refid="structRobot_1abc53076359a6049c4fdd79906f7571ac" prot="public" virt="non-virtual"><scope>Robot</scope><name>joint_module</name></member>
+      <member refid="structRobot_1a57c270424cc00ece6cee9a31011a14f3" prot="public" virt="non-virtual"><scope>Robot</scope><name>mechanical_calibration</name></member>
+      <member refid="structRobot_1a1f9d54a46141d3c38ca06fe85c92c50a" prot="public" virt="non-virtual"><scope>Robot</scope><name>motor</name></member>
+      <member refid="structRobot_1ace630f1abca285b60ad921b945764caf" prot="public" virt="non-virtual"><scope>Robot</scope><name>motor_constant</name></member>
+      <member refid="structRobot_1a9b4527aa61e8070712c8140b940cb5f2" prot="public" virt="non-virtual"><scope>Robot</scope><name>reverse_polarity</name></member>
+      <member refid="structRobot_1a97a3f8855072318aadbd6bb4a2b3c797" prot="public" virt="non-virtual"><scope>Robot</scope><name>slider_a</name></member>
+      <member refid="structRobot_1a1e974a5b757e05045aefe528901812dc" prot="public" virt="non-virtual"><scope>Robot</scope><name>slider_b</name></member>
+      <member refid="structRobot_1aee76416f855270701fee8aa214498503" prot="public" virt="non-virtual"><scope>Robot</scope><name>zero_angle</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

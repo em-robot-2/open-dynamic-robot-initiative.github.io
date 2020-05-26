@@ -7,8 +7,7 @@ var searchData=
   ['height_5fsensors_5fstates_5f',['height_sensors_states_',['../classblmc__robots_1_1Teststand.html#af9c7f9537b7123dae498d08d5c80fe07',1,'blmc_robots::Teststand']]],
   ['heightsensor_5fptr',['HeightSensor_ptr',['../common__header_8hpp.html#a921d3f5a8878524375bf7e740f2fb788',1,'blmc_robots']]],
   ['home_5foffset_5frad',['home_offset_rad',['../structblmc__robots_1_1HomingState.html#ad8ffa51d7885e6e83dd4b32354184175',1,'blmc_robots::HomingState::home_offset_rad()'],['../structblmc__robots_1_1NJointBlmcRobotDriver_1_1Config.html#a67b22638d86285d94021e9d1c0c1b6d7',1,'blmc_robots::NJointBlmcRobotDriver::Config::home_offset_rad()']]],
-  ['home_5fon_5findex_5fafter_5fnegative_5fend_5fstop',['home_on_index_after_negative_end_stop',['../classblmc__robots_1_1NJointBlmcRobotDriver.html#a9f48e6881584404fb24d7d770dfe6062',1,'blmc_robots::NJointBlmcRobotDriver']]],
-  ['homing_20_28joint_20position_20calibration_29',['Homing (Joint Position Calibration)',['../homing.html',1,'']]],
+  ['homing',['homing',['../classblmc__robots_1_1NJointBlmcRobotDriver.html#a2ec7dc99b82c474a1a16df37f5dee292',1,'blmc_robots::NJointBlmcRobotDriver::homing()'],['../homing.html',1,'(Global Namespace)']]],
   ['homingreturncode',['HomingReturnCode',['../blmc__joint__module_8hpp.html#aa1075809042ff261e4b0a20d161448b6',1,'blmc_robots']]],
   ['homingstate',['HomingState',['../structblmc__robots_1_1HomingState.html',1,'blmc_robots']]]
 ];

@@ -1,0 +1,188 @@
+\hypertarget{classrobot__interfaces_1_1RobotLogger}{}\section{robot\+\_\+interfaces\+:\+:Robot\+Logger$<$ Action, Observation $>$ Class Template Reference}
+\label{classrobot__interfaces_1_1RobotLogger}\index{robot\+\_\+interfaces\+::\+Robot\+Logger$<$ Action, Observation $>$@{robot\+\_\+interfaces\+::\+Robot\+Logger$<$ Action, Observation $>$}}
+
+
+To log data from {\itshape any} robot (real, simulated, fake).  
+
+
+
+
+{\ttfamily \#include $<$robot\+\_\+logger.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Robot\+Logger} (std\+::shared\+\_\+ptr$<$ \hyperlink{classrobot__interfaces_1_1RobotData}{robot\+\_\+interfaces\+::\+Robot\+Data}$<$ \hyperlink{classAction}{Action}, \hyperlink{classObservation}{Observation} $>$$>$ robot\+\_\+data, int block\+\_\+size)\hypertarget{classrobot__interfaces_1_1RobotLogger_a40fbf613d2fd5a54dfd71a0dde9da616}{}\label{classrobot__interfaces_1_1RobotLogger_a40fbf613d2fd5a54dfd71a0dde9da616}
+
+\item 
+std\+::vector$<$ std\+::string $>$ \hyperlink{classrobot__interfaces_1_1RobotLogger_aff9a4e9a91b3fe604bd16a94a006e151}{get\+\_\+header} ()
+\begin{DoxyCompactList}\small\item\em To get the title of the log file, describing all the information that will be logged in it. \end{DoxyCompactList}\item 
+void \hyperlink{classrobot__interfaces_1_1RobotLogger_a7c94db4517002755f3325c13aa430733}{append\+\_\+name\+\_\+to\+\_\+header} (std\+::string identifier, std\+::vector$<$ std\+::string $>$ field\+\_\+name, std\+::vector$<$ std\+::vector$<$ double $>$$>$ field\+\_\+data, std\+::vector$<$ std\+::string $>$ \&header)
+\begin{DoxyCompactList}\small\item\em Fills in the name information of each field to be logged according to the size of the field. \end{DoxyCompactList}\item 
+void \hyperlink{classrobot__interfaces_1_1RobotLogger_a8c7c9b7bff6e49b340c90b36bee9331e}{append\+\_\+header\+\_\+to\+\_\+file} ()\hypertarget{classrobot__interfaces_1_1RobotLogger_a8c7c9b7bff6e49b340c90b36bee9331e}{}\label{classrobot__interfaces_1_1RobotLogger_a8c7c9b7bff6e49b340c90b36bee9331e}
+
+\begin{DoxyCompactList}\small\item\em Writes the header to the log file. \end{DoxyCompactList}\item 
+void \hyperlink{classrobot__interfaces_1_1RobotLogger_ac568cd79a651c2c20fa9e1f136155ced}{append\+\_\+robot\+\_\+data\+\_\+to\+\_\+file} ()\hypertarget{classrobot__interfaces_1_1RobotLogger_ac568cd79a651c2c20fa9e1f136155ced}{}\label{classrobot__interfaces_1_1RobotLogger_ac568cd79a651c2c20fa9e1f136155ced}
+
+\begin{DoxyCompactList}\small\item\em Writes the timestamped robot data at {\itshape hopefully} every time index to the log file. \end{DoxyCompactList}\item 
+void \hyperlink{classrobot__interfaces_1_1RobotLogger_a70c988142c9ccbdc0c81b0bcc689031e}{append\+\_\+field\+\_\+data\+\_\+to\+\_\+file} (std\+::vector$<$ std\+::vector$<$ double $>$$>$ field\+\_\+data)
+\begin{DoxyCompactList}\small\item\em Appends the data corresponding to every field at the same time index to the log file. \end{DoxyCompactList}\item 
+void \hyperlink{classrobot__interfaces_1_1RobotLogger_a8dc63e66127923cfee3a2ddaf764da86}{write} ()
+\begin{DoxyCompactList}\small\item\em Writes everything to the log file. \end{DoxyCompactList}\item 
+void \hyperlink{classrobot__interfaces_1_1RobotLogger_a9abfad073fd735b9873b4b3f19f268e0}{start} (std\+::string filename)
+\begin{DoxyCompactList}\small\item\em Call \hyperlink{classrobot__interfaces_1_1RobotLogger_a9abfad073fd735b9873b4b3f19f268e0}{start()} to create the thread for the \hyperlink{classrobot__interfaces_1_1RobotLogger}{Robot\+Logger} and start logging! \end{DoxyCompactList}\item 
+void \hyperlink{classrobot__interfaces_1_1RobotLogger_a55ec7dcacd849adee53fa49a2a0c8234}{stop} ()\hypertarget{classrobot__interfaces_1_1RobotLogger_a55ec7dcacd849adee53fa49a2a0c8234}{}\label{classrobot__interfaces_1_1RobotLogger_a55ec7dcacd849adee53fa49a2a0c8234}
+
+\begin{DoxyCompactList}\small\item\em Call \hyperlink{classrobot__interfaces_1_1RobotLogger_a55ec7dcacd849adee53fa49a2a0c8234}{stop()} when you want to stop logging. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void $\ast$ {\bfseries write} (void $\ast$instance\+\_\+pointer)\hypertarget{classrobot__interfaces_1_1RobotLogger_a909c3baf8d34945085fee9c45e9d80c4}{}\label{classrobot__interfaces_1_1RobotLogger_a909c3baf8d34945085fee9c45e9d80c4}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{classrobot__interfaces_1_1RobotData}{robot\+\_\+interfaces\+::\+Robot\+Data}$<$ \hyperlink{classAction}{Action}, \hyperlink{classObservation}{Observation} $>$ $>$ \hyperlink{classrobot__interfaces_1_1RobotLogger_ad1391bc38ff516f01b3c8bdd91e27efc}{logger\+\_\+data\+\_\+}
+\begin{DoxyCompactList}\small\item\em This is to verify that the template types of the \hyperlink{classrobot__interfaces_1_1RobotLogger}{Robot\+Logger} are based on \hyperlink{classrobot__interfaces_1_1Loggable}{Loggable}. \end{DoxyCompactList}\item 
+int {\bfseries block\+\_\+size\+\_\+}\hypertarget{classrobot__interfaces_1_1RobotLogger_a0465f86efac78a429f8980bd2a12959e}{}\label{classrobot__interfaces_1_1RobotLogger_a0465f86efac78a429f8980bd2a12959e}
+
+\item 
+long int {\bfseries index\+\_\+}\hypertarget{classrobot__interfaces_1_1RobotLogger_ac47398855bcb94ca8a3e83334ee1d382}{}\label{classrobot__interfaces_1_1RobotLogger_ac47398855bcb94ca8a3e83334ee1d382}
+
+\item 
+bool {\bfseries stop\+\_\+was\+\_\+called\+\_\+}\hypertarget{classrobot__interfaces_1_1RobotLogger_a133c310dcabe26cb8918dad08ed96a90}{}\label{classrobot__interfaces_1_1RobotLogger_a133c310dcabe26cb8918dad08ed96a90}
+
+\item 
+std\+::ofstream {\bfseries output\+\_\+file\+\_\+}\hypertarget{classrobot__interfaces_1_1RobotLogger_aa03a18fb24545744533c39e193c5920a}{}\label{classrobot__interfaces_1_1RobotLogger_aa03a18fb24545744533c39e193c5920a}
+
+\item 
+std\+::string {\bfseries output\+\_\+file\+\_\+name\+\_\+}\hypertarget{classrobot__interfaces_1_1RobotLogger_a180a1ad565fd1a2342c6a40465fea731}{}\label{classrobot__interfaces_1_1RobotLogger_a180a1ad565fd1a2342c6a40465fea731}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::shared\+\_\+ptr$<$ real\+\_\+time\+\_\+tools\+::\+Real\+Time\+Thread $>$ {\bfseries thread\+\_\+}\hypertarget{classrobot__interfaces_1_1RobotLogger_a6a9d7845a73b1d62d0f0ddf85240c336}{}\label{classrobot__interfaces_1_1RobotLogger_a6a9d7845a73b1d62d0f0ddf85240c336}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename Action, typename Observation$>$\\*
+class robot\+\_\+interfaces\+::\+Robot\+Logger$<$ Action, Observation $>$}
+
+To log data from {\itshape any} robot (real, simulated, fake). 
+
+The \hyperlink{classrobot__interfaces_1_1RobotLogger}{Robot\+Logger} logs the timestamp, the time index, and the values of every \hyperlink{classObservation}{Observation}, \hyperlink{classAction}{Action}, and \hyperlink{structrobot__interfaces_1_1Status}{Status} variable. \hyperlink{classObservation}{Observation}, \hyperlink{classAction}{Action}, and \hyperlink{structrobot__interfaces_1_1Status}{Status} {\itshape must} derive from \hyperlink{classrobot__interfaces_1_1Loggable}{Loggable}. Any further data structure can be logged similarly, which derives from \hyperlink{classrobot__interfaces_1_1Loggable}{Loggable}.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em \hyperlink{classAction}{Action}} & \\
+\hline
+{\em \hyperlink{classObservation}{Observation}} & \\
+\hline
+\end{DoxyTemplParams}
+
+
+\subsection{Member Function Documentation}
+\index{robot\+\_\+interfaces\+::\+Robot\+Logger@{robot\+\_\+interfaces\+::\+Robot\+Logger}!append\+\_\+field\+\_\+data\+\_\+to\+\_\+file@{append\+\_\+field\+\_\+data\+\_\+to\+\_\+file}}
+\index{append\+\_\+field\+\_\+data\+\_\+to\+\_\+file@{append\+\_\+field\+\_\+data\+\_\+to\+\_\+file}!robot\+\_\+interfaces\+::\+Robot\+Logger@{robot\+\_\+interfaces\+::\+Robot\+Logger}}
+\subsubsection[{\texorpdfstring{append\+\_\+field\+\_\+data\+\_\+to\+\_\+file(std\+::vector$<$ std\+::vector$<$ double $>$$>$ field\+\_\+data)}{append_field_data_to_file(std::vector< std::vector< double >> field_data)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Action , typename Observation $>$ void {\bf robot\+\_\+interfaces\+::\+Robot\+Logger}$<$ {\bf Action}, {\bf Observation} $>$\+::append\+\_\+field\+\_\+data\+\_\+to\+\_\+file (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ std\+::vector$<$ double $>$$>$}]{field\+\_\+data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classrobot__interfaces_1_1RobotLogger_a70c988142c9ccbdc0c81b0bcc689031e}{}\label{classrobot__interfaces_1_1RobotLogger_a70c988142c9ccbdc0c81b0bcc689031e}
+
+
+Appends the data corresponding to every field at the same time index to the log file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em field\+\_\+data} & The field data \\
+\hline
+\end{DoxyParams}
+\index{robot\+\_\+interfaces\+::\+Robot\+Logger@{robot\+\_\+interfaces\+::\+Robot\+Logger}!append\+\_\+name\+\_\+to\+\_\+header@{append\+\_\+name\+\_\+to\+\_\+header}}
+\index{append\+\_\+name\+\_\+to\+\_\+header@{append\+\_\+name\+\_\+to\+\_\+header}!robot\+\_\+interfaces\+::\+Robot\+Logger@{robot\+\_\+interfaces\+::\+Robot\+Logger}}
+\subsubsection[{\texorpdfstring{append\+\_\+name\+\_\+to\+\_\+header(std\+::string identifier, std\+::vector$<$ std\+::string $>$ field\+\_\+name, std\+::vector$<$ std\+::vector$<$ double $>$$>$ field\+\_\+data, std\+::vector$<$ std\+::string $>$ \&header)}{append_name_to_header(std::string identifier, std::vector< std::string > field_name, std::vector< std::vector< double >> field_data, std::vector< std::string > &header)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Action , typename Observation $>$ void {\bf robot\+\_\+interfaces\+::\+Robot\+Logger}$<$ {\bf Action}, {\bf Observation} $>$\+::append\+\_\+name\+\_\+to\+\_\+header (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{identifier, }
+\item[{std\+::vector$<$ std\+::string $>$}]{field\+\_\+name, }
+\item[{std\+::vector$<$ std\+::vector$<$ double $>$$>$}]{field\+\_\+data, }
+\item[{std\+::vector$<$ std\+::string $>$ \&}]{header}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classrobot__interfaces_1_1RobotLogger_a7c94db4517002755f3325c13aa430733}{}\label{classrobot__interfaces_1_1RobotLogger_a7c94db4517002755f3325c13aa430733}
+
+
+Fills in the name information of each field to be logged according to the size of the field. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em identifier} & The structure the field corresponds to \\
+\hline
+{\em field\+\_\+name} & The name of the field \\
+\hline
+{\em field\+\_\+data} & The field data \\
+\hline
+{\em \&header} & Reference to the header of the log file \\
+\hline
+\end{DoxyParams}
+\index{robot\+\_\+interfaces\+::\+Robot\+Logger@{robot\+\_\+interfaces\+::\+Robot\+Logger}!get\+\_\+header@{get\+\_\+header}}
+\index{get\+\_\+header@{get\+\_\+header}!robot\+\_\+interfaces\+::\+Robot\+Logger@{robot\+\_\+interfaces\+::\+Robot\+Logger}}
+\subsubsection[{\texorpdfstring{get\+\_\+header()}{get_header()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Action , typename Observation $>$ std\+::vector$<$std\+::string$>$ {\bf robot\+\_\+interfaces\+::\+Robot\+Logger}$<$ {\bf Action}, {\bf Observation} $>$\+::get\+\_\+header (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classrobot__interfaces_1_1RobotLogger_aff9a4e9a91b3fe604bd16a94a006e151}{}\label{classrobot__interfaces_1_1RobotLogger_aff9a4e9a91b3fe604bd16a94a006e151}
+
+
+To get the title of the log file, describing all the information that will be logged in it. 
+
+\begin{DoxyReturn}{Returns}
+header The title of the log file. 
+\end{DoxyReturn}
+\index{robot\+\_\+interfaces\+::\+Robot\+Logger@{robot\+\_\+interfaces\+::\+Robot\+Logger}!start@{start}}
+\index{start@{start}!robot\+\_\+interfaces\+::\+Robot\+Logger@{robot\+\_\+interfaces\+::\+Robot\+Logger}}
+\subsubsection[{\texorpdfstring{start(std\+::string filename)}{start(std::string filename)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Action , typename Observation $>$ void {\bf robot\+\_\+interfaces\+::\+Robot\+Logger}$<$ {\bf Action}, {\bf Observation} $>$\+::start (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{filename}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classrobot__interfaces_1_1RobotLogger_a9abfad073fd735b9873b4b3f19f268e0}{}\label{classrobot__interfaces_1_1RobotLogger_a9abfad073fd735b9873b4b3f19f268e0}
+
+
+Call \hyperlink{classrobot__interfaces_1_1RobotLogger_a9abfad073fd735b9873b4b3f19f268e0}{start()} to create the thread for the \hyperlink{classrobot__interfaces_1_1RobotLogger}{Robot\+Logger} and start logging! 
+
+\begin{DoxyNote}{Note}
+Every time you start the logger with the same file name, it will obviously append newer data to the same file. This shouldn\textquotesingle{}t be a problem. But for different log files, specify different file names while starting the logger.
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & The name of the log file. \\
+\hline
+\end{DoxyParams}
+\index{robot\+\_\+interfaces\+::\+Robot\+Logger@{robot\+\_\+interfaces\+::\+Robot\+Logger}!write@{write}}
+\index{write@{write}!robot\+\_\+interfaces\+::\+Robot\+Logger@{robot\+\_\+interfaces\+::\+Robot\+Logger}}
+\subsubsection[{\texorpdfstring{write()}{write()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Action , typename Observation $>$ void {\bf robot\+\_\+interfaces\+::\+Robot\+Logger}$<$ {\bf Action}, {\bf Observation} $>$\+::write (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classrobot__interfaces_1_1RobotLogger_a8dc63e66127923cfee3a2ddaf764da86}{}\label{classrobot__interfaces_1_1RobotLogger_a8dc63e66127923cfee3a2ddaf764da86}
+
+
+Writes everything to the log file. 
+
+It dumps all the data corresponding to block\+\_\+size\+\_\+ number of time indices at one go. 
+
+\subsection{Member Data Documentation}
+\index{robot\+\_\+interfaces\+::\+Robot\+Logger@{robot\+\_\+interfaces\+::\+Robot\+Logger}!logger\+\_\+data\+\_\+@{logger\+\_\+data\+\_\+}}
+\index{logger\+\_\+data\+\_\+@{logger\+\_\+data\+\_\+}!robot\+\_\+interfaces\+::\+Robot\+Logger@{robot\+\_\+interfaces\+::\+Robot\+Logger}}
+\subsubsection[{\texorpdfstring{logger\+\_\+data\+\_\+}{logger_data_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Action , typename Observation $>$ std\+::shared\+\_\+ptr$<${\bf robot\+\_\+interfaces\+::\+Robot\+Data}$<${\bf Action}, {\bf Observation}$>$ $>$ {\bf robot\+\_\+interfaces\+::\+Robot\+Logger}$<$ {\bf Action}, {\bf Observation} $>$\+::logger\+\_\+data\+\_\+}\hypertarget{classrobot__interfaces_1_1RobotLogger_ad1391bc38ff516f01b3c8bdd91e27efc}{}\label{classrobot__interfaces_1_1RobotLogger_ad1391bc38ff516f01b3c8bdd91e27efc}
+
+
+This is to verify that the template types of the \hyperlink{classrobot__interfaces_1_1RobotLogger}{Robot\+Logger} are based on \hyperlink{classrobot__interfaces_1_1Loggable}{Loggable}. 
+
+Currently, the level of generalisability of the logger is that we {\itshape know} the following four timeseries structures exist for {\itshape any} robot whose data is to be logged-\/ applied\+\_\+action and desired\+\_\+action (of type \hyperlink{classAction}{Action}), observation (of type \hyperlink{classObservation}{Observation}), and status (of type \hyperlink{structrobot__interfaces_1_1Status}{Status}). 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/robot\+\_\+interfaces/robot\+\_\+logger.\+hpp\end{DoxyCompactItemize}

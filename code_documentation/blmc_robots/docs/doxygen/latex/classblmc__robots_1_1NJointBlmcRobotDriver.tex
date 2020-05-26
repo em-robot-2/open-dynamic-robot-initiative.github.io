@@ -1,0 +1,247 @@
+\hypertarget{classblmc__robots_1_1NJointBlmcRobotDriver}{}\section{blmc\+\_\+robots\+:\+:N\+Joint\+Blmc\+Robot\+Driver$<$ N\+\_\+\+J\+O\+I\+N\+TS, N\+\_\+\+M\+O\+T\+O\+R\+\_\+\+B\+O\+A\+R\+DS $>$ Class Template Reference}
+\label{classblmc__robots_1_1NJointBlmcRobotDriver}\index{blmc\+\_\+robots\+::\+N\+Joint\+Blmc\+Robot\+Driver$<$ N\+\_\+\+J\+O\+I\+N\+T\+S, N\+\_\+\+M\+O\+T\+O\+R\+\_\+\+B\+O\+A\+R\+D\+S $>$@{blmc\+\_\+robots\+::\+N\+Joint\+Blmc\+Robot\+Driver$<$ N\+\_\+\+J\+O\+I\+N\+T\+S, N\+\_\+\+M\+O\+T\+O\+R\+\_\+\+B\+O\+A\+R\+D\+S $>$}}
+
+
+Base class for simple n-\/joint B\+L\+MC robots.  
+
+
+
+
+{\ttfamily \#include $<$n\+\_\+joint\+\_\+blmc\+\_\+robot\+\_\+driver.\+hpp$>$}
+
+
+
+Inheritance diagram for blmc\+\_\+robots\+:\+:N\+Joint\+Blmc\+Robot\+Driver$<$ N\+\_\+\+J\+O\+I\+N\+TS, N\+\_\+\+M\+O\+T\+O\+R\+\_\+\+B\+O\+A\+R\+DS $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classblmc__robots_1_1NJointBlmcRobotDriver__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for blmc\+\_\+robots\+:\+:N\+Joint\+Blmc\+Robot\+Driver$<$ N\+\_\+\+J\+O\+I\+N\+TS, N\+\_\+\+M\+O\+T\+O\+R\+\_\+\+B\+O\+A\+R\+DS $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classblmc__robots_1_1NJointBlmcRobotDriver__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structblmc__robots_1_1NJointBlmcRobotDriver_1_1Config}{Config}
+\begin{DoxyCompactList}\small\item\em Configuration of the robot that can be changed by the user. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef robot\+\_\+interfaces\+::\+N\+Joint\+Robot\+Types$<$ N\+\_\+\+J\+O\+I\+N\+TS $>$ {\bfseries Types}\hypertarget{classblmc__robots_1_1NJointBlmcRobotDriver_a9564734eaa1fe694c12a1ef4a2fdd111}{}\label{classblmc__robots_1_1NJointBlmcRobotDriver_a9564734eaa1fe694c12a1ef4a2fdd111}
+
+\item 
+typedef Types\+::\+Action {\bfseries Action}\hypertarget{classblmc__robots_1_1NJointBlmcRobotDriver_a00dd0941134c3f67b8580e96d757a754}{}\label{classblmc__robots_1_1NJointBlmcRobotDriver_a00dd0941134c3f67b8580e96d757a754}
+
+\item 
+typedef Types\+::\+Observation {\bfseries Observation}\hypertarget{classblmc__robots_1_1NJointBlmcRobotDriver_ae9276e8ccd8afd265c6eac1907df2c84}{}\label{classblmc__robots_1_1NJointBlmcRobotDriver_ae9276e8ccd8afd265c6eac1907df2c84}
+
+\item 
+typedef Types\+::\+Vector {\bfseries Vector}\hypertarget{classblmc__robots_1_1NJointBlmcRobotDriver_a44c2dfe4150dfbce81e50bcfb7e609b1}{}\label{classblmc__robots_1_1NJointBlmcRobotDriver_a44c2dfe4150dfbce81e50bcfb7e609b1}
+
+\item 
+typedef std\+::array$<$ std\+::shared\+\_\+ptr$<$ blmc\+\_\+drivers\+::\+Motor\+Interface $>$, N\+\_\+\+J\+O\+I\+N\+TS $>$ {\bfseries Motors}\hypertarget{classblmc__robots_1_1NJointBlmcRobotDriver_a629509d3a20e1dbcba5ccf8ce56f1bfe}{}\label{classblmc__robots_1_1NJointBlmcRobotDriver_a629509d3a20e1dbcba5ccf8ce56f1bfe}
+
+\item 
+typedef std\+::array$<$ std\+::shared\+\_\+ptr$<$ blmc\+\_\+drivers\+::\+Can\+Bus\+Motor\+Board $>$, N\+\_\+\+M\+O\+T\+O\+R\+\_\+\+B\+O\+A\+R\+DS $>$ {\bfseries Motor\+Boards}\hypertarget{classblmc__robots_1_1NJointBlmcRobotDriver_af9a1e5d7dae33b324452fba3418a6fcf}{}\label{classblmc__robots_1_1NJointBlmcRobotDriver_af9a1e5d7dae33b324452fba3418a6fcf}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries N\+Joint\+Blmc\+Robot\+Driver} (const Motor\+Boards \&motor\+\_\+boards, const Motors \&motors, const \hyperlink{structblmc__robots_1_1MotorParameters}{Motor\+Parameters} \&motor\+\_\+parameters, const \hyperlink{structblmc__robots_1_1NJointBlmcRobotDriver_1_1Config}{Config} \&config)\hypertarget{classblmc__robots_1_1NJointBlmcRobotDriver_afecb1d950d3a2e89d51b35d14fa2c703}{}\label{classblmc__robots_1_1NJointBlmcRobotDriver_afecb1d950d3a2e89d51b35d14fa2c703}
+
+\item 
+Vector {\bfseries get\+\_\+max\+\_\+torques} () const \hypertarget{classblmc__robots_1_1NJointBlmcRobotDriver_a923c06860fa6aaddd49541b3a836d177}{}\label{classblmc__robots_1_1NJointBlmcRobotDriver_a923c06860fa6aaddd49541b3a836d177}
+
+\item 
+void {\bfseries pause\+\_\+motors} ()\hypertarget{classblmc__robots_1_1NJointBlmcRobotDriver_a581bdda9cafb5966425988bc6ca5821f}{}\label{classblmc__robots_1_1NJointBlmcRobotDriver_a581bdda9cafb5966425988bc6ca5821f}
+
+\item 
+Vector {\bfseries get\+\_\+measured\+\_\+index\+\_\+angles} () const \hypertarget{classblmc__robots_1_1NJointBlmcRobotDriver_a5c07ab80770b80db37e8471ec3b77685}{}\label{classblmc__robots_1_1NJointBlmcRobotDriver_a5c07ab80770b80db37e8471ec3b77685}
+
+\item 
+void \hyperlink{classblmc__robots_1_1NJointBlmcRobotDriver_a41b2ff96e0a687b0e1ae06ce1502d4db}{initialize} () override
+\begin{DoxyCompactList}\small\item\em Find home position of all joints and move to start position. \end{DoxyCompactList}\item 
+Observation {\bfseries get\+\_\+latest\+\_\+observation} () override\hypertarget{classblmc__robots_1_1NJointBlmcRobotDriver_acfe921e947e9dbe5eb74a7c9fb777dfd}{}\label{classblmc__robots_1_1NJointBlmcRobotDriver_acfe921e947e9dbe5eb74a7c9fb777dfd}
+
+\item 
+Action {\bfseries apply\+\_\+action} (const Action \&desired\+\_\+action) override\hypertarget{classblmc__robots_1_1NJointBlmcRobotDriver_a4fbd75b68c4dfa8e9320befd546f406a}{}\label{classblmc__robots_1_1NJointBlmcRobotDriver_a4fbd75b68c4dfa8e9320befd546f406a}
+
+\item 
+std\+::string {\bfseries get\+\_\+error} () override\hypertarget{classblmc__robots_1_1NJointBlmcRobotDriver_a6914754d6bd5bf9e0d2d4cdaa2f140d4}{}\label{classblmc__robots_1_1NJointBlmcRobotDriver_a6914754d6bd5bf9e0d2d4cdaa2f140d4}
+
+\item 
+void {\bfseries shutdown} () override\hypertarget{classblmc__robots_1_1NJointBlmcRobotDriver_a1dc679a59e08fdd97d4bb92f41178445}{}\label{classblmc__robots_1_1NJointBlmcRobotDriver_a1dc679a59e08fdd97d4bb92f41178445}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static Motor\+Boards {\bfseries create\+\_\+motor\+\_\+boards} (const std\+::array$<$ std\+::string, N\+\_\+\+M\+O\+T\+O\+R\+\_\+\+B\+O\+A\+R\+DS $>$ \&can\+\_\+ports)\hypertarget{classblmc__robots_1_1NJointBlmcRobotDriver_ae8d7e4d37b3a0ba6966311c9813caec0}{}\label{classblmc__robots_1_1NJointBlmcRobotDriver_ae8d7e4d37b3a0ba6966311c9813caec0}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const bool \hyperlink{classblmc__robots_1_1NJointBlmcRobotDriver_a4da9d51841e9b2995e597ae52c460586}{has\+\_\+endstop\+\_\+}
+\begin{DoxyCompactList}\small\item\em True if the joints have mechanical end stops, false if not. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Action {\bfseries apply\+\_\+action\+\_\+uninitialized} (const Action \&desired\+\_\+action)\hypertarget{classblmc__robots_1_1NJointBlmcRobotDriver_a51acd154a4769b2fbc35536fc32ca354}{}\label{classblmc__robots_1_1NJointBlmcRobotDriver_a51acd154a4769b2fbc35536fc32ca354}
+
+\item 
+void \hyperlink{classblmc__robots_1_1NJointBlmcRobotDriver_a23e443e175d91b66cb4e50fa87bbf0fa}{\+\_\+initialize} ()
+\begin{DoxyCompactList}\small\item\em Actual initialization that is called in a real-\/time thread in \hyperlink{classblmc__robots_1_1NJointBlmcRobotDriver_a41b2ff96e0a687b0e1ae06ce1502d4db}{initialize()}. \end{DoxyCompactList}\item 
+bool \hyperlink{classblmc__robots_1_1NJointBlmcRobotDriver_a2ec7dc99b82c474a1a16df37f5dee292}{homing} (Vector \hyperlink{n__joint__blmc__robot__driver_8hpp_a8f0c3d2c5211dc9fd38c4d64bdcf77cb}{endstop\+\_\+search\+\_\+torques\+\_\+\+Nm}, Vector home\+\_\+offset\+\_\+rad=Vector\+::\+Zero())
+\begin{DoxyCompactList}\small\item\em Homing using end stops (optional) and encoder indices. \end{DoxyCompactList}\item 
+bool \hyperlink{classblmc__robots_1_1NJointBlmcRobotDriver_a1defedb3825ccac7cd8511d209bcae61}{move\+\_\+to\+\_\+position} (const Vector \&goal\+\_\+pos, const double tolerance, const uint32\+\_\+t timeout\+\_\+cycles)
+\begin{DoxyCompactList}\small\item\em Move to given goal position using PD control. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classblmc__robots_1_1BlmcJointModules}{Blmc\+Joint\+Modules}$<$ N\+\_\+\+J\+O\+I\+N\+TS $>$ {\bfseries joint\+\_\+modules\+\_\+}\hypertarget{classblmc__robots_1_1NJointBlmcRobotDriver_a350c204742b25ae2808670b1b56099b8}{}\label{classblmc__robots_1_1NJointBlmcRobotDriver_a350c204742b25ae2808670b1b56099b8}
+
+\item 
+Motor\+Boards {\bfseries motor\+\_\+boards\+\_\+}\hypertarget{classblmc__robots_1_1NJointBlmcRobotDriver_a68e9cafdfc02da872dbc86c2fd162408}{}\label{classblmc__robots_1_1NJointBlmcRobotDriver_a68e9cafdfc02da872dbc86c2fd162408}
+
+\item 
+\hyperlink{structblmc__robots_1_1MotorParameters}{Motor\+Parameters} \hyperlink{classblmc__robots_1_1NJointBlmcRobotDriver_a035472dd47cf790d38b49d50fe51ba61}{motor\+\_\+parameters\+\_\+}\hypertarget{classblmc__robots_1_1NJointBlmcRobotDriver_a035472dd47cf790d38b49d50fe51ba61}{}\label{classblmc__robots_1_1NJointBlmcRobotDriver_a035472dd47cf790d38b49d50fe51ba61}
+
+\begin{DoxyCompactList}\small\item\em Fixed motor parameters (assuming all joints use same setup). \end{DoxyCompactList}\item 
+double \hyperlink{classblmc__robots_1_1NJointBlmcRobotDriver_a4c4b68c6ce49317b2bc15e20c136c2d5}{max\+\_\+torque\+\_\+\+Nm\+\_\+}\hypertarget{classblmc__robots_1_1NJointBlmcRobotDriver_a4c4b68c6ce49317b2bc15e20c136c2d5}{}\label{classblmc__robots_1_1NJointBlmcRobotDriver_a4c4b68c6ce49317b2bc15e20c136c2d5}
+
+\begin{DoxyCompactList}\small\item\em Maximum torque allowed on each joint. \end{DoxyCompactList}\item 
+\hyperlink{structblmc__robots_1_1NJointBlmcRobotDriver_1_1Config}{Config} \hyperlink{classblmc__robots_1_1NJointBlmcRobotDriver_a704ad05a652572289b74525e18680c11}{config\+\_\+}
+\begin{DoxyCompactList}\small\item\em User-\/defined configuration of the driver. \end{DoxyCompactList}\item 
+bool {\bfseries is\+\_\+initialized\+\_\+} = false\hypertarget{classblmc__robots_1_1NJointBlmcRobotDriver_abda748741eda4ad890d6e55b09b173d4}{}\label{classblmc__robots_1_1NJointBlmcRobotDriver_abda748741eda4ad890d6e55b09b173d4}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$size\+\_\+t N\+\_\+\+J\+O\+I\+N\+TS, size\+\_\+t N\+\_\+\+M\+O\+T\+O\+R\+\_\+\+B\+O\+A\+R\+DS$>$\\*
+class blmc\+\_\+robots\+::\+N\+Joint\+Blmc\+Robot\+Driver$<$ N\+\_\+\+J\+O\+I\+N\+T\+S, N\+\_\+\+M\+O\+T\+O\+R\+\_\+\+B\+O\+A\+R\+D\+S $>$}
+
+Base class for simple n-\/joint B\+L\+MC robots. 
+
+This is a generic base class to easily implement drivers for simple B\+L\+MC robots that consist of N\+\_\+\+J\+O\+I\+N\+TS joints.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em N\+\_\+\+J\+O\+I\+N\+TS} & Number of joints. \\
+\hline
+{\em N\+\_\+\+M\+O\+T\+O\+R\+\_\+\+B\+O\+A\+R\+DS} & Number of motor control boards that are used. \\
+\hline
+\end{DoxyTemplParams}
+
+
+\subsection{Member Function Documentation}
+\index{blmc\+\_\+robots\+::\+N\+Joint\+Blmc\+Robot\+Driver@{blmc\+\_\+robots\+::\+N\+Joint\+Blmc\+Robot\+Driver}!\+\_\+initialize@{\+\_\+initialize}}
+\index{\+\_\+initialize@{\+\_\+initialize}!blmc\+\_\+robots\+::\+N\+Joint\+Blmc\+Robot\+Driver@{blmc\+\_\+robots\+::\+N\+Joint\+Blmc\+Robot\+Driver}}
+\subsubsection[{\texorpdfstring{\+\_\+initialize()}{_initialize()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$size\+\_\+t N\+\_\+\+J\+O\+I\+N\+TS, size\+\_\+t N\+\_\+\+M\+O\+T\+O\+R\+\_\+\+B\+O\+A\+R\+DS$>$ void {\bf blmc\+\_\+robots\+::\+N\+Joint\+Blmc\+Robot\+Driver}$<$ N\+\_\+\+J\+O\+I\+N\+TS, N\+\_\+\+M\+O\+T\+O\+R\+\_\+\+B\+O\+A\+R\+DS $>$\+::\+\_\+initialize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classblmc__robots_1_1NJointBlmcRobotDriver_a23e443e175d91b66cb4e50fa87bbf0fa}{}\label{classblmc__robots_1_1NJointBlmcRobotDriver_a23e443e175d91b66cb4e50fa87bbf0fa}
+
+
+Actual initialization that is called in a real-\/time thread in \hyperlink{classblmc__robots_1_1NJointBlmcRobotDriver_a41b2ff96e0a687b0e1ae06ce1502d4db}{initialize()}. 
+
+\index{blmc\+\_\+robots\+::\+N\+Joint\+Blmc\+Robot\+Driver@{blmc\+\_\+robots\+::\+N\+Joint\+Blmc\+Robot\+Driver}!homing@{homing}}
+\index{homing@{homing}!blmc\+\_\+robots\+::\+N\+Joint\+Blmc\+Robot\+Driver@{blmc\+\_\+robots\+::\+N\+Joint\+Blmc\+Robot\+Driver}}
+\subsubsection[{\texorpdfstring{homing(\+Vector endstop\+\_\+search\+\_\+torques\+\_\+\+Nm, Vector home\+\_\+offset\+\_\+rad=\+Vector\+::\+Zero())}{homing(Vector endstop_search_torques_Nm, Vector home_offset_rad=Vector::Zero())}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$size\+\_\+t N\+\_\+\+J\+O\+I\+N\+TS, size\+\_\+t N\+\_\+\+M\+O\+T\+O\+R\+\_\+\+B\+O\+A\+R\+DS$>$ bool {\bf blmc\+\_\+robots\+::\+N\+Joint\+Blmc\+Robot\+Driver}$<$ N\+\_\+\+J\+O\+I\+N\+TS, N\+\_\+\+M\+O\+T\+O\+R\+\_\+\+B\+O\+A\+R\+DS $>$\+::homing (
+\begin{DoxyParamCaption}
+\item[{Vector}]{endstop\+\_\+search\+\_\+torques\+\_\+\+Nm, }
+\item[{Vector}]{home\+\_\+offset\+\_\+rad = {\ttfamily Vector\+:\+:Zero()}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classblmc__robots_1_1NJointBlmcRobotDriver_a2ec7dc99b82c474a1a16df37f5dee292}{}\label{classblmc__robots_1_1NJointBlmcRobotDriver_a2ec7dc99b82c474a1a16df37f5dee292}
+
+
+Homing using end stops (optional) and encoder indices. 
+
+Procedure for finding an absolute zero position (or \char`\"{}home\char`\"{} position) when using relative encoders.
+
+If the robot has end stops (according to configuration), all joints first move in negative direction until they hit the end stop. Then an encoder index search is started where each joint moves slowly in positive direction until the next encoder index. The position of this encoder index is the \char`\"{}home position\char`\"{}.
+
+By default, the zero position is the same as the home position. The optional argument home\+\_\+offset\+\_\+rad provides a means to move the zero position relative to the home position. The zero position is computed as \begin{DoxyVerb}zero position = encoder index position + home offset
+\end{DoxyVerb}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em endstop\+\_\+search\+\_\+torques\+\_\+\+Nm} & Torques that are used to move the joints while searching the end stop. \\
+\hline
+{\em home\+\_\+offset\+\_\+rad} & Offset between the home position and the desired zero position. \\
+\hline
+\end{DoxyParams}
+\index{blmc\+\_\+robots\+::\+N\+Joint\+Blmc\+Robot\+Driver@{blmc\+\_\+robots\+::\+N\+Joint\+Blmc\+Robot\+Driver}!initialize@{initialize}}
+\index{initialize@{initialize}!blmc\+\_\+robots\+::\+N\+Joint\+Blmc\+Robot\+Driver@{blmc\+\_\+robots\+::\+N\+Joint\+Blmc\+Robot\+Driver}}
+\subsubsection[{\texorpdfstring{initialize() override}{initialize() override}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$size\+\_\+t N\+\_\+\+J\+O\+I\+N\+TS, size\+\_\+t N\+\_\+\+M\+O\+T\+O\+R\+\_\+\+B\+O\+A\+R\+DS$>$ void {\bf blmc\+\_\+robots\+::\+N\+Joint\+Blmc\+Robot\+Driver}$<$ N\+\_\+\+J\+O\+I\+N\+TS, N\+\_\+\+M\+O\+T\+O\+R\+\_\+\+B\+O\+A\+R\+DS $>$\+::initialize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}}\hypertarget{classblmc__robots_1_1NJointBlmcRobotDriver_a41b2ff96e0a687b0e1ae06ce1502d4db}{}\label{classblmc__robots_1_1NJointBlmcRobotDriver_a41b2ff96e0a687b0e1ae06ce1502d4db}
+
+
+Find home position of all joints and move to start position. 
+
+Homes all joints using home\+\_\+on\+\_\+index\+\_\+after\+\_\+negative\+\_\+end\+\_\+stop. When finished, move the joint to the starting position (defined in {\ttfamily config\+\_\+.\+initial\+\_\+position\+\_\+rad}). \index{blmc\+\_\+robots\+::\+N\+Joint\+Blmc\+Robot\+Driver@{blmc\+\_\+robots\+::\+N\+Joint\+Blmc\+Robot\+Driver}!move\+\_\+to\+\_\+position@{move\+\_\+to\+\_\+position}}
+\index{move\+\_\+to\+\_\+position@{move\+\_\+to\+\_\+position}!blmc\+\_\+robots\+::\+N\+Joint\+Blmc\+Robot\+Driver@{blmc\+\_\+robots\+::\+N\+Joint\+Blmc\+Robot\+Driver}}
+\subsubsection[{\texorpdfstring{move\+\_\+to\+\_\+position(const Vector \&goal\+\_\+pos, const double tolerance, const uint32\+\_\+t timeout\+\_\+cycles)}{move_to_position(const Vector &goal_pos, const double tolerance, const uint32_t timeout_cycles)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$size\+\_\+t N\+\_\+\+J\+O\+I\+N\+TS, size\+\_\+t N\+\_\+\+M\+O\+T\+O\+R\+\_\+\+B\+O\+A\+R\+DS$>$ bool {\bf blmc\+\_\+robots\+::\+N\+Joint\+Blmc\+Robot\+Driver}$<$ N\+\_\+\+J\+O\+I\+N\+TS, N\+\_\+\+M\+O\+T\+O\+R\+\_\+\+B\+O\+A\+R\+DS $>$\+::move\+\_\+to\+\_\+position (
+\begin{DoxyParamCaption}
+\item[{const Vector \&}]{goal\+\_\+pos, }
+\item[{const double}]{tolerance, }
+\item[{const uint32\+\_\+t}]{timeout\+\_\+cycles}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classblmc__robots_1_1NJointBlmcRobotDriver_a1defedb3825ccac7cd8511d209bcae61}{}\label{classblmc__robots_1_1NJointBlmcRobotDriver_a1defedb3825ccac7cd8511d209bcae61}
+
+
+Move to given goal position using PD control. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em goal\+\_\+pos} & Angular goal position for each joint. \\
+\hline
+{\em tolerance} & Allowed position error for reaching the goal. This is checked per joint, that is the maximal possible error is +/-\/tolerance on each joint. \\
+\hline
+{\em timeout\+\_\+cycles} & Timeout. If exceeded before goal is reached, the procedure is aborted. Unit\+: Number of control loop cycles. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if goal position is reached, false if timeout is exceeded. 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\index{blmc\+\_\+robots\+::\+N\+Joint\+Blmc\+Robot\+Driver@{blmc\+\_\+robots\+::\+N\+Joint\+Blmc\+Robot\+Driver}!config\+\_\+@{config\+\_\+}}
+\index{config\+\_\+@{config\+\_\+}!blmc\+\_\+robots\+::\+N\+Joint\+Blmc\+Robot\+Driver@{blmc\+\_\+robots\+::\+N\+Joint\+Blmc\+Robot\+Driver}}
+\subsubsection[{\texorpdfstring{config\+\_\+}{config_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$size\+\_\+t N\+\_\+\+J\+O\+I\+N\+TS, size\+\_\+t N\+\_\+\+M\+O\+T\+O\+R\+\_\+\+B\+O\+A\+R\+DS$>$ {\bf Config} {\bf blmc\+\_\+robots\+::\+N\+Joint\+Blmc\+Robot\+Driver}$<$ N\+\_\+\+J\+O\+I\+N\+TS, N\+\_\+\+M\+O\+T\+O\+R\+\_\+\+B\+O\+A\+R\+DS $>$\+::config\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classblmc__robots_1_1NJointBlmcRobotDriver_a704ad05a652572289b74525e18680c11}{}\label{classblmc__robots_1_1NJointBlmcRobotDriver_a704ad05a652572289b74525e18680c11}
+
+
+User-\/defined configuration of the driver. 
+
+Contains all configuration values that can be modified by the user (via the configuration file). \index{blmc\+\_\+robots\+::\+N\+Joint\+Blmc\+Robot\+Driver@{blmc\+\_\+robots\+::\+N\+Joint\+Blmc\+Robot\+Driver}!has\+\_\+endstop\+\_\+@{has\+\_\+endstop\+\_\+}}
+\index{has\+\_\+endstop\+\_\+@{has\+\_\+endstop\+\_\+}!blmc\+\_\+robots\+::\+N\+Joint\+Blmc\+Robot\+Driver@{blmc\+\_\+robots\+::\+N\+Joint\+Blmc\+Robot\+Driver}}
+\subsubsection[{\texorpdfstring{has\+\_\+endstop\+\_\+}{has_endstop_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$size\+\_\+t N\+\_\+\+J\+O\+I\+N\+TS, size\+\_\+t N\+\_\+\+M\+O\+T\+O\+R\+\_\+\+B\+O\+A\+R\+DS$>$ const bool {\bf blmc\+\_\+robots\+::\+N\+Joint\+Blmc\+Robot\+Driver}$<$ N\+\_\+\+J\+O\+I\+N\+TS, N\+\_\+\+M\+O\+T\+O\+R\+\_\+\+B\+O\+A\+R\+DS $>$\+::has\+\_\+endstop\+\_\+}\hypertarget{classblmc__robots_1_1NJointBlmcRobotDriver_a4da9d51841e9b2995e597ae52c460586}{}\label{classblmc__robots_1_1NJointBlmcRobotDriver_a4da9d51841e9b2995e597ae52c460586}
+
+
+True if the joints have mechanical end stops, false if not. 
+
+If set to true, it is assumed that all joints of the robot have end stops that mechanically prevent them from moving out of the valid range.
+
+If present, the end stops are used for a fully automated homing procedure in which the joints first move until they hit the end stop before starting the encoder index search. This way it is ensured that the correct index is used for homing without any need for manual set up. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/blmc\+\_\+robots/\hyperlink{n__joint__blmc__robot__driver_8hpp}{n\+\_\+joint\+\_\+blmc\+\_\+robot\+\_\+driver.\+hpp}\end{DoxyCompactItemize}

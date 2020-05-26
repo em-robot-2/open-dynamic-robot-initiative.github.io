@@ -1,0 +1,96 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classrobot__interfaces_1_1GlobalSignalHandler" kind="class" language="C++" prot="public">
+    <compoundname>robot_interfaces::GlobalSignalHandler</compoundname>
+    <includes refid="global__signal__handler_8hpp" local="no">global_signal_handler.hpp</includes>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classrobot__interfaces_1_1GlobalSignalHandler_1ae0c579060c4b33139ed9f23c6398fe01" prot="private" static="yes" mutable="no">
+        <type>bool</type>
+        <definition>bool robot_interfaces::GlobalSignalHandler::received_sigint_</definition>
+        <argsstring></argsstring>
+        <name>received_sigint_</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/robot_interfaces/global_signal_handler.hpp" line="46" column="1" bodyfile="include/robot_interfaces/global_signal_handler.hpp" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classrobot__interfaces_1_1GlobalSignalHandler_1af7503f0022d78843f85062d7b602fe4b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void robot_interfaces::GlobalSignalHandler::initialize</definition>
+        <argsstring>()</argsstring>
+        <name>initialize</name>
+        <briefdescription>
+<para>Initialize the signal handler. </para>        </briefdescription>
+        <detaileddescription>
+<para>This must be called before using the class. Does nothing when called a second time. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/robot_interfaces/global_signal_handler.hpp" line="28" column="1" bodyfile="src/global_signal_handler.cpp" bodystart="14" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="classrobot__interfaces_1_1GlobalSignalHandler_1a55da931218f7d10052c233832456c601" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void robot_interfaces::GlobalSignalHandler::signal_handler</definition>
+        <argsstring>(int signal)</argsstring>
+        <name>signal_handler</name>
+        <param>
+          <type>int</type>
+          <declname>signal</declname>
+        </param>
+        <briefdescription>
+<para>Handles the signals. Do not call this directly. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/robot_interfaces/global_signal_handler.hpp" line="31" column="1" bodyfile="src/global_signal_handler.cpp" bodystart="26" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="classrobot__interfaces_1_1GlobalSignalHandler_1a7d24e6a71be9282a270e92be4e3808b9" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool robot_interfaces::GlobalSignalHandler::has_received_sigint</definition>
+        <argsstring>()</argsstring>
+        <name>has_received_sigint</name>
+        <briefdescription>
+<para>Check if a SIGINT was received. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>True if SIGINT was received. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/robot_interfaces/global_signal_handler.hpp" line="38" column="1" bodyfile="src/global_signal_handler.cpp" bodystart="34" bodyend="37"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classrobot__interfaces_1_1GlobalSignalHandler_1a803bfef40bef34f25f24aff690ee3970" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>robot_interfaces::GlobalSignalHandler::GlobalSignalHandler</definition>
+        <argsstring>()</argsstring>
+        <name>GlobalSignalHandler</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/robot_interfaces/global_signal_handler.hpp" line="41" column="1" bodyfile="include/robot_interfaces/global_signal_handler.hpp" bodystart="41" bodyend="44"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Static class implementing a signal handler and providing information about SIGINT. </para>    </briefdescription>
+    <detaileddescription>
+<para>Since signal handlers cannot be implemented in a non-static class method, use this globally accessible class as a workaround. It registers a signal handler provides static methods to poll if certain signals are received. </para>    </detaileddescription>
+    <location file="include/robot_interfaces/global_signal_handler.hpp" line="20" column="1" bodyfile="include/robot_interfaces/global_signal_handler.hpp" bodystart="19" bodyend="47"/>
+    <listofallmembers>
+      <member refid="classrobot__interfaces_1_1GlobalSignalHandler_1a803bfef40bef34f25f24aff690ee3970" prot="private" virt="non-virtual"><scope>robot_interfaces::GlobalSignalHandler</scope><name>GlobalSignalHandler</name></member>
+      <member refid="classrobot__interfaces_1_1GlobalSignalHandler_1a7d24e6a71be9282a270e92be4e3808b9" prot="public" virt="non-virtual"><scope>robot_interfaces::GlobalSignalHandler</scope><name>has_received_sigint</name></member>
+      <member refid="classrobot__interfaces_1_1GlobalSignalHandler_1af7503f0022d78843f85062d7b602fe4b" prot="public" virt="non-virtual"><scope>robot_interfaces::GlobalSignalHandler</scope><name>initialize</name></member>
+      <member refid="classrobot__interfaces_1_1GlobalSignalHandler_1ae0c579060c4b33139ed9f23c6398fe01" prot="private" virt="non-virtual"><scope>robot_interfaces::GlobalSignalHandler</scope><name>received_sigint_</name></member>
+      <member refid="classrobot__interfaces_1_1GlobalSignalHandler_1a55da931218f7d10052c233832456c601" prot="public" virt="non-virtual"><scope>robot_interfaces::GlobalSignalHandler</scope><name>signal_handler</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

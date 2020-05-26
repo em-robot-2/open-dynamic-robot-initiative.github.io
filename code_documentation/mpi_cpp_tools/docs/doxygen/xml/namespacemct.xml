@@ -1,0 +1,250 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="namespacemct" kind="namespace" language="C++">
+    <compoundname>mct</compoundname>
+    <innerclass refid="classmct_1_1LinearDynamics" prot="public">mct::LinearDynamics</innerclass>
+    <innerclass refid="classmct_1_1LinearDynamicsWithAccelerationConstraint" prot="public">mct::LinearDynamicsWithAccelerationConstraint</innerclass>
+    <innerclass refid="classmct_1_1NonnegDouble" prot="public">mct::NonnegDouble</innerclass>
+    <innerclass refid="classmct_1_1SafetyConstraint" prot="public">mct::SafetyConstraint</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="dynamical__systems_8hpp_1aab449f0863dee56d0f0e377c75a4812d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double mct::find_max_admissible_acceleration</definition>
+        <argsstring>(const double &amp;initial_velocity, const double &amp;initial_position, const double &amp;max_velocity, const double &amp;max_position, const mct::NonnegDouble &amp;abs_jerk_limit, const mct::NonnegDouble &amp;abs_acceleration_limit)</argsstring>
+        <name>find_max_admissible_acceleration</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>initial_velocity</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>initial_position</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>max_velocity</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>max_position</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classmct_1_1NonnegDouble" kindref="compound">mct::NonnegDouble</ref> &amp;</type>
+          <declname>abs_jerk_limit</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classmct_1_1NonnegDouble" kindref="compound">mct::NonnegDouble</ref> &amp;</type>
+          <declname>abs_acceleration_limit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para><xrefsect id="todo_1_todo000001"><xreftitle>Todo</xreftitle><xrefdescription><para>: not quite sure what is the right thing to do here </para></xrefdescription></xrefsect></para>        </inbodydescription>
+        <location file="include/mpi_cpp_tools/dynamical_systems.hpp" line="387" column="1" bodyfile="include/mpi_cpp_tools/dynamical_systems.hpp" bodystart="387" bodyend="433"/>
+      </memberdef>
+      <memberdef kind="function" id="dynamical__systems_8hpp_1a87c8fdeac88fa24892ddb753f31f2a6c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double mct::find_min_admissible_acceleration</definition>
+        <argsstring>(const double &amp;initial_velocity, const double &amp;initial_position, const double &amp;min_velocity, const double &amp;min_position, const mct::NonnegDouble &amp;abs_jerk_limit, const mct::NonnegDouble &amp;abs_acceleration_limit)</argsstring>
+        <name>find_min_admissible_acceleration</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>initial_velocity</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>initial_position</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>min_velocity</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>min_position</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classmct_1_1NonnegDouble" kindref="compound">mct::NonnegDouble</ref> &amp;</type>
+          <declname>abs_jerk_limit</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classmct_1_1NonnegDouble" kindref="compound">mct::NonnegDouble</ref> &amp;</type>
+          <declname>abs_acceleration_limit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mpi_cpp_tools/dynamical_systems.hpp" line="437" column="1" bodyfile="include/mpi_cpp_tools/dynamical_systems.hpp" bodystart="437" bodyend="451"/>
+      </memberdef>
+      <memberdef kind="function" id="math_8hpp_1acee1bab6012500f4f6709fadef426407" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double mct::clamp</definition>
+        <argsstring>(const double &amp;value, const double &amp;limit_a, const double &amp;limit_b)</argsstring>
+        <name>clamp</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>limit_a</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>limit_b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mpi_cpp_tools/math.hpp" line="17" column="1" bodyfile="include/mpi_cpp_tools/math.hpp" bodystart="17" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="math_8hpp_1a0da0a10ac9a5f53e1bff7004b9375ef1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Vector</type>
+          </param>
+        </templateparamlist>
+        <type>Vector</type>
+        <definition>Vector mct::clamp</definition>
+        <argsstring>(const Vector &amp;vector, const double &amp;limit_a, const double &amp;limit_b)</argsstring>
+        <name>clamp</name>
+        <param>
+          <type>const Vector &amp;</type>
+          <declname>vector</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>limit_a</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>limit_b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mpi_cpp_tools/math.hpp" line="26" column="1" bodyfile="include/mpi_cpp_tools/math.hpp" bodystart="26" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="math_8hpp_1a51a2b8ea864671201f79d50310a0cdd4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Vector</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void mct::append_to_vector</definition>
+        <argsstring>(Vector &amp;vector, const double &amp;element)</argsstring>
+        <name>append_to_vector</name>
+        <param>
+          <type>Vector &amp;</type>
+          <declname>vector</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>element</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mpi_cpp_tools/math.hpp" line="39" column="1" bodyfile="include/mpi_cpp_tools/math.hpp" bodystart="39" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="math_8hpp_1aab77f23043c1849bee062cf75c75d101" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Matrix</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void mct::append_rows_to_matrix</definition>
+        <argsstring>(Matrix &amp;matrix, const Matrix &amp;rows)</argsstring>
+        <name>append_rows_to_matrix</name>
+        <param>
+          <type>Matrix &amp;</type>
+          <declname>matrix</declname>
+        </param>
+        <param>
+          <type>const Matrix &amp;</type>
+          <declname>rows</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mpi_cpp_tools/math.hpp" line="47" column="1" bodyfile="include/mpi_cpp_tools/math.hpp" bodystart="47" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="math_8hpp_1a6014d19d6c69a7a98aac6b68c57e6795" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mct::approx_equal</definition>
+        <argsstring>(double x, double y, double epsilon=1e-10)</argsstring>
+        <name>approx_equal</name>
+        <param>
+          <type>double</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>epsilon</declname>
+          <defval>1e-10</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mpi_cpp_tools/math.hpp" line="57" column="1" bodyfile="include/mpi_cpp_tools/math.hpp" bodystart="57" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="math_8hpp_1a1cee0ed64de57025bf7ab0ae767008e6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Vector</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool mct::contains</definition>
+        <argsstring>(Vector v, double x)</argsstring>
+        <name>contains</name>
+        <param>
+          <type>Vector</type>
+          <declname>v</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mpi_cpp_tools/math.hpp" line="63" column="1" bodyfile="include/mpi_cpp_tools/math.hpp" bodystart="63" bodyend="73"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/mpi_cpp_tools/basic_tools.hpp" line="15" column="1"/>
+  </compounddef>
+</doxygen>

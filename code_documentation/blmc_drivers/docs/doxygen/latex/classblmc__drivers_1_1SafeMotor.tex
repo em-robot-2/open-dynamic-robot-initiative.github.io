@@ -1,0 +1,178 @@
+\hypertarget{classblmc__drivers_1_1SafeMotor}{}\section{blmc\+\_\+drivers\+:\+:Safe\+Motor Class Reference}
+\label{classblmc__drivers_1_1SafeMotor}\index{blmc\+\_\+drivers\+::\+Safe\+Motor@{blmc\+\_\+drivers\+::\+Safe\+Motor}}
+
+
+This class is a safe implementation of the \hyperlink{classblmc__drivers_1_1Motor}{Motor} class.  
+
+
+
+
+{\ttfamily \#include $<$motor.\+hpp$>$}
+
+
+
+Inheritance diagram for blmc\+\_\+drivers\+:\+:Safe\+Motor\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=227pt]{classblmc__drivers_1_1SafeMotor__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for blmc\+\_\+drivers\+:\+:Safe\+Motor\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=227pt]{classblmc__drivers_1_1SafeMotor__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classblmc__drivers_1_1SafeMotor_a6e9cda054c161d28f062955d97e73f82}{Safe\+Motor} (\hyperlink{classblmc__drivers_1_1MotorInterface_ae31f230b9da3674a05543023c90b124c}{Ptr}$<$ \hyperlink{classblmc__drivers_1_1MotorBoardInterface}{Motor\+Board\+Interface} $>$ board, bool motor\+\_\+id, const double \&max\+\_\+current\+\_\+target=2.\+0, const size\+\_\+t \&history\+\_\+length=1000, const double \&max\+\_\+velocity=std\+::numeric\+\_\+limits$<$ double $>$\+::quiet\+\_\+\+NaN())
+\begin{DoxyCompactList}\small\item\em Construct a new \hyperlink{classblmc__drivers_1_1SafeMotor}{Safe\+Motor} object. \end{DoxyCompactList}\item 
+virtual \hyperlink{classblmc__drivers_1_1MotorInterface_ae31f230b9da3674a05543023c90b124c}{Ptr}$<$ const \hyperlink{classblmc__drivers_1_1MotorInterface_a49b8fc916b9f9debbd7b0988463db5cd}{Scalar\+Timeseries} $>$ \hyperlink{classblmc__drivers_1_1SafeMotor_a2c938b6289e41a7d3ab8a19a045382e0}{get\+\_\+current\+\_\+target} () const 
+\begin{DoxyCompactList}\small\item\em Getters. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classblmc__drivers_1_1SafeMotor_adedaee24408b94b3d1ed8f856e218b12}{set\+\_\+current\+\_\+target} (const double \&current\+\_\+target)
+\begin{DoxyCompactList}\small\item\em Setters. \end{DoxyCompactList}\item 
+void \hyperlink{classblmc__drivers_1_1SafeMotor_ad4f4bb531e2a9e7f965b319afb53d43c}{set\+\_\+max\+\_\+current} (double max\+\_\+current\+\_\+target)
+\begin{DoxyCompactList}\small\item\em Set the max\+\_\+current\+\_\+target\+\_\+ object. \end{DoxyCompactList}\item 
+void \hyperlink{classblmc__drivers_1_1SafeMotor_aaa0083a39d815d7b3cd38c680bfea48a}{set\+\_\+max\+\_\+velocity} (double max\+\_\+velocity)
+\begin{DoxyCompactList}\small\item\em Set the max\+\_\+velocity\+\_\+ constant. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double \hyperlink{classblmc__drivers_1_1SafeMotor_ae58230855ac502d9c702304d785eb833}{max\+\_\+current\+\_\+target\+\_\+}\hypertarget{classblmc__drivers_1_1SafeMotor_ae58230855ac502d9c702304d785eb833}{}\label{classblmc__drivers_1_1SafeMotor_ae58230855ac502d9c702304d785eb833}
+
+\begin{DoxyCompactList}\small\item\em max\+\_\+current\+\_\+target\+\_\+ is the limit of the current. \end{DoxyCompactList}\item 
+double \hyperlink{classblmc__drivers_1_1SafeMotor_a1885b2a1c298765cae0a7ccda75d5f3f}{max\+\_\+velocity\+\_\+}\hypertarget{classblmc__drivers_1_1SafeMotor_a1885b2a1c298765cae0a7ccda75d5f3f}{}\label{classblmc__drivers_1_1SafeMotor_a1885b2a1c298765cae0a7ccda75d5f3f}
+
+\begin{DoxyCompactList}\small\item\em max\+\_\+velocity\+\_\+ limits the motor velocity. \end{DoxyCompactList}\item 
+\hyperlink{classblmc__drivers_1_1MotorInterface_ae31f230b9da3674a05543023c90b124c}{Ptr}$<$ \hyperlink{classblmc__drivers_1_1MotorInterface_a49b8fc916b9f9debbd7b0988463db5cd}{Scalar\+Timeseries} $>$ \hyperlink{classblmc__drivers_1_1SafeMotor_af79e6910868177f18a498ea83b350e3f}{current\+\_\+target\+\_\+}\hypertarget{classblmc__drivers_1_1SafeMotor_af79e6910868177f18a498ea83b350e3f}{}\label{classblmc__drivers_1_1SafeMotor_af79e6910868177f18a498ea83b350e3f}
+
+\begin{DoxyCompactList}\small\item\em History of the target current sent. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+This class is a safe implementation of the \hyperlink{classblmc__drivers_1_1Motor}{Motor} class. 
+
+It contains utilities to bound the control input. It could also contains some velocity limits at the motor level and why not some temperature management.
+
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000002}{Todo}]the velocity limit should be implemented in a smoother way, and the parameters should be passed in the constructor. \end{DoxyRefDesc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{blmc\+\_\+drivers\+::\+Safe\+Motor@{blmc\+\_\+drivers\+::\+Safe\+Motor}!Safe\+Motor@{Safe\+Motor}}
+\index{Safe\+Motor@{Safe\+Motor}!blmc\+\_\+drivers\+::\+Safe\+Motor@{blmc\+\_\+drivers\+::\+Safe\+Motor}}
+\subsubsection[{\texorpdfstring{Safe\+Motor(\+Ptr$<$ Motor\+Board\+Interface $>$ board, bool motor\+\_\+id, const double \&max\+\_\+current\+\_\+target=2.\+0, const size\+\_\+t \&history\+\_\+length=1000, const double \&max\+\_\+velocity=std\+::numeric\+\_\+limits$<$ double $>$\+::quiet\+\_\+\+Na\+N())}{SafeMotor(Ptr< MotorBoardInterface > board, bool motor_id, const double &max_current_target=2.0, const size_t &history_length=1000, const double &max_velocity=std::numeric_limits< double >::quiet_NaN())}}]{\setlength{\rightskip}{0pt plus 5cm}blmc\+\_\+drivers\+::\+Safe\+Motor\+::\+Safe\+Motor (
+\begin{DoxyParamCaption}
+\item[{{\bf Motor\+::\+Ptr}$<$ {\bf Motor\+Board\+Interface} $>$}]{board, }
+\item[{bool}]{motor\+\_\+id, }
+\item[{const double \&}]{max\+\_\+current\+\_\+target = {\ttfamily 2.0}, }
+\item[{const size\+\_\+t \&}]{history\+\_\+length = {\ttfamily 1000}, }
+\item[{const double \&}]{max\+\_\+velocity = {\ttfamily std\+:\+:numeric\+\_\+limits$<$~double$>$\+:\+:quiet\+\_\+NaN()}}
+\end{DoxyParamCaption}
+)}\hypertarget{classblmc__drivers_1_1SafeMotor_a6e9cda054c161d28f062955d97e73f82}{}\label{classblmc__drivers_1_1SafeMotor_a6e9cda054c161d28f062955d97e73f82}
+
+
+Construct a new \hyperlink{classblmc__drivers_1_1SafeMotor}{Safe\+Motor} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em board} & \\
+\hline
+{\em motor\+\_\+id} & \\
+\hline
+{\em max\+\_\+current\+\_\+target} & \\
+\hline
+{\em history\+\_\+length} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{blmc\+\_\+drivers\+::\+Safe\+Motor@{blmc\+\_\+drivers\+::\+Safe\+Motor}!get\+\_\+current\+\_\+target@{get\+\_\+current\+\_\+target}}
+\index{get\+\_\+current\+\_\+target@{get\+\_\+current\+\_\+target}!blmc\+\_\+drivers\+::\+Safe\+Motor@{blmc\+\_\+drivers\+::\+Safe\+Motor}}
+\subsubsection[{\texorpdfstring{get\+\_\+current\+\_\+target() const }{get_current_target() const }}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Ptr}$<$const {\bf Scalar\+Timeseries}$>$ blmc\+\_\+drivers\+::\+Safe\+Motor\+::get\+\_\+current\+\_\+target (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classblmc__drivers_1_1SafeMotor_a2c938b6289e41a7d3ab8a19a045382e0}{}\label{classblmc__drivers_1_1SafeMotor_a2c938b6289e41a7d3ab8a19a045382e0}
+
+
+Getters. 
+
+Get the \+\_\+current\+\_\+target object
+
+\begin{DoxyReturn}{Returns}
+Ptr$<$const Scalar\+Timeseries$>$ 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classblmc__drivers_1_1Motor_ac1c0c4f1faa125bc0b245fdbe2590575}{blmc\+\_\+drivers\+::\+Motor}.
+
+\index{blmc\+\_\+drivers\+::\+Safe\+Motor@{blmc\+\_\+drivers\+::\+Safe\+Motor}!set\+\_\+current\+\_\+target@{set\+\_\+current\+\_\+target}}
+\index{set\+\_\+current\+\_\+target@{set\+\_\+current\+\_\+target}!blmc\+\_\+drivers\+::\+Safe\+Motor@{blmc\+\_\+drivers\+::\+Safe\+Motor}}
+\subsubsection[{\texorpdfstring{set\+\_\+current\+\_\+target(const double \&current\+\_\+target)}{set_current_target(const double &current_target)}}]{\setlength{\rightskip}{0pt plus 5cm}void blmc\+\_\+drivers\+::\+Safe\+Motor\+::set\+\_\+current\+\_\+target (
+\begin{DoxyParamCaption}
+\item[{const double \&}]{current\+\_\+target}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classblmc__drivers_1_1SafeMotor_adedaee24408b94b3d1ed8f856e218b12}{}\label{classblmc__drivers_1_1SafeMotor_adedaee24408b94b3d1ed8f856e218b12}
+
+
+Setters. 
+
+Set the current target (Ampere)
+
+
+\begin{DoxyParams}{Parameters}
+{\em current\+\_\+target} & \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classblmc__drivers_1_1Motor_a48801c9858a7b1784b0a0ac4272fdaf5}{blmc\+\_\+drivers\+::\+Motor}.
+
+\index{blmc\+\_\+drivers\+::\+Safe\+Motor@{blmc\+\_\+drivers\+::\+Safe\+Motor}!set\+\_\+max\+\_\+current@{set\+\_\+max\+\_\+current}}
+\index{set\+\_\+max\+\_\+current@{set\+\_\+max\+\_\+current}!blmc\+\_\+drivers\+::\+Safe\+Motor@{blmc\+\_\+drivers\+::\+Safe\+Motor}}
+\subsubsection[{\texorpdfstring{set\+\_\+max\+\_\+current(double max\+\_\+current\+\_\+target)}{set_max_current(double max_current_target)}}]{\setlength{\rightskip}{0pt plus 5cm}void blmc\+\_\+drivers\+::\+Safe\+Motor\+::set\+\_\+max\+\_\+current (
+\begin{DoxyParamCaption}
+\item[{double}]{max\+\_\+current\+\_\+target}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classblmc__drivers_1_1SafeMotor_ad4f4bb531e2a9e7f965b319afb53d43c}{}\label{classblmc__drivers_1_1SafeMotor_ad4f4bb531e2a9e7f965b319afb53d43c}
+
+
+Set the max\+\_\+current\+\_\+target\+\_\+ object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em max\+\_\+current\+\_\+target} & \\
+\hline
+\end{DoxyParams}
+\index{blmc\+\_\+drivers\+::\+Safe\+Motor@{blmc\+\_\+drivers\+::\+Safe\+Motor}!set\+\_\+max\+\_\+velocity@{set\+\_\+max\+\_\+velocity}}
+\index{set\+\_\+max\+\_\+velocity@{set\+\_\+max\+\_\+velocity}!blmc\+\_\+drivers\+::\+Safe\+Motor@{blmc\+\_\+drivers\+::\+Safe\+Motor}}
+\subsubsection[{\texorpdfstring{set\+\_\+max\+\_\+velocity(double max\+\_\+velocity)}{set_max_velocity(double max_velocity)}}]{\setlength{\rightskip}{0pt plus 5cm}void blmc\+\_\+drivers\+::\+Safe\+Motor\+::set\+\_\+max\+\_\+velocity (
+\begin{DoxyParamCaption}
+\item[{double}]{max\+\_\+velocity}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classblmc__drivers_1_1SafeMotor_aaa0083a39d815d7b3cd38c680bfea48a}{}\label{classblmc__drivers_1_1SafeMotor_aaa0083a39d815d7b3cd38c680bfea48a}
+
+
+Set the max\+\_\+velocity\+\_\+ constant. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em max\+\_\+velocity} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/blmc\+\_\+drivers/devices/\hyperlink{motor_8hpp}{motor.\+hpp}\item 
+src/\hyperlink{motor_8cpp}{motor.\+cpp}\end{DoxyCompactItemize}

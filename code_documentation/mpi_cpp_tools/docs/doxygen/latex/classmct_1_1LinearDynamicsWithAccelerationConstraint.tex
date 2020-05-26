@@ -1,0 +1,101 @@
+\hypertarget{classmct_1_1LinearDynamicsWithAccelerationConstraint}{}\section{mct\+:\+:Linear\+Dynamics\+With\+Acceleration\+Constraint Class Reference}
+\label{classmct_1_1LinearDynamicsWithAccelerationConstraint}\index{mct\+::\+Linear\+Dynamics\+With\+Acceleration\+Constraint@{mct\+::\+Linear\+Dynamics\+With\+Acceleration\+Constraint}}
+
+
+Inheritance diagram for mct\+:\+:Linear\+Dynamics\+With\+Acceleration\+Constraint\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=264pt]{classmct_1_1LinearDynamicsWithAccelerationConstraint__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for mct\+:\+:Linear\+Dynamics\+With\+Acceleration\+Constraint\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=312pt]{classmct_1_1LinearDynamicsWithAccelerationConstraint__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef Linear\+Dynamics\+::\+Vector {\bfseries Vector}\hypertarget{classmct_1_1LinearDynamicsWithAccelerationConstraint_a9f31f3ecc820198a01eb0fc78c4dfb75}{}\label{classmct_1_1LinearDynamicsWithAccelerationConstraint_a9f31f3ecc820198a01eb0fc78c4dfb75}
+
+\item 
+typedef Eigen\+::\+Matrix$<$ double, Eigen\+::\+Dynamic, Eigen\+::\+Dynamic, 0, 10, 10 $>$ {\bfseries Matrix}\hypertarget{classmct_1_1LinearDynamicsWithAccelerationConstraint_a5a74321eebcdddebde9083145feb996f}{}\label{classmct_1_1LinearDynamicsWithAccelerationConstraint_a5a74321eebcdddebde9083145feb996f}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries print\+\_\+parameters} () const \hypertarget{classmct_1_1LinearDynamicsWithAccelerationConstraint_ade3a0d6eddf1a5af523270ae1fe13aca}{}\label{classmct_1_1LinearDynamicsWithAccelerationConstraint_ade3a0d6eddf1a5af523270ae1fe13aca}
+
+\item 
+{\bfseries Linear\+Dynamics\+With\+Acceleration\+Constraint} (Eigen\+::\+Matrix$<$ double, 5, 1 $>$ parameters)\hypertarget{classmct_1_1LinearDynamicsWithAccelerationConstraint_afe40d0fc5058e69055e0f4dbf59d611a}{}\label{classmct_1_1LinearDynamicsWithAccelerationConstraint_afe40d0fc5058e69055e0f4dbf59d611a}
+
+\item 
+{\bfseries Linear\+Dynamics\+With\+Acceleration\+Constraint} (double jerk, double initial\+\_\+acceleration, double initial\+\_\+velocity, double initial\+\_\+position, \hyperlink{classmct_1_1NonnegDouble}{mct\+::\+Nonneg\+Double} abs\+\_\+acceleration\+\_\+limit)\hypertarget{classmct_1_1LinearDynamicsWithAccelerationConstraint_a4501cf02cce687c60d6da0b24ef609d3}{}\label{classmct_1_1LinearDynamicsWithAccelerationConstraint_a4501cf02cce687c60d6da0b24ef609d3}
+
+\item 
+void {\bfseries set\+\_\+initial\+\_\+acceleration} (double initial\+\_\+acceleration)\hypertarget{classmct_1_1LinearDynamicsWithAccelerationConstraint_a8f9a83d5da9d9e7b9eb4031e43022dfe}{}\label{classmct_1_1LinearDynamicsWithAccelerationConstraint_a8f9a83d5da9d9e7b9eb4031e43022dfe}
+
+\item 
+double {\bfseries get\+\_\+acceleration} (\hyperlink{classmct_1_1NonnegDouble}{mct\+::\+Nonneg\+Double} t) const \hypertarget{classmct_1_1LinearDynamicsWithAccelerationConstraint_ad2691066026d0aa0e9c7867c98fc6685}{}\label{classmct_1_1LinearDynamicsWithAccelerationConstraint_ad2691066026d0aa0e9c7867c98fc6685}
+
+\item 
+double {\bfseries get\+\_\+velocity} (\hyperlink{classmct_1_1NonnegDouble}{mct\+::\+Nonneg\+Double} t) const \hypertarget{classmct_1_1LinearDynamicsWithAccelerationConstraint_a75b2c052e49a8b591b29df9551f05614}{}\label{classmct_1_1LinearDynamicsWithAccelerationConstraint_a75b2c052e49a8b591b29df9551f05614}
+
+\item 
+double {\bfseries get\+\_\+position} (\hyperlink{classmct_1_1NonnegDouble}{mct\+::\+Nonneg\+Double} t) const \hypertarget{classmct_1_1LinearDynamicsWithAccelerationConstraint_a79216cc4eef7308542d9811b8c44ecf6}{}\label{classmct_1_1LinearDynamicsWithAccelerationConstraint_a79216cc4eef7308542d9811b8c44ecf6}
+
+\item 
+{\footnotesize template$<$typename Array $>$ }\\Array {\bfseries get\+\_\+positions} (const Array \&times) const \hypertarget{classmct_1_1LinearDynamicsWithAccelerationConstraint_adaa181c2109d4f4098e7833e58ce929d}{}\label{classmct_1_1LinearDynamicsWithAccelerationConstraint_adaa181c2109d4f4098e7833e58ce929d}
+
+\item 
+Vector {\bfseries find\+\_\+t\+\_\+given\+\_\+velocity} (double velocity) const \hypertarget{classmct_1_1LinearDynamicsWithAccelerationConstraint_a9ce476e49904c83c85af67f5be5a5e2d}{}\label{classmct_1_1LinearDynamicsWithAccelerationConstraint_a9ce476e49904c83c85af67f5be5a5e2d}
+
+\item 
+bool {\bfseries will\+\_\+exceed\+\_\+jointly} (const double \&max\+\_\+velocity, const double \&max\+\_\+position) const \hypertarget{classmct_1_1LinearDynamicsWithAccelerationConstraint_a941585f2acda77a22a3a269ba6873afb}{}\label{classmct_1_1LinearDynamicsWithAccelerationConstraint_a941585f2acda77a22a3a269ba6873afb}
+
+\item 
+bool \hyperlink{classmct_1_1LinearDynamicsWithAccelerationConstraint_a568991a3b2459be274a86298caf8356c}{will\+\_\+exceed\+\_\+jointly} (const double \&max\+\_\+velocity, const double \&max\+\_\+position, double \&certificate\+\_\+time) const 
+\item 
+bool {\bfseries will\+\_\+deceed\+\_\+jointly} (const double \&min\+\_\+velocity, const double \&min\+\_\+position) const \hypertarget{classmct_1_1LinearDynamicsWithAccelerationConstraint_a9c94e5e278cb7519215a5495f326b11c}{}\label{classmct_1_1LinearDynamicsWithAccelerationConstraint_a9c94e5e278cb7519215a5495f326b11c}
+
+\item 
+bool {\bfseries will\+\_\+deceed\+\_\+jointly} (const double \&min\+\_\+velocity, const double \&min\+\_\+position, double \&certificate\+\_\+time) const \hypertarget{classmct_1_1LinearDynamicsWithAccelerationConstraint_ae3c5bef385c2bcb64b5a7cd9dae42654}{}\label{classmct_1_1LinearDynamicsWithAccelerationConstraint_ae3c5bef385c2bcb64b5a7cd9dae42654}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double {\bfseries acceleration\+\_\+limit\+\_\+}\hypertarget{classmct_1_1LinearDynamicsWithAccelerationConstraint_a8030e84817471fde3716a5d4ea4f2927}{}\label{classmct_1_1LinearDynamicsWithAccelerationConstraint_a8030e84817471fde3716a5d4ea4f2927}
+
+\item 
+\hyperlink{classmct_1_1NonnegDouble}{mct\+::\+Nonneg\+Double} {\bfseries jerk\+\_\+duration\+\_\+}\hypertarget{classmct_1_1LinearDynamicsWithAccelerationConstraint_ad5f33b779d2503eca2a7bb1f53ccc0da}{}\label{classmct_1_1LinearDynamicsWithAccelerationConstraint_ad5f33b779d2503eca2a7bb1f53ccc0da}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Function Documentation}
+\index{mct\+::\+Linear\+Dynamics\+With\+Acceleration\+Constraint@{mct\+::\+Linear\+Dynamics\+With\+Acceleration\+Constraint}!will\+\_\+exceed\+\_\+jointly@{will\+\_\+exceed\+\_\+jointly}}
+\index{will\+\_\+exceed\+\_\+jointly@{will\+\_\+exceed\+\_\+jointly}!mct\+::\+Linear\+Dynamics\+With\+Acceleration\+Constraint@{mct\+::\+Linear\+Dynamics\+With\+Acceleration\+Constraint}}
+\subsubsection[{\texorpdfstring{will\+\_\+exceed\+\_\+jointly(const double \&max\+\_\+velocity, const double \&max\+\_\+position, double \&certificate\+\_\+time) const }{will_exceed_jointly(const double &max_velocity, const double &max_position, double &certificate_time) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool mct\+::\+Linear\+Dynamics\+With\+Acceleration\+Constraint\+::will\+\_\+exceed\+\_\+jointly (
+\begin{DoxyParamCaption}
+\item[{const double \&}]{max\+\_\+velocity, }
+\item[{const double \&}]{max\+\_\+position, }
+\item[{double \&}]{certificate\+\_\+time}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmct_1_1LinearDynamicsWithAccelerationConstraint_a568991a3b2459be274a86298caf8356c}{}\label{classmct_1_1LinearDynamicsWithAccelerationConstraint_a568991a3b2459be274a86298caf8356c}
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000002}{Todo}]we could do this in a cleaner way with candidate points \end{DoxyRefDesc}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/mpi\+\_\+cpp\+\_\+tools/\hyperlink{dynamical__systems_8hpp}{dynamical\+\_\+systems.\+hpp}\end{DoxyCompactItemize}

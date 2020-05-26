@@ -1,0 +1,152 @@
+\hypertarget{classblmc__robots_1_1Polynome}{}\section{blmc\+\_\+robots\+:\+:Polynome$<$ O\+R\+D\+ER $>$ Class Template Reference}
+\label{classblmc__robots_1_1Polynome}\index{blmc\+\_\+robots\+::\+Polynome$<$ O\+R\+D\+E\+R $>$@{blmc\+\_\+robots\+::\+Polynome$<$ O\+R\+D\+E\+R $>$}}
+
+
+Simple class that defines $ P(x) $ a polynome of order O\+R\+D\+ER.  
+
+
+
+
+{\ttfamily \#include $<$polynome.\+hpp$>$}
+
+
+
+Inheritance diagram for blmc\+\_\+robots\+:\+:Polynome$<$ O\+R\+D\+ER $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=221pt]{classblmc__robots_1_1Polynome__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classblmc__robots_1_1Polynome_a8ece7a7021cc62167c023d51a5bb3879}{Polynome} ()
+\begin{DoxyCompactList}\small\item\em Polynome$<$\+O\+R\+D\+E\+R$>$ definitions. \end{DoxyCompactList}\item 
+\hyperlink{classblmc__robots_1_1Polynome_a4541e4b629061dfdbca73559a42a6e93}{$\sim$\+Polynome} ()
+\item 
+double \hyperlink{classblmc__robots_1_1Polynome_ae102191e0f730744e822c8e7599008d6}{compute} (double x)
+\item 
+double \hyperlink{classblmc__robots_1_1Polynome_a62183ec0d1bc22c224c14a58dd10e3e9}{compute\+\_\+derivative} (double x)
+\item 
+double \hyperlink{classblmc__robots_1_1Polynome_a6a20495bd6c6105b5109244b29b5d069}{compute\+\_\+sec\+\_\+derivative} (double x)
+\item 
+void \hyperlink{classblmc__robots_1_1Polynome_a31e2774f54d5a8a242878d6157e412c9}{get\+\_\+coefficients} (\hyperlink{classblmc__robots_1_1Polynome_a31e086184f3934b269e8318cce2859eb}{Coefficients} \&coefficients) const 
+\item 
+void \hyperlink{classblmc__robots_1_1Polynome_ad8daa2f5ffa1891aac2663519950afae}{set\+\_\+coefficients} (const \hyperlink{classblmc__robots_1_1Polynome_a31e086184f3934b269e8318cce2859eb}{Coefficients} \&coefficients)
+\item 
+int {\bfseries degree} ()\hypertarget{classblmc__robots_1_1Polynome_ada7f56fa60b0d23dd0ab9fedbbc1e0db}{}\label{classblmc__robots_1_1Polynome_ada7f56fa60b0d23dd0ab9fedbbc1e0db}
+
+\item 
+void \hyperlink{classblmc__robots_1_1Polynome_a1bf6f3cb3fa919dbdff30e55fd200324}{print} () const 
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::array$<$ double, O\+R\+D\+ER+1 $>$ \hyperlink{classblmc__robots_1_1Polynome_a0aa7d57743e14ed7f29f9b09509ce2e6}{coefficients\+\_\+}
+\end{DoxyCompactItemize}
+\subsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::array$<$ double, O\+R\+D\+ER $>$ \hyperlink{classblmc__robots_1_1Polynome_a31e086184f3934b269e8318cce2859eb}{Coefficients}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$int O\+R\+D\+ER$>$\\*
+class blmc\+\_\+robots\+::\+Polynome$<$ O\+R\+D\+E\+R $>$}
+
+Simple class that defines $ P(x) $ a polynome of order O\+R\+D\+ER. 
+
+It provide simple methods to compute $ P(x) $, $ \frac{dP}{dx}(x) $, and $ \frac{dP^2}{dx^2}(x) $
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em O\+R\+D\+ER} & is the order of the polynome \\
+\hline
+\end{DoxyTemplParams}
+
+
+\subsection{Member Typedef Documentation}
+\index{blmc\+\_\+robots\+::\+Polynome@{blmc\+\_\+robots\+::\+Polynome}!Coefficients@{Coefficients}}
+\index{Coefficients@{Coefficients}!blmc\+\_\+robots\+::\+Polynome@{blmc\+\_\+robots\+::\+Polynome}}
+\subsubsection[{\texorpdfstring{Coefficients}{Coefficients}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int O\+R\+D\+ER$>$ typedef std\+::array$<$double, O\+R\+D\+ER$>$ {\bf blmc\+\_\+robots\+::\+Polynome}$<$ O\+R\+D\+ER $>$\+::{\bf Coefficients}\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classblmc__robots_1_1Polynome_a31e086184f3934b269e8318cce2859eb}{}\label{classblmc__robots_1_1Polynome_a31e086184f3934b269e8318cce2859eb}
+Type of the container for the poynome coefficients 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{blmc\+\_\+robots\+::\+Polynome@{blmc\+\_\+robots\+::\+Polynome}!Polynome@{Polynome}}
+\index{Polynome@{Polynome}!blmc\+\_\+robots\+::\+Polynome@{blmc\+\_\+robots\+::\+Polynome}}
+\subsubsection[{\texorpdfstring{Polynome()}{Polynome()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int O\+R\+D\+ER$>$ {\bf blmc\+\_\+robots\+::\+Polynome}$<$ O\+R\+D\+ER $>$\+::{\bf Polynome} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classblmc__robots_1_1Polynome_a8ece7a7021cc62167c023d51a5bb3879}{}\label{classblmc__robots_1_1Polynome_a8ece7a7021cc62167c023d51a5bb3879}
+
+
+Polynome$<$\+O\+R\+D\+E\+R$>$ definitions. 
+
+Constructor \index{blmc\+\_\+robots\+::\+Polynome@{blmc\+\_\+robots\+::\+Polynome}!````~Polynome@{$\sim$\+Polynome}}
+\index{````~Polynome@{$\sim$\+Polynome}!blmc\+\_\+robots\+::\+Polynome@{blmc\+\_\+robots\+::\+Polynome}}
+\subsubsection[{\texorpdfstring{$\sim$\+Polynome()}{~Polynome()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int O\+R\+D\+ER$>$ {\bf blmc\+\_\+robots\+::\+Polynome}$<$ O\+R\+D\+ER $>$\+::$\sim${\bf Polynome} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classblmc__robots_1_1Polynome_a4541e4b629061dfdbca73559a42a6e93}{}\label{classblmc__robots_1_1Polynome_a4541e4b629061dfdbca73559a42a6e93}
+Destructor 
+
+\subsection{Member Function Documentation}
+\index{blmc\+\_\+robots\+::\+Polynome@{blmc\+\_\+robots\+::\+Polynome}!compute@{compute}}
+\index{compute@{compute}!blmc\+\_\+robots\+::\+Polynome@{blmc\+\_\+robots\+::\+Polynome}}
+\subsubsection[{\texorpdfstring{compute(double x)}{compute(double x)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int O\+R\+D\+ER$>$ double {\bf blmc\+\_\+robots\+::\+Polynome}$<$ O\+R\+D\+ER $>$\+::compute (
+\begin{DoxyParamCaption}
+\item[{double}]{x}
+\end{DoxyParamCaption}
+)}\hypertarget{classblmc__robots_1_1Polynome_ae102191e0f730744e822c8e7599008d6}{}\label{classblmc__robots_1_1Polynome_ae102191e0f730744e822c8e7599008d6}
+Compute the value. \index{blmc\+\_\+robots\+::\+Polynome@{blmc\+\_\+robots\+::\+Polynome}!compute\+\_\+derivative@{compute\+\_\+derivative}}
+\index{compute\+\_\+derivative@{compute\+\_\+derivative}!blmc\+\_\+robots\+::\+Polynome@{blmc\+\_\+robots\+::\+Polynome}}
+\subsubsection[{\texorpdfstring{compute\+\_\+derivative(double x)}{compute_derivative(double x)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int O\+R\+D\+ER$>$ double {\bf blmc\+\_\+robots\+::\+Polynome}$<$ O\+R\+D\+ER $>$\+::compute\+\_\+derivative (
+\begin{DoxyParamCaption}
+\item[{double}]{x}
+\end{DoxyParamCaption}
+)}\hypertarget{classblmc__robots_1_1Polynome_a62183ec0d1bc22c224c14a58dd10e3e9}{}\label{classblmc__robots_1_1Polynome_a62183ec0d1bc22c224c14a58dd10e3e9}
+Compute the value of the derivative. \index{blmc\+\_\+robots\+::\+Polynome@{blmc\+\_\+robots\+::\+Polynome}!compute\+\_\+sec\+\_\+derivative@{compute\+\_\+sec\+\_\+derivative}}
+\index{compute\+\_\+sec\+\_\+derivative@{compute\+\_\+sec\+\_\+derivative}!blmc\+\_\+robots\+::\+Polynome@{blmc\+\_\+robots\+::\+Polynome}}
+\subsubsection[{\texorpdfstring{compute\+\_\+sec\+\_\+derivative(double x)}{compute_sec_derivative(double x)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int O\+R\+D\+ER$>$ double {\bf blmc\+\_\+robots\+::\+Polynome}$<$ O\+R\+D\+ER $>$\+::compute\+\_\+sec\+\_\+derivative (
+\begin{DoxyParamCaption}
+\item[{double}]{x}
+\end{DoxyParamCaption}
+)}\hypertarget{classblmc__robots_1_1Polynome_a6a20495bd6c6105b5109244b29b5d069}{}\label{classblmc__robots_1_1Polynome_a6a20495bd6c6105b5109244b29b5d069}
+Compute the value of the second derivative. \index{blmc\+\_\+robots\+::\+Polynome@{blmc\+\_\+robots\+::\+Polynome}!get\+\_\+coefficients@{get\+\_\+coefficients}}
+\index{get\+\_\+coefficients@{get\+\_\+coefficients}!blmc\+\_\+robots\+::\+Polynome@{blmc\+\_\+robots\+::\+Polynome}}
+\subsubsection[{\texorpdfstring{get\+\_\+coefficients(\+Coefficients \&coefficients) const }{get_coefficients(Coefficients &coefficients) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int O\+R\+D\+ER$>$ void {\bf blmc\+\_\+robots\+::\+Polynome}$<$ O\+R\+D\+ER $>$\+::get\+\_\+coefficients (
+\begin{DoxyParamCaption}
+\item[{{\bf Coefficients} \&}]{coefficients}
+\end{DoxyParamCaption}
+) const}\hypertarget{classblmc__robots_1_1Polynome_a31e2774f54d5a8a242878d6157e412c9}{}\label{classblmc__robots_1_1Polynome_a31e2774f54d5a8a242878d6157e412c9}
+Get the coefficients. \index{blmc\+\_\+robots\+::\+Polynome@{blmc\+\_\+robots\+::\+Polynome}!print@{print}}
+\index{print@{print}!blmc\+\_\+robots\+::\+Polynome@{blmc\+\_\+robots\+::\+Polynome}}
+\subsubsection[{\texorpdfstring{print() const }{print() const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int O\+R\+D\+ER$>$ void {\bf blmc\+\_\+robots\+::\+Polynome}$<$ O\+R\+D\+ER $>$\+::print (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classblmc__robots_1_1Polynome_a1bf6f3cb3fa919dbdff30e55fd200324}{}\label{classblmc__robots_1_1Polynome_a1bf6f3cb3fa919dbdff30e55fd200324}
+Print the coefficient. \index{blmc\+\_\+robots\+::\+Polynome@{blmc\+\_\+robots\+::\+Polynome}!set\+\_\+coefficients@{set\+\_\+coefficients}}
+\index{set\+\_\+coefficients@{set\+\_\+coefficients}!blmc\+\_\+robots\+::\+Polynome@{blmc\+\_\+robots\+::\+Polynome}}
+\subsubsection[{\texorpdfstring{set\+\_\+coefficients(const Coefficients \&coefficients)}{set_coefficients(const Coefficients &coefficients)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int O\+R\+D\+ER$>$ void {\bf blmc\+\_\+robots\+::\+Polynome}$<$ O\+R\+D\+ER $>$\+::set\+\_\+coefficients (
+\begin{DoxyParamCaption}
+\item[{const {\bf Coefficients} \&}]{coefficients}
+\end{DoxyParamCaption}
+)}\hypertarget{classblmc__robots_1_1Polynome_ad8daa2f5ffa1891aac2663519950afae}{}\label{classblmc__robots_1_1Polynome_ad8daa2f5ffa1891aac2663519950afae}
+Set the coefficients. 
+
+\subsection{Member Data Documentation}
+\index{blmc\+\_\+robots\+::\+Polynome@{blmc\+\_\+robots\+::\+Polynome}!coefficients\+\_\+@{coefficients\+\_\+}}
+\index{coefficients\+\_\+@{coefficients\+\_\+}!blmc\+\_\+robots\+::\+Polynome@{blmc\+\_\+robots\+::\+Polynome}}
+\subsubsection[{\texorpdfstring{coefficients\+\_\+}{coefficients_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int O\+R\+D\+ER$>$ std\+::array$<$double, O\+R\+D\+ER+1$>$ {\bf blmc\+\_\+robots\+::\+Polynome}$<$ O\+R\+D\+ER $>$\+::coefficients\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classblmc__robots_1_1Polynome_a0aa7d57743e14ed7f29f9b09509ce2e6}{}\label{classblmc__robots_1_1Polynome_a0aa7d57743e14ed7f29f9b09509ce2e6}
+Vector of coefficients. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/blmc\+\_\+robots/mathematics/\hyperlink{polynome_8hpp}{polynome.\+hpp}\item 
+include/blmc\+\_\+robots/mathematics/polynome.\+hxx\end{DoxyCompactItemize}

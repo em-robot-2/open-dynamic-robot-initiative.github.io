@@ -21,21 +21,18 @@ import datetime
 from docutils import nodes
 from docutils.parsers.rst import directives
 
-# AutoStructify for math in markdown
-import recommonmark 
-from recommonmark.transform import AutoStructify
-
 # on_rtd is whether we are on readthedocs.org, this line of code grabbed from docs.readthedocs.org
 on_rtd = os.environ.get('READTHEDOCS', None) == 'True'
 
 
 # -- Project information -----------------------------------------------------
 
-project = u'Machines-in-Motion'
-copyright = (str(datetime.date.year) +
-             ' New York University and Max Planck Gesellschaft. ' +
-             'All rights reserved.')
-author = u'Maximilien Naveau'
+project = u'Open Dynamic Robot Initiative'
+import datetime
+now = datetime.datetime.now()
+copyright = (u'Copyright (c) ' + str(now.year) + ', New York University and ' +
+             u'Max Planck Gesellschaft. License under the BSD 3-clause.')
+author = u'Open Dynamic Robot Initiative consortium'
 
 # The short X.Y version
 version = u'0.0'
@@ -57,7 +54,7 @@ extensions = [
     'sphinx.ext.ifconfig',
     'sphinx.ext.viewcode',
     'sphinx.ext.githubpages',
-    'recommonmark', # markdown support
+    'm2r', # markdown support
 ]
 
 source_suffix = ['.rst', '.md']
@@ -91,7 +88,7 @@ man_pages = [
 ##
 texinfo_documents = [
     (master_doc, project, project + u' Documentation',
-     author, project, 'Machines in Motion group code base documentation.',
+     author, project, 'Open Dynamic Robot Initiative group code base documentation.',
      'Robotics'),
 ]
 
@@ -153,12 +150,4 @@ directives.register_directive('youtube', youtube)
 
 # -- Setup -----------------------------------------------------------------
 
-# some tools for markdown parsing
-def setup(app):
-    app.add_config_value('recommonmark_config', {
-            'auto_toc_tree_section': 'Contents',
-            'enable_math':True,
-            'enable_inline_math':True,
-            'enable_eval_rst':True,
-            }, True)
-    app.add_transform(AutoStructify)
+

@@ -8,8 +8,6 @@ var searchData=
   ['sensorbackend',['SensorBackend',['../classrobot__interfaces_1_1SensorBackend.html#af24fda0e1d54274cf8122195f82acea9',1,'robot_interfaces::SensorBackend']]],
   ['sensordata',['SensorData',['../classrobot__interfaces_1_1SensorData.html',1,'robot_interfaces']]],
   ['sensordriver',['SensorDriver',['../classrobot__interfaces_1_1SensorDriver.html',1,'robot_interfaces']]],
-  ['sensordriver_3c_20cameraobservation_20_3e',['SensorDriver&lt; CameraObservation &gt;',['../classrobot__interfaces_1_1SensorDriver.html',1,'robot_interfaces']]],
-  ['sensordriver_3c_20tricameraobservation_20_3e',['SensorDriver&lt; TriCameraObservation &gt;',['../classrobot__interfaces_1_1SensorDriver.html',1,'robot_interfaces']]],
   ['sensorfrontend',['SensorFrontend',['../classrobot__interfaces_1_1SensorFrontend.html',1,'robot_interfaces']]],
   ['set_5fmax_5faction_5frepetitions',['set_max_action_repetitions',['../classrobot__interfaces_1_1RobotBackend.html#aad761d1e0ab7296a9632b9c4cc9c91db',1,'robot_interfaces::RobotBackend']]],
   ['shutdown',['shutdown',['../classDriver.html#a630fc9183eb419beb09b5828b4547b6d',1,'Driver::shutdown()'],['../classDriver.html#a630fc9183eb419beb09b5828b4547b6d',1,'Driver::shutdown()'],['../classrobot__interfaces_1_1MonitoredRobotDriver.html#a95714a60e69a3ac06461382a7b391289',1,'robot_interfaces::MonitoredRobotDriver::shutdown()'],['../classrobot__interfaces_1_1RobotDriver.html#a3451fb8b15d2840b559f3ee858de01f8',1,'robot_interfaces::RobotDriver::shutdown()']]],

@@ -1,0 +1,311 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="py__finger__types_8cpp" kind="file" language="C++">
+    <compoundname>py_finger_types.cpp</compoundname>
+    <includes refid="pybind__helper_8hpp" local="no">robot_interfaces/pybind_helper.hpp</includes>
+    <includes refid="finger__types_8hpp" local="no">robot_interfaces/finger_types.hpp</includes>
+    <incdepgraph>
+      <node id="964">
+        <label>atomic</label>
+      </node>
+      <node id="976">
+        <label>time_series/time_series.hpp</label>
+      </node>
+      <node id="953">
+        <label>robot_interfaces/pybind_helper.hpp</label>
+        <link refid="pybind__helper_8hpp"/>
+        <childnode refid="954" relation="include">
+        </childnode>
+        <childnode refid="955" relation="include">
+        </childnode>
+        <childnode refid="956" relation="include">
+        </childnode>
+      </node>
+      <node id="975">
+        <label>time_series/multiprocess_time_series.hpp</label>
+      </node>
+      <node id="977">
+        <label>status.hpp</label>
+        <link refid="status_8hpp"/>
+        <childnode refid="978" relation="include">
+        </childnode>
+        <childnode refid="961" relation="include">
+        </childnode>
+        <childnode refid="974" relation="include">
+        </childnode>
+        <childnode refid="979" relation="include">
+        </childnode>
+      </node>
+      <node id="970">
+        <label>robot_interfaces/global_signal_handler.hpp</label>
+        <link refid="global__signal__handler_8hpp"/>
+      </node>
+      <node id="965">
+        <label>cstdint</label>
+      </node>
+      <node id="988">
+        <label>real_time_tools/timer.hpp</label>
+      </node>
+      <node id="982">
+        <label>robot_interfaces/robot_logger.hpp</label>
+        <link refid="robot__logger_8hpp_source"/>
+        <childnode refid="983" relation="include">
+        </childnode>
+        <childnode refid="972" relation="include">
+        </childnode>
+        <childnode refid="984" relation="include">
+        </childnode>
+        <childnode refid="960" relation="include">
+        </childnode>
+        <childnode refid="985" relation="include">
+        </childnode>
+        <childnode refid="986" relation="include">
+        </childnode>
+        <childnode refid="987" relation="include">
+        </childnode>
+        <childnode refid="968" relation="include">
+        </childnode>
+        <childnode refid="969" relation="include">
+        </childnode>
+        <childnode refid="988" relation="include">
+        </childnode>
+        <childnode refid="961" relation="include">
+        </childnode>
+        <childnode refid="977" relation="include">
+        </childnode>
+      </node>
+      <node id="961">
+        <label>robot_interfaces/loggable.hpp</label>
+        <link refid="loggable_8hpp_source"/>
+      </node>
+      <node id="959">
+        <label>cmath</label>
+      </node>
+      <node id="978">
+        <label>cereal/types/string.hpp</label>
+      </node>
+      <node id="969">
+        <label>real_time_tools/thread.hpp</label>
+      </node>
+      <node id="958">
+        <label>robot_interfaces/n_joint_robot_types.hpp</label>
+        <link refid="n__joint__robot__types_8hpp_source"/>
+        <childnode refid="959" relation="include">
+        </childnode>
+        <childnode refid="960" relation="include">
+        </childnode>
+        <childnode refid="961" relation="include">
+        </childnode>
+        <childnode refid="962" relation="include">
+        </childnode>
+        <childnode refid="971" relation="include">
+        </childnode>
+        <childnode refid="981" relation="include">
+        </childnode>
+        <childnode refid="982" relation="include">
+        </childnode>
+        <childnode refid="989" relation="include">
+        </childnode>
+      </node>
+      <node id="960">
+        <label>Eigen/Eigen</label>
+      </node>
+      <node id="974">
+        <label>string</label>
+      </node>
+      <node id="954">
+        <label>pybind11/eigen.h</label>
+      </node>
+      <node id="985">
+        <label>mpi_cpp_tools/basic_tools.hpp</label>
+      </node>
+      <node id="986">
+        <label>mpi_cpp_tools/dynamical_systems.hpp</label>
+      </node>
+      <node id="981">
+        <label>robot_interfaces/robot_frontend.hpp</label>
+        <link refid="robot__frontend_8hpp_source"/>
+        <childnode refid="963" relation="include">
+        </childnode>
+        <childnode refid="959" relation="include">
+        </childnode>
+        <childnode refid="976" relation="include">
+        </childnode>
+        <childnode refid="962" relation="include">
+        </childnode>
+        <childnode refid="971" relation="include">
+        </childnode>
+        <childnode refid="977" relation="include">
+        </childnode>
+      </node>
+      <node id="983">
+        <label>fstream</label>
+      </node>
+      <node id="967">
+        <label>real_time_tools/checkpoint_timer.hpp</label>
+      </node>
+      <node id="987">
+        <label>mpi_cpp_tools/math.hpp</label>
+      </node>
+      <node id="968">
+        <label>real_time_tools/process_manager.hpp</label>
+      </node>
+      <node id="952">
+        <label>srcpy/py_finger_types.cpp</label>
+        <link refid="py_finger_types.cpp"/>
+        <childnode refid="953" relation="include">
+        </childnode>
+        <childnode refid="957" relation="include">
+        </childnode>
+      </node>
+      <node id="979">
+        <label>vector</label>
+      </node>
+      <node id="966">
+        <label>pybind11/embed.h</label>
+      </node>
+      <node id="971">
+        <label>robot_interfaces/robot_data.hpp</label>
+        <link refid="robot__data_8hpp"/>
+        <childnode refid="972" relation="include">
+        </childnode>
+        <childnode refid="973" relation="include">
+        </childnode>
+        <childnode refid="974" relation="include">
+        </childnode>
+        <childnode refid="975" relation="include">
+        </childnode>
+        <childnode refid="976" relation="include">
+        </childnode>
+        <childnode refid="977" relation="include">
+        </childnode>
+      </node>
+      <node id="955">
+        <label>pybind11/pybind11.h</label>
+      </node>
+      <node id="989">
+        <label>robot_interfaces/cereal_eigen.hpp</label>
+        <link refid="cereal__eigen_8hpp"/>
+        <childnode refid="960" relation="include">
+        </childnode>
+        <childnode refid="990" relation="include">
+        </childnode>
+      </node>
+      <node id="972">
+        <label>iostream</label>
+      </node>
+      <node id="962">
+        <label>robot_interfaces/robot_backend.hpp</label>
+        <link refid="robot__backend_8hpp_source"/>
+        <childnode refid="963" relation="include">
+        </childnode>
+        <childnode refid="964" relation="include">
+        </childnode>
+        <childnode refid="959" relation="include">
+        </childnode>
+        <childnode refid="965" relation="include">
+        </childnode>
+        <childnode refid="966" relation="include">
+        </childnode>
+        <childnode refid="967" relation="include">
+        </childnode>
+        <childnode refid="968" relation="include">
+        </childnode>
+        <childnode refid="969" relation="include">
+        </childnode>
+        <childnode refid="970" relation="include">
+        </childnode>
+        <childnode refid="961" relation="include">
+        </childnode>
+        <childnode refid="971" relation="include">
+        </childnode>
+        <childnode refid="980" relation="include">
+        </childnode>
+        <childnode refid="977" relation="include">
+        </childnode>
+      </node>
+      <node id="984">
+        <label>chrono</label>
+      </node>
+      <node id="990">
+        <label>type_traits</label>
+      </node>
+      <node id="957">
+        <label>robot_interfaces/finger_types.hpp</label>
+        <link refid="finger__types_8hpp_source"/>
+        <childnode refid="958" relation="include">
+        </childnode>
+      </node>
+      <node id="963">
+        <label>algorithm</label>
+      </node>
+      <node id="956">
+        <label>pybind11/stl_bind.h</label>
+      </node>
+      <node id="980">
+        <label>robot_interfaces/robot_driver.hpp</label>
+        <link refid="robot__driver_8hpp_source"/>
+        <childnode refid="974" relation="include">
+        </childnode>
+      </node>
+      <node id="973">
+        <label>memory</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="py__finger__types_8cpp_1ab295ef4cf11fbedce6a7b19f4adb60e6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PYBIND11_MODULE</definition>
+        <argsstring>(py_finger_types, m)</argsstring>
+        <name>PYBIND11_MODULE</name>
+        <param>
+          <type>py_finger_types</type>
+        </param>
+        <param>
+          <type>m</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="srcpy/py_finger_types.cpp" line="27" column="1" bodyfile="srcpy/py_finger_types.cpp" bodystart="27" bodyend="31"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Create bindings for One-Joint robot types. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>[2017]<sp/>Max<sp/>Planck<sp/>Society.<sp/>All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>This<sp/>program<sp/>is<sp/>free<sp/>software:<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>as<sp/>published<sp/>by</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>the<sp/>Free<sp/>Software<sp/>Foundation,<sp/>either<sp/>version<sp/>3<sp/>of<sp/>the<sp/>License,<sp/>or</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>This<sp/>program<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>along<sp/>with<sp/>this<sp/>program.<sp/><sp/>If<sp/>not,<sp/>see<sp/>&lt;http://www.gnu.org/licenses/&gt;.</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="preprocessor">#include<sp/>&lt;<ref refid="pybind__helper_8hpp" kindref="compound">robot_interfaces/pybind_helper.hpp</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;robot_interfaces/finger_types.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal"><ref refid="namespacerobot__interfaces" kindref="compound">robot_interfaces</ref>;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal">PYBIND11_MODULE(py_finger_types,<sp/>m)</highlight></codeline>
+<codeline lineno="28"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>create_python_bindings&lt;FingerTypes&gt;(m);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="srcpy/py_finger_types.cpp"/>
+  </compounddef>
+</doxygen>

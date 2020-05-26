@@ -1,0 +1,242 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classrobot__interfaces_1_1RobotFrontend" kind="class" language="C++" prot="public">
+    <compoundname>robot_interfaces::RobotFrontend</compoundname>
+    <derivedcompoundref refid="classrobot__interfaces_1_1Robot" prot="public" virt="non-virtual">robot_interfaces::Robot&lt; Action, Observation, Driver, Data &gt;</derivedcompoundref>
+    <includes refid="robot__frontend_8hpp" local="no">robot_frontend.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename <ref refid="classAction" kindref="compound">Action</ref></type>
+      </param>
+      <param>
+        <type>typename <ref refid="classObservation" kindref="compound">Observation</ref></type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classrobot__interfaces_1_1RobotFrontend_1a02bebc6c3e9822f026c48f970d80a865" prot="public" static="no">
+        <type>time_series::Timestamp</type>
+        <definition>typedef time_series::Timestamp robot_interfaces::RobotFrontend&lt; Action, Observation &gt;::TimeStamp</definition>
+        <argsstring></argsstring>
+        <name>TimeStamp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/robot_interfaces/robot_frontend.hpp" line="41" column="1" bodyfile="include/robot_interfaces/robot_frontend.hpp" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classrobot__interfaces_1_1RobotFrontend_1a256d4a3359c46caca9fe92d62b4ae413" prot="protected" static="no" mutable="no">
+        <type>std::shared_ptr&lt; <ref refid="classrobot__interfaces_1_1RobotData" kindref="compound">RobotData</ref>&lt; <ref refid="classAction" kindref="compound">Action</ref>, <ref refid="classObservation" kindref="compound">Observation</ref> &gt; &gt;</type>
+        <definition>std::shared_ptr&lt;RobotData&lt;Action, Observation&gt; &gt; robot_interfaces::RobotFrontend&lt; Action, Observation &gt;::robot_data_</definition>
+        <argsstring></argsstring>
+        <name>robot_data_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/robot_interfaces/robot_frontend.hpp" line="124" column="1" bodyfile="include/robot_interfaces/robot_frontend.hpp" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classrobot__interfaces_1_1RobotFrontend_1a0bd84764fb1a3004282706963aa48c3e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>robot_interfaces::RobotFrontend&lt; Action, Observation &gt;::RobotFrontend</definition>
+        <argsstring>(std::shared_ptr&lt; RobotData&lt; Action, Observation &gt;&gt; robot_data)</argsstring>
+        <name>RobotFrontend</name>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="classrobot__interfaces_1_1RobotData" kindref="compound">RobotData</ref>&lt; <ref refid="classAction" kindref="compound">Action</ref>, <ref refid="classObservation" kindref="compound">Observation</ref> &gt;&gt;</type>
+          <declname>robot_data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/robot_interfaces/robot_frontend.hpp" line="43" column="1" bodyfile="include/robot_interfaces/robot_frontend.hpp" bodystart="43" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="classrobot__interfaces_1_1RobotFrontend_1a7628a6f8d6858bb42565ad3577b9d5f0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classObservation" kindref="compound">Observation</ref></type>
+        <definition>Observation robot_interfaces::RobotFrontend&lt; Action, Observation &gt;::get_observation</definition>
+        <argsstring>(const TimeIndex &amp;t)</argsstring>
+        <name>get_observation</name>
+        <param>
+          <type>const TimeIndex &amp;</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/robot_interfaces/robot_frontend.hpp" line="49" column="1" bodyfile="include/robot_interfaces/robot_frontend.hpp" bodystart="49" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="classrobot__interfaces_1_1RobotFrontend_1ad9cf328a6a438cf40df1944c1772fca8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classAction" kindref="compound">Action</ref></type>
+        <definition>Action robot_interfaces::RobotFrontend&lt; Action, Observation &gt;::get_desired_action</definition>
+        <argsstring>(const TimeIndex &amp;t)</argsstring>
+        <name>get_desired_action</name>
+        <param>
+          <type>const TimeIndex &amp;</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/robot_interfaces/robot_frontend.hpp" line="53" column="1" bodyfile="include/robot_interfaces/robot_frontend.hpp" bodystart="53" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="classrobot__interfaces_1_1RobotFrontend_1a52f915a23cd37e4c108080ed5cba674a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classAction" kindref="compound">Action</ref></type>
+        <definition>Action robot_interfaces::RobotFrontend&lt; Action, Observation &gt;::get_applied_action</definition>
+        <argsstring>(const TimeIndex &amp;t)</argsstring>
+        <name>get_applied_action</name>
+        <param>
+          <type>const TimeIndex &amp;</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/robot_interfaces/robot_frontend.hpp" line="57" column="1" bodyfile="include/robot_interfaces/robot_frontend.hpp" bodystart="57" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="classrobot__interfaces_1_1RobotFrontend_1a48eff6e33cdafa175e8e311296aacfec" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structrobot__interfaces_1_1Status" kindref="compound">Status</ref></type>
+        <definition>Status robot_interfaces::RobotFrontend&lt; Action, Observation &gt;::get_status</definition>
+        <argsstring>(const TimeIndex &amp;t)</argsstring>
+        <name>get_status</name>
+        <param>
+          <type>const TimeIndex &amp;</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/robot_interfaces/robot_frontend.hpp" line="61" column="1" bodyfile="include/robot_interfaces/robot_frontend.hpp" bodystart="61" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="classrobot__interfaces_1_1RobotFrontend_1abaf909237a40a0da1839d5e341ad572b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>TimeStamp</type>
+        <definition>TimeStamp robot_interfaces::RobotFrontend&lt; Action, Observation &gt;::get_time_stamp_ms</definition>
+        <argsstring>(const TimeIndex &amp;t)</argsstring>
+        <name>get_time_stamp_ms</name>
+        <param>
+          <type>const TimeIndex &amp;</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/robot_interfaces/robot_frontend.hpp" line="66" column="1" bodyfile="include/robot_interfaces/robot_frontend.hpp" bodystart="66" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="classrobot__interfaces_1_1RobotFrontend_1a3d74aa3bd15ab0baef5d011f06aad7e7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>TimeIndex</type>
+        <definition>TimeIndex robot_interfaces::RobotFrontend&lt; Action, Observation &gt;::get_current_timeindex</definition>
+        <argsstring>()</argsstring>
+        <name>get_current_timeindex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/robot_interfaces/robot_frontend.hpp" line="70" column="1" bodyfile="include/robot_interfaces/robot_frontend.hpp" bodystart="70" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="classrobot__interfaces_1_1RobotFrontend_1a26c137f65b908d6eddffff75df38361a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>TimeIndex</type>
+        <definition>TimeIndex robot_interfaces::RobotFrontend&lt; Action, Observation &gt;::append_desired_action</definition>
+        <argsstring>(const Action &amp;desired_action)</argsstring>
+        <name>append_desired_action</name>
+        <param>
+          <type>const <ref refid="classAction" kindref="compound">Action</ref> &amp;</type>
+          <declname>desired_action</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/robot_interfaces/robot_frontend.hpp" line="75" column="1" bodyfile="include/robot_interfaces/robot_frontend.hpp" bodystart="75" bodyend="116"/>
+      </memberdef>
+      <memberdef kind="function" id="classrobot__interfaces_1_1RobotFrontend_1a9b5242a6781e6028a84a6eb358b1ad10" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void robot_interfaces::RobotFrontend&lt; Action, Observation &gt;::wait_until_timeindex</definition>
+        <argsstring>(const TimeIndex &amp;t)</argsstring>
+        <name>wait_until_timeindex</name>
+        <param>
+          <type>const TimeIndex &amp;</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/robot_interfaces/robot_frontend.hpp" line="118" column="1" bodyfile="include/robot_interfaces/robot_frontend.hpp" bodystart="118" bodyend="121"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Communication link between <ref refid="classrobot__interfaces_1_1RobotData" kindref="compound">RobotData</ref> and the user. </para>    </briefdescription>
+    <detaileddescription>
+<para>Takes care of communication between the <ref refid="classrobot__interfaces_1_1RobotData" kindref="compound">RobotData</ref> and the user. It is just a thin wrapper around <ref refid="classrobot__interfaces_1_1RobotData" kindref="compound">RobotData</ref> to facilitate interaction and also to make sure the user cannot use <ref refid="classrobot__interfaces_1_1RobotData" kindref="compound">RobotData</ref> in incorrect ways.</para><para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="classAction" kindref="compound">Action</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername><ref refid="classObservation" kindref="compound">Observation</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="135">
+        <label>robot_interfaces::RobotFrontend&lt; Action, Observation &gt;</label>
+        <link refid="classrobot__interfaces_1_1RobotFrontend"/>
+      </node>
+      <node id="136">
+        <label>robot_interfaces::Robot&lt; Action, Observation &gt;</label>
+        <link refid="classrobot__interfaces_1_1Robot"/>
+        <childnode refid="135" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="include/robot_interfaces/robot_frontend.hpp" line="39" column="1" bodyfile="include/robot_interfaces/robot_frontend.hpp" bodystart="38" bodyend="125"/>
+    <listofallmembers>
+      <member refid="classrobot__interfaces_1_1RobotFrontend_1a26c137f65b908d6eddffff75df38361a" prot="public" virt="non-virtual"><scope>robot_interfaces::RobotFrontend</scope><name>append_desired_action</name></member>
+      <member refid="classrobot__interfaces_1_1RobotFrontend_1a52f915a23cd37e4c108080ed5cba674a" prot="public" virt="non-virtual"><scope>robot_interfaces::RobotFrontend</scope><name>get_applied_action</name></member>
+      <member refid="classrobot__interfaces_1_1RobotFrontend_1a3d74aa3bd15ab0baef5d011f06aad7e7" prot="public" virt="non-virtual"><scope>robot_interfaces::RobotFrontend</scope><name>get_current_timeindex</name></member>
+      <member refid="classrobot__interfaces_1_1RobotFrontend_1ad9cf328a6a438cf40df1944c1772fca8" prot="public" virt="non-virtual"><scope>robot_interfaces::RobotFrontend</scope><name>get_desired_action</name></member>
+      <member refid="classrobot__interfaces_1_1RobotFrontend_1a7628a6f8d6858bb42565ad3577b9d5f0" prot="public" virt="non-virtual"><scope>robot_interfaces::RobotFrontend</scope><name>get_observation</name></member>
+      <member refid="classrobot__interfaces_1_1RobotFrontend_1a48eff6e33cdafa175e8e311296aacfec" prot="public" virt="non-virtual"><scope>robot_interfaces::RobotFrontend</scope><name>get_status</name></member>
+      <member refid="classrobot__interfaces_1_1RobotFrontend_1abaf909237a40a0da1839d5e341ad572b" prot="public" virt="non-virtual"><scope>robot_interfaces::RobotFrontend</scope><name>get_time_stamp_ms</name></member>
+      <member refid="classrobot__interfaces_1_1RobotFrontend_1a256d4a3359c46caca9fe92d62b4ae413" prot="protected" virt="non-virtual"><scope>robot_interfaces::RobotFrontend</scope><name>robot_data_</name></member>
+      <member refid="classrobot__interfaces_1_1RobotFrontend_1a0bd84764fb1a3004282706963aa48c3e" prot="public" virt="non-virtual"><scope>robot_interfaces::RobotFrontend</scope><name>RobotFrontend</name></member>
+      <member refid="classrobot__interfaces_1_1RobotFrontend_1a02bebc6c3e9822f026c48f970d80a865" prot="public" virt="non-virtual"><scope>robot_interfaces::RobotFrontend</scope><name>TimeStamp</name></member>
+      <member refid="classrobot__interfaces_1_1RobotFrontend_1a9b5242a6781e6028a84a6eb358b1ad10" prot="public" virt="non-virtual"><scope>robot_interfaces::RobotFrontend</scope><name>wait_until_timeindex</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

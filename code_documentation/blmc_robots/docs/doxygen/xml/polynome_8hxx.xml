@@ -1,0 +1,313 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="polynome_8hxx" kind="file" language="C++">
+    <compoundname>polynome.hxx</compoundname>
+    <includes local="no">iostream</includes>
+    <includes local="no">vector</includes>
+    <includes refid="polynome_8hpp" local="yes">blmc_robots/mathematics/polynome.hpp</includes>
+    <includedby refid="polynome_8hpp" local="yes">include/blmc_robots/mathematics/polynome.hpp</includedby>
+    <incdepgraph>
+      <node id="942">
+        <label>include/blmc_robots/mathematics/polynome.hxx</label>
+        <link refid="polynome.hxx"/>
+        <childnode refid="943" relation="include">
+        </childnode>
+        <childnode refid="944" relation="include">
+        </childnode>
+        <childnode refid="945" relation="include">
+        </childnode>
+      </node>
+      <node id="945">
+        <label>blmc_robots/mathematics/polynome.hpp</label>
+        <link refid="polynome_8hpp"/>
+        <childnode refid="946" relation="include">
+        </childnode>
+        <childnode refid="942" relation="include">
+        </childnode>
+      </node>
+      <node id="944">
+        <label>vector</label>
+      </node>
+      <node id="946">
+        <label>array</label>
+      </node>
+      <node id="943">
+        <label>iostream</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="952">
+        <label>include/blmc_robots/single_motor.hpp</label>
+        <link refid="single__motor_8hpp"/>
+      </node>
+      <node id="956">
+        <label>src/programs/solo12_hardware_calibration.cpp</label>
+        <link refid="solo12__hardware__calibration_8cpp"/>
+      </node>
+      <node id="947">
+        <label>include/blmc_robots/mathematics/polynome.hxx</label>
+        <link refid="polynome.hxx"/>
+        <childnode refid="948" relation="include">
+        </childnode>
+      </node>
+      <node id="963">
+        <label>include/blmc_robots/solo8.hpp</label>
+        <link refid="solo8_8hpp"/>
+        <childnode refid="964" relation="include">
+        </childnode>
+        <childnode refid="965" relation="include">
+        </childnode>
+        <childnode refid="966" relation="include">
+        </childnode>
+      </node>
+      <node id="964">
+        <label>demos/demo_solo8.cpp</label>
+        <link refid="demo__solo8_8cpp"/>
+      </node>
+      <node id="948">
+        <label>include/blmc_robots/mathematics/polynome.hpp</label>
+        <link refid="polynome_8hpp"/>
+        <childnode refid="949" relation="include">
+        </childnode>
+        <childnode refid="947" relation="include">
+        </childnode>
+        <childnode refid="962" relation="include">
+        </childnode>
+        <childnode refid="967" relation="include">
+        </childnode>
+      </node>
+      <node id="959">
+        <label>include/blmc_robots/teststand.hpp</label>
+        <link refid="teststand_8hpp"/>
+        <childnode refid="960" relation="include">
+        </childnode>
+      </node>
+      <node id="950">
+        <label>include/blmc_robots/n_joint_blmc_robot_driver.hpp</label>
+        <link refid="n__joint__blmc__robot__driver_8hpp"/>
+      </node>
+      <node id="961">
+        <label>src/blmc_joint_module.cpp</label>
+        <link refid="blmc__joint__module_8cpp"/>
+      </node>
+      <node id="967">
+        <label>src/mathematics/polynome.cpp</label>
+        <link refid="polynome_8cpp"/>
+      </node>
+      <node id="953">
+        <label>include/blmc_robots/solo12.hpp</label>
+        <link refid="solo12_8hpp"/>
+        <childnode refid="954" relation="include">
+        </childnode>
+        <childnode refid="955" relation="include">
+        </childnode>
+        <childnode refid="956" relation="include">
+        </childnode>
+      </node>
+      <node id="965">
+        <label>demos/demo_solo8_calibration.cpp</label>
+        <link refid="demo__solo8__calibration_8cpp"/>
+      </node>
+      <node id="954">
+        <label>demos/demo_solo12.cpp</label>
+        <link refid="demo__solo12_8cpp"/>
+      </node>
+      <node id="957">
+        <label>include/blmc_robots/solo8ti.hpp</label>
+        <link refid="solo8ti_8hpp_source"/>
+      </node>
+      <node id="949">
+        <label>include/blmc_robots/blmc_joint_module.hpp</label>
+        <link refid="blmc__joint__module_8hpp"/>
+        <childnode refid="950" relation="include">
+        </childnode>
+        <childnode refid="951" relation="include">
+        </childnode>
+        <childnode refid="952" relation="include">
+        </childnode>
+        <childnode refid="953" relation="include">
+        </childnode>
+        <childnode refid="957" relation="include">
+        </childnode>
+        <childnode refid="958" relation="include">
+        </childnode>
+        <childnode refid="959" relation="include">
+        </childnode>
+        <childnode refid="961" relation="include">
+        </childnode>
+      </node>
+      <node id="958">
+        <label>include/blmc_robots/stuggihop.hpp</label>
+        <link refid="stuggihop_8hpp"/>
+      </node>
+      <node id="951">
+        <label>include/blmc_robots/single_leg.hpp</label>
+        <link refid="single__leg_8hpp"/>
+      </node>
+      <node id="960">
+        <label>src/programs/teststand_hardware_calibration.cpp</label>
+        <link refid="teststand__hardware__calibration_8cpp"/>
+      </node>
+      <node id="966">
+        <label>src/programs/solo8_hardware_calibration.cpp</label>
+        <link refid="solo8__hardware__calibration_8cpp"/>
+      </node>
+      <node id="962">
+        <label>include/blmc_robots/spi_joint_module.hpp</label>
+        <link refid="spi__joint__module_8hpp_source"/>
+        <childnode refid="963" relation="include">
+        </childnode>
+      </node>
+      <node id="955">
+        <label>demos/demo_solo12_calibration.cpp</label>
+        <link refid="demo__solo12__calibration_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innernamespace refid="namespaceblmc__robots">blmc_robots</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="12"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="polynome_8hpp" kindref="compound">blmc_robots/mathematics/polynome.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceblmc__robots" kindref="compound">blmc_robots</ref></highlight></codeline>
+<codeline lineno="21"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ORDER&gt;</highlight></codeline>
+<codeline lineno="28" refid="classblmc__robots_1_1Polynome_1a8ece7a7021cc62167c023d51a5bb3879" refkind="member"><highlight class="normal"><ref refid="classblmc__robots_1_1Polynome_1a8ece7a7021cc62167c023d51a5bb3879" kindref="member">Polynome&lt;ORDER&gt;::Polynome</ref>()</highlight></codeline>
+<codeline lineno="29"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/>coefficients_.fill(0.0);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ORDER&gt;</highlight></codeline>
+<codeline lineno="34" refid="classblmc__robots_1_1Polynome_1a4541e4b629061dfdbca73559a42a6e93" refkind="member"><highlight class="normal"><ref refid="classblmc__robots_1_1Polynome_1a4541e4b629061dfdbca73559a42a6e93" kindref="member">Polynome&lt;ORDER&gt;::~Polynome</ref>()</highlight></codeline>
+<codeline lineno="35"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ORDER&gt;</highlight></codeline>
+<codeline lineno="39" refid="classblmc__robots_1_1Polynome_1ae102191e0f730744e822c8e7599008d6" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classblmc__robots_1_1Polynome_1ae102191e0f730744e822c8e7599008d6" kindref="member">Polynome&lt;ORDER&gt;::compute</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>x)</highlight></codeline>
+<codeline lineno="40"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>res<sp/>=<sp/>0.0;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>pt<sp/>=<sp/>1.0;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0<sp/>;<sp/>i<sp/>&lt;<sp/>coefficients_.size()<sp/>;<sp/>++i)</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>res<sp/>+=<sp/>coefficients_[i]<sp/>*<sp/>pt;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>pt<sp/>*=<sp/>x;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>res;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ORDER&gt;</highlight></codeline>
+<codeline lineno="52" refid="classblmc__robots_1_1Polynome_1a62183ec0d1bc22c224c14a58dd10e3e9" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classblmc__robots_1_1Polynome_1a62183ec0d1bc22c224c14a58dd10e3e9" kindref="member">Polynome&lt;ORDER&gt;::compute_derivative</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>x)</highlight></codeline>
+<codeline lineno="53"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>res<sp/>=<sp/>0.0;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>pt<sp/>=<sp/>1.0;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>1<sp/>;<sp/>i<sp/>&lt;<sp/>coefficients_.size()<sp/>;<sp/>++i)</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>res<sp/>+=<sp/>i<sp/>*<sp/>coefficients_[i]<sp/>*<sp/>pt;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>pt<sp/>*=<sp/>x<sp/>;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>res;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ORDER&gt;</highlight></codeline>
+<codeline lineno="65" refid="classblmc__robots_1_1Polynome_1a6a20495bd6c6105b5109244b29b5d069" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classblmc__robots_1_1Polynome_1a6a20495bd6c6105b5109244b29b5d069" kindref="member">Polynome&lt;ORDER&gt;::compute_sec_derivative</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>x)</highlight></codeline>
+<codeline lineno="66"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>res<sp/>=<sp/>0.0;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>pt<sp/>=<sp/>1.0;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>2<sp/>;<sp/>i<sp/>&lt;<sp/>coefficients_.size()<sp/>;<sp/>++i)</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>res<sp/>+=<sp/>i<sp/>*<sp/>(i<sp/>-<sp/>1)<sp/>*<sp/>coefficients_[i]<sp/>*<sp/>pt;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>pt<sp/>*=<sp/>x;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>res;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ORDER&gt;</highlight></codeline>
+<codeline lineno="78" refid="classblmc__robots_1_1Polynome_1a31e2774f54d5a8a242878d6157e412c9" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classblmc__robots_1_1Polynome_1a31e2774f54d5a8a242878d6157e412c9" kindref="member">Polynome&lt;ORDER&gt;::get_coefficients</ref>(<ref refid="classblmc__robots_1_1Polynome_1a31e086184f3934b269e8318cce2859eb" kindref="member">Coefficients</ref><sp/>&amp;coefficients)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="79"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/>coefficients<sp/>=<sp/>coefficients_;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ORDER&gt;</highlight></codeline>
+<codeline lineno="84" refid="classblmc__robots_1_1Polynome_1ad8daa2f5ffa1891aac2663519950afae" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classblmc__robots_1_1Polynome_1ad8daa2f5ffa1891aac2663519950afae" kindref="member">Polynome&lt;ORDER&gt;::set_coefficients</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classblmc__robots_1_1Polynome_1a31e086184f3934b269e8318cce2859eb" kindref="member">Coefficients</ref><sp/>&amp;coefficients)</highlight></codeline>
+<codeline lineno="85"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/>coefficients_<sp/>=<sp/>coefficients;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ORDER&gt;</highlight></codeline>
+<codeline lineno="90" refid="classblmc__robots_1_1Polynome_1a1bf6f3cb3fa919dbdff30e55fd200324" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classblmc__robots_1_1Polynome_1a1bf6f3cb3fa919dbdff30e55fd200324" kindref="member">Polynome&lt;ORDER&gt;::print</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="91"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0<sp/>;<sp/>i<sp/>&lt;<sp/>ORDER<sp/>;<sp/>++i)</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/>coefficients_[i]<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal"><sp/>;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ORDER&gt;</highlight></codeline>
+<codeline lineno="104" refid="classblmc__robots_1_1TimePolynome_1a644871336a78055c4e27e9b52e75ad8c" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classblmc__robots_1_1TimePolynome_1a644871336a78055c4e27e9b52e75ad8c" kindref="member">TimePolynome&lt;ORDER&gt;::compute</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>t)</highlight></codeline>
+<codeline lineno="105"><highlight class="normal">{<sp/></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(t<sp/>&lt;=<sp/>0.0)</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>init_pose_;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>t<sp/>&gt;=<sp/>final_time_<sp/>)</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>final_pose_;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classblmc__robots_1_1Polynome_1ae102191e0f730744e822c8e7599008d6" kindref="member">Polynome&lt;ORDER&gt;::compute</ref>(t);</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="119"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ORDER&gt;</highlight></codeline>
+<codeline lineno="122" refid="classblmc__robots_1_1TimePolynome_1a089cd5e46da974828cfb1b042119c163" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classblmc__robots_1_1TimePolynome_1a089cd5e46da974828cfb1b042119c163" kindref="member">TimePolynome&lt;ORDER&gt;::compute_derivative</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>t)</highlight></codeline>
+<codeline lineno="123"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(t<sp/>&lt;=<sp/>0.0)</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>init_speed_;</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>t<sp/>&gt;=<sp/>final_time_<sp/>)</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>final_speed_;</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classblmc__robots_1_1Polynome_1a62183ec0d1bc22c224c14a58dd10e3e9" kindref="member">Polynome&lt;ORDER&gt;::compute_derivative</ref>(t);</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="136"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ORDER&gt;</highlight></codeline>
+<codeline lineno="139" refid="classblmc__robots_1_1TimePolynome_1a3402f5a2e56b7ef46d93342f8c208bd1" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classblmc__robots_1_1TimePolynome_1a3402f5a2e56b7ef46d93342f8c208bd1" kindref="member">TimePolynome&lt;ORDER&gt;::compute_sec_derivative</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>t)</highlight></codeline>
+<codeline lineno="140"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(t<sp/>&lt;=<sp/>0.0)</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>init_acc_;</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>t<sp/>&gt;=<sp/>final_time_<sp/>)</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>final_acc_;</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classblmc__robots_1_1Polynome_1a6a20495bd6c6105b5109244b29b5d069" kindref="member">Polynome&lt;ORDER&gt;::compute_sec_derivative</ref>(t);</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="153"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>blmc_robots</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="include/blmc_robots/mathematics/polynome.hxx"/>
+  </compounddef>
+</doxygen>

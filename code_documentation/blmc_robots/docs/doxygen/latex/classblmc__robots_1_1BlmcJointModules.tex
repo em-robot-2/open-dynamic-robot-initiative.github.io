@@ -1,0 +1,381 @@
+\hypertarget{classblmc__robots_1_1BlmcJointModules}{}\section{blmc\+\_\+robots\+:\+:Blmc\+Joint\+Modules$<$ C\+O\+U\+NT $>$ Class Template Reference}
+\label{classblmc__robots_1_1BlmcJointModules}\index{blmc\+\_\+robots\+::\+Blmc\+Joint\+Modules$<$ C\+O\+U\+N\+T $>$@{blmc\+\_\+robots\+::\+Blmc\+Joint\+Modules$<$ C\+O\+U\+N\+T $>$}}
+
+
+This class defines an interface to a collection of B\+L\+MC joints.  
+
+
+
+
+{\ttfamily \#include $<$blmc\+\_\+joint\+\_\+module.\+hpp$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef Eigen\+::\+Matrix$<$ double, C\+O\+U\+NT, 1 $>$ \hyperlink{classblmc__robots_1_1BlmcJointModules_abaff382c6fd4b494ec0c17498d94919e}{Vector}\hypertarget{classblmc__robots_1_1BlmcJointModules_abaff382c6fd4b494ec0c17498d94919e}{}\label{classblmc__robots_1_1BlmcJointModules_abaff382c6fd4b494ec0c17498d94919e}
+
+\begin{DoxyCompactList}\small\item\em Defines a static Eigen vector type in order to define the interface. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classblmc__robots_1_1BlmcJointModules_a74910d81a89f9b1713ce8fecc69191fe}{Blmc\+Joint\+Modules} (const std\+::array$<$ std\+::shared\+\_\+ptr$<$ blmc\+\_\+drivers\+::\+Motor\+Interface $>$, C\+O\+U\+NT $>$ \&motors, const \hyperlink{classblmc__robots_1_1BlmcJointModules_abaff382c6fd4b494ec0c17498d94919e}{Vector} \&motor\+\_\+constants, const \hyperlink{classblmc__robots_1_1BlmcJointModules_abaff382c6fd4b494ec0c17498d94919e}{Vector} \&gear\+\_\+ratios, const \hyperlink{classblmc__robots_1_1BlmcJointModules_abaff382c6fd4b494ec0c17498d94919e}{Vector} \&zero\+\_\+angles, const \hyperlink{classblmc__robots_1_1BlmcJointModules_abaff382c6fd4b494ec0c17498d94919e}{Vector} \&max\+\_\+currents)
+\begin{DoxyCompactList}\small\item\em Construct a new \hyperlink{classblmc__robots_1_1BlmcJointModules}{Blmc\+Joint\+Modules} object. \end{DoxyCompactList}\item 
+\hyperlink{classblmc__robots_1_1BlmcJointModules_af4c700a8d346ceaebece38928b5e7ca6}{Blmc\+Joint\+Modules} ()\hypertarget{classblmc__robots_1_1BlmcJointModules_af4c700a8d346ceaebece38928b5e7ca6}{}\label{classblmc__robots_1_1BlmcJointModules_af4c700a8d346ceaebece38928b5e7ca6}
+
+\begin{DoxyCompactList}\small\item\em Construct a new \hyperlink{classblmc__robots_1_1BlmcJointModules}{Blmc\+Joint\+Modules} object. \end{DoxyCompactList}\item 
+void \hyperlink{classblmc__robots_1_1BlmcJointModules_a905addfe3271be5bc88bd785c5cbb032}{set\+\_\+motor\+\_\+array} (const std\+::array$<$ std\+::shared\+\_\+ptr$<$ blmc\+\_\+drivers\+::\+Motor\+Interface $>$, C\+O\+U\+NT $>$ \&motors, const \hyperlink{classblmc__robots_1_1BlmcJointModules_abaff382c6fd4b494ec0c17498d94919e}{Vector} \&motor\+\_\+constants, const \hyperlink{classblmc__robots_1_1BlmcJointModules_abaff382c6fd4b494ec0c17498d94919e}{Vector} \&gear\+\_\+ratios, const \hyperlink{classblmc__robots_1_1BlmcJointModules_abaff382c6fd4b494ec0c17498d94919e}{Vector} \&zero\+\_\+angles, const \hyperlink{classblmc__robots_1_1BlmcJointModules_abaff382c6fd4b494ec0c17498d94919e}{Vector} \&max\+\_\+currents)
+\begin{DoxyCompactList}\small\item\em Set the motor array, by creating the corresponding modules. \end{DoxyCompactList}\item 
+void \hyperlink{classblmc__robots_1_1BlmcJointModules_a26d4d675142bc783c1f983d135a41a09}{send\+\_\+torques} ()\hypertarget{classblmc__robots_1_1BlmcJointModules_a26d4d675142bc783c1f983d135a41a09}{}\label{classblmc__robots_1_1BlmcJointModules_a26d4d675142bc783c1f983d135a41a09}
+
+\begin{DoxyCompactList}\small\item\em Send the registered torques to all modules. \end{DoxyCompactList}\item 
+void \hyperlink{classblmc__robots_1_1BlmcJointModules_a97f538c52a1c00846497417333f93230}{set\+\_\+joint\+\_\+polarities} (std\+::array$<$ bool, C\+O\+U\+NT $>$ reverse\+\_\+polarities)
+\begin{DoxyCompactList}\small\item\em Set the polarities of the joints (see \hyperlink{classblmc__robots_1_1BlmcJointModule_a137da65771a8628db4692e3bfc924f07}{Blmc\+Joint\+Module\+::set\+\_\+joint\+\_\+polarity}) \end{DoxyCompactList}\item 
+void \hyperlink{classblmc__robots_1_1BlmcJointModules_ac7dba81727847238fc4c42b7dca6a0ea}{set\+\_\+torques} (const \hyperlink{classblmc__robots_1_1BlmcJointModules_abaff382c6fd4b494ec0c17498d94919e}{Vector} \&desired\+\_\+torques)
+\begin{DoxyCompactList}\small\item\em Register the joint torques to be sent for all modules. \end{DoxyCompactList}\item 
+\hyperlink{classblmc__robots_1_1BlmcJointModules_abaff382c6fd4b494ec0c17498d94919e}{Vector} \hyperlink{classblmc__robots_1_1BlmcJointModules_a6cc2989e6132988557ebe03e69658f50}{get\+\_\+max\+\_\+torques} ()
+\begin{DoxyCompactList}\small\item\em Get the maximum admissible joint torque that can be applied. \end{DoxyCompactList}\item 
+\hyperlink{classblmc__robots_1_1BlmcJointModules_abaff382c6fd4b494ec0c17498d94919e}{Vector} \hyperlink{classblmc__robots_1_1BlmcJointModules_a9c71bc7db0ff4cd08bc2686a244caa65}{get\+\_\+sent\+\_\+torques} () const 
+\begin{DoxyCompactList}\small\item\em Get the previously sent torques. \end{DoxyCompactList}\item 
+\hyperlink{classblmc__robots_1_1BlmcJointModules_abaff382c6fd4b494ec0c17498d94919e}{Vector} \hyperlink{classblmc__robots_1_1BlmcJointModules_aeefc9487da9aafde41da790968a8165e}{get\+\_\+measured\+\_\+torques} () const 
+\begin{DoxyCompactList}\small\item\em Get the measured joint torques. \end{DoxyCompactList}\item 
+\hyperlink{classblmc__robots_1_1BlmcJointModules_abaff382c6fd4b494ec0c17498d94919e}{Vector} \hyperlink{classblmc__robots_1_1BlmcJointModules_af739948e89e5192eb853c7c5dcb9e87f}{get\+\_\+measured\+\_\+angles} () const 
+\begin{DoxyCompactList}\small\item\em Get the measured joint angles. \end{DoxyCompactList}\item 
+\hyperlink{classblmc__robots_1_1BlmcJointModules_abaff382c6fd4b494ec0c17498d94919e}{Vector} \hyperlink{classblmc__robots_1_1BlmcJointModules_a87320890796f67050faa4fa506d5142d}{get\+\_\+measured\+\_\+velocities} () const 
+\begin{DoxyCompactList}\small\item\em Get the measured joint velocities. \end{DoxyCompactList}\item 
+void \hyperlink{classblmc__robots_1_1BlmcJointModules_abc94960666d33b6a5071d4cf25f7794d}{set\+\_\+zero\+\_\+angles} (const \hyperlink{classblmc__robots_1_1BlmcJointModules_abaff382c6fd4b494ec0c17498d94919e}{Vector} \&zero\+\_\+angles)
+\begin{DoxyCompactList}\small\item\em Set the zero\+\_\+angles. \end{DoxyCompactList}\item 
+\hyperlink{classblmc__robots_1_1BlmcJointModules_abaff382c6fd4b494ec0c17498d94919e}{Vector} \hyperlink{classblmc__robots_1_1BlmcJointModules_a4ca83d65d009aaafe4522d431490bb1d}{get\+\_\+zero\+\_\+angles} () const 
+\begin{DoxyCompactList}\small\item\em Get the zero\+\_\+angles. \end{DoxyCompactList}\item 
+\hyperlink{classblmc__robots_1_1BlmcJointModules_abaff382c6fd4b494ec0c17498d94919e}{Vector} \hyperlink{classblmc__robots_1_1BlmcJointModules_a0ef05c89eeb1ffde131f44d4f3a300c8}{get\+\_\+measured\+\_\+index\+\_\+angles} () const 
+\begin{DoxyCompactList}\small\item\em Get the index\+\_\+angles. \end{DoxyCompactList}\item 
+void \hyperlink{classblmc__robots_1_1BlmcJointModules_ada76994634fd0f15fb5df311a61e97d7}{set\+\_\+position\+\_\+control\+\_\+gains} (size\+\_\+t joint\+\_\+id, double kp, double kd)
+\begin{DoxyCompactList}\small\item\em Set position control gains for the specified joint. \end{DoxyCompactList}\item 
+void \hyperlink{classblmc__robots_1_1BlmcJointModules_a524fd41f808027190d59460a4787aea6}{set\+\_\+position\+\_\+control\+\_\+gains} (\hyperlink{classblmc__robots_1_1BlmcJointModules_abaff382c6fd4b494ec0c17498d94919e}{Vector} kp, \hyperlink{classblmc__robots_1_1BlmcJointModules_abaff382c6fd4b494ec0c17498d94919e}{Vector} kd)
+\begin{DoxyCompactList}\small\item\em Set position control gains for all joints. \end{DoxyCompactList}\item 
+\hyperlink{blmc__joint__module_8hpp_aa1075809042ff261e4b0a20d161448b6}{Homing\+Return\+Code} \hyperlink{classblmc__robots_1_1BlmcJointModules_a4b3dfee12a87fddf81961fab48e3dae4}{execute\+\_\+homing} (double search\+\_\+distance\+\_\+limit\+\_\+rad, \hyperlink{classblmc__robots_1_1BlmcJointModules_abaff382c6fd4b494ec0c17498d94919e}{Vector} home\+\_\+offset\+\_\+rad, \hyperlink{classblmc__robots_1_1BlmcJointModules_abaff382c6fd4b494ec0c17498d94919e}{Vector} profile\+\_\+step\+\_\+size\+\_\+rad=Vector\+::\+Constant(0.\+001))
+\begin{DoxyCompactList}\small\item\em Perform homing for all joints. \end{DoxyCompactList}\item 
+\hyperlink{blmc__joint__module_8hpp_ae2dd8b0230887c948d2583feb6beb051}{Go\+To\+Return\+Code} \hyperlink{classblmc__robots_1_1BlmcJointModules_afc82da986738d3a2265e5cf6337d3251}{go\+\_\+to} (\hyperlink{classblmc__robots_1_1BlmcJointModules_abaff382c6fd4b494ec0c17498d94919e}{Vector} angle\+\_\+to\+\_\+reach\+\_\+rad, double average\+\_\+speed\+\_\+rad\+\_\+per\+\_\+sec=1.\+0)
+\begin{DoxyCompactList}\small\item\em Allow the robot to go to a desired pose. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::array$<$ std\+::shared\+\_\+ptr$<$ \hyperlink{classblmc__robots_1_1BlmcJointModule}{Blmc\+Joint\+Module} $>$, C\+O\+U\+NT $>$ \hyperlink{classblmc__robots_1_1BlmcJointModules_a40ab7b84d3b54d298209098cdf81a14d}{modules\+\_\+}\hypertarget{classblmc__robots_1_1BlmcJointModules_a40ab7b84d3b54d298209098cdf81a14d}{}\label{classblmc__robots_1_1BlmcJointModules_a40ab7b84d3b54d298209098cdf81a14d}
+
+\begin{DoxyCompactList}\small\item\em These are the B\+L\+M\+C\+Joint\+Module objects corresponding to a robot. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$int C\+O\+U\+NT$>$\\*
+class blmc\+\_\+robots\+::\+Blmc\+Joint\+Modules$<$ C\+O\+U\+N\+T $>$}
+
+This class defines an interface to a collection of B\+L\+MC joints. 
+
+It creates a B\+L\+M\+C\+Joint\+Module for every blmc\+\_\+driver\+::\+Motor\+Interface provided.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em C\+O\+U\+NT} & \\
+\hline
+\end{DoxyTemplParams}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{blmc\+\_\+robots\+::\+Blmc\+Joint\+Modules@{blmc\+\_\+robots\+::\+Blmc\+Joint\+Modules}!Blmc\+Joint\+Modules@{Blmc\+Joint\+Modules}}
+\index{Blmc\+Joint\+Modules@{Blmc\+Joint\+Modules}!blmc\+\_\+robots\+::\+Blmc\+Joint\+Modules@{blmc\+\_\+robots\+::\+Blmc\+Joint\+Modules}}
+\subsubsection[{\texorpdfstring{Blmc\+Joint\+Modules(const std\+::array$<$ std\+::shared\+\_\+ptr$<$ blmc\+\_\+drivers\+::\+Motor\+Interface $>$, C\+O\+U\+N\+T $>$ \&motors, const Vector \&motor\+\_\+constants, const Vector \&gear\+\_\+ratios, const Vector \&zero\+\_\+angles, const Vector \&max\+\_\+currents)}{BlmcJointModules(const std::array< std::shared_ptr< blmc_drivers::MotorInterface >, COUNT > &motors, const Vector &motor_constants, const Vector &gear_ratios, const Vector &zero_angles, const Vector &max_currents)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int C\+O\+U\+NT$>$ {\bf blmc\+\_\+robots\+::\+Blmc\+Joint\+Modules}$<$ C\+O\+U\+NT $>$\+::{\bf Blmc\+Joint\+Modules} (
+\begin{DoxyParamCaption}
+\item[{const std\+::array$<$ std\+::shared\+\_\+ptr$<$ blmc\+\_\+drivers\+::\+Motor\+Interface $>$, C\+O\+U\+NT $>$ \&}]{motors, }
+\item[{const {\bf Vector} \&}]{motor\+\_\+constants, }
+\item[{const {\bf Vector} \&}]{gear\+\_\+ratios, }
+\item[{const {\bf Vector} \&}]{zero\+\_\+angles, }
+\item[{const {\bf Vector} \&}]{max\+\_\+currents}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classblmc__robots_1_1BlmcJointModules_a74910d81a89f9b1713ce8fecc69191fe}{}\label{classblmc__robots_1_1BlmcJointModules_a74910d81a89f9b1713ce8fecc69191fe}
+
+
+Construct a new \hyperlink{classblmc__robots_1_1BlmcJointModules}{Blmc\+Joint\+Modules} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em motors} & \\
+\hline
+{\em motor\+\_\+constants} & \\
+\hline
+{\em gear\+\_\+ratios} & \\
+\hline
+{\em zero\+\_\+angles} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{blmc\+\_\+robots\+::\+Blmc\+Joint\+Modules@{blmc\+\_\+robots\+::\+Blmc\+Joint\+Modules}!execute\+\_\+homing@{execute\+\_\+homing}}
+\index{execute\+\_\+homing@{execute\+\_\+homing}!blmc\+\_\+robots\+::\+Blmc\+Joint\+Modules@{blmc\+\_\+robots\+::\+Blmc\+Joint\+Modules}}
+\subsubsection[{\texorpdfstring{execute\+\_\+homing(double search\+\_\+distance\+\_\+limit\+\_\+rad, Vector home\+\_\+offset\+\_\+rad, Vector profile\+\_\+step\+\_\+size\+\_\+rad=\+Vector\+::\+Constant(0.\+001))}{execute_homing(double search_distance_limit_rad, Vector home_offset_rad, Vector profile_step_size_rad=Vector::Constant(0.001))}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int C\+O\+U\+NT$>$ {\bf Homing\+Return\+Code} {\bf blmc\+\_\+robots\+::\+Blmc\+Joint\+Modules}$<$ C\+O\+U\+NT $>$\+::execute\+\_\+homing (
+\begin{DoxyParamCaption}
+\item[{double}]{search\+\_\+distance\+\_\+limit\+\_\+rad, }
+\item[{{\bf Vector}}]{home\+\_\+offset\+\_\+rad, }
+\item[{{\bf Vector}}]{profile\+\_\+step\+\_\+size\+\_\+rad = {\ttfamily Vector\+:\+:Constant(0.001)}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classblmc__robots_1_1BlmcJointModules_a4b3dfee12a87fddf81961fab48e3dae4}{}\label{classblmc__robots_1_1BlmcJointModules_a4b3dfee12a87fddf81961fab48e3dae4}
+
+
+Perform homing for all joints. 
+
+If one of the joints fails, the complete homing fails. Otherwise it loops until all joints finished. If a joint is finished while others are still running, it is held at the home position.
+
+See \hyperlink{classblmc__robots_1_1BlmcJointModule_abb2712542f3c340bc0ecf76bd343b6b3}{Blmc\+Joint\+Module\+::update\+\_\+homing} for details on the homing procedure.
+
+See \hyperlink{classblmc__robots_1_1BlmcJointModule_aa534604b5ead6a3eee5c47a9454f6834}{Blmc\+Joint\+Module\+::init\+\_\+homing} for description of the arguments.
+
+\begin{DoxyReturn}{Returns}
+Final status of the homing procedure (either S\+U\+C\+C\+E\+SS if all joints succeeded or the return code of the first joint that failed). 
+\end{DoxyReturn}
+\index{blmc\+\_\+robots\+::\+Blmc\+Joint\+Modules@{blmc\+\_\+robots\+::\+Blmc\+Joint\+Modules}!get\+\_\+max\+\_\+torques@{get\+\_\+max\+\_\+torques}}
+\index{get\+\_\+max\+\_\+torques@{get\+\_\+max\+\_\+torques}!blmc\+\_\+robots\+::\+Blmc\+Joint\+Modules@{blmc\+\_\+robots\+::\+Blmc\+Joint\+Modules}}
+\subsubsection[{\texorpdfstring{get\+\_\+max\+\_\+torques()}{get_max_torques()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int C\+O\+U\+NT$>$ {\bf Vector} {\bf blmc\+\_\+robots\+::\+Blmc\+Joint\+Modules}$<$ C\+O\+U\+NT $>$\+::get\+\_\+max\+\_\+torques (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classblmc__robots_1_1BlmcJointModules_a6cc2989e6132988557ebe03e69658f50}{}\label{classblmc__robots_1_1BlmcJointModules_a6cc2989e6132988557ebe03e69658f50}
+
+
+Get the maximum admissible joint torque that can be applied. 
+
+\begin{DoxyReturn}{Returns}
+Vector (N/m) 
+\end{DoxyReturn}
+\index{blmc\+\_\+robots\+::\+Blmc\+Joint\+Modules@{blmc\+\_\+robots\+::\+Blmc\+Joint\+Modules}!get\+\_\+measured\+\_\+angles@{get\+\_\+measured\+\_\+angles}}
+\index{get\+\_\+measured\+\_\+angles@{get\+\_\+measured\+\_\+angles}!blmc\+\_\+robots\+::\+Blmc\+Joint\+Modules@{blmc\+\_\+robots\+::\+Blmc\+Joint\+Modules}}
+\subsubsection[{\texorpdfstring{get\+\_\+measured\+\_\+angles() const }{get_measured_angles() const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int C\+O\+U\+NT$>$ {\bf Vector} {\bf blmc\+\_\+robots\+::\+Blmc\+Joint\+Modules}$<$ C\+O\+U\+NT $>$\+::get\+\_\+measured\+\_\+angles (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classblmc__robots_1_1BlmcJointModules_af739948e89e5192eb853c7c5dcb9e87f}{}\label{classblmc__robots_1_1BlmcJointModules_af739948e89e5192eb853c7c5dcb9e87f}
+
+
+Get the measured joint angles. 
+
+\begin{DoxyReturn}{Returns}
+Vector (rad) 
+\end{DoxyReturn}
+\index{blmc\+\_\+robots\+::\+Blmc\+Joint\+Modules@{blmc\+\_\+robots\+::\+Blmc\+Joint\+Modules}!get\+\_\+measured\+\_\+index\+\_\+angles@{get\+\_\+measured\+\_\+index\+\_\+angles}}
+\index{get\+\_\+measured\+\_\+index\+\_\+angles@{get\+\_\+measured\+\_\+index\+\_\+angles}!blmc\+\_\+robots\+::\+Blmc\+Joint\+Modules@{blmc\+\_\+robots\+::\+Blmc\+Joint\+Modules}}
+\subsubsection[{\texorpdfstring{get\+\_\+measured\+\_\+index\+\_\+angles() const }{get_measured_index_angles() const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int C\+O\+U\+NT$>$ {\bf Vector} {\bf blmc\+\_\+robots\+::\+Blmc\+Joint\+Modules}$<$ C\+O\+U\+NT $>$\+::get\+\_\+measured\+\_\+index\+\_\+angles (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classblmc__robots_1_1BlmcJointModules_a0ef05c89eeb1ffde131f44d4f3a300c8}{}\label{classblmc__robots_1_1BlmcJointModules_a0ef05c89eeb1ffde131f44d4f3a300c8}
+
+
+Get the index\+\_\+angles. 
+
+There is one index per motor rotation so there are gear\+\_\+ratio indexes per joint rotation.
+
+\begin{DoxyReturn}{Returns}
+Vector (rad) 
+\end{DoxyReturn}
+\index{blmc\+\_\+robots\+::\+Blmc\+Joint\+Modules@{blmc\+\_\+robots\+::\+Blmc\+Joint\+Modules}!get\+\_\+measured\+\_\+torques@{get\+\_\+measured\+\_\+torques}}
+\index{get\+\_\+measured\+\_\+torques@{get\+\_\+measured\+\_\+torques}!blmc\+\_\+robots\+::\+Blmc\+Joint\+Modules@{blmc\+\_\+robots\+::\+Blmc\+Joint\+Modules}}
+\subsubsection[{\texorpdfstring{get\+\_\+measured\+\_\+torques() const }{get_measured_torques() const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int C\+O\+U\+NT$>$ {\bf Vector} {\bf blmc\+\_\+robots\+::\+Blmc\+Joint\+Modules}$<$ C\+O\+U\+NT $>$\+::get\+\_\+measured\+\_\+torques (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classblmc__robots_1_1BlmcJointModules_aeefc9487da9aafde41da790968a8165e}{}\label{classblmc__robots_1_1BlmcJointModules_aeefc9487da9aafde41da790968a8165e}
+
+
+Get the measured joint torques. 
+
+\begin{DoxyReturn}{Returns}
+Vector (Nm) 
+\end{DoxyReturn}
+\index{blmc\+\_\+robots\+::\+Blmc\+Joint\+Modules@{blmc\+\_\+robots\+::\+Blmc\+Joint\+Modules}!get\+\_\+measured\+\_\+velocities@{get\+\_\+measured\+\_\+velocities}}
+\index{get\+\_\+measured\+\_\+velocities@{get\+\_\+measured\+\_\+velocities}!blmc\+\_\+robots\+::\+Blmc\+Joint\+Modules@{blmc\+\_\+robots\+::\+Blmc\+Joint\+Modules}}
+\subsubsection[{\texorpdfstring{get\+\_\+measured\+\_\+velocities() const }{get_measured_velocities() const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int C\+O\+U\+NT$>$ {\bf Vector} {\bf blmc\+\_\+robots\+::\+Blmc\+Joint\+Modules}$<$ C\+O\+U\+NT $>$\+::get\+\_\+measured\+\_\+velocities (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classblmc__robots_1_1BlmcJointModules_a87320890796f67050faa4fa506d5142d}{}\label{classblmc__robots_1_1BlmcJointModules_a87320890796f67050faa4fa506d5142d}
+
+
+Get the measured joint velocities. 
+
+\begin{DoxyReturn}{Returns}
+Vector (rad/s) 
+\end{DoxyReturn}
+\index{blmc\+\_\+robots\+::\+Blmc\+Joint\+Modules@{blmc\+\_\+robots\+::\+Blmc\+Joint\+Modules}!get\+\_\+sent\+\_\+torques@{get\+\_\+sent\+\_\+torques}}
+\index{get\+\_\+sent\+\_\+torques@{get\+\_\+sent\+\_\+torques}!blmc\+\_\+robots\+::\+Blmc\+Joint\+Modules@{blmc\+\_\+robots\+::\+Blmc\+Joint\+Modules}}
+\subsubsection[{\texorpdfstring{get\+\_\+sent\+\_\+torques() const }{get_sent_torques() const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int C\+O\+U\+NT$>$ {\bf Vector} {\bf blmc\+\_\+robots\+::\+Blmc\+Joint\+Modules}$<$ C\+O\+U\+NT $>$\+::get\+\_\+sent\+\_\+torques (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classblmc__robots_1_1BlmcJointModules_a9c71bc7db0ff4cd08bc2686a244caa65}{}\label{classblmc__robots_1_1BlmcJointModules_a9c71bc7db0ff4cd08bc2686a244caa65}
+
+
+Get the previously sent torques. 
+
+\begin{DoxyReturn}{Returns}
+Vector (Nm) 
+\end{DoxyReturn}
+\index{blmc\+\_\+robots\+::\+Blmc\+Joint\+Modules@{blmc\+\_\+robots\+::\+Blmc\+Joint\+Modules}!get\+\_\+zero\+\_\+angles@{get\+\_\+zero\+\_\+angles}}
+\index{get\+\_\+zero\+\_\+angles@{get\+\_\+zero\+\_\+angles}!blmc\+\_\+robots\+::\+Blmc\+Joint\+Modules@{blmc\+\_\+robots\+::\+Blmc\+Joint\+Modules}}
+\subsubsection[{\texorpdfstring{get\+\_\+zero\+\_\+angles() const }{get_zero_angles() const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int C\+O\+U\+NT$>$ {\bf Vector} {\bf blmc\+\_\+robots\+::\+Blmc\+Joint\+Modules}$<$ C\+O\+U\+NT $>$\+::get\+\_\+zero\+\_\+angles (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classblmc__robots_1_1BlmcJointModules_a4ca83d65d009aaafe4522d431490bb1d}{}\label{classblmc__robots_1_1BlmcJointModules_a4ca83d65d009aaafe4522d431490bb1d}
+
+
+Get the zero\+\_\+angles. 
+
+These are the joint angles between the starting pose and the zero theoretical pose of the urdf.
+
+\begin{DoxyReturn}{Returns}
+Vector (rad) 
+\end{DoxyReturn}
+\index{blmc\+\_\+robots\+::\+Blmc\+Joint\+Modules@{blmc\+\_\+robots\+::\+Blmc\+Joint\+Modules}!go\+\_\+to@{go\+\_\+to}}
+\index{go\+\_\+to@{go\+\_\+to}!blmc\+\_\+robots\+::\+Blmc\+Joint\+Modules@{blmc\+\_\+robots\+::\+Blmc\+Joint\+Modules}}
+\subsubsection[{\texorpdfstring{go\+\_\+to(\+Vector angle\+\_\+to\+\_\+reach\+\_\+rad, double average\+\_\+speed\+\_\+rad\+\_\+per\+\_\+sec=1.\+0)}{go_to(Vector angle_to_reach_rad, double average_speed_rad_per_sec=1.0)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int C\+O\+U\+NT$>$ {\bf Go\+To\+Return\+Code} {\bf blmc\+\_\+robots\+::\+Blmc\+Joint\+Modules}$<$ C\+O\+U\+NT $>$\+::go\+\_\+to (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector}}]{angle\+\_\+to\+\_\+reach\+\_\+rad, }
+\item[{double}]{average\+\_\+speed\+\_\+rad\+\_\+per\+\_\+sec = {\ttfamily 1.0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classblmc__robots_1_1BlmcJointModules_afc82da986738d3a2265e5cf6337d3251}{}\label{classblmc__robots_1_1BlmcJointModules_afc82da986738d3a2265e5cf6337d3251}
+
+
+Allow the robot to go to a desired pose. 
+
+Once the control done 0 torques is sent.
+
+
+\begin{DoxyParams}{Parameters}
+{\em angle\+\_\+to\+\_\+reach\+\_\+rad} & (rad) \\
+\hline
+{\em average\+\_\+speed\+\_\+rad\+\_\+per\+\_\+sec} & (rad/sec) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Go\+To\+Return\+Code 
+\end{DoxyReturn}
+\index{blmc\+\_\+robots\+::\+Blmc\+Joint\+Modules@{blmc\+\_\+robots\+::\+Blmc\+Joint\+Modules}!set\+\_\+joint\+\_\+polarities@{set\+\_\+joint\+\_\+polarities}}
+\index{set\+\_\+joint\+\_\+polarities@{set\+\_\+joint\+\_\+polarities}!blmc\+\_\+robots\+::\+Blmc\+Joint\+Modules@{blmc\+\_\+robots\+::\+Blmc\+Joint\+Modules}}
+\subsubsection[{\texorpdfstring{set\+\_\+joint\+\_\+polarities(std\+::array$<$ bool, C\+O\+U\+N\+T $>$ reverse\+\_\+polarities)}{set_joint_polarities(std::array< bool, COUNT > reverse_polarities)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int C\+O\+U\+NT$>$ void {\bf blmc\+\_\+robots\+::\+Blmc\+Joint\+Modules}$<$ C\+O\+U\+NT $>$\+::set\+\_\+joint\+\_\+polarities (
+\begin{DoxyParamCaption}
+\item[{std\+::array$<$ bool, C\+O\+U\+NT $>$}]{reverse\+\_\+polarities}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classblmc__robots_1_1BlmcJointModules_a97f538c52a1c00846497417333f93230}{}\label{classblmc__robots_1_1BlmcJointModules_a97f538c52a1c00846497417333f93230}
+
+
+Set the polarities of the joints (see \hyperlink{classblmc__robots_1_1BlmcJointModule_a137da65771a8628db4692e3bfc924f07}{Blmc\+Joint\+Module\+::set\+\_\+joint\+\_\+polarity}) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em reverse\+\_\+polarity} & \\
+\hline
+\end{DoxyParams}
+\index{blmc\+\_\+robots\+::\+Blmc\+Joint\+Modules@{blmc\+\_\+robots\+::\+Blmc\+Joint\+Modules}!set\+\_\+motor\+\_\+array@{set\+\_\+motor\+\_\+array}}
+\index{set\+\_\+motor\+\_\+array@{set\+\_\+motor\+\_\+array}!blmc\+\_\+robots\+::\+Blmc\+Joint\+Modules@{blmc\+\_\+robots\+::\+Blmc\+Joint\+Modules}}
+\subsubsection[{\texorpdfstring{set\+\_\+motor\+\_\+array(const std\+::array$<$ std\+::shared\+\_\+ptr$<$ blmc\+\_\+drivers\+::\+Motor\+Interface $>$, C\+O\+U\+N\+T $>$ \&motors, const Vector \&motor\+\_\+constants, const Vector \&gear\+\_\+ratios, const Vector \&zero\+\_\+angles, const Vector \&max\+\_\+currents)}{set_motor_array(const std::array< std::shared_ptr< blmc_drivers::MotorInterface >, COUNT > &motors, const Vector &motor_constants, const Vector &gear_ratios, const Vector &zero_angles, const Vector &max_currents)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int C\+O\+U\+NT$>$ void {\bf blmc\+\_\+robots\+::\+Blmc\+Joint\+Modules}$<$ C\+O\+U\+NT $>$\+::set\+\_\+motor\+\_\+array (
+\begin{DoxyParamCaption}
+\item[{const std\+::array$<$ std\+::shared\+\_\+ptr$<$ blmc\+\_\+drivers\+::\+Motor\+Interface $>$, C\+O\+U\+NT $>$ \&}]{motors, }
+\item[{const {\bf Vector} \&}]{motor\+\_\+constants, }
+\item[{const {\bf Vector} \&}]{gear\+\_\+ratios, }
+\item[{const {\bf Vector} \&}]{zero\+\_\+angles, }
+\item[{const {\bf Vector} \&}]{max\+\_\+currents}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classblmc__robots_1_1BlmcJointModules_a905addfe3271be5bc88bd785c5cbb032}{}\label{classblmc__robots_1_1BlmcJointModules_a905addfe3271be5bc88bd785c5cbb032}
+
+
+Set the motor array, by creating the corresponding modules. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em motors} & \\
+\hline
+{\em motor\+\_\+constants} & \\
+\hline
+{\em gear\+\_\+ratios} & \\
+\hline
+{\em zero\+\_\+angles} & \\
+\hline
+\end{DoxyParams}
+\index{blmc\+\_\+robots\+::\+Blmc\+Joint\+Modules@{blmc\+\_\+robots\+::\+Blmc\+Joint\+Modules}!set\+\_\+position\+\_\+control\+\_\+gains@{set\+\_\+position\+\_\+control\+\_\+gains}}
+\index{set\+\_\+position\+\_\+control\+\_\+gains@{set\+\_\+position\+\_\+control\+\_\+gains}!blmc\+\_\+robots\+::\+Blmc\+Joint\+Modules@{blmc\+\_\+robots\+::\+Blmc\+Joint\+Modules}}
+\subsubsection[{\texorpdfstring{set\+\_\+position\+\_\+control\+\_\+gains(size\+\_\+t joint\+\_\+id, double kp, double kd)}{set_position_control_gains(size_t joint_id, double kp, double kd)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int C\+O\+U\+NT$>$ void {\bf blmc\+\_\+robots\+::\+Blmc\+Joint\+Modules}$<$ C\+O\+U\+NT $>$\+::set\+\_\+position\+\_\+control\+\_\+gains (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{joint\+\_\+id, }
+\item[{double}]{kp, }
+\item[{double}]{kd}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classblmc__robots_1_1BlmcJointModules_ada76994634fd0f15fb5df311a61e97d7}{}\label{classblmc__robots_1_1BlmcJointModules_ada76994634fd0f15fb5df311a61e97d7}
+
+
+Set position control gains for the specified joint. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em joint\+\_\+id} & ID of the joint (in range {\ttfamily \mbox{[}0, C\+O\+U\+NT)}). \\
+\hline
+{\em kp} & P gain. \\
+\hline
+{\em kd} & D gain. \\
+\hline
+\end{DoxyParams}
+\index{blmc\+\_\+robots\+::\+Blmc\+Joint\+Modules@{blmc\+\_\+robots\+::\+Blmc\+Joint\+Modules}!set\+\_\+position\+\_\+control\+\_\+gains@{set\+\_\+position\+\_\+control\+\_\+gains}}
+\index{set\+\_\+position\+\_\+control\+\_\+gains@{set\+\_\+position\+\_\+control\+\_\+gains}!blmc\+\_\+robots\+::\+Blmc\+Joint\+Modules@{blmc\+\_\+robots\+::\+Blmc\+Joint\+Modules}}
+\subsubsection[{\texorpdfstring{set\+\_\+position\+\_\+control\+\_\+gains(\+Vector kp, Vector kd)}{set_position_control_gains(Vector kp, Vector kd)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int C\+O\+U\+NT$>$ void {\bf blmc\+\_\+robots\+::\+Blmc\+Joint\+Modules}$<$ C\+O\+U\+NT $>$\+::set\+\_\+position\+\_\+control\+\_\+gains (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector}}]{kp, }
+\item[{{\bf Vector}}]{kd}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classblmc__robots_1_1BlmcJointModules_a524fd41f808027190d59460a4787aea6}{}\label{classblmc__robots_1_1BlmcJointModules_a524fd41f808027190d59460a4787aea6}
+
+
+Set position control gains for all joints. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em kp} & P gains. \\
+\hline
+{\em kd} & D gains. \\
+\hline
+\end{DoxyParams}
+\index{blmc\+\_\+robots\+::\+Blmc\+Joint\+Modules@{blmc\+\_\+robots\+::\+Blmc\+Joint\+Modules}!set\+\_\+torques@{set\+\_\+torques}}
+\index{set\+\_\+torques@{set\+\_\+torques}!blmc\+\_\+robots\+::\+Blmc\+Joint\+Modules@{blmc\+\_\+robots\+::\+Blmc\+Joint\+Modules}}
+\subsubsection[{\texorpdfstring{set\+\_\+torques(const Vector \&desired\+\_\+torques)}{set_torques(const Vector &desired_torques)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int C\+O\+U\+NT$>$ void {\bf blmc\+\_\+robots\+::\+Blmc\+Joint\+Modules}$<$ C\+O\+U\+NT $>$\+::set\+\_\+torques (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector} \&}]{desired\+\_\+torques}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classblmc__robots_1_1BlmcJointModules_ac7dba81727847238fc4c42b7dca6a0ea}{}\label{classblmc__robots_1_1BlmcJointModules_ac7dba81727847238fc4c42b7dca6a0ea}
+
+
+Register the joint torques to be sent for all modules. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em desired\+\_\+torques} & (Nm) \\
+\hline
+\end{DoxyParams}
+\index{blmc\+\_\+robots\+::\+Blmc\+Joint\+Modules@{blmc\+\_\+robots\+::\+Blmc\+Joint\+Modules}!set\+\_\+zero\+\_\+angles@{set\+\_\+zero\+\_\+angles}}
+\index{set\+\_\+zero\+\_\+angles@{set\+\_\+zero\+\_\+angles}!blmc\+\_\+robots\+::\+Blmc\+Joint\+Modules@{blmc\+\_\+robots\+::\+Blmc\+Joint\+Modules}}
+\subsubsection[{\texorpdfstring{set\+\_\+zero\+\_\+angles(const Vector \&zero\+\_\+angles)}{set_zero_angles(const Vector &zero_angles)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int C\+O\+U\+NT$>$ void {\bf blmc\+\_\+robots\+::\+Blmc\+Joint\+Modules}$<$ C\+O\+U\+NT $>$\+::set\+\_\+zero\+\_\+angles (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector} \&}]{zero\+\_\+angles}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classblmc__robots_1_1BlmcJointModules_abc94960666d33b6a5071d4cf25f7794d}{}\label{classblmc__robots_1_1BlmcJointModules_abc94960666d33b6a5071d4cf25f7794d}
+
+
+Set the zero\+\_\+angles. 
+
+These are the joint angles between the starting pose and the zero theoretical pose of the urdf.
+
+
+\begin{DoxyParams}{Parameters}
+{\em zero\+\_\+angles} & (rad) \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/blmc\+\_\+robots/\hyperlink{blmc__joint__module_8hpp}{blmc\+\_\+joint\+\_\+module.\+hpp}\end{DoxyCompactItemize}

@@ -1,0 +1,128 @@
+\hypertarget{classpy__robot__properties__teststand_1_1config_1_1TeststandConfig}{}\section{py\+\_\+robot\+\_\+properties\+\_\+teststand.\+config.\+Teststand\+Config Class Reference}
+\label{classpy__robot__properties__teststand_1_1config_1_1TeststandConfig}\index{py\+\_\+robot\+\_\+properties\+\_\+teststand.\+config.\+Teststand\+Config@{py\+\_\+robot\+\_\+properties\+\_\+teststand.\+config.\+Teststand\+Config}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def {\bfseries build\+Robot\+Wrapper} (cls)\hypertarget{classpy__robot__properties__teststand_1_1config_1_1TeststandConfig_ad0bd7dd74ddf8ca9f8a4c8523f560e6e}{}\label{classpy__robot__properties__teststand_1_1config_1_1TeststandConfig_ad0bd7dd74ddf8ca9f8a4c8523f560e6e}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+string {\bfseries robot\+\_\+name} = \char`\"{}teststand\char`\"{}\hypertarget{classpy__robot__properties__teststand_1_1config_1_1TeststandConfig_ab68e64f324ea47a4c81f9cc82aeb6cf4}{}\label{classpy__robot__properties__teststand_1_1config_1_1TeststandConfig_ab68e64f324ea47a4c81f9cc82aeb6cf4}
+
+\item 
+float {\bfseries kp} = 5.\+0\hypertarget{classpy__robot__properties__teststand_1_1config_1_1TeststandConfig_a360b8c5b84b6849da15236a2c98ff991}{}\label{classpy__robot__properties__teststand_1_1config_1_1TeststandConfig_a360b8c5b84b6849da15236a2c98ff991}
+
+\item 
+float {\bfseries kd} = 0.\+1\hypertarget{classpy__robot__properties__teststand_1_1config_1_1TeststandConfig_ac8ef3cbf2ca5a3b84dac6713cfab2a90}{}\label{classpy__robot__properties__teststand_1_1config_1_1TeststandConfig_ac8ef3cbf2ca5a3b84dac6713cfab2a90}
+
+\item 
+float {\bfseries ki} = 0.\+0\hypertarget{classpy__robot__properties__teststand_1_1config_1_1TeststandConfig_a1beb333b141d33d055368ff5418b3c09}{}\label{classpy__robot__properties__teststand_1_1config_1_1TeststandConfig_a1beb333b141d33d055368ff5418b3c09}
+
+\item 
+tuple {\bfseries urdf\+\_\+path}
+\item 
+list {\bfseries meshes\+\_\+path}
+\item 
+tuple {\bfseries yaml\+\_\+path}
+\item 
+float {\bfseries motor\+\_\+inertia} = 0.\+0000045\hypertarget{classpy__robot__properties__teststand_1_1config_1_1TeststandConfig_a0d2f901b065d005500004294a0999ed7}{}\label{classpy__robot__properties__teststand_1_1config_1_1TeststandConfig_a0d2f901b065d005500004294a0999ed7}
+
+\item 
+int {\bfseries motor\+\_\+gear\+\_\+ration} = 9\hypertarget{classpy__robot__properties__teststand_1_1config_1_1TeststandConfig_a934b88c4ed3899692dafb89134bfe3da}{}\label{classpy__robot__properties__teststand_1_1config_1_1TeststandConfig_a934b88c4ed3899692dafb89134bfe3da}
+
+\item 
+float {\bfseries motor\+\_\+torque\+\_\+constant} = 0.\+025\hypertarget{classpy__robot__properties__teststand_1_1config_1_1TeststandConfig_afac43884ea08cc21acbb61d4a0306313}{}\label{classpy__robot__properties__teststand_1_1config_1_1TeststandConfig_afac43884ea08cc21acbb61d4a0306313}
+
+\item 
+{\bfseries robot\+\_\+model} = se3.\+build\+Model\+From\+Urdf(urdf\+\_\+path)\hypertarget{classpy__robot__properties__teststand_1_1config_1_1TeststandConfig_a40bb72cc42004c48cc616bafae8c489a}{}\label{classpy__robot__properties__teststand_1_1config_1_1TeststandConfig_a40bb72cc42004c48cc616bafae8c489a}
+
+\item 
+int {\bfseries nb\+\_\+joints} = robot\+\_\+model.\+nv-\/1\hypertarget{classpy__robot__properties__teststand_1_1config_1_1TeststandConfig_ac9ae69e00d3ecafbacac1cb7ae40a141}{}\label{classpy__robot__properties__teststand_1_1config_1_1TeststandConfig_ac9ae69e00d3ecafbacac1cb7ae40a141}
+
+\item 
+float {\bfseries control\+\_\+period} = 0.\+001\hypertarget{classpy__robot__properties__teststand_1_1config_1_1TeststandConfig_acb8248d2c6d0bdbbd64d7757b2ef79f8}{}\label{classpy__robot__properties__teststand_1_1config_1_1TeststandConfig_acb8248d2c6d0bdbbd64d7757b2ef79f8}
+
+\item 
+{\bfseries dt} = control\+\_\+period\hypertarget{classpy__robot__properties__teststand_1_1config_1_1TeststandConfig_ac505b7b1f485d8478b0ba74bf37c2409}{}\label{classpy__robot__properties__teststand_1_1config_1_1TeststandConfig_ac505b7b1f485d8478b0ba74bf37c2409}
+
+\item 
+int {\bfseries max\+\_\+current} = 2\hypertarget{classpy__robot__properties__teststand_1_1config_1_1TeststandConfig_a0254df8be16673a474dc8601bc94b221}{}\label{classpy__robot__properties__teststand_1_1config_1_1TeststandConfig_a0254df8be16673a474dc8601bc94b221}
+
+\item 
+{\bfseries max\+\_\+torque} = motor\+\_\+torque\+\_\+constant$\ast$max\+\_\+current\hypertarget{classpy__robot__properties__teststand_1_1config_1_1TeststandConfig_a54adeff97de2a750b78ca4b9e0f7463f}{}\label{classpy__robot__properties__teststand_1_1config_1_1TeststandConfig_a54adeff97de2a750b78ca4b9e0f7463f}
+
+\item 
+{\bfseries max\+\_\+control} = max\+\_\+current\hypertarget{classpy__robot__properties__teststand_1_1config_1_1TeststandConfig_a87cc00992f11a17c61b87b2e916a32bb}{}\label{classpy__robot__properties__teststand_1_1config_1_1TeststandConfig_a87cc00992f11a17c61b87b2e916a32bb}
+
+\item 
+tuple {\bfseries urdf\+\_\+to\+\_\+dgm} = (0, 1, 2)\hypertarget{classpy__robot__properties__teststand_1_1config_1_1TeststandConfig_afe4ab5c493dfc98619a6af64f09b0c80}{}\label{classpy__robot__properties__teststand_1_1config_1_1TeststandConfig_afe4ab5c493dfc98619a6af64f09b0c80}
+
+\item 
+float {\bfseries ctrl\+\_\+manager\+\_\+current\+\_\+to\+\_\+control\+\_\+gain} = 1.\+0\hypertarget{classpy__robot__properties__teststand_1_1config_1_1TeststandConfig_a1e1844188aa9fafaca58e8cc155456f8}{}\label{classpy__robot__properties__teststand_1_1config_1_1TeststandConfig_a1e1844188aa9fafaca58e8cc155456f8}
+
+\item 
+dictionary {\bfseries map\+\_\+joint\+\_\+name\+\_\+to\+\_\+id} = \{\}\hypertarget{classpy__robot__properties__teststand_1_1config_1_1TeststandConfig_a05f9fc796458f92afb255abf58002d03}{}\label{classpy__robot__properties__teststand_1_1config_1_1TeststandConfig_a05f9fc796458f92afb255abf58002d03}
+
+\item 
+dictionary {\bfseries map\+\_\+joint\+\_\+limits} = \{\}\hypertarget{classpy__robot__properties__teststand_1_1config_1_1TeststandConfig_acdaffba62df91da3b81cb004f5883cbc}{}\label{classpy__robot__properties__teststand_1_1config_1_1TeststandConfig_acdaffba62df91da3b81cb004f5883cbc}
+
+\item 
+{\bfseries max\+\_\+qref} = pi\hypertarget{classpy__robot__properties__teststand_1_1config_1_1TeststandConfig_abbe4bbf7e0a84e850eca3e68929c7bc7}{}\label{classpy__robot__properties__teststand_1_1config_1_1TeststandConfig_abbe4bbf7e0a84e850eca3e68929c7bc7}
+
+\item 
+list {\bfseries initial\+\_\+configuration} = \mbox{[}0.\+4, 0.\+8, -\/1.\+6\mbox{]}\hypertarget{classpy__robot__properties__teststand_1_1config_1_1TeststandConfig_a0c3a590774ec639751c92874e8b326fe}{}\label{classpy__robot__properties__teststand_1_1config_1_1TeststandConfig_a0c3a590774ec639751c92874e8b326fe}
+
+\item 
+int {\bfseries initial\+\_\+velocity} = 3\hypertarget{classpy__robot__properties__teststand_1_1config_1_1TeststandConfig_ab51eeb3530ace4ecee3b12242de8a375}{}\label{classpy__robot__properties__teststand_1_1config_1_1TeststandConfig_ab51eeb3530ace4ecee3b12242de8a375}
+
+\item 
+{\bfseries q0} = zero(robot\+\_\+model.\+nq)\hypertarget{classpy__robot__properties__teststand_1_1config_1_1TeststandConfig_a86d0a6e6c038efa02f20efed9c0cefb2}{}\label{classpy__robot__properties__teststand_1_1config_1_1TeststandConfig_a86d0a6e6c038efa02f20efed9c0cefb2}
+
+\item 
+{\bfseries v0} = zero(robot\+\_\+model.\+nv)\hypertarget{classpy__robot__properties__teststand_1_1config_1_1TeststandConfig_a30b5cded89883c8f7d713fd9b70fc161}{}\label{classpy__robot__properties__teststand_1_1config_1_1TeststandConfig_a30b5cded89883c8f7d713fd9b70fc161}
+
+\item 
+{\bfseries a0} = zero(robot\+\_\+model.\+nv)\hypertarget{classpy__robot__properties__teststand_1_1config_1_1TeststandConfig_a8215d067b482f1e37bd6a957c2e3b9e4}{}\label{classpy__robot__properties__teststand_1_1config_1_1TeststandConfig_a8215d067b482f1e37bd6a957c2e3b9e4}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Data Documentation}
+\index{py\+\_\+robot\+\_\+properties\+\_\+teststand\+::config\+::\+Teststand\+Config@{py\+\_\+robot\+\_\+properties\+\_\+teststand\+::config\+::\+Teststand\+Config}!meshes\+\_\+path@{meshes\+\_\+path}}
+\index{meshes\+\_\+path@{meshes\+\_\+path}!py\+\_\+robot\+\_\+properties\+\_\+teststand\+::config\+::\+Teststand\+Config@{py\+\_\+robot\+\_\+properties\+\_\+teststand\+::config\+::\+Teststand\+Config}}
+\subsubsection[{\texorpdfstring{meshes\+\_\+path}{meshes_path}}]{\setlength{\rightskip}{0pt plus 5cm}list py\+\_\+robot\+\_\+properties\+\_\+teststand.\+config.\+Teststand\+Config.\+meshes\+\_\+path\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classpy__robot__properties__teststand_1_1config_1_1TeststandConfig_a97ed7263634428ba248020b279f807a1}{}\label{classpy__robot__properties__teststand_1_1config_1_1TeststandConfig_a97ed7263634428ba248020b279f807a1}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+1 = [
+2         dirname(rospkg.RosPack().get\_path(\textcolor{stringliteral}{"robot\_properties\_"} + robot\_name))
+3     ]
+\end{DoxyCode}
+\index{py\+\_\+robot\+\_\+properties\+\_\+teststand\+::config\+::\+Teststand\+Config@{py\+\_\+robot\+\_\+properties\+\_\+teststand\+::config\+::\+Teststand\+Config}!urdf\+\_\+path@{urdf\+\_\+path}}
+\index{urdf\+\_\+path@{urdf\+\_\+path}!py\+\_\+robot\+\_\+properties\+\_\+teststand\+::config\+::\+Teststand\+Config@{py\+\_\+robot\+\_\+properties\+\_\+teststand\+::config\+::\+Teststand\+Config}}
+\subsubsection[{\texorpdfstring{urdf\+\_\+path}{urdf_path}}]{\setlength{\rightskip}{0pt plus 5cm}tuple py\+\_\+robot\+\_\+properties\+\_\+teststand.\+config.\+Teststand\+Config.\+urdf\+\_\+path\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classpy__robot__properties__teststand_1_1config_1_1TeststandConfig_ae8b0e21a78fe89c48b707028bc892559}{}\label{classpy__robot__properties__teststand_1_1config_1_1TeststandConfig_ae8b0e21a78fe89c48b707028bc892559}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+1 = (
+2         join(rospkg.RosPack().get\_path(\textcolor{stringliteral}{"robot\_properties\_teststand"}),
+3              \textcolor{stringliteral}{"urdf"},
+4              \textcolor{stringliteral}{"teststand.urdf"})
+5     )
+\end{DoxyCode}
+\index{py\+\_\+robot\+\_\+properties\+\_\+teststand\+::config\+::\+Teststand\+Config@{py\+\_\+robot\+\_\+properties\+\_\+teststand\+::config\+::\+Teststand\+Config}!yaml\+\_\+path@{yaml\+\_\+path}}
+\index{yaml\+\_\+path@{yaml\+\_\+path}!py\+\_\+robot\+\_\+properties\+\_\+teststand\+::config\+::\+Teststand\+Config@{py\+\_\+robot\+\_\+properties\+\_\+teststand\+::config\+::\+Teststand\+Config}}
+\subsubsection[{\texorpdfstring{yaml\+\_\+path}{yaml_path}}]{\setlength{\rightskip}{0pt plus 5cm}tuple py\+\_\+robot\+\_\+properties\+\_\+teststand.\+config.\+Teststand\+Config.\+yaml\+\_\+path\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classpy__robot__properties__teststand_1_1config_1_1TeststandConfig_acc7f8bb5b23a6ec613194e217e41fb25}{}\label{classpy__robot__properties__teststand_1_1config_1_1TeststandConfig_acc7f8bb5b23a6ec613194e217e41fb25}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+1 = (
+2         join(rospkg.RosPack().get\_path(\textcolor{stringliteral}{"robot\_properties\_teststand"}),
+3              \textcolor{stringliteral}{"config"},
+4              \textcolor{stringliteral}{"dgm\_parameters.yaml"})
+5     )
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/py\+\_\+robot\+\_\+properties\+\_\+teststand/\hyperlink{config_8py}{config.\+py}\end{DoxyCompactItemize}

@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classrobot__interfaces_1_1Loggable" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>robot_interfaces::Loggable</compoundname>
+    <derivedcompoundref refid="structrobot__interfaces_1_1NJointRobotTypes_1_1Action" prot="public" virt="non-virtual">robot_interfaces::NJointRobotTypes&lt; N &gt;::Action</derivedcompoundref>
+    <derivedcompoundref refid="structrobot__interfaces_1_1NJointRobotTypes_1_1Observation" prot="public" virt="non-virtual">robot_interfaces::NJointRobotTypes&lt; N &gt;::Observation</derivedcompoundref>
+    <derivedcompoundref refid="structrobot__interfaces_1_1Status" prot="public" virt="non-virtual">robot_interfaces::Status</derivedcompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classrobot__interfaces_1_1Loggable_1a19635ebc166379f11fe4c8e58153243a" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>virtual std::vector&lt;std::string&gt; robot_interfaces::Loggable::get_name</definition>
+        <argsstring>()=0</argsstring>
+        <name>get_name</name>
+        <reimplementedby refid="structrobot__interfaces_1_1NJointRobotTypes_1_1Action_1a4d4b702fdf41cc9713c46edbbb26db51">get_name</reimplementedby>
+        <reimplementedby refid="structrobot__interfaces_1_1Status_1a2cd6543deb86d878ba43153c18d2fadb">get_name</reimplementedby>
+        <reimplementedby refid="structrobot__interfaces_1_1NJointRobotTypes_1_1Observation_1a9eda538dfcaf22f36a879e0b6b11e856">get_name</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/robot_interfaces/loggable.hpp" line="26" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classrobot__interfaces_1_1Loggable_1a28ffee45cf66a84d16b2c907ed10367c" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>std::vector&lt; std::vector&lt; double &gt; &gt;</type>
+        <definition>virtual std::vector&lt;std::vector&lt;double&gt; &gt; robot_interfaces::Loggable::get_data</definition>
+        <argsstring>()=0</argsstring>
+        <name>get_data</name>
+        <reimplementedby refid="structrobot__interfaces_1_1NJointRobotTypes_1_1Action_1a8fe4c10c53d72e4f8bb9c09d3be9b39d">get_data</reimplementedby>
+        <reimplementedby refid="structrobot__interfaces_1_1Status_1af530134f33fa21c02d1157636c385fa3">get_data</reimplementedby>
+        <reimplementedby refid="structrobot__interfaces_1_1NJointRobotTypes_1_1Observation_1a874a72549cdd211ee60390e7df46a4bc">get_data</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/robot_interfaces/loggable.hpp" line="31" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="98">
+        <label>robot_interfaces::Loggable</label>
+        <link refid="classrobot__interfaces_1_1Loggable"/>
+      </node>
+      <node id="99">
+        <label>robot_interfaces::NJointRobotTypes&lt; N &gt;::Action</label>
+        <link refid="structrobot__interfaces_1_1NJointRobotTypes_1_1Action"/>
+        <childnode refid="98" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="100">
+        <label>robot_interfaces::NJointRobotTypes&lt; N &gt;::Observation</label>
+        <link refid="structrobot__interfaces_1_1NJointRobotTypes_1_1Observation"/>
+        <childnode refid="98" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="101">
+        <label>robot_interfaces::Status</label>
+        <link refid="structrobot__interfaces_1_1Status"/>
+        <childnode refid="98" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="include/robot_interfaces/loggable.hpp" line="19" column="1" bodyfile="include/robot_interfaces/loggable.hpp" bodystart="18" bodyend="32"/>
+    <listofallmembers>
+      <member refid="classrobot__interfaces_1_1Loggable_1a28ffee45cf66a84d16b2c907ed10367c" prot="public" virt="pure-virtual"><scope>robot_interfaces::Loggable</scope><name>get_data</name></member>
+      <member refid="classrobot__interfaces_1_1Loggable_1a19635ebc166379f11fe4c8e58153243a" prot="public" virt="pure-virtual"><scope>robot_interfaces::Loggable</scope><name>get_name</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

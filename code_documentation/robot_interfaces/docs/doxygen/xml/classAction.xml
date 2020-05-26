@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classAction" kind="class" language="C++" prot="public">
+    <compoundname>Action</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classAction_1af8e52b4b916b835965d83fce59f82d3e" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Action::values[2]</definition>
+        <argsstring>[2]</argsstring>
+        <name>values</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="demos/demo.cpp" line="32" column="1" bodyfile="demos/demo.cpp" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classAction_1af84767113e5cb4645db17e570afc6a0e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Action::print</definition>
+        <argsstring>(bool backline)</argsstring>
+        <name>print</name>
+        <param>
+          <type>bool</type>
+          <declname>backline</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="demos/demo.cpp" line="34" column="1" bodyfile="demos/demo.cpp" bodystart="34" bodyend="38"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="demos/demo.cpp" line="30" column="1" bodyfile="demos/demo.cpp" bodystart="29" bodyend="39"/>
+    <listofallmembers>
+      <member refid="classAction_1af84767113e5cb4645db17e570afc6a0e" prot="public" virt="non-virtual"><scope>Action</scope><name>print</name></member>
+      <member refid="classAction_1af8e52b4b916b835965d83fce59f82d3e" prot="public" virt="non-virtual"><scope>Action</scope><name>values</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
